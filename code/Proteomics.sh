@@ -1,17 +1,16 @@
 #!/bin/bash
-# identification.sh
-# bash identification.sh mgf_folder outputfolder database
+# USE: bash Proteomics.sh mgf_folder outputfolder
 # Daniel Camilo Osorio
 # Maestría en Bioinformática - Universidad Nacional de Colombia (Bogotá)
 # Laboratorio de Bioquímica Teórica y Bioinformática - Pontificia Universidad Javeriana (Bogotá)
 
-# Genera la base de datos decoy a partir de la base de datos descargada de UniProt
+# Genera la base de datos decoy a partir de la base de datos descargada de UniProt.
 java -cp ~/SearchGUI/SearchGUI-1.26.4.jar eu.isas.searchgui.cmd.FastaCLI -in DB/Mmu_180315.fasta -decoy
 
 # Genera el archivo de parametros.
 java -cp ~/SearchGUI/SearchGUI-1.26.4.jar eu.isas.searchgui.cmd.IdentificationParametersCLI -db ~/DB/Mmu_180315_concatenated_target_decoy.fasta -out p.parameters -frag_tol 0.02 -prec_tol 6 -prec_ppm 1 -enzyme "Trypsin" -fixed_mods "carbamidomethyl c" -variable_mods "oxidation of m, acetylation of protein n-term" -min_charge 2 -max_charge 4 -mc 2 -fi b -ri y
 
-# Genera la carpeta resultados
+# Genera la carpeta resultados.
 name=`basename $2`
 mkdir ~/$2
 

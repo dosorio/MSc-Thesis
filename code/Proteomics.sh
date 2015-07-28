@@ -29,4 +29,7 @@ java -Xmx13000m -cp ~/PeptideShaker/PeptideShaker-0.38.3.jar eu.isas.peptideshak
 # Reporta los peptidos identificados y los datos asociados.
 java -Xmx13000m -cp ~/PeptideShaker/PeptideShaker-0.38.3.jar eu.isas.peptideshaker.cmd.ReportCLI -in ~/$2/${name}.cps -out_reports ~/$2/ -reports "0,1,2,3,4" -documentation "0,1,2,3,4"
 
+# Reporta las proteinas identificadas
+grep -E '^[0-9]{1,10}\s' *${2}_Default_Hierarchical_Report.txt > ${2}_Proteins.txt
+
 exit

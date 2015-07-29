@@ -4,9 +4,6 @@
 # Maestría en Bioinformática - Universidad Nacional de Colombia (Bogotá)
 # Laboratorio de Bioquímica Teórica y Bioinformática - Pontificia Universidad Javeriana (Bogotá)
 
-# Setting the working directory
-setwd("Documents/Proteomics/")
-
 # Loading the UniProt.ws package
 library(UniProt.ws)
 
@@ -25,5 +22,5 @@ Specie@taxIdUniprots<- as.vector(Proteome$V2)
 Data <- select(Specie, keys(Specie,"UNIPROTKB"), "EC", "UNIPROTKB")
 
 # Writing output files
-write.table(Data[!is.na(Data$EC),],"results/Human_OligoDendocyte/EC_OL-OX.txt",sep = "\t",col.names = FALSE,row.names = FALSE,quote = FALSE)
-write.table(Data[is.na(Data$EC),],"results/Human_OligoDendocyte/NoEC_OL-OX.txt",sep = "\t",col.names = FALSE,row.names = FALSE,quote = FALSE)
+write.table(Data[!is.na(Data$EC),],"EC_OL-OX.txt",sep = "\t",col.names = FALSE,row.names = FALSE,quote = FALSE)
+write.table(Data[is.na(Data$EC),],"nEC_OL-OX.txt",sep = "\t",col.names = FALSE,row.names = FALSE,quote = FALSE)

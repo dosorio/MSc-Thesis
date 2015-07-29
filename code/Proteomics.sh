@@ -19,7 +19,7 @@ ln -s ~/$1/*.mgf ~/$2/
 
 # Genera la comparación de peptidos usando SearchGUI
 java -Xmx8000m -cp ~/SearchGUI/SearchGUI-1.26.4.jar eu.isas.searchgui.cmd.SearchCLI -spectrum_files ~/$2/ -output_folder ~/$2/ -id_params p.parameters -xtandem 1 -msgf 0 -omssa 1 -ms_amanda 0 -myrimatch 0 -comet 0 -tide 0 -species "Homo sapiens" -species_type "Vertebrates" -output_option 3
-exit
+
 # Remueve el log de la base de datos derby
 rm ~/derby.log
 
@@ -30,6 +30,9 @@ java -Xmx8000m -cp ~/PeptideShaker/PeptideShaker-0.38.3.jar eu.isas.peptideshake
 java -Xmx8000m -cp ~/PeptideShaker/PeptideShaker-0.38.3.jar eu.isas.peptideshaker.cmd.ReportCLI -in ~/$2/${name}.cps -out_reports ~/$2/ -reports "0,1,2,3,4" -documentation "0,1,2,3,4"
 
 # Reporta las proteinas identificadas
-grep -E '^[0-9]{1,10}\s' *${2}_Default_Hierarchical_Report.txt > ${2}_Proteins.txt
+grep -E '^[0-9]{1,10}\s' ~/$2/*${2}_3_Default_Hierarchical_Report.txt > ${2}_Proteins.txt
+
+# Extrae los códigos EC de UNIPROT
+Rscript UniProt.R ${2}_Proteins.txt
 
 exit

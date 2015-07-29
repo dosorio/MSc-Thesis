@@ -1,0 +1,193 @@
+Project Details1: PeptideShaker Version: 0.38.3
+2: Date: Wed Jul 22 13:38:17 COT 2015
+3: Experiment: OL
+4: Sample: OL
+5: Replicate Number: 3
+6: Identification Algorithms: X!Tandem
+Database Search Parameters
+
+1: Precursor Accuracy Unit: ppm
+2: Precursor Ion m/z Tolerance: 10.0
+3: Fragment Ion m/z Tolerance: 0.05
+4: Enzyme: Trypsin
+5: Number of Missed Cleavages: Not implemented
+6: Database: HSA-210715_concatenated_target_decoy.fasta
+7: Forward Ion: b
+8: Rewind Ion: y
+9: Fixed Modifications: carbamidomethyl c
+10: Variable Modifications: oxidation of m, acetylation of protein n-term, pyro-cmc, pyro-glu from n-term e, pyro-glu from n-term q
+11: Refinement Variable Modifications: 
+12: Refinement Fixed Modifications: 
+Input Filters
+
+1: Minimal Peptide Length: 6
+2: Maximal Peptide Length: 30
+3: Precursor m/z Tolerance: none
+4: Precursor m/z Tolerance Unit: Yes
+5: Unrecognized Modifications Discarded: Yes
+Validation Summary
+
+1: #Validated Proteins: 2810.0
+2: Protein Total: 3376.3
+3Protein FDR Limit: 1.0 %
+4: Protein FNR Limit: 17.51 %
+5: Protein Confidence Limit: 93.92 %
+6: Protein PEP Limit: 6.08 %
+7: Protein Confidence Accuracy: 0.79 %
+8: #Validated Peptides: 11040.0
+9: #Validated Peptides: 370.0
+10: #Validated Peptides: 513.0
+11: Peptide Total: 17501.32
+12: Peptide Total: 736.62
+13: Peptide Total: 824.2
+14: Peptide FDR Limit: 1.0 %
+15: Peptide FDR Limit: 0.81 %
+16: Peptide FDR Limit: 0.97 %
+17: Peptide FNR Limit: 37.52 %
+18: Peptide FNR Limit: 50.09 %
+19: Peptide FNR Limit: 38.37 %
+20: Peptide Confidence Limit: 94.13 %
+21: Peptide Confidence Limit: 93.06 %
+22: Peptide Confidence Limit: 97.24 %
+23: Peptide PEP Limit: 5.87 %
+24: Peptide PEP Limit: 6.94 %
+25: Peptide PEP Limit: 2.76 %
+26: Peptide Confidence Accuracy: 0.26 %
+27: Peptide Confidence Accuracy: 1.43 %
+28: Peptide Confidence Accuracy: 0.56 %
+29: #Validated PSM: 1091.0
+30: #Validated PSM: 1695.0
+31: #Validated PSM: 1230.0
+32: #Validated PSM: 1200.0
+33: #Validated PSM: 1474.0
+34: #Validated PSM: 2017.0
+35: #Validated PSM: 1101.0
+36: #Validated PSM: 1206.0
+37: #Validated PSM: 1777.0
+38: #Validated PSM: 793.0
+39: #Validated PSM: 1543.0
+40: #Validated PSM: 1039.0
+41: #Validated PSM: 1089.0
+42: #Validated PSM: 246.0
+43: #Validated PSM: 109.0
+44: #Validated PSM: 2901.0
+45: #Validated PSM: 3859.0
+46: PSM Total: 1381.6
+47: PSM Total: 2138.01
+48: PSM Total: 1638.64
+49: PSM Total: 1651.68
+50: PSM Total: 1808.72
+51: PSM Total: 2709.39
+52: PSM Total: 1412.34
+53: PSM Total: 1677.81
+54: PSM Total: 2176.64
+55: PSM Total: 1281.98
+56: PSM Total: 1992.64
+57: PSM Total: 1553.86
+58: PSM Total: 1491.61
+59: PSM Total: 609.34
+60: PSM Total: 390.21
+61: PSM Total: 4308.23
+62: PSM Total: 10602.31
+63: PSM FDR Limit: 0.92 %
+64: PSM FDR Limit: 0.94 %
+65: PSM FDR Limit: 0.98 %
+66: PSM FDR Limit: 1.0 %
+67: PSM FDR Limit: 0.81 %
+68: PSM FDR Limit: 0.99 %
+69: PSM FDR Limit: 1.0 %
+70: PSM FDR Limit: 1.0 %
+71: PSM FDR Limit: 0.96 %
+72: PSM FDR Limit: 0.76 %
+73: PSM FDR Limit: 0.97 %
+74: PSM FDR Limit: 0.87 %
+75: PSM FDR Limit: 0.73 %
+76: PSM FDR Limit: 0.81 %
+77: PSM FDR Limit: 0.92 %
+78: PSM FDR Limit: 1.0 %
+79: PSM FDR Limit: 0.88 %
+80: PSM FNR Limit: 21.98 %
+81: PSM FNR Limit: 21.56 %
+82: PSM FNR Limit: 25.63 %
+83: PSM FNR Limit: 28.07 %
+84: PSM FNR Limit: 19.43 %
+85: PSM FNR Limit: 26.32 %
+86: PSM FNR Limit: 23.07 %
+87: PSM FNR Limit: 29.04 %
+88: PSM FNR Limit: 19.55 %
+89: PSM FNR Limit: 38.66 %
+90: PSM FNR Limit: 23.25 %
+91: PSM FNR Limit: 33.84 %
+92: PSM FNR Limit: 27.78 %
+93: PSM FNR Limit: 60.3 %
+94: PSM FNR Limit: 72.59 %
+95: PSM FNR Limit: 33.33 %
+96: PSM FNR Limit: 63.94 %
+97: PSM Confidence Limit: 87.5 %
+98: PSM Confidence Limit: 92.75 %
+99: PSM Confidence Limit: 93.9 %
+100: PSM Confidence Limit: 91.21 %
+101: PSM Confidence Limit: 86.99 %
+102: PSM Confidence Limit: 88.76 %
+103: PSM Confidence Limit: 87.86 %
+104: PSM Confidence Limit: 90.53 %
+105: PSM Confidence Limit: 83.23 %
+106: PSM Confidence Limit: 94.53 %
+107: PSM Confidence Limit: 91.06 %
+108: PSM Confidence Limit: 89.86 %
+109: PSM Confidence Limit: 90.88 %
+110: PSM Confidence Limit: 91.89 %
+111: PSM Confidence Limit: 88.0 %
+112: PSM Confidence Limit: 91.03 %
+113: PSM Confidence Limit: 95.08 %
+114: PSM PEP Limit: 12.5 %
+115: PSM PEP Limit: 7.25 %
+116: PSM PEP Limit: 6.1 %
+117: PSM PEP Limit: 8.79 %
+118: PSM PEP Limit: 13.01 %
+119: PSM PEP Limit: 11.24 %
+120: PSM PEP Limit: 12.14 %
+121: PSM PEP Limit: 9.47 %
+122: PSM PEP Limit: 16.77 %
+123: PSM PEP Limit: 5.47 %
+124: PSM PEP Limit: 8.94 %
+125: PSM PEP Limit: 10.14 %
+126: PSM PEP Limit: 9.12 %
+127: PSM PEP Limit: 8.11 %
+128: PSM PEP Limit: 12.0 %
+129: PSM PEP Limit: 8.97 %
+130: PSM PEP Limit: 4.92 %
+131: PSM Confidence Accuracy: 0.43 %
+132: PSM Confidence Accuracy: 0.75 %
+133: PSM Confidence Accuracy: 0.63 %
+134: PSM Confidence Accuracy: 0.43 %
+135: PSM Confidence Accuracy: 0.74 %
+136: PSM Confidence Accuracy: 0.63 %
+137: PSM Confidence Accuracy: 0.27 %
+138: PSM Confidence Accuracy: 0.22 %
+139: PSM Confidence Accuracy: 0.32 %
+140: PSM Confidence Accuracy: 0.81 %
+141: PSM Confidence Accuracy: 0.85 %
+142: PSM Confidence Accuracy: 0.76 %
+143: PSM Confidence Accuracy: 0.33 %
+144: PSM Confidence Accuracy: 0.9 %
+145: PSM Confidence Accuracy: 4.17 %
+146: PSM Confidence Accuracy: 0.28 %
+147: PSM Confidence Accuracy: 0.42 %
+Postranslational Modification Scoring Settings
+
+1: A-score: No
+2: Accounting for Neutral Losses: No
+3: False Location Rate: 1.0
+Spectrum Counting Parameters
+
+1: Method: NSAF
+2: Validated Matches Only: Yes
+Annotation Settings
+
+1: Intensity Limit: 0.75
+2: Automatic Annotation: Yes
+3: Selected Ions: b, y
+4: Neutral Losses: H2O, NH3
+5: Neutral Losses Sequence Dependence: Yes
+6: Fragment Ion m/z Tolerance: 0.05

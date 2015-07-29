@@ -24,10 +24,6 @@ Specie@taxIdUniprots<- as.vector(Proteome$V2)
 # Retrieving the UNIPROT EC numbers
 Data <- select(Specie, keys(Specie,"UNIPROTKB"), "EC", "UNIPROTKB")
 
-# Filtering data
-nEC<-Data[is.na(Data$EC),]
-EC<-Data[!is.na(Data$EC),]
-
 # Writing output files
-write.table(EC,"results/Human_OligoDendocyte/EC_OL-OX.txt",sep = "\t",col.names = FALSE,row.names = FALSE,quote = FALSE)
-write.table(nEC,"results/Human_OligoDendocyte/NoEC_OL-OX.txt",sep = "\t",col.names = FALSE,row.names = FALSE,quote = FALSE)
+write.table(Data[!is.na(Data$EC),],"results/Human_OligoDendocyte/EC_OL-OX.txt",sep = "\t",col.names = FALSE,row.names = FALSE,quote = FALSE)
+write.table(Data[is.na(Data$EC),],"results/Human_OligoDendocyte/NoEC_OL-OX.txt",sep = "\t",col.names = FALSE,row.names = FALSE,quote = FALSE)

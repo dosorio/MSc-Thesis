@@ -4,6 +4,9 @@
 # Maestría en Bioinformática - Universidad Nacional de Colombia (Bogotá)
 # Laboratorio de Bioquímica Teórica y Bioinformática - Pontificia Universidad Javeriana (Bogotá)
 
+# Configuración de Idioma
+export LC_ALL=C
+
 # Genera la base de datos decoy a partir de la base de datos descargada de UniProt.
 java -cp ~/SearchGUI/SearchGUI-1.26.4.jar eu.isas.searchgui.cmd.FastaCLI -in DB/HSA/HSA-210715.fasta -decoy
 
@@ -18,7 +21,7 @@ mkdir ~/$2
 ln -s ~/$1/*.mgf ~/$2/
 
 # Genera la comparación de peptidos usando SearchGUI
-java -Xmx8000m -cp ~/SearchGUI/SearchGUI-1.26.4.jar eu.isas.searchgui.cmd.SearchCLI -spectrum_files ~/$2/ -output_folder ~/$2/ -id_params p.parameters -xtandem 1 -msgf 0 -omssa 1 -ms_amanda 0 -myrimatch 0 -comet 0 -tide 0 -species "Homo sapiens" -species_type "Vertebrates" -output_option 3
+java -Xmx8000m -cp ~/SearchGUI/SearchGUI-1.26.4.jar eu.isas.searchgui.cmd.SearchCLI -spectrum_files ~/$2/ -output_folder ~/$2/ -id_params p.parameters -xtandem 0 -msgf 0 -omssa 0 -ms_amanda 1 -myrimatch 0 -comet 0 -tide 0 -species "Homo sapiens" -species_type "Vertebrates" -output_option 3
 
 # Remueve el log de la base de datos derby
 rm ~/derby.log

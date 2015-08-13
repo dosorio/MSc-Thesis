@@ -5,7 +5,7 @@ Specie<-(UniProt.ws(taxId=9606))
 Specie@taxIdUniprots<- as.vector(NoEC_OL.OX$V1)
 
 # Retrieving the UNIPROT EC numbers
-Data <- select(Specie, keys(Specie,"ENSEMBL"), "GENES", "ENSEMBL")
+Data_G <- select(Specie, keys(Specie,"ENSEMBL"), "GENES", "ENSEMBL")
 
 
 get_STRING_species(version="10", species_name="Homo sapiens")

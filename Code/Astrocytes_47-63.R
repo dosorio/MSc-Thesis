@@ -1,5 +1,5 @@
 setwd("~/Dropbox/Maestría Bioinformática/Tesis de Maestría/")
-#source("https://bioconductor.org/biocLite.R")
+source("https://bioconductor.org/biocLite.R")
 #biocLite("DESeq")
 #biocLite("ReactomePA")
 #biocLite("KEGGREST")
@@ -38,8 +38,8 @@ MatureAstrocyte<- select(Human,keys=toupper(unique(rownames(ActiveGenes[DE,]))),
 # Excluyo proteínas con actividad enzimática
 EC<-HSA[!is.na(HSA$ENSEMBL),]
 
-# Extraigo rutas metabolicas involucradas
-AstrocyteMetabolism<-enrichPathway(unique(na.omit(MatureAstrocyte$ENTREZ_GENE)),organism = "human",readable = TRUE)
+# Extraigo rutas metabolicas involucradas en la diferenciación de astrocito maduro
+AstrocyteMetabolism<-enrichPathway(unique(na.omit(HSA$ENTREZ_GENE)),organism = "human",readable = TRUE,pvalueCutoff = 0.05)
 ResumenAstrocyte<-summary(AstrocyteMetabolism)
 
 # Extrayendo ENSEMBL ID's
@@ -53,13 +53,13 @@ for (i in 1:length(ENSEMBL)){
 }
 
 # Reconstrucción Borrador
-Astrocyte_DRAFT<-unique(HMR[HMR$RXNID%in%RXN,])
+Astrocyte_DRAFT<-unique(HMR[HMR$RXNID%in%sort(RXN),])
 Astrocyte_DRAFT<-Astrocyte_DRAFT[!grepl("[[:digit:]]\\.[[:digit:]]",Astrocyte_DRAFT$EQUATION),]
 # Convirtiendo a Sybil
 
 cobra2sybil<-function(reaction){
   coeficients <- function(met) {
-    regmatches(met, gregexpr('^[0-9,.]', met))
+    regmatches(met, gregexpr('^[0-9]+[[:blank:]]', met))
   }
   
   if(grepl("[[:blank:]]=>[[:blank:]]",reaction)){
@@ -73,8 +73,8 @@ cobra2sybil<-function(reaction){
     r_coefic[is.na(r_coefic)]<-1
     p_coefic <- as.numeric(sapply(products, coeficients))
     p_coefic[is.na(p_coefic)]<-1
-    reactant <- gsub("^[[:digit:]][[:blank:]]","",reactant)
-    products <- gsub("^[[:digit:]][[:blank:]]","",products)
+    reactant <- gsub("^[[:digit:]]+[[:blank:]]","",reactant)
+    products <- gsub("^[[:digit:]]+[[:blank:]]","",products)
     reactant <- mapply(function(c,m){paste("(",c,") ", m, sep = "")}, c=r_coefic, m=reactant)
     products <- mapply(function(c,m){paste("(",c,") ", m, sep = "")}, c=p_coefic, m=products)
     reaction <- paste(paste0(reactant,collapse = " + "), paste0(products,collapse = " + "),sep = " --> ")
@@ -89,8 +89,8 @@ cobra2sybil<-function(reaction){
     r_coefic[is.na(r_coefic)]<-1
     p_coefic <- as.numeric(sapply(products, coeficients))
     p_coefic[is.na(p_coefic)]<-1
-    reactant <- gsub("^[[:digit:]][[:blank:]]","",reactant)
-    products <- gsub("^[[:digit:]][[:blank:]]","",products)
+    reactant <- gsub("^[[:digit:]]+[[:blank:]]","",reactant)
+    products <- gsub("^[[:digit:]]+[[:blank:]]","",products)
     reactant <- mapply(function(c,m){paste("(",c,") ", m, sep = "")}, c=r_coefic, m=reactant)
     products <- mapply(function(c,m){paste("(",c,") ", m, sep = "")}, c=p_coefic, m=products)
     reaction <- paste(paste0(reactant,collapse = " + "), paste0(products,collapse = " + "),sep = " <==> ")
@@ -98,4 +98,52 @@ cobra2sybil<-function(reaction){
   gsub("\\[s\\]","\\[e\\]",reaction)
 }
 
+reversible <- function(reaction){
+  if(grepl("[[:blank:]]-->[[:blank:]]",reaction)){
+    return("irreversible")
+  } else {
+    return("reversible")
+  }
+}
+
+compartment <- function(reaction){
+  if(grepl("[[:blank:]]=>[[:blank:]]",reaction)){
+  reaction <- strsplit(reaction," <==> ",fixed = TRUE)[[1]]
+  } else {
+  reaction <- strsplit(reaction," --> ",fixed = TRUE)[[1]]}
+  reaction <- unlist(strsplit(reaction," + ",fixed = TRUE))
+  comp<-unlist(regmatches(reaction, gregexpr('\\[[[:alpha:]]\\]$', reaction)))
+  comp<-gsub("\\[","",comp)
+  comp<-gsub("\\]","",comp)
+  paste(unique(comp),collapse = ", ")
+}
+
+metabolites<-function(reaction){
+  if(grepl("[[:blank:]]-->[[:blank:]]",reaction)){
+    reaction <- strsplit(reaction," --> ",fixed = TRUE)[[1]]
+  } else {
+    reaction <- strsplit(reaction," <==> ",fixed = TRUE)[[1]]}
+  reaction <- unlist(strsplit(reaction," + ",fixed = TRUE))
+  gsub("\\([[:digit:]]+\\)[[:blank:]]","",reaction)
+}
+
+metmodel<-function(m_name){
+  if (grepl("\\[",m_name) || grepl("\\(",m_name)){
+    c<-gsub(m_name,"",metabolites[grep(m_name,metabolites,fixed = TRUE)],fixed = TRUE)
+    unique(gsub("\\]","",gsub("\\[","",c)))
+  } else {
+    unique(gsub("\\]","",gsub(paste0(m_name,"\\["),"",metabolites[grep(paste0("^",m_name,"\\["),metabolites)])))
+  }
+}
+
 reactions<-sapply(Astrocyte_DRAFT$EQUATION,cobra2sybil)
+names <- Astrocyte_DRAFT$RXNID
+rever <- as.vector(sapply(reactions,reversible))
+comp<- as.vector(sapply(reactions,compartment))
+Astrocyte_MODEL<-as.data.frame(cbind(as.character(names),as.character(names),as.character(reactions),as.character(rever),as.character(comp),-1000,1000,0,"",""))
+colnames(Astrocyte_MODEL)<-c("abbreviation","name","equation","reversible","compartment","lowbnd","uppbnd","obj_coef","rule","subsystem")
+write.table(Astrocyte_MODEL,sep = "\t",row.names = FALSE,file = "Astrocyte_react.tsv")
+
+
+metabolites <- unique(unlist(sapply(as.vector(Astrocyte_MODEL$equation),metabolites)))
+m_names <- unique(gsub('\\[[[:alpha:]]\\]$',"",metabolites))

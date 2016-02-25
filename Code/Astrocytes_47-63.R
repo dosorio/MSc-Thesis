@@ -128,12 +128,17 @@ metabolites<-function(reaction){
 }
 
 metmodel<-function(m_name){
-  if (grepl("\\[",m_name) || grepl("\\(",m_name)){
-    c<-gsub(m_name,"",metabolites[grep(m_name,metabolites,fixed = TRUE)],fixed = TRUE)
-    unique(gsub("\\]","",gsub("\\[","",c)))
-  } else {
-    unique(gsub("\\]","",gsub(paste0(m_name,"\\["),"",metabolites[grep(paste0("^",m_name,"\\["),metabolites)])))
-  }
+  m_name <- gsub("\\]","*",m_name)
+  m_name <- gsub("\\[","*",m_name)
+  m_name <- gsub("\\(","*",m_name)
+  m_name <- gsub("\\)","*",m_name)
+  m_name <- gsub("\\*","[[:punct:]]",m_name)
+  m_name <- paste0("^",m_name,"[[:punct:]]")
+  mets <- metabolites[grep(m_name,metabolites)]
+  comp<-unlist(regmatches(mets, gregexpr('\\[[[:alpha:]]\\]$', mets)))
+  comp<-gsub("\\[","",comp)
+  comp<-gsub("\\]","",comp)
+  paste0(unique(comp),collapse = ", ")
 }
 
 reactions<-sapply(Astrocyte_DRAFT$EQUATION,cobra2sybil)
@@ -146,4 +151,4 @@ write.table(Astrocyte_MODEL,sep = "\t",row.names = FALSE,file = "Astrocyte_react
 
 
 metabolites <- unique(unlist(sapply(as.vector(Astrocyte_MODEL$equation),metabolites)))
-m_names <- unique(gsub('\\[[[:alpha:]]\\]$',"",metabolites))
+m_names <- unique(gsub('\\[[[:alpha:]]+\\]$',"",metabolites))

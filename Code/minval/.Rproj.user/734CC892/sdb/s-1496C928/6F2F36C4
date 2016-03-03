@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1456324597075.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6F2F36C4",
+    "lastKnownWriteTime" : 4294967302,
+    "last_content_update" : 1456324597075,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "u0uqp3x6pj",
+        "caption" : "Astrocyte_MODEL",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=Astrocyte_MODEL&cache_key=u0uqp3x6pj",
+        "displayedObservations" : "5171",
+        "environment" : "",
+        "object" : "Astrocyte_MODEL",
+        "totalObservations" : "5171",
+        "variables" : "10"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

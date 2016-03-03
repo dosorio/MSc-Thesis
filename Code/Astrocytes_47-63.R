@@ -6,6 +6,7 @@ source("https://bioconductor.org/biocLite.R")
 #biocLite("reactome.db")
 #biocLite("UniProt.ws")
 #biocLite("org.Hs.eg.db")
+#install_github("dosorio/convert2sybil")
 # require(DESeq)
 # require(edgeR)
 require(caret)
@@ -32,36 +33,36 @@ table(DE)
 
 # Extraigo ID's genes en diferentes bases de datos
 Human<-(UniProt.ws(taxId=9606))
-HSA<-select(Human,keys=toupper(unique(rownames(ActiveGenes))),columns = c("ENSEMBL","ENTREZ_GENE","ENTRY-NAME","KO","KEGG","EC","REACTOME","PROTEIN-NAMES"),keytype ="GENECARDS")
-MatureAstrocyte<- select(Human,keys=toupper(unique(rownames(ActiveGenes[DE,]))),columns = c("ENSEMBL","ENTREZ_GENE","ENTRY-NAME","KO","KEGG","EC","REACTOME","PROTEIN-NAMES"),keytype ="GENECARDS")
+HSA<-select(Human,keys=toupper(unique(rownames(ActiveGenes))),columns = c("ENTREZ_GENE","EC"),keytype ="GENECARDS")
+#MatureAstrocyte<- select(Human,keys=toupper(unique(rownames(ActiveGenes[DE,]))),columns = c("ENSEMBL","ENTREZ_GENE","ENTRY-NAME","KO","KEGG","EC","REACTOME","PROTEIN-NAMES"),keytype ="GENECARDS")
 
 # Excluyo proteínas con actividad enzimática
-EC<-HSA[!is.na(HSA$ENSEMBL),]
+EC<-HSA[!is.na(HSA$EC),]
 
 # Extraigo rutas metabolicas involucradas en la diferenciación de astrocito maduro
 AstrocyteMetabolism<-enrichPathway(unique(na.omit(HSA$ENTREZ_GENE)),organism = "human",readable = TRUE,pvalueCutoff = 0.05)
 ResumenAstrocyte<-summary(AstrocyteMetabolism)
 
 # Extrayendo ENSEMBL ID's
-ENSEMBL<-unique(unlist(strsplit(EC$ENSEMBL,";")))
+EC_C<-unique(unlist(strsplit(EC$EC,";")))
 
 # Extrayendo de HMR
-HMR<-read.csv("Data/rxn_HMRdatabase2_00.csv",sep = ";")
+setwd("~/Dropbox/Maestría Bioinformática/Tesis de Maestría/")
+RECON<-read.csv("Data/RECON_rxn.txt",sep = "\t")
 RXN<-NULL
-for (i in 1:length(ENSEMBL)){
-  RXN<-c(RXN,as.vector(HMR[grep(ENSEMBL[i],HMR$GENE.ASSOCIATION),2]))
+for (i in 1:length(EC$ENTREZ_GENE)){
+  RXN<-unique(c(RXN,as.vector(RECON[grep(paste0("[[:punct:]]",EC$ENTREZ_GENE[i],"\\."),RECON$Gene.reaction.association),1])))
 }
 
 # Reconstrucción Borrador
-Astrocyte_DRAFT<-unique(HMR[HMR$RXNID%in%sort(RXN),])
-Astrocyte_DRAFT<-Astrocyte_DRAFT[!grepl("[[:digit:]]\\.[[:digit:]]",Astrocyte_DRAFT$EQUATION),]
-# Convirtiendo a Sybil
+Astrocyte_DRAFT<-RECON[RECON$Rxn.name%in%RXN,]
 
+# Convirtiendo a Sybil
 cobra2sybil<-function(reaction){
   coeficients <- function(met) {
     regmatches(met, gregexpr('^[0-9]+[[:blank:]]', met))
   }
-  
+
   if(grepl("[[:blank:]]=>[[:blank:]]",reaction)){
     reactant <- sub("(.*) => (.*)","\\1",reaction)
     products <- sub("(.*) => (.*)","\\2",reaction)
@@ -108,9 +109,9 @@ reversible <- function(reaction){
 
 compartment <- function(reaction){
   if(grepl("[[:blank:]]=>[[:blank:]]",reaction)){
-  reaction <- strsplit(reaction," <==> ",fixed = TRUE)[[1]]
+    reaction <- strsplit(reaction," <==> ",fixed = TRUE)[[1]]
   } else {
-  reaction <- strsplit(reaction," --> ",fixed = TRUE)[[1]]}
+    reaction <- strsplit(reaction," --> ",fixed = TRUE)[[1]]}
   reaction <- unlist(strsplit(reaction," + ",fixed = TRUE))
   comp<-unlist(regmatches(reaction, gregexpr('\\[[[:alpha:]]\\]$', reaction)))
   comp<-gsub("\\[","",comp)
@@ -118,32 +119,128 @@ compartment <- function(reaction){
   paste(unique(comp),collapse = ", ")
 }
 
-metabolites<-function(reaction){
-  if(grepl("[[:blank:]]-->[[:blank:]]",reaction)){
-    reaction <- strsplit(reaction," --> ",fixed = TRUE)[[1]]
+metabolites_f<-function(reaction){
+  if(grepl("[[:blank:]]?-->[[:blank:]]?",reaction)){
+    reaction <- strsplit(reaction,"[[:blank:]]?-->[[:blank:]]?")[[1]]
   } else {
-    reaction <- strsplit(reaction," <==> ",fixed = TRUE)[[1]]}
-  reaction <- unlist(strsplit(reaction," + ",fixed = TRUE))
-  gsub("\\([[:digit:]]+\\)[[:blank:]]","",reaction)
+    reaction <- strsplit(reaction,"[[:blank:]]?<==>[[:blank:]]?")[[1]]}
+  reaction <- unlist(strsplit(reaction,"[[:blank:]]?\\+[[:blank:]]?"))
+  reaction <- gsub("\\([[:digit:]]+\\)[[:blank:]]","",reaction)
+  gsub("[[:blank:]]","",reaction)
 }
 
 metmodel<-function(m_name){
-  if (grepl("\\[",m_name) || grepl("\\(",m_name)){
-    c<-gsub(m_name,"",metabolites[grep(m_name,metabolites,fixed = TRUE)],fixed = TRUE)
-    unique(gsub("\\]","",gsub("\\[","",c)))
-  } else {
-    unique(gsub("\\]","",gsub(paste0(m_name,"\\["),"",metabolites[grep(paste0("^",m_name,"\\["),metabolites)])))
-  }
+  m_name <- gsub("\\]","*",m_name)
+  m_name <- gsub("\\[","*",m_name)
+  m_name <- gsub("\\(","*",m_name)
+  m_name <- gsub("\\)","*",m_name)
+  m_name <- gsub("\\*","[[:punct:]]",m_name)
+  m_name <- paste0("^",m_name,"[[:punct:]]")
+  mets <- metabolites[grep(m_name,metabolites)]
+  comp<-unlist(regmatches(mets, gregexpr('\\[[[:alpha:]]\\]$', mets)))
+  comp<-gsub("\\[","",comp)
+  comp<-gsub("\\]","",comp)
+  paste0(unique(comp),collapse = ", ")
 }
 
-reactions<-sapply(Astrocyte_DRAFT$EQUATION,cobra2sybil)
-names <- Astrocyte_DRAFT$RXNID
+setwd("~/Desktop/")
+reactions<-sapply(Astrocyte_DRAFT$Formula,cobra2sybil)
+names <- Astrocyte_DRAFT$Rxn.name
 rever <- as.vector(sapply(reactions,reversible))
 comp<- as.vector(sapply(reactions,compartment))
-Astrocyte_MODEL<-as.data.frame(cbind(as.character(names),as.character(names),as.character(reactions),as.character(rever),as.character(comp),-1000,1000,0,"",""))
+
+Astrocyte_MODEL<-as.data.frame(cbind(as.character(names),as.character(Astrocyte_DRAFT$Rxn.description),as.character(reactions),as.character(rever),as.character(comp),-1000,1000,0,as.character(Astrocyte_DRAFT$Gene.reaction.association),""),stringsAsFactors = FALSE)
+Astrocyte_MODEL$V6[rever=="irreversible"]<-0
+m_out <- c("L-lactate[e]",
+           "glutamine[e]",
+           "sphingosine-1-phosphate[e]",
+           "starch structure 1[c]",
+            "glycogenin G11[c]",
+            "prostaglandin E2[e]",
+            "prostaglandin F2alpha[e]",
+            "prostaglandin E1[e]",
+            "5,6-EET[c]",
+            "8,9-EET[c]",
+            "11,12-EET[c]",
+            "14,15-EET[c]",
+            "GSH[e]",
+           "ATP[m]",
+           "glycogen[c]",
+           "H2O[c]",
+           "H[c]",
+           "CO2[c]",
+           "glucose[e]",
+           "OAA[m]",
+           "succinate[m]",
+           "ribose-5-phosphate[c]"
+)
+m_in <- c("glucose[e]",
+          "glutamate[e]",
+          "O2[c]",
+          "Pi[e]",
+          "NH3[e]",
+          "H[e]",
+          "Na[e]",
+          "Fe2[e]",
+          "Li[e]",
+          "Ca2[e]",
+          "Mg2[e]",
+          "Cu2[e]",
+          "K[e]",
+          "folate[e]",
+          "NO[e]",
+          "NH4[e]",
+          "zinc[e]"
+          # "carbonate[e]",
+          # "cysteine[e]",
+          # "glycine[e]",
+          # "arginine[e]",
+          # "histidine[e]",
+          # "methionine[e]",
+          # "tyrosine[e]",
+          # "glutamine[e]",
+          # "serine[e]",
+          # "tryptophan[e]",
+          # "phenylalanine[e]",
+          # "leucine[e]",
+          # "valine[e]",
+          # "threonine[e]",
+          # "isoleucine[e]",
+          # "cystine[e]"
+)
+
+for(compound in m_out){
+  id = paste0(compound,"OUT")
+  Astrocyte_MODEL[(dim(Astrocyte_MODEL)[1]+1),]<-c(id,id,paste0(compound," --> "),"irreversible","e",0,1000,0,"","")
+}
+for(compound in m_in){
+  id = paste0(compound,"IN")
+  Astrocyte_MODEL[(dim(Astrocyte_MODEL)[1]+1),]<-c(id,id,paste0(compound,"--> "),"irreversible","e",-1000,0,0,"","")
+}
+
+Astrocyte_MODEL[(dim(Astrocyte_MODEL)[1]+1),]<-c("GLIOT","OBJECTIVE1","beta-D-glucose[c] + glutamate[e] + O2[c] + Pi[m] + H[m] --> H2O[m] + ATP[m] + H[m] + OAA[m] + succinate[m] + ribose-5-phosphate[c] + glycogenin G11[c] + L-lactate[e] + glutamine[e] + sphingosine-1-phosphate[e] + prostaglandin E2[e] + prostaglandin F2alpha[e] + prostaglandin E1[e] + 5,6-EET[c] + 8,9-EET[c] + 11,12-EET[c] + 14,15-EET[c] + GSH[e]","irreversible","c",0,1000,1,"","")
+#Astrocyte_MODEL[(dim(Astrocyte_MODEL)[1]+1),]<-c("ATPSYN","OBJECTIVE2","ADP[m] + Pi[m] + H[m] --> H2O[m] + ATP[m] + H[m]","irreversible","c",0,1000,1,"","")
+#Astrocyte_MODEL[(dim(Astrocyte_MODEL)[1]+1),]<-c("GBM","OBJECTIVE3","--> OAA[m] + succinate[m] + GSH[c] + ribose-5-phosphate[c]","irreversible","c",0,1000,1,"","")
+
 colnames(Astrocyte_MODEL)<-c("abbreviation","name","equation","reversible","compartment","lowbnd","uppbnd","obj_coef","rule","subsystem")
 write.table(Astrocyte_MODEL,sep = "\t",row.names = FALSE,file = "Astrocyte_react.tsv")
 
 
-metabolites <- unique(unlist(sapply(as.vector(Astrocyte_MODEL$equation),metabolites)))
-m_names <- unique(gsub('\\[[[:alpha:]]\\]$',"",metabolites))
+metabolites <- unique(unlist(sapply(as.vector(Astrocyte_MODEL$equation),metabolites_f)))
+m_names <- unique(gsub('\\[[[:alpha:]]+\\]$',"",metabolites))
+compart <- as.vector(sapply(m_names, metmodel))
+Astrocyte_METS <- as.data.frame(cbind(m_names,m_names,compart))
+colnames(Astrocyte_METS)<-c("abbreviation","name","compartment")
+write.table(Astrocyte_METS,sep = "\t",row.names = FALSE,file = "Astrocyte_met.tsv")
+
+name = "T1"
+id = "T1"
+description = ""
+abbreviation = ""
+Nmetabolites = ""
+Nreactions = ""
+Ngenes = ""
+Nnnz = ""
+Astrocyte_DESC<-cbind(name,id)
+write.table(Astrocyte_DESC,sep = "\t",row.names = FALSE,file = "Astrocyte_desc.tsv")
+

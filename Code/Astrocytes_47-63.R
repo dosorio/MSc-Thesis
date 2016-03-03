@@ -226,6 +226,7 @@ colnames(Astrocyte_MODEL)<-c("abbreviation","name","equation","reversible","comp
 write.table(Astrocyte_MODEL,sep = "\t",row.names = FALSE,file = "Astrocyte_react.tsv")
 
 
+<<<<<<< HEAD
 metabolites <- unique(unlist(sapply(as.vector(Astrocyte_MODEL$equation),metabolites_f)))
 m_names <- unique(gsub('\\[[[:alpha:]]+\\]$',"",metabolites))
 compart <- as.vector(sapply(m_names, metmodel))
@@ -243,4 +244,3 @@ Ngenes = ""
 Nnnz = ""
 Astrocyte_DESC<-cbind(name,id)
 write.table(Astrocyte_DESC,sep = "\t",row.names = FALSE,file = "Astrocyte_desc.tsv")
-

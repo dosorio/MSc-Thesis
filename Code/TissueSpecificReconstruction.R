@@ -1,7 +1,7 @@
 setwd("~/Dropbox/Maestria Bioinformatica/Tesis de Maestria/")
+# install.packages("devtools")
 # source("https://bioconductor.org/biocLite.R")
 # library(devtools)
-# install.packages("devtools")
 # biocLite("UniProt.ws")
 # install_github("gibbslab/g2f")
 # install_github("gibbslab/minval")
@@ -21,24 +21,21 @@ Human <- (UniProt.ws(taxId=9606))
 Astrocyte_Genes <- select(Human,keys=toupper(unique(rownames(Astrocyte_Expression))),columns = c("ENTREZ_GENE","ENSEMBL","EC"),keytype ="GENECARDS")
 
 # Extrayendo de RECON
-RECON <- as.data.frame.array(read.csv("Data/RECON_rxn.txt",sep = "\t"))
+RECON <- as.data.frame.array(read.csv("Data/RECON_rxn.csv",sep = "\t"))
 RECON$Formula <- gsub("[[:blank:]]+$","",gsub("^[[:blank:]]+","",RECON$Formula))
-RECON$Gene.reaction.association<-gsub("\\(","\\( ",RECON$Gene.reaction.association)
-RECON$Gene.reaction.association<-gsub("\\)"," \\)",RECON$Gene.reaction.association)
-RECON$Gene.reaction.association<-gsub("([[:print:]]+)"," \\1 ",RECON$Gene.reaction.association)
-
+RECON$Gene.reaction.association<-gsub("([[:digit:]]+).[[:digit:]]+"," \\1 ",RECON$Gene.reaction.association)
 
 # Extrayendo las reacciones asociadas a los genes en RECON
-Reactions <- sapply(unique(Astrocyte_Genes$ENTREZ_GENE[!is.na(Astrocyte_Genes$EC)]),function(enzyme){RECON$Rxn.name[grep(paste0("[[:blank:]]",enzyme,"\\.","[[:digit:]]+[[:blank:]]"),RECON$Gene.reaction.association)]})
+Reactions <- sapply(unique(Astrocyte_Genes$ENTREZ_GENE[!is.na(Astrocyte_Genes$EC)]),function(enzyme){RECON$Rxn.name[grep(paste0("[[:blank:]]",enzyme,"[[:blank:]]"),RECON$Gene.reaction.association)]})
 Reactions <- unique(unlist(Reactions))
 
 # GapFind y GapFill
-Reactions <- g2f(RECON$Formula[RECON$Rxn.name%in%Reactions],RECON$Formula[RECON$Gene.reaction.association==""],consensus = TRUE)
+Reactions <- gapFill(RECON$Formula[RECON$Rxn.name%in%Reactions],RECON$Formula[RECON$Gene.reaction.association==""],consensus = TRUE)
 Reactions <- gsub("[[:blank:]]+$","",gsub("^[[:blank:]]+","",Reactions))
 
 # Añadiendo flujo
 colnames(RECON) <- c("ID","DESCRIPTION","REACTION","GPR","REVERSIBLE","LOWER.BOUND","UPPER.BOUND","OBJECTIVE")
-to.sbml(RECON,"DMEM.xml")
+convert2sbml(RECON,"DMEM.xml")
 DMEM <- readSBMLmod("DMEM.xml")
 
 # DMEM
@@ -98,6 +95,8 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_hxan(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_cl(e)'] <- -1000
 lowbnd(DMEM)[react_id(DMEM) == 'EX_so4(e)'] <- -100
 lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
+lowbnd(DMEM)[react_id(DMEM) == 'EX_nh4(e)'] <- -100
+
 
 Reactions_Flux <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
 
@@ -185,6 +184,7 @@ lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_hxan(e)'] <- -1
 lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_cl(e)'] <- -1000
 lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_so4(e)'] <- -100
 lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_estradiol(e)'] <- -1
+lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_hn4(e)'] <- -100
 
 # 
 lockedReactions <- function(model){
@@ -206,6 +206,6 @@ woFlux <- lockedReactions(Astrocyte_DraftM)
 
 # 
 Astrocyte_Reconstruction <- Astrocyte_Draft[!Astrocyte_Draft$ID%in%woFlux,]
-# Extraigo rutas metabolicas involucradas en la diferenciación de astrocito maduro
-AstrocyteMetabolism<-enrichPathway(unique(na.omit(Astrocyte_Genes$ENTREZ_GENE[Astrocyte_Genes$EC!=""])),organism = "human",readable = TRUE,pvalueCutoff = 0.05)
-ResumenAstrocyte<-summary(AstrocyteMetabolism)
+
+#
+to.sbml(Astrocyte_Reconstruction,"Astrocyte.xml")

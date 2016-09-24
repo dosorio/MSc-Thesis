@@ -98,7 +98,8 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_nh4(e)'] <- -100
 
 
-Reactions_Flux <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
+Reactions_Flux <-(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
+DMEM@obj_coef <- rep(0,DMEM@react_num)
 
 DMEM <- addReact(DMEM, id="MC", met=c("glu_L[e]","ca2[e]","gln_L[e]"),
                  Scoef=c(-1,-1,1), reversible=FALSE,

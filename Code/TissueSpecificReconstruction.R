@@ -212,4 +212,4 @@ woFlux <- lockedReactions(Astrocyte_DraftM)
 Astrocyte_Reconstruction <- Astrocyte_Draft[!Astrocyte_Draft$ID%in%woFlux,]
 
 #
-to.sbml(Astrocyte_Reconstruction,"Astrocyte.xml")
+convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")

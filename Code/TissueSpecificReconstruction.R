@@ -24,6 +24,10 @@ Astrocyte_Genes <- select(Human,keys=toupper(unique(rownames(Astrocyte_Expressio
 RECON <- as.data.frame.array(read.csv("Data/RECON_rxn.csv",sep = "\t"))
 RECON$Formula <- gsub("[[:blank:]]+$","",gsub("^[[:blank:]]+","",RECON$Formula))
 RECON$Gene.reaction.association<-gsub("([[:digit:]]+).[[:digit:]]+"," \\1 ",RECON$Gene.reaction.association)
+RECON$Gene.reaction.association <- sapply(RECON$Gene.reaction.association, function(gpr){
+  woSpaces <- gsub("\\(|\\)|[[:blank:]]+","",gpr)
+  paste0(unique(unlist(lapply(lapply(unlist(strsplit(woSpaces,"or")), function(gpr){strsplit(gpr,"and")}),function(gpr){paste0("( ",paste0(sort(unlist(gpr)),collapse = " and ")," )")}))),collapse = " or ")
+},USE.NAMES = FALSE)
 
 # Extrayendo las reacciones asociadas a los genes en RECON
 Reactions <- sapply(unique(Astrocyte_Genes$ENTREZ_GENE[!is.na(Astrocyte_Genes$EC)]),function(enzyme){RECON$Rxn.name[grep(paste0("[[:blank:]]",enzyme,"[[:blank:]]"),RECON$Gene.reaction.association)]})
@@ -98,8 +102,7 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_nh4(e)'] <- -100
 
 
-Reactions_Flux <-(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
-DMEM@obj_coef <- rep(0,DMEM@react_num)
+Reactions_Flux <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
 
 DMEM <- addReact(DMEM, id="MC", met=c("glu_L[e]","ca2[e]","gln_L[e]"),
                  Scoef=c(-1,-1,1), reversible=FALSE,

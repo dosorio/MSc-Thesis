@@ -115,7 +115,17 @@ DMEM <- addReact(DMEM, id="MC", met=c("gly[c]","ser_D[e]"),
                  lb=0, ub=1000, obj=1)
 Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
+DMEM <- addReact(DMEM, id="MC", met=c("ser_L[c]","ser_D[e]"),
+                 Scoef=c(-1,1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
 DMEM <- addReact(DMEM, id="MC", met=c("glc_D[e]","lac_L[e]"),
+                 Scoef=c(-1,2), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
+DMEM <- addReact(DMEM, id="MC", met=c("atp[c]","atp[e]"),
                  Scoef=c(-1,2), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
 Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))

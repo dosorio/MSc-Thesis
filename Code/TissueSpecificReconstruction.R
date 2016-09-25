@@ -110,7 +110,7 @@ DMEM <- addReact(DMEM, id="MC", met=c("glu_L[e]","ca2[e]","gln_L[e]"),
                  lb=0, ub=1000, obj=1)
 Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("gly[e]","ser_D[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("gly[c]","ser_D[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
 Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
@@ -129,7 +129,7 @@ Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))
 Astrocyte_Draft<- RECON[RECON$REACTION%in%unique(c(Reactions,Reactions_Flux)),]
 
 #
-to.sbml(Astrocyte_Draft,"Astrocyte_Draft.xml")
+convert2sbml(Astrocyte_Draft,"Astrocyte_Draft.xml")
 
 #
 Astrocyte_DraftM <- readSBMLmod("Astrocyte_Draft.xml")

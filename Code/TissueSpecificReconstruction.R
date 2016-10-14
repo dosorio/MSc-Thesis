@@ -84,9 +84,10 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_thm(e)'] <- -1000
 lowbnd(DMEM)[react_id(DMEM) == 'EX_pyr(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_thymd(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_tyr_L(e)'] <- -1
-lowbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -1000
+lowbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -0.530
 lowbnd(DMEM)[react_id(DMEM) == 'EX_h2o(e)'] <- -100
 lowbnd(DMEM)[react_id(DMEM) == 'EX_cl(e)'] <- -1000
+lowbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.515
 lowbnd(DMEM)[react_id(DMEM) == 'EX_so4(e)'] <- -100
 lowbnd(DMEM)[react_id(DMEM) == 'EX_hdca(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
@@ -99,6 +100,7 @@ uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgf2(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgh2(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgi2(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02202(e)'] <- 1000
+uppbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -0.515
 uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02203(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02204(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02205(e)'] <- 1000
@@ -117,7 +119,6 @@ uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrD4(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrE4(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrF4(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_gthrd(e)'] <- 1000
-lowbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.515
 uppbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.530
 uppbnd(DMEM)[react_id(DMEM) == 'EX_lac_L(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_glc_D(e)'] <- 1000
@@ -125,6 +126,7 @@ uppbnd(DMEM)[react_id(DMEM) == 'EX_gln_L(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_ser_D(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_atp(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_taur(e)'] <- 1000
+
 
 Reactions_Flux <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
 
@@ -209,9 +211,10 @@ lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_thm(e)'] <- -1000
 lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_pyr(e)'] <- -1
 lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_thymd(e)'] <- -1
 lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_tyr_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_o2(e)'] <- -1000
+lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_o2(e)'] <- -0.530
 lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_h2o(e)'] <- -100
 lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_cl(e)'] <- -1000
+lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_co2(e)'] <- 0.515
 lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_so4(e)'] <- -100
 lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_hdca(e)'] <- -1
 lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_estradiol(e)'] <- -1
@@ -224,6 +227,7 @@ uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_prostgf2(e)'] <- 1000
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_prostgh2(e)'] <- 1000
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_prostgi2(e)'] <- 1000
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02202(e)'] <- 1000
+uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_o2(e)'] <- -0.515
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02203(e)'] <- 1000
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02204(e)'] <- 1000
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02205(e)'] <- 1000
@@ -242,7 +246,6 @@ uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_leuktrD4(e)'] <- 1000
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_leuktrE4(e)'] <- 1000
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_leuktrF4(e)'] <- 1000
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_gthrd(e)'] <- 1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_co2(e)'] <- 0.515
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_co2(e)'] <- 0.530
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_lac_L(e)'] <- 1000
 uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_glc_D(e)'] <- 1000

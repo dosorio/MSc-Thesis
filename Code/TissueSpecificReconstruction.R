@@ -18,7 +18,7 @@ Astrocyte_Activated <- Astrocyte_Expression[(rowSums(scale(Astrocyte_Expression)
 
 # Extraigo ID's genes en diferentes bases de datos
 Human <- (UniProt.ws(taxId=9606))
-Human_Genes <- select(Human,keys=toupper(rownames(Astrocyte_Expression)),columns = c("ENTREZ_GENE","ENSEMBL","EC"),keytype ="GENECARDS")
+Human_Genes <- select(Human,keys=toupper(rownames(Astrocyte_Activated)),columns = c("ENTREZ_GENE","ENSEMBL","EC"),keytype ="GENECARDS")
 
 # Extrayendo de RECON
 RECON <- as.data.frame.array(read.csv("Data/RECON_rxn.txt",sep = "\t"))

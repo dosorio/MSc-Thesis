@@ -114,7 +114,6 @@ uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02216(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02217(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrA4(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrB4(e)'] <- 1000
-uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrC4(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrD4(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrE4(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrF4(e)'] <- 1000

@@ -14,7 +14,7 @@ require(sybilSBML)
 
 # Lectura FPKM Astrocitos Saludables
 Astrocyte_Expression <- read.csv("Data/GSE73721.csv",row.names = "Gene")[,c(9:26)]
-Astrocyte_Activated <- Astrocyte_Expression[(rowSums(scale(Astrocyte_Expression)>0)/ncol(Astrocyte_Expression))>=0.5,]
+Astrocyte_Activated <- Astrocyte_Expression[(rowSums(scale(Astrocyte_Expression)>=0)/ncol(Astrocyte_Expression))>=0.5,]
 
 # Extraigo ID's genes en diferentes bases de datos
 Human <- (UniProt.ws(taxId=9606))
@@ -152,7 +152,7 @@ DMEM <- addReact(DMEM, id="MC", met=c("glc_D[e]","lac_L[e]"),
                  lb=0, ub=1000, obj=1)
 Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("atp[c]","atp[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("glc_D[c]","atp[e]"),
                  Scoef=c(-1,2), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
 Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
@@ -281,98 +281,19 @@ DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","leuktrF4[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
 Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
+# 
+DMEM <- rmReact(model = DMEM, react = "MC")
+
 # Construyendo la reconstrucción
+RECON$LOWER.BOUND <- DMEM@lowbnd
+RECON$UPPER.BOUND <- DMEM@uppbnd
 Astrocyte_Draft<- mapReactions(reactionList = unique(c(Reactions,Reactions_Flux)),referenceData = RECON,by = "REACTION")
 convert2sbml(Astrocyte_Draft,"Results/Astrocyte_Draft.xml")
 
 #
 Astrocyte_DraftM <- readSBMLmod("Results/Astrocyte_Draft.xml")
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM)%in%react_id(findExchReact(Astrocyte_DraftM))] <- 0
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_ca2(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_glc(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_fe3(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_k(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_na1(e)'] <- -1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02172(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_Rtotal(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_Rtotal2(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_Rtotal3(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_pi(e)'] <- -100
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_ala_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_arg_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_asn_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_asp_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_cys_L(e)'] <- -1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_glu_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_gly(e)'] <- -1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_his_L(e)'] <- -1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_ile_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_leu_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_lys_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_met_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_phe_L(e)'] <- -1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_pro_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_ser_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_thr_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_trp_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_val_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_btn(e)'] <- -100
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_chol(e)'] <- -1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_aqcobal(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_fol(e)'] <- -1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_inost(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_lnlc(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_lnlnca(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_ncam(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_pydxn(e)'] <- -1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_ribflv(e)'] <- -1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_thm(e)'] <- -1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_pyr(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_thymd(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_tyr_L(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_o2(e)'] <- -0.530
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_h2o(e)'] <- -100
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_cl(e)'] <- -1000
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_co2(e)'] <- 0.515
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_so4(e)'] <- -100
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_hdca(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_estradiol(e)'] <- -1
-lowbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_nh4(e)'] <- -100
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM)%in%react_id(findExchReact(Astrocyte_DraftM))] <- 0
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_prostgd2(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_prostge1(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_prostge2(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_prostgf2(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_prostgh2(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_prostgi2(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02202(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_o2(e)'] <- -0.515
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02203(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02204(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02205(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02206(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02207(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02208(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02210(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02213(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02214(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02216(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_HC02217(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_leuktrA4(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_leuktrB4(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_leuktrC4(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_leuktrD4(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_leuktrE4(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_leuktrF4(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_gthrd(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_co2(e)'] <- 0.530
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_lac_L(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_glc_D(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_gln_L(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_ser_D(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_atp(e)'] <- 1000
-uppbnd(Astrocyte_DraftM)[react_id(Astrocyte_DraftM) == 'EX_taur(e)'] <- 1000
-
+optimizeProb(Astrocyte_DraftM)
 # 
 lockedReactions <- function(model){
   if(!is.loaded("sybil")){require("sybil")}
@@ -392,9 +313,11 @@ lockedReactions <- function(model){
 woFlux <- lockedReactions(Astrocyte_DraftM)
 
 # 
-Astrocyte_Draft$LOWER.BOUND <- Astrocyte_DraftM@lowbnd
-Astrocyte_Draft$UPPER.BOUND <- Astrocyte_DraftM@uppbnd
 Astrocyte_Reconstruction <- Astrocyte_Draft[!Astrocyte_Draft$ID%in%woFlux,]
 
 #
 convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")
+
+#
+Astrocyte <- readSBMLmod("Results/Astrocyte.xml")
+optimizeProb(Astrocyte)

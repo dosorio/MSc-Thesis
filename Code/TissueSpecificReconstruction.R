@@ -126,7 +126,9 @@ uppbnd(DMEM)[react_id(DMEM) == 'EX_gln_L(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_ser_D(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_atp(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_taur(e)'] <- 1000
-
+uppbnd(DMEM)[react_id(DMEM) == 'EX_no(e)'] <- 1000
+uppbnd(DMEM)[react_id(DMEM) == 'EX_o2s(e)'] <- 1000
+uppbnd(DMEM)[react_id(DMEM) == 'EX_h2o2(e)'] <- 1000
 
 Reactions_Flux <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
 

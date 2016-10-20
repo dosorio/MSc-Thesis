@@ -14,16 +14,29 @@ require(minval)
 require(ReactomePA)
 require(sybilSBML)
 
-# Lectura FPKM Astrocitos Saludables
-Astrocyte_Expression <- read.csv("Data/GSE73721.csv",row.names = "Gene")[,c(9:26)]
+# Descarga FPKM Astrocitos de Corteza Saludables
+getGEOSuppFiles(GEO = "GSE73721",makeDirectory = TRUE,baseDir = "Data/")
+
+# Removiendo otros tipos de datos
+Astrocyte_Expression <- read.csv(file = "~/Documents/masterThesis/Data/GSE73721/GSE73721_Human_and_mouse_table.csv.gz",
+                                 header = TRUE,
+                                 row.names = "Gene")[,c(9:26)]
+
+# Identificando genes expresados por encima de la media en al menos el 50% de los casos
 Astrocyte_Activated <- Astrocyte_Expression[(rowSums(scale(Astrocyte_Expression)>=0)/ncol(Astrocyte_Expression))>=0.5,]
 
 # Extraigo ID's genes en diferentes bases de datos
 Human <- (UniProt.ws(taxId=9606))
 Astrocyte_Genes <- select(Human,keys=toupper(rownames(Astrocyte_Activated)),columns = c("ENTREZ_GENE","ENSEMBL","EC"),keytype ="GENECARDS")
 
-# Extrayendo de RECON
-RECON <- read.csv("Data/RECON.csv",sep = "\t",stringsAsFactors = FALSE)
+# Leyendo RECON para usarla como referencia
+RECON <- read.csv(file = "Data/RECON.csv",
+                  sep = "\t",
+                  stringsAsFactors = FALSE,
+                  header = TRUE,
+                  col.names = c("ID","DESCRIPTION","REACTION","GPR","REVERSIBLE","LOWER.BOUND","UPPER.BOUND","OBJECTIVE"))
+
+# Convirtiendo las GPR a ENTREZ
 RECON$GPR <- gsub("([[:alnum:]]+)\\.[[:digit:]]+"," \\1 ",RECON$GPR)
 RECON$GPR <- sapply(RECON$GPR, function(gpr){
   woSpaces <- gsub("\\(|\\)|[[:blank:]]+","",gpr)
@@ -31,11 +44,10 @@ RECON$GPR <- sapply(RECON$GPR, function(gpr){
 },USE.NAMES = FALSE)
 
 # Extrayendo las reacciones asociadas a los genes en RECON
-reactions <- sapply(unique(Astrocyte_Genes$ENTREZ_GENE[!is.na(Astrocyte_Genes$EC)]),function(enzyme){RECON$REACTION[grep(paste0("[[:blank:]]",enzyme,"[[:blank:]]"),RECON$GPR)]})
-reactions <- unique(unlist(reactions))
+Astrocyte_Reactions <- unique(unlist(sapply(unique(Astrocyte_Genes$ENTREZ_GENE[!is.na(Astrocyte_Genes$EC)]),function(enzyme){RECON$REACTION[grep(paste0("[[:blank:]]",enzyme,"[[:blank:]]"),RECON$GPR)]})))
 
 # GapFind y GapFill
-reactions <- gapFill(reactions,RECON$REACTION[RECON$GPR==""],consensus = TRUE)
+Astrocyte_Reactions <- gapFill(Astrocyte_Reactions,RECON$REACTION[nchar(RECON$GPR)==0],consensus = TRUE)
 
 # Añadiendo flujo
 convert2sbml(RECON,"Results/DMEM.xml")
@@ -87,6 +99,7 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_thymd(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_tyr_L(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -0.530
 lowbnd(DMEM)[react_id(DMEM) == 'EX_h2o(e)'] <- -100
+lowbnd(DMEM)[react_id(DMEM) == 'EX_nh4(e)'] <- -100
 lowbnd(DMEM)[react_id(DMEM) == 'EX_cl(e)'] <- -1000
 lowbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.515
 lowbnd(DMEM)[react_id(DMEM) == 'EX_so4(e)'] <- -100
@@ -137,6 +150,11 @@ Reactions_Flux <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
 DMEM@obj_coef <- rep(0,DMEM@react_num)
 
 DMEM <- addReact(DMEM, id="MC", met=c("glu_L[e]","gln_L[e]"),
+                 Scoef=c(-1,1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
+DMEM <- addReact(DMEM, id="MC", met=c("nh4[c]","glu_L[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
 Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))

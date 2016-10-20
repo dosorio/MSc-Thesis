@@ -23,7 +23,7 @@ Human <- (UniProt.ws(taxId=9606))
 Astrocyte_Genes <- select(Human,keys=toupper(rownames(Astrocyte_Activated)),columns = c("ENTREZ_GENE","ENSEMBL","EC"),keytype ="GENECARDS")
 
 # Extrayendo de RECON
-RECON <- read.csv("Data/RECON_rxn.txt",sep = "\t",stringsAsFactors = FALSE)
+RECON <- read.csv("Data/RECON.csv",sep = "\t",stringsAsFactors = FALSE)
 RECON$GPR <- gsub("([[:alnum:]]+)\\.[[:digit:]]+"," \\1 ",RECON$GPR)
 RECON$GPR <- sapply(RECON$GPR, function(gpr){
   woSpaces <- gsub("\\(|\\)|[[:blank:]]+","",gpr)

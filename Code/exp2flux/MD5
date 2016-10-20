@@ -1,0 +1,9 @@
+ea234986d38adf98026cfe05ae63a35b *DESCRIPTION
+73d1faed9724f268025b8a38ba7ab690 *NAMESPACE
+0973c2fe48d78264781f9b65cdcf3a20 *R/exp2flux.R
+2a7e39e85cd8ff1d2d88041ad7fd2f03 *R/fluxDifferences.R
+ef9eb773d70fcdf99c59117e72ecdd79 *R/plotDifferences.R
+8d3a0990850afe5bee2c713182d542f6 *README.md
+bd2e664d9449ff8ae7df2bf23c969a40 *man/exp2flux.Rd
+81c8682dc013462794318f762d4c67dc *man/fluxDifferences.Rd
+43a65c8e0bb3f0e412657ce2fbc6d971 *man/plotDifferences.Rd

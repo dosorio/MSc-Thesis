@@ -2,11 +2,13 @@
 # source("https://bioconductor.org/biocLite.R")
 # library(devtools)
 # biocLite("UniProt.ws")
+# biocLite("GEOquery")
 # install_github("gibbslab/g2f")
 # install_github("gibbslab/minval")
 # biocLite("ReactomePA")
 # install.packages("sybilSBML")
 require(UniProt.ws)
+require(GEOquery)
 require(g2f)
 require(minval)
 require(ReactomePA)
@@ -21,22 +23,21 @@ Human <- (UniProt.ws(taxId=9606))
 Astrocyte_Genes <- select(Human,keys=toupper(rownames(Astrocyte_Activated)),columns = c("ENTREZ_GENE","ENSEMBL","EC"),keytype ="GENECARDS")
 
 # Extrayendo de RECON
-RECON <- as.data.frame.array(read.csv("Data/RECON_rxn.txt",sep = "\t"))
-RECON$Gene.reaction.association<-gsub("([[:alnum:]]+)\\.[[:digit:]]+"," \\1 ",RECON$Gene.reaction.association)
-RECON$Gene.reaction.association <- sapply(RECON$Gene.reaction.association, function(gpr){
+RECON <- read.csv("Data/RECON_rxn.txt",sep = "\t",stringsAsFactors = FALSE)
+RECON$GPR <- gsub("([[:alnum:]]+)\\.[[:digit:]]+"," \\1 ",RECON$GPR)
+RECON$GPR <- sapply(RECON$GPR, function(gpr){
   woSpaces <- gsub("\\(|\\)|[[:blank:]]+","",gpr)
   paste0(unique(unlist(lapply(lapply(unlist(strsplit(woSpaces,"or")), function(gpr){strsplit(gpr,"and")}),function(gpr){paste0("( ",paste0(sort(unlist(gpr)),collapse = " and ")," )")}))),collapse = " or ")
 },USE.NAMES = FALSE)
 
 # Extrayendo las reacciones asociadas a los genes en RECON
-Reactions <- sapply(unique(Astrocyte_Genes$ENTREZ_GENE[!is.na(Astrocyte_Genes$EC)]),function(enzyme){RECON$Formula[grep(paste0("[[:blank:]]",enzyme,"[[:blank:]]"),RECON$Gene.reaction.association)]})
-Reactions <- unique(unlist(Reactions))
+reactions <- sapply(unique(Astrocyte_Genes$ENTREZ_GENE[!is.na(Astrocyte_Genes$EC)]),function(enzyme){RECON$REACTION[grep(paste0("[[:blank:]]",enzyme,"[[:blank:]]"),RECON$GPR)]})
+reactions <- unique(unlist(reactions))
 
 # GapFind y GapFill
-Reactions <- gapFill(Reactions,RECON$Formula[RECON$Gene.reaction.association==""],consensus = TRUE)
+reactions <- gapFill(reactions,RECON$REACTION[RECON$GPR==""],consensus = TRUE)
 
 # Añadiendo flujo
-colnames(RECON) <- c("ID","DESCRIPTION","REACTION","GPR","REVERSIBLE","LOWER.BOUND","UPPER.BOUND","OBJECTIVE")
 convert2sbml(RECON,"Results/DMEM.xml")
 DMEM <- readSBMLmod("Results/DMEM.xml")
 
@@ -91,6 +92,7 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.515
 lowbnd(DMEM)[react_id(DMEM) == 'EX_so4(e)'] <- -100
 lowbnd(DMEM)[react_id(DMEM) == 'EX_hdca(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
+lowbnd(DMEM)[react_id(DMEM) == 'EX_tibolone(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_nh4(e)'] <- -100
 uppbnd(DMEM)[react_id(DMEM)%in%react_id(findExchReact(DMEM))] <- 0
 uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgd2(e)'] <- 1000
@@ -284,38 +286,44 @@ DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","leuktrF4[e]"),
                  lb=0, ub=1000, obj=1)
 Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
+DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","o2s[e]"),
+                 Scoef=c(-1,1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
+DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","h2o2[e]"),
+                 Scoef=c(-1,1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
+DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","no[e]"),
+                 Scoef=c(-1,1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
 # 
 DMEM <- rmReact(model = DMEM, react = "MC")
 
 # Construyendo la reconstrucción
 RECON$LOWER.BOUND <- DMEM@lowbnd
 RECON$UPPER.BOUND <- DMEM@uppbnd
-Astrocyte_Draft<- mapReactions(reactionList = unique(c(Reactions,Reactions_Flux)),referenceData = RECON,by = "REACTION")
+Astrocyte_Draft<- mapReactions(reactionList = unique(c(reactions,Reactions_Flux)),referenceData = RECON,by = "REACTION")
 convert2sbml(Astrocyte_Draft,"Results/Astrocyte_Draft.xml")
 
 #
 Astrocyte_DraftM <- readSBMLmod("Results/Astrocyte_Draft.xml")
+fv <- fluxVar(Astrocyte_DraftM)
+t1 <- Astrocyte_DraftM@react_id[(fv@lp_obj[1:Astrocyte_DraftM@react_num]==0 & fv@lp_obj[(Astrocyte_DraftM@react_num+1):(2*Astrocyte_DraftM@react_num)]==0)]
 optimizeProb(Astrocyte_DraftM)
-# 
-lockedReactions <- function(model){
-  if(!is.loaded("sybil")){require("sybil")}
-  locked <- NULL
-  pb <- txtProgressBar(min = 1,max = model@react_num,style=3)
-  for (reaction in 1:model@react_num) {
-    setTxtProgressBar(pb, reaction)
-    model@obj_coef <- rep(0, model@react_num)
-    model@obj_coef[reaction] <- 1
-    FBA <- optimizeProb(model)
-    locked <- unique(c(locked, model@react_id[as.vector(FBA@fluxdist@fluxes!=0)]))
-  }
-  close(pb)
-  locked <- model@react_id[!model@react_id%in%locked]
-  return(locked)
-}
-woFlux <- lockedReactions(Astrocyte_DraftM)
 
 # 
-Astrocyte_Reconstruction <- Astrocyte_Draft[!Astrocyte_Draft$ID%in%woFlux,]
+woFlux <- blockedReactions(Astrocyte_DraftM)
+
+# 
+Astrocyte_Reconstruction <- mapReactions(reactionList = woFlux,
+                                         referenceData = Astrocyte_Draft,
+                                         by = "ID",
+                                         inverse = TRUE)
 
 #
 convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")

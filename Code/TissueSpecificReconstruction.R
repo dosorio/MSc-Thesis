@@ -38,6 +38,7 @@ RECON <- read.csv(file = "Data/RECON.csv",
 
 # Convirtiendo las GPR a ENTREZ
 RECON$GPR <- gsub("([[:alnum:]]+)\\.[[:digit:]]+"," \\1 ",RECON$GPR)
+RECON$REACTION <- gsub("[[:blank:]]+"," ",RECON$REACTION)
 RECON$GPR <- sapply(RECON$GPR, function(gpr){
   woSpaces <- gsub("\\(|\\)|[[:blank:]]+","",gpr)
   paste0(unique(unlist(lapply(lapply(unlist(strsplit(woSpaces,"or")), function(gpr){strsplit(gpr,"and")}),function(gpr){paste0("( ",paste0(sort(unlist(gpr)),collapse = " and ")," )")}))),collapse = " or ")
@@ -47,11 +48,13 @@ RECON$GPR <- sapply(RECON$GPR, function(gpr){
 Astrocyte_Reactions <- unique(unlist(sapply(unique(Astrocyte_Genes$ENTREZ_GENE[!is.na(Astrocyte_Genes$EC)]),function(enzyme){RECON$REACTION[grep(paste0("[[:blank:]]",enzyme,"[[:blank:]]"),RECON$GPR)]})))
 
 # GapFind y GapFill
-Astrocyte_Reactions <- gapFill(Astrocyte_Reactions,RECON$REACTION[nchar(RECON$GPR)==0],consensus = TRUE)
+Astrocyte_Reactions <- gapFill(reactionList = Astrocyte_Reactions,
+                               reference = RECON$REACTION[nchar(RECON$GPR)==0],
+                               consensus = TRUE)
 
 # Añadiendo flujo
-convert2sbml(RECON,"Results/DMEM.xml")
-DMEM <- readSBMLmod("Results/DMEM.xml")
+convert2sbml(RECON,"Results/RECON.xml")
+DMEM <- readSBMLmod("Results/RECON.xml")
 
 # DMEM
 lowbnd(DMEM)[react_id(DMEM)%in%react_id(findExchReact(DMEM))] <- 0
@@ -94,7 +97,6 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_ncam(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_pydxn(e)'] <- -1000
 lowbnd(DMEM)[react_id(DMEM) == 'EX_ribflv(e)'] <- -1000
 lowbnd(DMEM)[react_id(DMEM) == 'EX_thm(e)'] <- -1000
-lowbnd(DMEM)[react_id(DMEM) == 'EX_pyr(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_thymd(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_tyr_L(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -0.530
@@ -105,9 +107,11 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.515
 lowbnd(DMEM)[react_id(DMEM) == 'EX_so4(e)'] <- -100
 lowbnd(DMEM)[react_id(DMEM) == 'EX_hdca(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
-lowbnd(DMEM)[react_id(DMEM) == 'EX_tibolone(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_nh4(e)'] <- -100
+lowbnd(DMEM)[react_id(DMEM) == 'EX_4abut(e)'] <- -1
 uppbnd(DMEM)[react_id(DMEM)%in%react_id(findExchReact(DMEM))] <- 0
+uppbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.530
+uppbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -0.515
 uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgd2(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_prostge1(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_prostge2(e)'] <- 1000
@@ -115,7 +119,6 @@ uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgf2(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgh2(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgi2(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02202(e)'] <- 1000
-uppbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -0.515
 uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02203(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02204(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02205(e)'] <- 1000
@@ -134,190 +137,126 @@ uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrD4(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrE4(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrF4(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_gthrd(e)'] <- 1000
-uppbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.530
 uppbnd(DMEM)[react_id(DMEM) == 'EX_lac_L(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_glc_D(e)'] <- 1000
+uppbnd(DMEM)[react_id(DMEM) == 'EX_glu_L(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_gln_L(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_ser_D(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_atp(e)'] <- 1000
-uppbnd(DMEM)[react_id(DMEM) == 'EX_taur(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_no(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_o2s(e)'] <- 1000
+uppbnd(DMEM)[react_id(DMEM) == 'EX_fe2(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_h2o2(e)'] <- 1000
 
-Reactions_Flux <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
+
+Enrichment <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
 
 DMEM@obj_coef <- rep(0,DMEM@react_num)
 
 DMEM <- addReact(DMEM, id="MC", met=c("glu_L[e]","gln_L[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
 DMEM <- addReact(DMEM, id="MC", met=c("nh4[c]","glu_L[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("gly[c]","ser_D[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("gly[e]","ser_D[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
 DMEM <- addReact(DMEM, id="MC", met=c("ser_L[c]","ser_D[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
 DMEM <- addReact(DMEM, id="MC", met=c("glc_D[e]","lac_L[e]"),
                  Scoef=c(-1,2), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
 DMEM <- addReact(DMEM, id="MC", met=c("glc_D[c]","atp[e]"),
                  Scoef=c(-1,2), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
 DMEM <- addReact(DMEM, id="MC", met=c("cys_L[e]","gthrd[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","prostgd2[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","prostgd2[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","prostge1[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","prostge1[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","prostge2[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","prostge2[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","prostgf2[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","prostgh2[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","prostgh2[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","prostgi2[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","prostgi2[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02208[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02202[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02210[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02203[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02213[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02204[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02214[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02205[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02216[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02206[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02217[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02207[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","leuktrB4[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02208[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","leuktrE4[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02210[e]"),
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","no[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02213[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02214[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02216[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","HC02217[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","leuktrA4[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","leuktrB4[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","leuktrC4[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","leuktrD4[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","leuktrE4[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","leuktrF4[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","o2s[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","h2o2[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("arachd[c]","no[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Reactions_Flux <- unique(c(Reactions_Flux,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
 # 
 DMEM <- rmReact(model = DMEM, react = "MC")
@@ -325,13 +264,13 @@ DMEM <- rmReact(model = DMEM, react = "MC")
 # Construyendo la reconstrucción
 RECON$LOWER.BOUND <- DMEM@lowbnd
 RECON$UPPER.BOUND <- DMEM@uppbnd
-Astrocyte_Draft<- mapReactions(reactionList = unique(c(reactions,Reactions_Flux)),referenceData = RECON,by = "REACTION")
+Astrocyte_Draft<- mapReactions(reactionList = unique(c(Astrocyte_Reactions,Enrichment)),
+                               referenceData = RECON,
+                               by = "REACTION")
 convert2sbml(Astrocyte_Draft,"Results/Astrocyte_Draft.xml")
 
 #
 Astrocyte_DraftM <- readSBMLmod("Results/Astrocyte_Draft.xml")
-fv <- fluxVar(Astrocyte_DraftM)
-t1 <- Astrocyte_DraftM@react_id[(fv@lp_obj[1:Astrocyte_DraftM@react_num]==0 & fv@lp_obj[(Astrocyte_DraftM@react_num+1):(2*Astrocyte_DraftM@react_num)]==0)]
 optimizeProb(Astrocyte_DraftM)
 
 # 
@@ -349,3 +288,11 @@ convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")
 #
 Astrocyte <- readSBMLmod("Results/Astrocyte.xml")
 optimizeProb(Astrocyte)
+
+# FBA
+model_FBA <- optimizeProb(Astrocyte)
+model_FBA
+
+# Minimizing the total absolute fluxes MTF (Evaluando las múltiples posibles soluciones)
+model_MTF <- optimizeProb(Astrocyte, algorithm = "mtf", wtobj = mod_obj(model_FBA))
+getNetFlux(getFluxDist(model_MTF,findExchReact(Astrocyte)))

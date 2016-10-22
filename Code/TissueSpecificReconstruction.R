@@ -139,7 +139,6 @@ uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrF4(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_gthrd(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_lac_L(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_glc_D(e)'] <- 1000
-uppbnd(DMEM)[react_id(DMEM) == 'EX_glu_L(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_gln_L(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_ser_D(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_atp(e)'] <- 1000
@@ -177,11 +176,6 @@ DMEM <- addReact(DMEM, id="MC", met=c("glu_L[e]","gln_L[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
 Enrichment <- RECON[getFluxDist(optimizeProb(DMEM))!=0,3]
-
-DMEM <- addReact(DMEM, id="MC", met=c("nh4[c]","glu_L[e]"),
-                 Scoef=c(-1,1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
 DMEM <- addReact(DMEM, id="MC", met=c("gly[e]","ser_D[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
@@ -279,22 +273,10 @@ DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","no[e]"),
 Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
 
-
+#
 Astrocyte_Reconstruction <- mapReactions(reactionList = unique(c(Enrichment,Astrocyte_Draft$REACTION)),
                                          referenceData = RECON,
                                          by = "REACTION")
 
 #
 convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")
-
-#
-Astrocyte <- readSBMLmod("Results/Astrocyte.xml")
-optimizeProb(Astrocyte)
-
-# FBA
-model_FBA <- optimizeProb(Astrocyte)
-model_FBA
-
-# Minimizing the total absolute fluxes MTF (Evaluando las múltiples posibles soluciones)
-model_MTF <- optimizeProb(Astrocyte, algorithm = "mtf", wtobj = mod_obj(model_FBA))
-getNetFlux(getFluxDist(model_MTF,findExchReact(Astrocyte)))

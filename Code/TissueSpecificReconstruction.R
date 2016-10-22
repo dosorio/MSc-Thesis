@@ -279,4 +279,5 @@ Astrocyte_Reconstruction <- mapReactions(reactionList = unique(c(Enrichment,Astr
                                          by = "REACTION")
 
 #
+write.csv2(x = Astrocyte_Reconstruction,file = "Results/Astrocyte.csv")
 convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")

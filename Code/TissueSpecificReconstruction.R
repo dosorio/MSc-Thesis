@@ -148,15 +148,35 @@ uppbnd(DMEM)[react_id(DMEM) == 'EX_o2s(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_fe2(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_h2o2(e)'] <- 1000
 
-
 Enrichment <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
 
-DMEM@obj_coef <- rep(0,DMEM@react_num)
+# Construyendo la reconstrucción
+RECON$LOWER.BOUND <- DMEM@lowbnd
+RECON$UPPER.BOUND <- DMEM@uppbnd
+Astrocyte_Draft<- mapReactions(reactionList = unique(c(Astrocyte_Reactions,Enrichment)),
+                               referenceData = RECON,
+                               by = "REACTION")
+convert2sbml(Astrocyte_Draft,"Results/Astrocyte_Draft.xml")
 
+#
+Astrocyte_DraftM <- readSBMLmod("Results/Astrocyte_Draft.xml")
+optimizeProb(Astrocyte_DraftM)
+
+# 
+woFlux <- blockedReactions(Astrocyte_DraftM)
+
+# 
+Astrocyte_Draft <- mapReactions(reactionList = woFlux,
+                                         referenceData = Astrocyte_Draft,
+                                         by = "ID",
+                                         inverse = TRUE)
+
+#
+DMEM@obj_coef <- rep(0,DMEM@react_num)
 DMEM <- addReact(DMEM, id="MC", met=c("glu_L[e]","gln_L[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- RECON[getFluxDist(optimizeProb(DMEM))!=0,3]
 
 DMEM <- addReact(DMEM, id="MC", met=c("nh4[c]","glu_L[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
@@ -258,29 +278,11 @@ DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","no[e]"),
                  lb=0, ub=1000, obj=1)
 Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
-# 
-DMEM <- rmReact(model = DMEM, react = "MC")
 
-# Construyendo la reconstrucción
-RECON$LOWER.BOUND <- DMEM@lowbnd
-RECON$UPPER.BOUND <- DMEM@uppbnd
-Astrocyte_Draft<- mapReactions(reactionList = unique(c(Astrocyte_Reactions,Enrichment)),
-                               referenceData = RECON,
-                               by = "REACTION")
-convert2sbml(Astrocyte_Draft,"Results/Astrocyte_Draft.xml")
 
-#
-Astrocyte_DraftM <- readSBMLmod("Results/Astrocyte_Draft.xml")
-optimizeProb(Astrocyte_DraftM)
-
-# 
-woFlux <- blockedReactions(Astrocyte_DraftM)
-
-# 
-Astrocyte_Reconstruction <- mapReactions(reactionList = woFlux,
-                                         referenceData = Astrocyte_Draft,
-                                         by = "ID",
-                                         inverse = TRUE)
+Astrocyte_Reconstruction <- mapReactions(reactionList = unique(c(Enrichment,Astrocyte_Draft$REACTION)),
+                                         referenceData = RECON,
+                                         by = "REACTION")
 
 #
 convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")

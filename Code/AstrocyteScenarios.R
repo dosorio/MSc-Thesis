@@ -11,7 +11,7 @@ Astrocyte_Expression <- matrix(c(toupper(rownames(Astrocyte_Expression)),round(r
 
 # Extraigo ID's genes en diferentes bases de datos
 Human <- (UniProt.ws(taxId=9606))
-Astrocyte_Genes <- select(Human,keys=toupper(rownames(Astrocyte_Expression)),columns = c("ENTREZ_GENE"),keytype ="GENECARDS")
+Astrocyte_Genes <- select(Human,keys=toupper(Astrocyte_Expression[,1]),columns = c("ENTREZ_GENE"),keytype ="GENECARDS")
 
 # Merge
 Astrocyte_ExpressionSet <- merge(Astrocyte_Genes,Astrocyte_Expression,by = "GENECARDS")

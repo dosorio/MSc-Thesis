@@ -62,8 +62,6 @@ model_FBA
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model)))
 
-
-plot(robAna(Astrocyte_Model,"EX_hdca(e)",rng = c(-1,0),numP = 80))
 # Extraigo rutas metabolicas involucradas en la diferenciación de astrocito maduro
 # AstrocyteMetabolism<-enrichPathway(unique(na.omit(Astrocyte_Genes$ENTREZ_GENE[Astrocyte_Genes$EC!=""])),organism = "human",readable = TRUE,pvalueCutoff = 0.05)
 # ResumenAstrocyte<-summary(AstrocyteMetabolism)

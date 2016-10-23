@@ -202,6 +202,16 @@ DMEM <- addReact(DMEM, id="MC", met=c("cys_L[e]","gthrd[e]"),
                  lb=0, ub=1000, obj=1)
 Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","h2o2[e]"),
+                 Scoef=c(-1,1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
+DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","o2s[e]"),
+                 Scoef=c(-1,1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
 DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","prostgd2[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
@@ -279,5 +289,5 @@ Astrocyte_Reconstruction <- mapReactions(reactionList = unique(c(Enrichment,Astr
                                          by = "REACTION")
 
 #
-write.csv2(x = Astrocyte_Reconstruction,file = "Results/Astrocyte.csv")
+write.csv2(x = Astrocyte_Reconstruction,file = "Results/Astrocyte.csv",row.names = FALSE)
 convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")

@@ -108,6 +108,7 @@
    <species id="M_ppi[c]" name="ppi" compartment="c" boundaryCondition="false"/>
    <species id="M_aact[c]" name="aact" compartment="c" boundaryCondition="false"/>
    <species id="M_mthgxl[c]" name="mthgxl" compartment="c" boundaryCondition="false"/>
+   <species id="M_aact[m]" name="aact" compartment="m" boundaryCondition="false"/>
    <species id="M_4abut[e]" name="4abut" compartment="e" boundaryCondition="false"/>
    <species id="M_4abut[c]" name="4abut" compartment="c" boundaryCondition="false"/>
    <species id="M_2maacoa[m]" name="2maacoa" compartment="m" boundaryCondition="false"/>
@@ -299,7 +300,6 @@
    <species id="M_amp[x]" name="amp" compartment="x" boundaryCondition="false"/>
    <species id="M_amp[r]" name="amp" compartment="r" boundaryCondition="false"/>
    <species id="M_2aobut[m]" name="2aobut" compartment="m" boundaryCondition="false"/>
-   <species id="M_aact[m]" name="aact" compartment="m" boundaryCondition="false"/>
    <species id="M_ala_B[m]" name="ala_B" compartment="m" boundaryCondition="false"/>
    <species id="M_msa[m]" name="msa" compartment="m" boundaryCondition="false"/>
    <species id="M_arachdcoa[c]" name="arachdcoa" compartment="c" boundaryCondition="false"/>
@@ -348,8 +348,13 @@
    <species id="M_mpdol_L[c]" name="mpdol_L" compartment="c" boundaryCondition="false"/>
    <species id="M_chito2pdol_U[c]" name="chito2pdol_U" compartment="c" boundaryCondition="false"/>
    <species id="M_mpdol_U[c]" name="mpdol_U" compartment="c" boundaryCondition="false"/>
+   <species id="M_betald[m]" name="betald" compartment="m" boundaryCondition="false"/>
+   <species id="M_glyb[m]" name="glyb" compartment="m" boundaryCondition="false"/>
    <species id="M_bhb[e]" name="bhb" compartment="e" boundaryCondition="false"/>
    <species id="M_bhb[c]" name="bhb" compartment="c" boundaryCondition="false"/>
+   <species id="M_glyb[c]" name="glyb" compartment="c" boundaryCondition="false"/>
+   <species id="M_dmgly[c]" name="dmgly" compartment="c" boundaryCondition="false"/>
+   <species id="M_met_L[c]" name="met_L" compartment="c" boundaryCondition="false"/>
    <species id="M_bildglcur[e]" name="bildglcur" compartment="e" boundaryCondition="false"/>
    <species id="M_bildglcur[c]" name="bildglcur" compartment="c" boundaryCondition="false"/>
    <species id="M_bilglcur[e]" name="bilglcur" compartment="e" boundaryCondition="false"/>
@@ -424,6 +429,7 @@
    <species id="M_cholp[c]" name="cholp" compartment="c" boundaryCondition="false"/>
    <species id="M_cholate[e]" name="cholate" compartment="e" boundaryCondition="false"/>
    <species id="M_cholate[c]" name="cholate" compartment="c" boundaryCondition="false"/>
+   <species id="M_chol[m]" name="chol" compartment="m" boundaryCondition="false"/>
    <species id="M_cholp[g]" name="cholp" compartment="g" boundaryCondition="false"/>
    <species id="M_cholp[l]" name="cholp" compartment="l" boundaryCondition="false"/>
    <species id="M_chol[e]" name="chol" compartment="e" boundaryCondition="false"/>
@@ -608,6 +614,9 @@
    <species id="M_ipdp[x]" name="ipdp" compartment="x" boundaryCondition="false"/>
    <species id="M_grdp[x]" name="grdp" compartment="x" boundaryCondition="false"/>
    <species id="M_ppi[x]" name="ppi" compartment="x" boundaryCondition="false"/>
+   <species id="M_dmgly[m]" name="dmgly" compartment="m" boundaryCondition="false"/>
+   <species id="M_fald[m]" name="fald" compartment="m" boundaryCondition="false"/>
+   <species id="M_sarcs[m]" name="sarcs" compartment="m" boundaryCondition="false"/>
    <species id="M_dmnoncoa[c]" name="dmnoncoa" compartment="c" boundaryCondition="false"/>
    <species id="M_dmnoncrn[c]" name="dmnoncrn" compartment="c" boundaryCondition="false"/>
    <species id="M_dna[n]" name="dna" compartment="n" boundaryCondition="false"/>
@@ -871,6 +880,8 @@
    <species id="M_paps[g]" name="paps" compartment="g" boundaryCondition="false"/>
    <species id="M_pap[g]" name="pap" compartment="g" boundaryCondition="false"/>
    <species id="M_sgalside_hs[g]" name="sgalside_hs" compartment="g" boundaryCondition="false"/>
+   <species id="M_digalside_hs[g]" name="digalside_hs" compartment="g" boundaryCondition="false"/>
+   <species id="M_digalsgalside_hs[g]" name="digalsgalside_hs" compartment="g" boundaryCondition="false"/>
    <species id="M_ksi_deg26[l]" name="ksi_deg26" compartment="l" boundaryCondition="false"/>
    <species id="M_gal[l]" name="gal" compartment="l" boundaryCondition="false"/>
    <species id="M_ksi_deg27[l]" name="ksi_deg27" compartment="l" boundaryCondition="false"/>
@@ -997,6 +1008,7 @@
    <species id="M_guln[r]" name="guln" compartment="r" boundaryCondition="false"/>
    <species id="M_gullac[r]" name="gullac" compartment="r" boundaryCondition="false"/>
    <species id="M_gullac[c]" name="gullac" compartment="c" boundaryCondition="false"/>
+   <species id="M_glucys[c]" name="glucys" compartment="c" boundaryCondition="false"/>
    <species id="M_nadp[m]" name="nadp" compartment="m" boundaryCondition="false"/>
    <species id="M_nadph[m]" name="nadph" compartment="m" boundaryCondition="false"/>
    <species id="M_forglu[c]" name="forglu" compartment="c" boundaryCondition="false"/>
@@ -1021,6 +1033,7 @@
    <species id="M_xan[c]" name="xan" compartment="c" boundaryCondition="false"/>
    <species id="M_guln[c]" name="guln" compartment="c" boundaryCondition="false"/>
    <species id="M_m2gacpail_hs[r]" name="m2gacpail_hs" compartment="r" boundaryCondition="false"/>
+   <species id="M_h2o2[e]" name="h2o2" compartment="e" boundaryCondition="false"/>
    <species id="M_h2o2[n]" name="h2o2" compartment="n" boundaryCondition="false"/>
    <species id="M_m3gacpail_hs[r]" name="m3gacpail_hs" compartment="r" boundaryCondition="false"/>
    <species id="M_pe_hs[r]" name="pe_hs" compartment="r" boundaryCondition="false"/>
@@ -1133,6 +1146,7 @@
    <species id="M_mag_hs[c]" name="mag_hs" compartment="c" boundaryCondition="false"/>
    <species id="M_Rtotal2[c]" name="Rtotal2" compartment="c" boundaryCondition="false"/>
    <species id="M_lthstrl[r]" name="lthstrl" compartment="r" boundaryCondition="false"/>
+   <species id="M_lys_L[m]" name="lys_L" compartment="m" boundaryCondition="false"/>
    <species id="M_nm4masn[g]" name="nm4masn" compartment="g" boundaryCondition="false"/>
    <species id="M_man[g]" name="man" compartment="g" boundaryCondition="false"/>
    <species id="M_nm2masn[g]" name="nm2masn" compartment="g" boundaryCondition="false"/>
@@ -1146,9 +1160,9 @@
    <species id="M_g1m7masnB[r]" name="g1m7masnB" compartment="r" boundaryCondition="false"/>
    <species id="M_man[r]" name="man" compartment="r" boundaryCondition="false"/>
    <species id="M_man[e]" name="man" compartment="e" boundaryCondition="false"/>
+   <species id="M_3mgcoa[m]" name="3mgcoa" compartment="m" boundaryCondition="false"/>
    <species id="M_mescon[m]" name="mescon" compartment="m" boundaryCondition="false"/>
    <species id="M_mescoa[m]" name="mescoa" compartment="m" boundaryCondition="false"/>
-   <species id="M_met_L[c]" name="met_L" compartment="c" boundaryCondition="false"/>
    <species id="M_g2m8masn[r]" name="g2m8masn" compartment="r" boundaryCondition="false"/>
    <species id="M_mi13456p[c]" name="mi13456p" compartment="c" boundaryCondition="false"/>
    <species id="M_minohp[c]" name="minohp" compartment="c" boundaryCondition="false"/>
@@ -1232,6 +1246,7 @@
    <species id="M_thymd[m]" name="thymd" compartment="m" boundaryCondition="false"/>
    <species id="M_amp[e]" name="amp" compartment="e" boundaryCondition="false"/>
    <species id="M_gtp[e]" name="gtp" compartment="e" boundaryCondition="false"/>
+   <species id="M_o2s[e]" name="o2s" compartment="e" boundaryCondition="false"/>
    <species id="M_o2s[m]" name="o2s" compartment="m" boundaryCondition="false"/>
    <species id="M_o2s[n]" name="o2s" compartment="n" boundaryCondition="false"/>
    <species id="M_o2s[x]" name="o2s" compartment="x" boundaryCondition="false"/>
@@ -1349,7 +1364,6 @@
    <species id="M_ksii_core4_deg1[l]" name="ksii_core4_deg1" compartment="l" boundaryCondition="false"/>
    <species id="M_saccrp_L[m]" name="saccrp_L" compartment="m" boundaryCondition="false"/>
    <species id="M_L2aadp6sa[m]" name="L2aadp6sa" compartment="m" boundaryCondition="false"/>
-   <species id="M_sarcs[m]" name="sarcs" compartment="m" boundaryCondition="false"/>
    <species id="M_sph1p[r]" name="sph1p" compartment="r" boundaryCondition="false"/>
    <species id="M_sphgn[r]" name="sphgn" compartment="r" boundaryCondition="false"/>
    <species id="M_sbt_D[c]" name="sbt_D" compartment="c" boundaryCondition="false"/>
@@ -1481,6 +1495,7 @@
    <species id="M_3hpp[m]" name="3hpp" compartment="m" boundaryCondition="false"/>
    <species id="M_HC00682[m]" name="HC00682" compartment="m" boundaryCondition="false"/>
    <species id="M_2mpdhl[m]" name="2mpdhl" compartment="m" boundaryCondition="false"/>
+   <species id="M_HC01377[m]" name="HC01377" compartment="m" boundaryCondition="false"/>
    <species id="M_nac[c]" name="nac" compartment="c" boundaryCondition="false"/>
    <species id="M_HC01115[c]" name="HC01115" compartment="c" boundaryCondition="false"/>
    <species id="M_HC00361[c]" name="HC00361" compartment="c" boundaryCondition="false"/>
@@ -1488,6 +1503,8 @@
    <species id="M_pmtcrn[x]" name="pmtcrn" compartment="x" boundaryCondition="false"/>
    <species id="M_arachdcoa[r]" name="arachdcoa" compartment="r" boundaryCondition="false"/>
    <species id="M_arachdcrn[r]" name="arachdcrn" compartment="r" boundaryCondition="false"/>
+   <species id="M_L2aadp[m]" name="L2aadp" compartment="m" boundaryCondition="false"/>
+   <species id="M_HC01712[m]" name="HC01712" compartment="m" boundaryCondition="false"/>
    <species id="M_4abutn[m]" name="4abutn" compartment="m" boundaryCondition="false"/>
    <species id="M_4abut[m]" name="4abut" compartment="m" boundaryCondition="false"/>
    <species id="M_HC00718[c]" name="HC00718" compartment="c" boundaryCondition="false"/>
@@ -1495,7 +1512,6 @@
    <species id="M_pacald[c]" name="pacald" compartment="c" boundaryCondition="false"/>
    <species id="M_pac[c]" name="pac" compartment="c" boundaryCondition="false"/>
    <species id="M_betald[c]" name="betald" compartment="c" boundaryCondition="false"/>
-   <species id="M_glyb[c]" name="glyb" compartment="c" boundaryCondition="false"/>
    <species id="M_HC01522[c]" name="HC01522" compartment="c" boundaryCondition="false"/>
    <species id="M_HC00460[c]" name="HC00460" compartment="c" boundaryCondition="false"/>
    <species id="M_HC00900[m]" name="HC00900" compartment="m" boundaryCondition="false"/>
@@ -1642,6 +1658,7 @@
    <species id="M_HC00342[c]" name="HC00342" compartment="c" boundaryCondition="false"/>
    <species id="M_oxa[c]" name="oxa" compartment="c" boundaryCondition="false"/>
    <species id="M_oxa[m]" name="oxa" compartment="m" boundaryCondition="false"/>
+   <species id="M_lnlccoa[x]" name="lnlccoa" compartment="x" boundaryCondition="false"/>
    <species id="M_dttp[m]" name="dttp" compartment="m" boundaryCondition="false"/>
    <species id="M_arachcoa[c]" name="arachcoa" compartment="c" boundaryCondition="false"/>
    <species id="M_CE2250[c]" name="CE2250" compartment="c" boundaryCondition="false"/>
@@ -1732,6 +1749,10 @@
    <species id="M_CE4794[m]" name="CE4794" compartment="m" boundaryCondition="false"/>
    <species id="M_CE2416[x]" name="CE2416" compartment="x" boundaryCondition="false"/>
    <species id="M_CE4793[c]" name="CE4793" compartment="c" boundaryCondition="false"/>
+   <species id="M_CE4813[c]" name="CE4813" compartment="c" boundaryCondition="false"/>
+   <species id="M_CE4819[c]" name="CE4819" compartment="c" boundaryCondition="false"/>
+   <species id="M_CE4822[c]" name="CE4822" compartment="c" boundaryCondition="false"/>
+   <species id="M_CE4820[c]" name="CE4820" compartment="c" boundaryCondition="false"/>
    <species id="M_CE4833[r]" name="CE4833" compartment="r" boundaryCondition="false"/>
    <species id="M_CE4831[r]" name="CE4831" compartment="r" boundaryCondition="false"/>
    <species id="M_CE4835[r]" name="CE4835" compartment="r" boundaryCondition="false"/>
@@ -1761,6 +1782,8 @@
    <species id="M_CE5160[r]" name="CE5160" compartment="r" boundaryCondition="false"/>
    <species id="M_CE5161[r]" name="CE5161" compartment="r" boundaryCondition="false"/>
    <species id="M_CE5162[r]" name="CE5162" compartment="r" boundaryCondition="false"/>
+   <species id="M_CE5166[m]" name="CE5166" compartment="m" boundaryCondition="false"/>
+   <species id="M_cholcoads[m]" name="cholcoads" compartment="m" boundaryCondition="false"/>
    <species id="M_CE4876[r]" name="CE4876" compartment="r" boundaryCondition="false"/>
    <species id="M_3hbcoa_R[c]" name="3hbcoa_R" compartment="c" boundaryCondition="false"/>
    <species id="M_3bcrn[c]" name="3bcrn" compartment="c" boundaryCondition="false"/>
@@ -2685,6 +2708,28 @@
       <speciesReference species="M_h2o2[c]" stoichiometry="1"/>
       <speciesReference species="M_nh4[c]" stoichiometry="1"/>
       <speciesReference species="M_mthgxl[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="AACTtm"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: </p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_aact[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_aact[c]" stoichiometry="1"/>
     </listOfProducts>
   <kineticLaw>
     <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -6418,6 +6463,32 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="BETALDHxm"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: </p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h2o[m]" stoichiometry="1"/>
+      <speciesReference species="M_nad[m]" stoichiometry="1"/>
+      <speciesReference species="M_betald[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h[m]" stoichiometry="2"/>
+      <speciesReference species="M_nadh[m]" stoichiometry="1"/>
+      <speciesReference species="M_glyb[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="BHBt"  reversible="true">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: </p></html>
@@ -6436,6 +6507,30 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="-1000"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="BHMT"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 23743 ) or ( 635 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_hcys_L[c]" stoichiometry="1"/>
+      <speciesReference species="M_glyb[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_dmgly[c]" stoichiometry="1"/>
+      <speciesReference species="M_met_L[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
       <parameter id="UPPER_BOUND" value="1000"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
@@ -7549,6 +7644,30 @@
     <listOfProducts>
       <speciesReference species="M_na1[c]" stoichiometry="2"/>
       <speciesReference species="M_cholate[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="CHOLD2m"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 55349 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_fad[m]" stoichiometry="1"/>
+      <speciesReference species="M_chol[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_fadh2[m]" stoichiometry="1"/>
+      <speciesReference species="M_betald[m]" stoichiometry="1"/>
     </listOfProducts>
   <kineticLaw>
     <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -11314,6 +11433,32 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="DMGDHm"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 29958 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h2o[m]" stoichiometry="1"/>
+      <speciesReference species="M_fad[m]" stoichiometry="1"/>
+      <speciesReference species="M_dmgly[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_fadh2[m]" stoichiometry="1"/>
+      <speciesReference species="M_fald[m]" stoichiometry="1"/>
+      <speciesReference species="M_sarcs[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="DMNONCOACRNCPT1"  reversible="true">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: </p></html>
@@ -11444,6 +11589,30 @@
     </listOfReactants>
     <listOfProducts>
       <speciesReference species="M_adp[c]" stoichiometry="1"/>
+      <speciesReference species="M_dadp[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="DNDPt13m"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 60386 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_atp[m]" stoichiometry="1"/>
+      <speciesReference species="M_dadp[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_atp[c]" stoichiometry="1"/>
       <speciesReference species="M_dadp[m]" stoichiometry="1"/>
     </listOfProducts>
   <kineticLaw>
@@ -18205,6 +18374,31 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="GAL3ST12"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 9514 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_digalside_hs[g]" stoichiometry="1"/>
+      <speciesReference species="M_paps[g]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h[g]" stoichiometry="1"/>
+      <speciesReference species="M_digalsgalside_hs[g]" stoichiometry="1"/>
+      <speciesReference species="M_pap[g]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="GALASE10ly"  reversible="false">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 2588 and 2720 and 4758 and 5476 ) or ( 2720 and 5476 )</p></html>
@@ -20772,6 +20966,33 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="GLUCYS"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 2729 and 2730 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_atp[c]" stoichiometry="1"/>
+      <speciesReference species="M_glu_L[c]" stoichiometry="1"/>
+      <speciesReference species="M_cys_L[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_adp[c]" stoichiometry="1"/>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_pi[c]" stoichiometry="1"/>
+      <speciesReference species="M_glucys[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="GLUDxm"  reversible="true">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 2747 ) or ( 2746 )</p></html>
@@ -21596,6 +21817,33 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="GTHS"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 2937 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_atp[c]" stoichiometry="1"/>
+      <speciesReference species="M_gly[c]" stoichiometry="1"/>
+      <speciesReference species="M_glucys[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_adp[c]" stoichiometry="1"/>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_pi[c]" stoichiometry="1"/>
+      <speciesReference species="M_gthrd[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="GTPtn"  reversible="true">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: </p></html>
@@ -21804,6 +22052,28 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="H2O2t"  reversible="true">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: </p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h2o2[e]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h2o2[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="-1000"/>
       <parameter id="UPPER_BOUND" value="1000"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
@@ -22406,6 +22676,31 @@
       <speciesReference species="M_adp[c]" stoichiometry="1"/>
       <speciesReference species="M_h[c]" stoichiometry="1"/>
       <speciesReference species="M_man6p[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="HEX7"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 2645 ) or ( 3098 ) or ( 3101 ) or ( 3099 ) or ( 80201 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_atp[c]" stoichiometry="1"/>
+      <speciesReference species="M_fru[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_adp[c]" stoichiometry="1"/>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_f6p[c]" stoichiometry="1"/>
     </listOfProducts>
   <kineticLaw>
     <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -25253,6 +25548,30 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="LYStm"  reversible="true">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 83884 ) or ( 10166 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h[m]" stoichiometry="1"/>
+      <speciesReference species="M_lys_L[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_lys_L[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="-1000"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="M1316Mg"  reversible="false">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 4124 ) or ( 4122 )</p></html>
@@ -25766,6 +26085,33 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="MCCCrm"  reversible="true">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 56922 and 64087 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_atp[m]" stoichiometry="1"/>
+      <speciesReference species="M_hco3[m]" stoichiometry="1"/>
+      <speciesReference species="M_3mb2coa[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h[m]" stoichiometry="1"/>
+      <speciesReference species="M_adp[m]" stoichiometry="1"/>
+      <speciesReference species="M_pi[m]" stoichiometry="1"/>
+      <speciesReference species="M_3mgcoa[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="-1000"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="MCD"  reversible="false">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 23417 )</p></html>
@@ -26129,6 +26475,29 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="MGCHrm"  reversible="true">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 549 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h2o[m]" stoichiometry="1"/>
+      <speciesReference species="M_3mgcoa[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_hmgcoa[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="-1000"/>
       <parameter id="UPPER_BOUND" value="1000"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
@@ -29830,6 +30199,28 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="O2St"  reversible="true">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: </p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_o2s[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_o2s[e]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="-1000"/>
       <parameter id="UPPER_BOUND" value="1000"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
@@ -34031,6 +34422,31 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="RNDR4"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 6240 and 6241 ) or ( 50484 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_udp[c]" stoichiometry="1"/>
+      <speciesReference species="M_trdrd[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h2o[c]" stoichiometry="1"/>
+      <speciesReference species="M_dudp[c]" stoichiometry="1"/>
+      <speciesReference species="M_trdox[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="RPE"  reversible="true">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 6120 )</p></html>
@@ -35505,6 +35921,33 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="SACCD3m"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 10157 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h[m]" stoichiometry="1"/>
+      <speciesReference species="M_nadph[m]" stoichiometry="1"/>
+      <speciesReference species="M_akg[m]" stoichiometry="1"/>
+      <speciesReference species="M_lys_L[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h2o[m]" stoichiometry="1"/>
+      <speciesReference species="M_nadp[m]" stoichiometry="1"/>
+      <speciesReference species="M_saccrp_L[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="SACCD4m"  reversible="false">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 10157 )</p></html>
@@ -36159,6 +36602,31 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="-1000"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="SFGTH"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 2098 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h2o[c]" stoichiometry="1"/>
+      <speciesReference species="M_Sfglutth[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_for[c]" stoichiometry="1"/>
+      <speciesReference species="M_gthrd[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
       <parameter id="UPPER_BOUND" value="1000"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
@@ -41519,6 +41987,31 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="r0358"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 3098 ) or ( 3099 ) or ( 3101 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_datp[c]" stoichiometry="1"/>
+      <speciesReference species="M_fru[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_dadp[c]" stoichiometry="1"/>
+      <speciesReference species="M_f6p[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="r0360"  reversible="false">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 3098 ) or ( 3099 ) or ( 3101 )</p></html>
@@ -41657,6 +42150,31 @@
     <listOfProducts>
       <speciesReference species="M_co2[m]" stoichiometry="1"/>
       <speciesReference species="M_2mpdhl[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="r0386"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 593 and 594 and 641649 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h[m]" stoichiometry="1"/>
+      <speciesReference species="M_4mop[m]" stoichiometry="1"/>
+      <speciesReference species="M_lpam[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_co2[m]" stoichiometry="1"/>
+      <speciesReference species="M_HC01377[m]" stoichiometry="1"/>
     </listOfProducts>
   <kineticLaw>
     <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -42163,6 +42681,55 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="-1000"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="r0450"  reversible="true">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 51166 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_akg[m]" stoichiometry="1"/>
+      <speciesReference species="M_L2aadp[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_2oxoadp[m]" stoichiometry="1"/>
+      <speciesReference species="M_glu_L[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="-1000"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="r0451"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 4967 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h[m]" stoichiometry="1"/>
+      <speciesReference species="M_2oxoadp[m]" stoichiometry="1"/>
+      <speciesReference species="M_lpam[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_co2[m]" stoichiometry="1"/>
+      <speciesReference species="M_HC01712[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
       <parameter id="UPPER_BOUND" value="1000"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
@@ -42711,6 +43278,30 @@
     </listOfReactants>
     <listOfProducts>
       <speciesReference species="M_accoa[m]" stoichiometry="1"/>
+      <speciesReference species="M_dhlam[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="r0557"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 1743 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_coa[m]" stoichiometry="1"/>
+      <speciesReference species="M_HC01712[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_glutcoa[m]" stoichiometry="1"/>
       <speciesReference species="M_dhlam[m]" stoichiometry="1"/>
     </listOfProducts>
   <kineticLaw>
@@ -43587,6 +44178,30 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="-1000"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="r0656"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 1629 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_coa[m]" stoichiometry="1"/>
+      <speciesReference species="M_HC01377[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_ivcoa[m]" stoichiometry="1"/>
+      <speciesReference species="M_dhlam[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
       <parameter id="UPPER_BOUND" value="1000"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
@@ -51747,6 +52362,30 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="r2014"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 11136 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_arg_L[e]" stoichiometry="1"/>
+      <speciesReference species="M_phe_L[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_arg_L[c]" stoichiometry="1"/>
+      <speciesReference species="M_phe_L[e]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="r2018"  reversible="false">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 11136 )</p></html>
@@ -51854,6 +52493,30 @@
     <listOfProducts>
       <speciesReference species="M_orn[c]" stoichiometry="1"/>
       <speciesReference species="M_cys_L[e]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="r2070"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 11136 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_hom_L[c]" stoichiometry="1"/>
+      <speciesReference species="M_citr_L[e]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_citr_L[c]" stoichiometry="1"/>
+      <speciesReference species="M_hom_L[e]" stoichiometry="1"/>
     </listOfProducts>
   <kineticLaw>
     <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -55454,6 +56117,33 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="r2502"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 215 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h2o[c]" stoichiometry="1"/>
+      <speciesReference species="M_atp[c]" stoichiometry="1"/>
+      <speciesReference species="M_lnlccoa[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_adp[c]" stoichiometry="1"/>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_pi[c]" stoichiometry="1"/>
+      <speciesReference species="M_lnlccoa[x]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="r2506"  reversible="true">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: </p></html>
@@ -55956,6 +56646,30 @@
     </listOfReactants>
     <listOfProducts>
       <speciesReference species="M_dlnlcgcoa[r]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="-1000"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="r2539"  reversible="true">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: </p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_L2aadp[m]" stoichiometry="1"/>
+      <speciesReference species="M_L2aadp6sa[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_L2aadp[c]" stoichiometry="1"/>
+      <speciesReference species="M_L2aadp6sa[m]" stoichiometry="1"/>
     </listOfProducts>
   <kineticLaw>
     <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -58818,6 +59532,58 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="RE3120C"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 6785 ) or ( 79071 ) or ( 60481 ) or ( 54898 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_malcoa[c]" stoichiometry="1"/>
+      <speciesReference species="M_CE4813[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_co2[c]" stoichiometry="1"/>
+      <speciesReference species="M_coa[c]" stoichiometry="1"/>
+      <speciesReference species="M_CE4819[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="RE3124C"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 6785 ) or ( 79071 ) or ( 60481 ) or ( 54898 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_malcoa[c]" stoichiometry="1"/>
+      <speciesReference species="M_CE4822[c]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_co2[c]" stoichiometry="1"/>
+      <speciesReference species="M_coa[c]" stoichiometry="1"/>
+      <speciesReference species="M_CE4820[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="RE3151R"  reversible="false">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 64834 ) or ( 79071 ) or ( 60481 ) or ( 54898 )</p></html>
@@ -59555,6 +60321,30 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="-1000"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="RE3247M"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 51 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_o2[m]" stoichiometry="1"/>
+      <speciesReference species="M_CE5166[m]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h2o2[m]" stoichiometry="1"/>
+      <speciesReference species="M_cholcoads[m]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
       <parameter id="UPPER_BOUND" value="1000"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
@@ -64535,6 +65325,32 @@
     </listOfParameters>
     </kineticLaw>
   </reaction>
+  <reaction id="LEUyLAThtc"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 9056 ) or ( 6520 and 9057 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h[e]" stoichiometry="1"/>
+      <speciesReference species="M_arg_L[c]" stoichiometry="1"/>
+      <speciesReference species="M_leu_L[e]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_arg_L[e]" stoichiometry="1"/>
+      <speciesReference species="M_leu_L[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
   <reaction id="LINOFATPtc"  reversible="false">
     <notes>
       <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 10999 )</p></html>
@@ -64574,6 +65390,32 @@
       <speciesReference species="M_na1[c]" stoichiometry="2"/>
       <speciesReference species="M_lys_L[c]" stoichiometry="1"/>
       <speciesReference species="M_cl[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="METyLATthc"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 9056 ) or ( 6520 and 9057 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h[e]" stoichiometry="1"/>
+      <speciesReference species="M_arg_L[c]" stoichiometry="1"/>
+      <speciesReference species="M_met_L[e]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_arg_L[e]" stoichiometry="1"/>
+      <speciesReference species="M_met_L[c]" stoichiometry="1"/>
     </listOfProducts>
   <kineticLaw>
     <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -64743,6 +65585,32 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="-1000"/>
+      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
+      <parameter id="FLUX_VALUE" value="0"/>
+    </listOfParameters>
+    </kineticLaw>
+  </reaction>
+  <reaction id="PHEyLATthc"  reversible="false">
+    <notes>
+      <html xmlns="http://www.w3.org/1999/xhtml"><p>GENE_ASSOCIATION: ( 9056 ) or ( 6520 and 9057 )</p></html>
+    </notes>
+    <listOfReactants>
+      <speciesReference species="M_h[e]" stoichiometry="1"/>
+      <speciesReference species="M_arg_L[c]" stoichiometry="1"/>
+      <speciesReference species="M_phe_L[e]" stoichiometry="1"/>
+    </listOfReactants>
+    <listOfProducts>
+      <speciesReference species="M_h[c]" stoichiometry="1"/>
+      <speciesReference species="M_arg_L[e]" stoichiometry="1"/>
+      <speciesReference species="M_phe_L[c]" stoichiometry="1"/>
+    </listOfProducts>
+  <kineticLaw>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci>FLUX_VALUE</ci>
+    </math>
+    <listOfParameters>
+      <parameter id="LOWER_BOUND" value="0"/>
       <parameter id="UPPER_BOUND" value="1000"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>

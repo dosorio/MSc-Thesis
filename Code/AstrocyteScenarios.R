@@ -2,6 +2,7 @@ require(sybilSBML)
 require(Biobase)
 require(exp2flux)
 require(UniProt.ws)
+require(exp2flux)
 
 # Loading Gene Expression data
 Astrocyte_Expression <- as.matrix(read.csv(file = "~/Documents/masterThesis/Data/GSE73721/GSE73721_Human_and_mouse_table.csv.gz",
@@ -30,14 +31,22 @@ Astrocyte_Expression <- Astrocyte_Expression[complete.cases(Astrocyte_Expression
 Astrocyte_Expression <- Astrocyte_Expression[!is.na(rownames(Astrocyte_Expression)),]
 
 # Creating healthy states
+Astrocyte_Modelcsv <- read.csv2("Results/Astrocyte.csv")
 Astrocyte_Model <- readSBMLmod("Results/Astrocyte.xml")
 Astrocyte_Model
 
+# División del gráfico
 par(mfcol=c(1,4))
+
 # Fetal
 Astrocyte_ExpressionSet <- ExpressionSet(Astrocyte_Expression[,c(1:6)])
 fetalAstrocyte_Model <- exp2flux(Astrocyte_Model,Astrocyte_ExpressionSet,scale = FALSE)
 plot(fluxVar(fetalAstrocyte_Model),ylim=c(-250,250),main=paste0("Fetal: ",round(optimizeProb(fetalAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
+fetalAstrocyte_Modelcsv <- Astrocyte_Modelcsv
+fetalAstrocyte_Modelcsv$LOWER.BOUND <- fetalAstrocyte_Model@lowbnd
+fetalAstrocyte_Modelcsv$UPPER.BOUND <- fetalAstrocyte_Model@uppbnd
+write.csv2(fetalAstrocyte_Modelcsv,file = "Results/fetalAstrocyte.csv",row.names = FALSE)
+convert2sbml(fetalAstrocyte_Modelcsv,"Results/fetalAstrocyte.xml")
 
 # Young
 Astrocyte_ExpressionSet <- ExpressionSet(Astrocyte_Expression[,c(7:9)])

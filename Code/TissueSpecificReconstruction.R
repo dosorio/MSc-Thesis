@@ -145,6 +145,7 @@ uppbnd(DMEM)[react_id(DMEM) == 'EX_atp(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_no(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_o2s(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_fe2(e)'] <- 1000
+lowbnd(DMEM)[react_id(DMEM) == 'EX_glu_L(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_h2o2(e)'] <- 1000
 
 Enrichment <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
@@ -173,6 +174,16 @@ Astrocyte_Draft <- mapReactions(reactionList = woFlux,
 #
 DMEM@obj_coef <- rep(0,DMEM@react_num)
 DMEM <- addReact(DMEM, id="MC", met=c("glu_L[e]","gln_L[e]"),
+                 Scoef=c(-1,1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Enrichment <- RECON[getFluxDist(optimizeProb(DMEM))!=0,3]
+
+DMEM <- addReact(DMEM, id="MC", met=c("nh4[e]","glu_L[e]"),
+                 Scoef=c(-1,1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Enrichment <- RECON[getFluxDist(optimizeProb(DMEM))!=0,3]
+
+DMEM <- addReact(DMEM, id="MC", met=c("ca2[e]","glu_L[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
 Enrichment <- RECON[getFluxDist(optimizeProb(DMEM))!=0,3]

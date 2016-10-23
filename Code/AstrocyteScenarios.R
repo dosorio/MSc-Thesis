@@ -88,10 +88,10 @@ getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model)))
 
 par(mfcol=c(1,6))
 # Palmitate Value
-IC50 <- function(model, controlReaction, range, ...){
+IC50 <- function(model, controlReaction, range){
   robValues <- suppressMessages(robAna(model = model,ctrlreact = controlReaction, rng = range, numP = 1000))
   IC <- robValues@ctrlfl[which.min(abs(round((robValues@lp_obj/robValues@lp_obj[1000])-1,6)+0.5))]
-  plot(suppressMessages(robAna(model = model,ctrlreact = controlReaction, rng = range, numP = 20)),ylim=c(0,3),xlab="HDCA uptake rate \n mM/gWD*h",ylab="Objective Function Value",...)
+  plot(suppressMessages(robAna(model = model,ctrlreact = controlReaction, rng = range, numP = 20)),ylim=c(0,3),xlab="HDCA uptake rate \n mM/gWD*h",ylab="Objective Function Value")
   abline(v = abs(IC),col="red")
   text(abs(IC),robValues@lp_obj[1000]/2,substitute(IC[50]==t0, list(t0 = abs(round(IC,3)))),pos = 4)
   return(IC)
@@ -161,6 +161,11 @@ round(mean(Palmitate),3)
 round(sd(Palmitate),3)
 
 # Minimizing the total absolute fluxes MTF (Evaluando las múltiples posibles soluciones)
+matureAstrocyte_Model <- readSBMLmod("Results/matureAstrocyte.xml")
+lowbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.214
+uppbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.214
+model_FBA <- optimizeProb(matureAstrocyte_Model)
+model_FBA
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model)))
 

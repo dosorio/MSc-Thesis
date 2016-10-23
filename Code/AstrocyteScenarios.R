@@ -52,16 +52,31 @@ convert2sbml(fetalAstrocyte_Modelcsv,"Results/fetalAstrocyte.xml")
 Astrocyte_ExpressionSet <- ExpressionSet(Astrocyte_Expression[,c(7:9)])
 youngAstrocyte_Model <- exp2flux(Astrocyte_Model,Astrocyte_ExpressionSet,scale = FALSE)
 plot(fluxVar(youngAstrocyte_Model),ylim=c(-250,250),main=paste0("Young (8-16 yo): ",round(optimizeProb(youngAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
+youngAstrocyte_Modelcsv <- Astrocyte_Modelcsv
+youngAstrocyte_Modelcsv$LOWER.BOUND <- youngAstrocyte_Model@lowbnd
+youngAstrocyte_Modelcsv$UPPER.BOUND <- youngAstrocyte_Model@uppbnd
+write.csv2(youngAstrocyte_Modelcsv,file = "Results/youngAstrocyte.csv",row.names = FALSE)
+convert2sbml(youngAstrocyte_Modelcsv,"Results/youngAstrocyte.xml")
 
 # Adult
 Astrocyte_ExpressionSet <- ExpressionSet(Astrocyte_Expression[,c(10:12)])
 adultAstrocyte_Model <- exp2flux(Astrocyte_Model,Astrocyte_ExpressionSet,scale = FALSE)
 plot(fluxVar(adultAstrocyte_Model),ylim=c(-250,250),main=paste0("Adult (21-35 yo): ",round(optimizeProb(adultAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
+adultAstrocyte_Modelcsv <- Astrocyte_Modelcsv
+adultAstrocyte_Modelcsv$LOWER.BOUND <- adultAstrocyte_Model@lowbnd
+adultAstrocyte_Modelcsv$UPPER.BOUND <- adultAstrocyte_Model@uppbnd
+write.csv2(adultAstrocyte_Modelcsv,file = "Results/adultAstrocyte.csv",row.names = FALSE)
+convert2sbml(adultAstrocyte_Modelcsv,"Results/adultAstrocyte.xml")
 
 # Mature
 Astrocyte_ExpressionSet <- ExpressionSet(Astrocyte_Expression[,c(13:18)])
 matureAstrocyte_Model <- exp2flux(Astrocyte_Model,Astrocyte_ExpressionSet,scale = FALSE)
 plot(fluxVar(matureAstrocyte_Model),ylim=c(-250,250),main=paste0("Mature (47-63 yo): ",round(optimizeProb(matureAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
+matureAstrocyte_Modelcsv <- Astrocyte_Modelcsv
+matureAstrocyte_Modelcsv$LOWER.BOUND <- matureAstrocyte_Model@lowbnd
+matureAstrocyte_Modelcsv$UPPER.BOUND <- matureAstrocyte_Model@uppbnd
+write.csv2(matureAstrocyte_Modelcsv,file = "Results/matureAstrocyte.csv",row.names = FALSE)
+convert2sbml(matureAstrocyte_Modelcsv,"Results/matureAstrocyte.xml")
 
 # FBA
 model_FBA <- optimizeProb(matureAstrocyte_Model)

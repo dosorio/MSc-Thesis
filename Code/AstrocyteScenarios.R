@@ -3,6 +3,7 @@ require(Biobase)
 require(exp2flux)
 require(UniProt.ws)
 require(exp2flux)
+require(minval)
 
 # Loading Gene Expression data
 Astrocyte_Expression <- as.matrix(read.csv(file = "~/Documents/masterThesis/Data/GSE73721/GSE73721_Human_and_mouse_table.csv.gz",

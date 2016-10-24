@@ -31,13 +31,13 @@ Astrocyte_Genes <- select(Human,keys=toupper(rownames(Astrocyte_Activated)),colu
 
 # Leyendo RECON para usarla como referencia
 RECON <- read.csv(file = "Data/RECON.csv",
-                  sep = "\t",
+                  sep = ";",
                   stringsAsFactors = FALSE,
                   header = TRUE,
                   col.names = c("ID","DESCRIPTION","REACTION","GPR","REVERSIBLE","LOWER.BOUND","UPPER.BOUND","OBJECTIVE"))
 
 # Convirtiendo las GPR a ENTREZ
-RECON$GPR <- gsub("([[:alnum:]]+)\\.[[:digit:]]+"," \\1 ",RECON$GPR)
+RECON$GPR <- gsub("([[:alnum:]]+)\\.+[[:digit:]]+"," \\1 ",RECON$GPR)
 RECON$REACTION <- gsub("[[:blank:]]+"," ",RECON$REACTION)
 RECON$GPR <- sapply(RECON$GPR, function(gpr){
   woSpaces <- gsub("\\(|\\)|[[:blank:]]+","",gpr)

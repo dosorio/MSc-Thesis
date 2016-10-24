@@ -30,7 +30,6 @@ matureAstrocyte_Model <- addReact(model = matureAstrocyte_Model,
                                   reversible = FALSE,
                                   ub = 1000,
                                   obj = TRUE)
-optimizeProb(matureAstrocyte_Model)
 Palmitate <- c(Palmitate,IC50(model = matureAstrocyte_Model,controlReaction = "EX_hdca(e)",range = c(-0.5,0)))
 
 # Biomass Function + gly -> D-serine
@@ -41,7 +40,6 @@ matureAstrocyte_Model <- addReact(model = matureAstrocyte_Model,
                                   reversible = FALSE,
                                   ub = 1000,
                                   obj = TRUE)
-optimizeProb(matureAstrocyte_Model)
 Palmitate <- c(Palmitate,IC50(model = matureAstrocyte_Model,controlReaction = "EX_hdca(e)",range = c(-0.5,0)))
 
 # Biomass Function + glc -> lactate
@@ -52,7 +50,6 @@ matureAstrocyte_Model <- addReact(model = matureAstrocyte_Model,
                                   reversible = FALSE,
                                   ub = 1000,
                                   obj = TRUE)
-optimizeProb(matureAstrocyte_Model)
 Palmitate <- c(Palmitate,IC50(model = matureAstrocyte_Model,controlReaction = "EX_hdca(e)",range = c(-0.5,0)))
 
 # Biomass Function + gly -> D-serine
@@ -63,7 +60,6 @@ matureAstrocyte_Model <- addReact(model = matureAstrocyte_Model,
                                   reversible = FALSE,
                                   ub = 1000,
                                   obj = TRUE)
-optimizeProb(matureAstrocyte_Model)
 Palmitate <- c(Palmitate,IC50(model = matureAstrocyte_Model,controlReaction = "EX_hdca(e)",range = c(-0.5,0)))
 
 # Biomass Function + gly -> D-serine
@@ -74,26 +70,10 @@ matureAstrocyte_Model <- addReact(model = matureAstrocyte_Model,
                                   reversible = FALSE,
                                   ub = 1000,
                                   obj = TRUE)
-optimizeProb(matureAstrocyte_Model)
 Palmitate <- c(Palmitate,IC50(model = matureAstrocyte_Model,controlReaction = "EX_hdca(e)",range = c(-0.5,0)))
 
 # Inflammation Palmitate Uptake
 round(mean(Palmitate),3)
 round(sd(Palmitate),3)
 
-# Minimizing the total absolute fluxes MTF (Evaluando las múltiples posibles soluciones)
-matureAstrocyte_Model <- readSBMLmod("Results/matureAstrocyte.xml")
-lowbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.214
-uppbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.214
-model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
-model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
-getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model)))
 
-
-
-
-
-# Extraigo rutas metabolicas involucradas en la diferenciación de astrocito maduro
-# AstrocyteMetabolism<-enrichPathway(unique(na.omit(Astrocyte_Genes$ENTREZ_GENE[Astrocyte_Genes$EC!=""])),organism = "human",readable = TRUE,pvalueCutoff = 0.05)
-# ResumenAstrocyte<-summary(AstrocyteMetabolism)

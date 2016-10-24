@@ -1,0 +1,21 @@
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Resumen}{\es@scroman {v}}
+\select@language {spanish}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Lista de s\'{\i }mbolos}{\es@scroman {viii}}
+\contentsline {chapter}{\numberline {1}Introducci\'{o}n}{1}
+\contentsline {chapter}{\numberline {2}Cap\'{\i }tulo 1}{3}
+\contentsline {section}{\numberline {2.1}Subt\'{\i }tulos nivel 2}{3}
+\contentsline {subsection}{\numberline {2.1.1}Subt\'{\i }tulos nivel 3}{3}
+\contentsline {chapter}{\numberline {3}Cap\'{\i }tulo 2}{4}
+\contentsline {section}{\numberline {3.1}Ejemplos de citaciones bibliogr\'{a}ficas}{4}
+\contentsline {section}{\numberline {3.2}Ejemplos de presentaci\'{o}n y citaci\'{o}n de figuras}{5}
+\contentsline {section}{\numberline {3.3}Ejemplo de presentaci\'{o}n y citaci\'{o}n de tablas y cuadros}{5}
+\contentsline {subsection}{\numberline {3.3.1}Consideraciones adicionales para el manejo de figuras y tablas}{7}
+\contentsline {chapter}{\numberline {4}Cap\'{\i }tulo 3}{8}
+\contentsline {chapter}{\numberline {5}Cap\'{\i }tulo ...}{9}
+\contentsline {chapter}{\numberline {6}Conclusiones y recomendaciones}{10}
+\contentsline {section}{\numberline {6.1}Conclusiones}{10}
+\contentsline {section}{\numberline {6.2}Recomendaciones}{10}
+\contentsline {chapter}{\numberline {A}Anexo: Nombrar el anexo A de acuerdo con su contenido}{11}
+\contentsline {chapter}{\numberline {B}Anexo: Nombrar el anexo B de acuerdo con su contenido}{12}
+\contentsline {chapter}{\numberline {C}Anexo: Nombrar el anexo C de acuerdo con su contenido}{13}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliograf\'{\i }a}{15}

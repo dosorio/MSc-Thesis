@@ -74,8 +74,8 @@ sink()
 matureAstrocyte_Model <- readSBMLmod("Results/matureAstrocyte.xml")
 
 # Adding Palmitate
-lowbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.222
-uppbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.222
+lowbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- IC50palmitate_v
+uppbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- IC50palmitate_v
 
 
 # Minimizing the total absolute fluxes MTF (Evaluando las múltiples posibles soluciones)

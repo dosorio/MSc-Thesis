@@ -1,54 +1,57 @@
 solver:                                   glpkAPI
 method:                                   simplex
 algorithm:                                fba
-number of variables:                      2681
-number of constraints:                    1939
+number of variables:                      2747
+number of constraints:                    1931
 return value of solver:                   solution process was successful
 solution status:                          solution is optimal
-value of objective function (fba):        1000.377063
-value of objective function (model):      1000.377063
+value of objective function (fba):        1000.846845
+value of objective function (model):      1000.846845
 uptake reaction rates (absolute values):
- EX_arg_L(e)           0.135463
+ EX_arg_L(e)           0.304237
  EX_asn_L(e)           1.000000
  EX_asp_L(e)           1.000000
- EX_chol(e)            0.064834
- EX_cys_L(e)           0.017560
+ EX_chol(e)            0.145612
+ EX_cys_L(e)           0.039438
  EX_fe3(e)             1.000000
- EX_glc(e)             0.103764
- EX_gly(e)           997.789762
- EX_hdca(e)            0.209000
- EX_his_L(e)           0.451714
- EX_ile_L(e)           0.107870
- EX_inost(e)           0.008791
- EX_leu_L(e)           0.205703
- EX_lys_L(e)           0.223262
- EX_met_L(e)           0.057698
+ EX_glc(e)             1.000000
+ EX_glu_L(e)           0.479134
+ EX_gly(e)           996.130742
+ EX_hdca(e)            0.222000
+ EX_his_L(e)           1.067866
+ EX_ile_L(e)           0.242265
+ EX_inost(e)           0.019744
+ EX_leu_L(e)           0.461988
+ EX_lys_L(e)           0.501425
+ EX_met_L(e)           0.129584
  EX_o2(e)              0.530000
- EX_phe_L(e)           0.097836
- EX_pi(e)              0.407425
- EX_Rtotal(e)          0.106593
- EX_Rtotal2(e)         0.100000
- EX_thr_L(e)           0.117904
- EX_thymd(e)           0.033241
- EX_trp_L(e)           0.005017
- EX_tyr_L(e)           0.060206
- EX_val_L(e)           0.132956
+ EX_phe_L(e)           0.219731
+ EX_pi(e)              0.915035
+ EX_Rtotal(e)          0.239398
+ EX_Rtotal2(e)         0.224590
+ EX_thr_L(e)           0.264800
+ EX_thymd(e)           0.377675
+ EX_trp_L(e)           0.011268
+ EX_tyr_L(e)           0.135216
+ EX_val_L(e)           0.298606
 
 excretion reaction rates (absolute values):
  EX_co2(e)             0.515000
  EX_fe2(e)             1.000000
- EX_gln_L(e)           1.331154
- EX_glu_L(e)           0.013068
- EX_lac_L(e)           1.165367
- EX_ser_D(e)         997.714322
+ EX_gln_L(e)           2.092954
+ EX_lac_L(e)           3.486812
+ EX_ser_D(e)         995.291584
 
 unused exchange reactions [abs(rate) < 1e-06]:
- [1] "EX_ala_L(e)"    "EX_arg_L(e)"    "EX_asn_L(e)"    "EX_asp_L(e)"    "EX_atp(e)"      "EX_ca2(e)"      "EX_chol(e)"    
- [8] "EX_cl(e)"       "EX_co2(e)"      "EX_cys_L(e)"    "EX_fe2(e)"      "EX_fe3(e)"      "EX_fol(e)"      "EX_glc(e)"     
-[15] "EX_gln_L(e)"    "EX_glu_L(e)"    "EX_gly(e)"      "EX_gthrd(e)"    "EX_h2o(e)"      "EX_hdca(e)"     "EX_his_L(e)"   
-[22] "EX_ile_L(e)"    "EX_inost(e)"    "EX_lac_L(e)"    "EX_leuktrB4(e)" "EX_leuktrE4(e)" "EX_leu_L(e)"    "EX_lnlc(e)"    
-[29] "EX_lnlnca(e)"   "EX_lys_L(e)"    "EX_met_L(e)"    "EX_na1(e)"      "EX_ncam(e)"     "EX_no(e)"       "EX_o2(e)"      
-[36] "EX_phe_L(e)"    "EX_pi(e)"       "EX_pro_L(e)"    "EX_prostgd2(e)" "EX_prostge1(e)" "EX_ribflv(e)"   "EX_Rtotal(e)"  
-[43] "EX_Rtotal2(e)"  "EX_ser_D(e)"    "EX_ser_L(e)"    "EX_so4(e)"      "EX_thr_L(e)"    "EX_thymd(e)"    "EX_trp_L(e)"   
-[50] "EX_tyr_L(e)"    "EX_val_L(e)"    "EX_prostgh2(e)" "EX_prostgi2(e)" "EX_HC02208(e)"  "EX_HC02210(e)"  "EX_HC02213(e)" 
-[57] "EX_HC02214(e)"  "EX_HC02216(e)"  "EX_HC02217(e)" 
+ [1] "EX_ala_L(e)"      "EX_aldstrn(e)"    "EX_arg_L(e)"      "EX_asn_L(e)"      "EX_asp_L(e)"      "EX_atp(e)"       
+ [7] "EX_ca2(e)"        "EX_chol(e)"       "EX_cl(e)"         "EX_co2(e)"        "EX_crtsl(e)"      "EX_cys_L(e)"     
+[13] "EX_estradiol(e)"  "EX_fe2(e)"        "EX_fe3(e)"        "EX_fol(e)"        "EX_glc(e)"        "EX_gln_L(e)"     
+[19] "EX_glu_L(e)"      "EX_gly(e)"        "EX_gthrd(e)"      "EX_h2o(e)"        "EX_hdca(e)"       "EX_his_L(e)"     
+[25] "EX_ile_L(e)"      "EX_inost(e)"      "EX_lac_L(e)"      "EX_leuktrB4(e)"   "EX_leuktrD4(e)"   "EX_leuktrE4(e)"  
+[31] "EX_leu_L(e)"      "EX_lnlc(e)"       "EX_lnlnca(e)"     "EX_lys_L(e)"      "EX_met_L(e)"      "EX_na1(e)"       
+[37] "EX_ncam(e)"       "EX_nh4(e)"        "EX_no(e)"         "EX_o2(e)"         "EX_phe_L(e)"      "EX_pi(e)"        
+[43] "EX_prgstrn(e)"    "EX_pro_L(e)"      "EX_prostgd2(e)"   "EX_prostge1(e)"   "EX_ribflv(e)"     "EX_Rtotal(e)"    
+[49] "EX_Rtotal2(e)"    "EX_Rtotal3(e)"    "EX_ser_D(e)"      "EX_ser_L(e)"      "EX_so4(e)"        "EX_thr_L(e)"     
+[55] "EX_thymd(e)"      "EX_trp_L(e)"      "EX_tststerone(e)" "EX_tyr_L(e)"      "EX_val_L(e)"      "EX_prostgh2(e)"  
+[61] "EX_prostgi2(e)"   "EX_HC02208(e)"    "EX_HC02210(e)"    "EX_HC02213(e)"    "EX_HC02214(e)"    "EX_HC02216(e)"   
+[67] "EX_HC02217(e)"   

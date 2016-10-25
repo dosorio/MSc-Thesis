@@ -60,7 +60,7 @@ DMEM <- readSBMLmod("Results/RECON.xml")
 lowbnd(DMEM)[react_id(DMEM)%in%react_id(findExchReact(DMEM))] <- 0
 lowbnd(DMEM)[react_id(DMEM) == 'EX_ca2(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_glc(e)'] <- -1
-lowbnd(DMEM)[react_id(DMEM) == 'EX_fe3(e)'] <- -1
+lowbnd(DMEM)[react_id(DMEM) == 'EX_fe3(e)'] <- -0.0003
 lowbnd(DMEM)[react_id(DMEM) == 'EX_k(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_na1(e)'] <- -1000
 lowbnd(DMEM)[react_id(DMEM) == 'EX_HC02172(e)'] <- -1

@@ -101,7 +101,6 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_thymd(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_tyr_L(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -0.530
 lowbnd(DMEM)[react_id(DMEM) == 'EX_h2o(e)'] <- -100
-lowbnd(DMEM)[react_id(DMEM) == 'EX_nh4(e)'] <- -100
 lowbnd(DMEM)[react_id(DMEM) == 'EX_cl(e)'] <- -1000
 lowbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.515
 lowbnd(DMEM)[react_id(DMEM) == 'EX_so4(e)'] <- -100

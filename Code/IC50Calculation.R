@@ -7,6 +7,7 @@ model_FBA <- optimizeProb(matureAstrocyte_Model)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model)))
 
+pdf(file = "Slides/Figures/IC50.pdf",width = 13,height = 8.45)
 par(mfcol=c(1,6))
 # Palmitate Value
 IC50 <- function(model, controlReaction, range){
@@ -71,9 +72,9 @@ matureAstrocyte_Model <- addReact(model = matureAstrocyte_Model,
                                   ub = 1000,
                                   obj = TRUE)
 Palmitate <- c(Palmitate,IC50(model = matureAstrocyte_Model,controlReaction = "EX_hdca(e)",range = c(-0.5,0)))
-
+dev.off()
 # Inflammation Palmitate Uptake
-round(mean(Palmitate),3)
-round(sd(Palmitate),3)
+IC50palmitate_v <- round(mean(Palmitate),3)
+IC50palmitate_d <- round(sd(Palmitate),3)
 
 

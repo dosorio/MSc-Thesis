@@ -37,6 +37,7 @@ Astrocyte_Model <- readSBMLmod("Results/Astrocyte.xml")
 Astrocyte_Model
 
 # División del gráfico
+pdf(file = "Slides/Figures/Astrocyte_MetabolicChanges.pdf",width = 10,height = 6.5)
 par(mfcol=c(1,4))
 
 # Fetal
@@ -78,3 +79,4 @@ matureAstrocyte_Modelcsv$LOWER.BOUND <- matureAstrocyte_Model@lowbnd
 matureAstrocyte_Modelcsv$UPPER.BOUND <- matureAstrocyte_Model@uppbnd
 write.csv2(matureAstrocyte_Modelcsv,file = "Results/matureAstrocyte.csv",row.names = FALSE)
 convert2sbml(matureAstrocyte_Modelcsv,"Results/matureAstrocyte.xml")
+dev.off()

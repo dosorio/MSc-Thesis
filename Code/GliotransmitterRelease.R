@@ -80,7 +80,7 @@ uppbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <
 
 # Minimizing the total absolute fluxes MTF (Evaluando las múltiples posibles soluciones)
 dir.create("Results/inflammatedAstrocyte")
-# BO Healthy
+# BO Inflammated
 sink("Results/inflammatedAstrocyte/BO.txt")
 model_FBA <- optimizeProb(matureAstrocyte_Model)
 model_FBA

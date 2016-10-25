@@ -10,8 +10,8 @@ model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_
 getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model)))
 
 # Minimizing the total absolute fluxes MTF (Evaluando las múltiples posibles soluciones)
-lowbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- IC50palmitate_v
-uppbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- IC50palmitate_v
+lowbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.209
+uppbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.209
 model_FBA <- optimizeProb(matureAstrocyte_Model)
 model_FBA
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))

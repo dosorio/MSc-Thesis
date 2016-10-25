@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 OCT 2016 07:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 OCT 2016 22:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1053,7 +1053,7 @@ Overfull \vbox (5.15884pt too high) detected at line 51
 [4
 
  <./Figures/Astrocyte_MetabolicChanges.pdf>]
-<Figures/IC50.pdf, id=107, 939.51pt x 610.28pt>
+<Figures/IC50.pdf, id=108, 939.51pt x 610.28pt>
 File: Figures/IC50.pdf Graphic file (type pdf)
  <use Figures/IC50.pdf>
 Package pdftex.def Info: Figures/IC50.pdf used on input line 56.
@@ -1064,7 +1064,7 @@ Overfull \vbox (5.02393pt too high) detected at line 56
 
 [5
 
- <./Figures/IC50.pdf>] <Figures/minval.pdf, id=128, 364.1906pt x 273.1505pt>
+ <./Figures/IC50.pdf>] <Figures/minval.pdf, id=130, 364.1906pt x 273.1505pt>
 File: Figures/minval.pdf Graphic file (type pdf)
 
 <use Figures/minval.pdf>
@@ -1076,7 +1076,7 @@ Overfull \vbox (35.89316pt too high) detected at line 61
 
 [6
 
- <./Figures/minval.pdf>] <Figures/g2f.pdf, id=180, 364.1906pt x 273.1505pt>
+ <./Figures/minval.pdf>] <Figures/g2f.pdf, id=182, 364.1906pt x 273.1505pt>
 File: Figures/g2f.pdf Graphic file (type pdf)
 
 <use Figures/g2f.pdf>
@@ -1089,7 +1089,7 @@ Overfull \vbox (35.89316pt too high) detected at line 66
 [7
 
  <./Figures/g2f.pdf>]
-<Figures/exp2flux.pdf, id=231, 364.1906pt x 273.1505pt>
+<Figures/exp2flux.pdf, id=233, 364.1906pt x 273.1505pt>
 File: Figures/exp2flux.pdf Graphic file (type pdf)
 
 <use Figures/exp2flux.pdf>
@@ -1104,25 +1104,25 @@ Overfull \vbox (35.89316pt too high) detected at line 71
  <./Figures/exp2flux.pdf>] [9
 
 ]
-<Figures/Events.pdf, id=293, 771.13884pt x 123.72011pt>
+<Figures/Events.pdf, id=295, 771.13884pt x 123.72011pt>
 File: Figures/Events.pdf Graphic file (type pdf)
 
 <use Figures/Events.pdf>
 Package pdftex.def Info: Figures/Events.pdf used on input line 99.
 (pdftex.def)             Requested size: 307.28987pt x 49.30026pt.
- <Figures/IS3B.png, id=294, 151.2852pt x 96.36pt>
+ <Figures/IS3B.png, id=296, 151.2852pt x 96.36pt>
 File: Figures/IS3B.png Graphic file (type png)
 
 <use Figures/IS3B.png>
 Package pdftex.def Info: Figures/IS3B.png used on input line 99.
 (pdftex.def)             Requested size: 92.1879pt x 58.71921pt.
- <Figures/ICSB.png, id=296, 315.1775pt x 200.75pt>
+ <Figures/ICSB.png, id=298, 315.1775pt x 200.75pt>
 File: Figures/ICSB.png Graphic file (type png)
 
 <use Figures/ICSB.png>
 Package pdftex.def Info: Figures/ICSB.png used on input line 99.
 (pdftex.def)             Requested size: 92.1879pt x 58.71837pt.
- <Figures/ICGEB.pdf, id=297, 315.1775pt x 200.75pt>
+ <Figures/ICGEB.pdf, id=299, 315.1775pt x 200.75pt>
 File: Figures/ICGEB.pdf Graphic file (type pdf)
 
 <use Figures/ICGEB.pdf>
@@ -1132,20 +1132,20 @@ Package pdftex.def Info: Figures/ICGEB.pdf used on input line 99.
 
  <./Figures/Events.pdf, page is rotated 270 degrees> <./Figures/IS3B.png> <./Fi
 gures/ICSB.png> <./Figures/ICGEB.pdf>]
-<Figures/logoIG.png, id=480, 401.5pt x 102.3825pt>
+<Figures/logoIG.png, id=482, 401.5pt x 102.3825pt>
 File: Figures/logoIG.png Graphic file (type png)
  <use Figures/logoIG.png>
 Package pdftex.def Info: Figures/logoIG.png used on input line 124.
 (pdftex.def)             Requested size: 78.10532pt x 19.91684pt.
 
-<Figures/logoGIBBS.png, id=481, 307.1475pt x 112.42pt>
+<Figures/logoGIBBS.png, id=483, 307.1475pt x 112.42pt>
 File: Figures/logoGIBBS.png Graphic file (type png)
 
 <use Figures/logoGIBBS.png>
 Package pdftex.def Info: Figures/logoGIBBS.png used on input line 124.
 (pdftex.def)             Requested size: 54.41243pt x 19.91684pt.
 
-<Figures/GIBBS.jpg, id=482, 2689.04625pt x 718.685pt>
+<Figures/GIBBS.jpg, id=484, 2689.04625pt x 718.685pt>
 File: Figures/GIBBS.jpg Graphic file (type jpg)
  <use Figures/GIBBS.jpg>
 Package pdftex.def Info: Figures/GIBBS.jpg used on input line 124.
@@ -1187,7 +1187,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
 Here is how much of TeX's memory you used:
  18409 strings out of 493014
  346355 string characters out of 6133351
- 439609 words of memory out of 5000000
+ 439610 words of memory out of 5000000
  21471 multiletter control sequences out of 15000+600000
  16710 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1198,10 +1198,10 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on masterThesis.pdf (11 pages, 5346535 bytes).
+Output written on masterThesis.pdf (11 pages, 4521673 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 355 compressed objects within 4 object streams
+ 527 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
  29 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

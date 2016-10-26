@@ -146,6 +146,7 @@ sink()
 
 
 
+
 # Extraigo rutas metabolicas involucradas en la diferenciación de astrocito maduro
 # AstrocyteMetabolism<-enrichPathway(unique(na.omit(Astrocyte_Genes$ENTREZ_GENE[Astrocyte_Genes$EC!=""])),organism = "human",readable = TRUE,pvalueCutoff = 0.05)
 # ResumenAstrocyte<-summary(AstrocyteMetabolism)

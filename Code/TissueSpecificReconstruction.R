@@ -108,11 +108,6 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_hdca(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_nh4(e)'] <- -100
 lowbnd(DMEM)[react_id(DMEM) == 'EX_4abut(e)'] <- -1
-lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
-lowbnd(DMEM)[react_id(DMEM) == 'EX_crtsl(e)'] <- -1
-lowbnd(DMEM)[react_id(DMEM) == 'EX_aldstrn(e)'] <- -1
-lowbnd(DMEM)[react_id(DMEM) == 'EX_prgstrn(e)'] <- -1
-lowbnd(DMEM)[react_id(DMEM) == 'EX_tststerone(e)'] <- -1
 uppbnd(DMEM)[react_id(DMEM)%in%react_id(findExchReact(DMEM))] <- 0
 uppbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.530
 uppbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -0.515
@@ -152,6 +147,7 @@ uppbnd(DMEM)[react_id(DMEM) == 'EX_fe2(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_glu_L(e)'] <- 1000
 uppbnd(DMEM)[react_id(DMEM) == 'EX_h2o2(e)'] <- 1000
 
+
 Enrichment <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
 
 # Construyendo la reconstrucción
@@ -171,41 +167,16 @@ woFlux <- blockedReactions(Astrocyte_DraftM)
 
 # 
 Astrocyte_Draft <- mapReactions(reactionList = woFlux,
-                                         referenceData = Astrocyte_Draft,
-                                         by = "ID",
-                                         inverse = TRUE)
+                                referenceData = Astrocyte_Draft,
+                                by = "ID",
+                                inverse = TRUE)
 
 #
 DMEM@obj_coef <- rep(0,DMEM@react_num)
-DMEM <- addReact(DMEM, id="MC", met=c("estradiol[e]"),
-                 Scoef=c(-1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Enrichment <- RECON[getFluxDist(optimizeProb(DMEM))!=0,3]
-
-DMEM <- addReact(DMEM, id="MC", met=c("crtsl[e]"),
-                 Scoef=c(-1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("aldstrn[e]"),
-                 Scoef=c(-1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("prgstrn[e]"),
-                 Scoef=c(-1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
-DMEM <- addReact(DMEM, id="MC", met=c("tststerone[e]"),
-                 Scoef=c(-1), reversible=FALSE,
-                 lb=0, ub=1000, obj=1)
-Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
 DMEM <- addReact(DMEM, id="MC", met=c("glu_L[e]","gln_L[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
-Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Enrichment <- RECON[getFluxDist(optimizeProb(DMEM))!=0,3]
 
 DMEM <- addReact(DMEM, id="MC", met=c("nh4[e]","glu_L[e]"),
                  Scoef=c(-1,1), reversible=FALSE,
@@ -328,6 +299,38 @@ Astrocyte_Reconstruction <- mapReactions(reactionList = unique(c(Enrichment,Astr
                                          referenceData = RECON,
                                          by = "REACTION")
 
+# Tibolone Mecanism
+lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
+lowbnd(DMEM)[react_id(DMEM) == 'EX_crtsl(e)'] <- -1
+lowbnd(DMEM)[react_id(DMEM) == 'EX_aldstrn(e)'] <- -1
+lowbnd(DMEM)[react_id(DMEM) == 'EX_prgstrn(e)'] <- -1
+lowbnd(DMEM)[react_id(DMEM) == 'EX_tststerone(e)'] <- -1
+DMEM <- addReact(DMEM, id="MC", met=c("estradiol[e]"),
+                 Scoef=c(-1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Tibolone <- RECON[getFluxDist(optimizeProb(DMEM))!=0,3]
+
+DMEM <- addReact(DMEM, id="MC", met=c("crtsl[e]"),
+                 Scoef=c(-1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
+DMEM <- addReact(DMEM, id="MC", met=c("aldstrn[e]"),
+                 Scoef=c(-1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
+DMEM <- addReact(DMEM, id="MC", met=c("prgstrn[e]"),
+                 Scoef=c(-1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+
+DMEM <- addReact(DMEM, id="MC", met=c("tststerone[e]"),
+                 Scoef=c(-1), reversible=FALSE,
+                 lb=0, ub=1000, obj=1)
+Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
+Tibolone <- mapReactions(reactionList = Tibolone[!Tibolone%in%Astrocyte_Reconstruction$REACTION],referenceData = RECON,by = "REACTION")
+write.csv2(x = Tibolone,file = "Results/TiboloneReactions.csv",row.names = FALSE)
 #
 write.csv2(x = Astrocyte_Reconstruction,file = "Results/Astrocyte.csv",row.names = FALSE)
 convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")

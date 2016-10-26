@@ -305,7 +305,8 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_crtsl(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_aldstrn(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_prgstrn(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_tststerone(e)'] <- -1
-
+RECON$LOWER.BOUND <- DMEM@lowbnd
+RECON$UPPER.BOUND <- DMEM@uppbnd
 DMEM <- addReact(DMEM, id="MC", met=c("estradiol[e]","hdca[e]","h2o2[e]"),
                  Scoef=c(-1,-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
@@ -359,5 +360,6 @@ Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 Tibolone <- mapReactions(reactionList = Tibolone[!Tibolone%in%Astrocyte_Reconstruction$REACTION],referenceData = RECON,by = "REACTION")
 write.csv2(x = Tibolone,file = "Results/TiboloneReactions.csv",row.names = FALSE)
 #
+Astrocyte_Reconstruction <- rbind(Astrocyte_Reconstruction,Tibolone)
 write.csv2(x = Astrocyte_Reconstruction,file = "Results/Astrocyte.csv",row.names = FALSE)
 convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")

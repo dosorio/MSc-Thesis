@@ -305,8 +305,6 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_crtsl(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_aldstrn(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_prgstrn(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_tststerone(e)'] <- -1
-RECON$LOWER.BOUND <- DMEM@lowbnd
-RECON$UPPER.BOUND <- DMEM@uppbnd
 DMEM <- addReact(DMEM, id="MC", met=c("estradiol[e]","hdca[e]","h2o2[e]"),
                  Scoef=c(-1,-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)

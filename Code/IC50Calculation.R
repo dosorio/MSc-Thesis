@@ -53,7 +53,7 @@ matureAstrocyte_Model <- addReact(model = matureAstrocyte_Model,
                                   obj = TRUE)
 Palmitate <- c(Palmitate,IC50(model = matureAstrocyte_Model,controlReaction = "EX_hdca(e)",range = c(-0.5,0)))
 
-# Biomass Function + gly -> D-serine
+# Biomass Function + Cys -> Gthrd
 matureAstrocyte_Model <- addReact(model = matureAstrocyte_Model,
                                   id = "MC",
                                   met = c("cys_L[c]","gthrd[e]"),
@@ -63,7 +63,7 @@ matureAstrocyte_Model <- addReact(model = matureAstrocyte_Model,
                                   obj = TRUE)
 Palmitate <- c(Palmitate,IC50(model = matureAstrocyte_Model,controlReaction = "EX_hdca(e)",range = c(-0.5,0)))
 
-# Biomass Function + gly -> D-serine
+# Biomass Function + glc -> ATP
 matureAstrocyte_Model <- addReact(model = matureAstrocyte_Model,
                                   id = "MC",
                                   met = c("glc_D[c]","atp[e]"),

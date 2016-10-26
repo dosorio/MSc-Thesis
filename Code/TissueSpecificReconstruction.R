@@ -107,6 +107,7 @@ lowbnd(DMEM)[react_id(DMEM) == 'EX_so4(e)'] <- -100
 lowbnd(DMEM)[react_id(DMEM) == 'EX_hdca(e)'] <- -1
 lowbnd(DMEM)[react_id(DMEM) == 'EX_nh4(e)'] <- -100
 lowbnd(DMEM)[react_id(DMEM) == 'EX_4abut(e)'] <- -1
+lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
 uppbnd(DMEM)[react_id(DMEM)%in%react_id(findExchReact(DMEM))] <- 0
 uppbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.530
 uppbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -0.515

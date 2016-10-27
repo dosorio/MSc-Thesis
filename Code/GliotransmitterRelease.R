@@ -157,7 +157,11 @@ sink()
 ###########################################################################################
 
 # Reading Model
-matureAstrocyte_Model <- readSBMLmod("Results/matureAstrocyte.xml")
+matureAstrocyte_Model <- read.csv2("Results/matureAstrocyte.csv")
+Tibolone <- read.csv2("Results/TiboloneReactions.csv")
+matureAstrocyte_Model <- rbind(matureAstrocyte_Model,Tibolone)
+convert2sbml(matureAstrocyte_Model,"Results/matureAstrocyte_Tibolone.xml")
+matureAstrocyte_Model <- readSBMLmod("Results/matureAstrocyte_Tibolone.xml")
 
 # Adding Palmitate
 lowbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.226

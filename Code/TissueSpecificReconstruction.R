@@ -361,5 +361,5 @@ Astrocyte_Reconstruction <- mapReactions(reactionList = unique(c(Enrichment,Astr
 # write.csv2(x = Tibolone,file = "Results/TiboloneReactions.csv",row.names = FALSE)
 # #
 # Astrocyte_Reconstruction <- rbind(Astrocyte_Reconstruction,Tibolone)
-# write.csv2(x = Astrocyte_Reconstruction,file = "Results/Astrocyte.csv",row.names = FALSE)
+write.csv2(x = Astrocyte_Reconstruction,file = "Results/Astrocyte.csv",row.names = FALSE)
 convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")

@@ -1,46 +1,46 @@
 solver:                                   glpkAPI
 method:                                   simplex
 algorithm:                                fba
-number of variables:                      2888
-number of constraints:                    2034
+number of variables:                      3027
+number of constraints:                    2125
 return value of solver:                   solution process was successful
 solution status:                          solution is optimal
-value of objective function (fba):        1000.837263
-value of objective function (model):      1000.837263
+value of objective function (fba):        1000.896158
+value of objective function (model):      1000.896158
 uptake reaction rates (absolute values):
- EX_arg_L(e)           0.300795
- EX_asn_L(e)           1.000000
+ EX_arg_L(e)           0.321954
+ EX_asn_L(e)           0.879518
  EX_asp_L(e)           1.000000
- EX_chol(e)            0.143964
- EX_cys_L(e)           0.038992
+ EX_chol(e)            0.154091
+ EX_cys_L(e)           0.041735
  EX_fe3(e)             1.000000
  EX_glc(e)             1.000000
- EX_glu_L(e)           0.455040
- EX_gly(e)           996.054631
+ EX_glu_L(e)           0.313126
+ EX_gly(e)           996.058398
  EX_hdca(e)            0.208000
- EX_his_L(e)           0.965149
- EX_ile_L(e)           0.239524
- EX_inost(e)           0.019521
- EX_leu_L(e)           0.456761
- EX_lys_L(e)           0.495752
- EX_met_L(e)           0.128118
+ EX_his_L(e)           1.094856
+ EX_ile_L(e)           0.256373
+ EX_inost(e)           0.020894
+ EX_leu_L(e)           0.488890
+ EX_lys_L(e)           0.530624
+ EX_met_L(e)           0.137130
  EX_o2(e)              0.530000
- EX_phe_L(e)           0.217245
- EX_pi(e)              0.904682
- EX_Rtotal(e)          0.236689
- EX_Rtotal2(e)         0.222049
- EX_thr_L(e)           0.261804
- EX_thymd(e)           0.389974
- EX_trp_L(e)           0.011141
- EX_tyr_L(e)           0.133686
- EX_val_L(e)           0.295227
+ EX_phe_L(e)           0.232526
+ EX_pi(e)              0.968319
+ EX_Rtotal(e)          0.253338
+ EX_Rtotal2(e)         0.237668
+ EX_thr_L(e)           0.280220
+ EX_thymd(e)           0.393416
+ EX_trp_L(e)           0.011924
+ EX_tyr_L(e)           0.143089
+ EX_val_L(e)           0.315994
 
 excretion reaction rates (absolute values):
  EX_co2(e)             0.515000
  EX_fe2(e)             1.000000
- EX_gln_L(e)           1.842255
- EX_lac_L(e)           3.467579
- EX_ser_D(e)         995.455516
+ EX_gln_L(e)           1.769881
+ EX_lac_L(e)           3.237787
+ EX_ser_D(e)         995.332624
 
 unused exchange reactions [abs(rate) < 1e-06]:
  [1] "EX_ala_L(e)"     "EX_arg_L(e)"     "EX_asn_L(e)"     "EX_asp_L(e)"     "EX_atp(e)"       "EX_ca2(e)"       "EX_chol(e)"      "EX_cl(e)"       

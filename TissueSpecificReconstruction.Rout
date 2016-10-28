@@ -1,486 +1,0 @@
-
-R version 3.3.1 (2016-06-21) -- "Bug in Your Hair"
-Copyright (C) 2016 The R Foundation for Statistical Computing
-Platform: x86_64-apple-darwin16.0.0 (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> # install.packages("devtools")
-> # source("https://bioconductor.org/biocLite.R")
-> # library(devtools)
-> # biocLite("UniProt.ws")
-> # biocLite("GEOquery")
-> # install_github("gibbslab/g2f")
-> # install_github("gibbslab/minval")
-> # biocLite("ReactomePA")
-> # install.packages("sybilSBML")
-> require(UniProt.ws)
-Loading required package: UniProt.ws
-Loading required package: RSQLite
-Loading required package: DBI
-Loading required package: RCurl
-Loading required package: bitops
-Loading required package: BiocGenerics
-Loading required package: parallel
-
-Attaching package: ‘BiocGenerics’
-
-The following objects are masked from ‘package:parallel’:
-
-    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
-    clusterExport, clusterMap, parApply, parCapply, parLapply,
-    parLapplyLB, parRapply, parSapply, parSapplyLB
-
-The following objects are masked from ‘package:stats’:
-
-    IQR, mad, xtabs
-
-The following objects are masked from ‘package:base’:
-
-    anyDuplicated, append, as.data.frame, cbind, colnames, do.call,
-    duplicated, eval, evalq, Filter, Find, get, grep, grepl, intersect,
-    is.unsorted, lapply, lengths, Map, mapply, match, mget, order,
-    paste, pmax, pmax.int, pmin, pmin.int, Position, rank, rbind,
-    Reduce, rownames, sapply, setdiff, sort, table, tapply, union,
-    unique, unsplit, which, which.max, which.min
-
-> require(GEOquery)
-Loading required package: GEOquery
-Loading required package: Biobase
-Welcome to Bioconductor
-
-    Vignettes contain introductory material; view with
-    'browseVignettes()'. To cite Bioconductor, see
-    'citation("Biobase")', and for packages 'citation("pkgname")'.
-
-Setting options('download.file.method.GEOquery'='auto')
-Setting options('GEOquery.inmemory.gpl'=FALSE)
-> require(g2f)
-Loading required package: g2f
-> require(minval)
-Loading required package: minval
-> require(ReactomePA)
-Loading required package: ReactomePA
-Warning message:
-In library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :
-  there is no package called ‘ReactomePA’
-> require(sybilSBML)
-Loading required package: sybilSBML
-Loading required package: Matrix
-Loading required package: sybil
-Loading required package: lattice
-using libSBML version 5.11.4
-> 
-> # Descarga FPKM Astrocitos de Corteza Saludables
-> getGEOSuppFiles(GEO = "GSE73721",makeDirectory = TRUE,baseDir = "Data/")
-https://ftp.ncbi.nlm.nih.gov/geo/series/GSE73nnn/GSE73721/suppl/
-OK
-trying URL 'https://ftp.ncbi.nlm.nih.gov/geo/series/GSE73nnn/GSE73721/suppl//GSE73721_Human_and_mouse_table.csv.gz'
-Content type 'application/x-gzip' length 658883 bytes (643 KB)
-==================================================
-downloaded 643 KB
-
-> 
-> # Removiendo otros tipos de datos
-> Astrocyte_Expression <- read.csv(file = "~/Documents/masterThesis/Data/GSE73721/GSE73721_Human_and_mouse_table.csv.gz",
-+                                  header = TRUE,
-+                                  row.names = "Gene")[,c(9:26)]
-> 
-> # Identificando genes expresados por encima de la media en al menos el 50% de los casos
-> Astrocyte_Activated <- Astrocyte_Expression[(rowSums(scale(Astrocyte_Expression)>=0)/ncol(Astrocyte_Expression))>=0.5,]
-> 
-> # Extraigo ID's genes en diferentes bases de datos
-> Human <- (UniProt.ws(taxId=9606))
-> Astrocyte_Genes <- select(Human,keys=toupper(rownames(Astrocyte_Activated)),columns = c("ENTREZ_GENE","ENSEMBL","EC"),keytype ="GENECARDS")
-Getting mapping data for ABAT ... and ACC
-Getting mapping data for P80404 ... and P_ENTREZGENEID
-Getting mapping data for P80404 ... and ENSEMBL_ID
-Getting extra data for P80404,O95477,Q9UBJ2,P28288,Q8WU67,Q8IZP0
-Getting extra data for Q9BTE1,O00399,O94760,Q16531,P35638,P30046
-Getting extra data for O00139,Q9Y496,Q12840,P33176,Q92845,Q07866
-Getting extra data for Q70Z35,P22694,P10644,O94806,F7VJQ1,P04156
-Getting extra data for Q9NYJ8,Q15543,Q16594,Q9HBM6,Q7L7X3,Q6NXT6
-Getting extra data for P24666,Q9H6R3,O14672,Q13443,P55265,Q8N157
-Getting extra data for Q99608,Q92597,O14561,Q9Y375,O43920,P51957
-'select()' returned 1:many mapping between keys and columns
-> 
-> # Leyendo RECON para usarla como referencia
-> RECON <- read.csv(file = "Data/RECON.csv",
-+                   sep = ";",
-+                   stringsAsFactors = FALSE,
-+                   header = TRUE,
-+                   col.names = c("ID","DESCRIPTION","REACTION","GPR","REVERSIBLE","LOWER.BOUND","UPPER.BOUND","OBJECTIVE"))
-> 
-> # Convirtiendo las GPR a ENTREZ
-> RECON$GPR <- gsub("([[:alnum:]]+)\\.+[[:digit:]]+"," \\1 ",RECON$GPR)
-> RECON$REACTION <- gsub("[[:blank:]]+"," ",RECON$REACTION)
-> RECON$GPR <- sapply(RECON$GPR, function(gpr){
-+   woSpaces <- gsub("\\(|\\)|[[:blank:]]+","",gpr)
-+   paste0(unique(unlist(lapply(lapply(unlist(strsplit(woSpaces,"or")), function(gpr){strsplit(gpr,"and")}),function(gpr){paste0("( ",paste0(sort(unlist(gpr)),collapse = " and ")," )")}))),collapse = " or ")
-+ },USE.NAMES = FALSE)
-> 
-> # Extrayendo las reacciones asociadas a los genes en RECON
-> Astrocyte_Reactions <- unique(unlist(sapply(unique(Astrocyte_Genes$ENTREZ_GENE[!is.na(Astrocyte_Genes$EC)]),function(enzyme){RECON$REACTION[grep(paste0("[[:blank:]]",enzyme,"[[:blank:]]"),RECON$GPR)]})))
-> 
-> # GapFind y GapFill
-> Astrocyte_Reactions <- gapFill(reactionList = Astrocyte_Reactions,
-+                                reference = RECON$REACTION[nchar(RECON$GPR)==0],
-+                                consensus = TRUE)
-823 Orphan reactants found
-613 Orphan reactants found
-611 Orphan reactants found
-721 Orphan products found
-625 Orphan products found
-624 Orphan products found
-> 
-> # Añadiendo flujo
-> convert2sbml(RECON,"Results/RECON.xml")
-> DMEM <- readSBMLmod("Results/RECON.xml")
-reading SBML file ... OK
-getting the model ... OK
-creating S and parsing constraints ... OK
-GPR mapping ... OK
-cleaning up ... OK
-validating object ... OK
-> 
-> # DMEM
-> lowbnd(DMEM)[react_id(DMEM)%in%react_id(findExchReact(DMEM))] <- 0
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_ca2(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_glc(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_fe3(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_k(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_na1(e)'] <- -1000
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_HC02172(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_Rtotal(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_Rtotal2(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_Rtotal3(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_pi(e)'] <- -100
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_ala_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_arg_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_asn_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_asp_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_cys_L(e)'] <- -1000
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_glu_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_gly(e)'] <- -1000
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_his_L(e)'] <- -1000
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_ile_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_leu_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_lys_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_met_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_phe_L(e)'] <- -1000
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_pro_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_ser_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_thr_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_trp_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_val_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_btn(e)'] <- -100
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_chol(e)'] <- -1000
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_aqcobal(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_fol(e)'] <- -1000
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_inost(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_lnlc(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_lnlnca(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_ncam(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_pydxn(e)'] <- -1000
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_ribflv(e)'] <- -1000
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_thm(e)'] <- -1000
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_thymd(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_tyr_L(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -0.530
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_h2o(e)'] <- -100
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_cl(e)'] <- -1000
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.515
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_so4(e)'] <- -100
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_hdca(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_nh4(e)'] <- -100
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_4abut(e)'] <- -1
-> lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
-> uppbnd(DMEM)[react_id(DMEM)%in%react_id(findExchReact(DMEM))] <- 0
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_co2(e)'] <- 0.530
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_o2(e)'] <- -0.515
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgd2(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_prostge1(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_prostge2(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgf2(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgh2(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_prostgi2(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02202(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02203(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02204(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02205(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02206(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02207(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02208(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02210(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02213(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02214(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02216(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_HC02217(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrA4(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrB4(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrC4(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrD4(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrE4(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_leuktrF4(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_gthrd(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_lac_L(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_glc_D(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_gln_L(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_ser_D(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_atp(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_no(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_o2s(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_fe2(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_glu_L(e)'] <- 1000
-> uppbnd(DMEM)[react_id(DMEM) == 'EX_h2o2(e)'] <- 1000
-> 
-> 
-> Enrichment <- (RECON[getFluxDist(optimizeProb(DMEM))!=0,3])
-Loading required package: glpkAPI
-using GLPK version 4.60
-> 
-> # Construyendo la reconstrucción
-> RECON$LOWER.BOUND <- DMEM@lowbnd
-> RECON$UPPER.BOUND <- DMEM@uppbnd
-> Astrocyte_Draft<- mapReactions(reactionList = unique(c(Astrocyte_Reactions,Enrichment)),
-+                                referenceData = RECON,
-+                                by = "REACTION")
-> convert2sbml(Astrocyte_Draft,"Results/Astrocyte_Draft.xml")
-> 
-> #
-> Astrocyte_DraftM <- readSBMLmod("Results/Astrocyte_Draft.xml")
-reading SBML file ... OK
-getting the model ... OK
-creating S and parsing constraints ... OK
-GPR mapping ... OK
-cleaning up ... OK
-validating object ... OK
-> optimizeProb(Astrocyte_DraftM)
-solver:                                   glpkAPI
-method:                                   simplex
-algorithm:                                fba
-number of variables:                      2627
-number of constraints:                    2347
-return value of solver:                   solution process was successful
-solution status:                          solution is optimal
-value of objective function (fba):        1.481928
-value of objective function (model):      1.481928
-> 
-> # 
-> woFlux <- blockedReactions(Astrocyte_DraftM)
-  |                                                                              |                                                                      |   0%  |                                                                              |                                                                      |   1%  |                                                                              |=                                                                     |   1%  |                                                                              |=                                                                     |   2%  |                                                                              |==                                                                    |   2%  |                                                                              |==                                                                    |   3%  |                                                                              |==                                                                    |   4%  |                                                                              |===                                                                   |   4%  |                                                                              |===                                                                   |   5%  |                                                                              |====                                                                  |   5%  |                                                                              |====                                                                  |   6%  |                                                                              |=====                                                                 |   6%  |                                                                              |=====                                                                 |   7%  |                                                                              |=====                                                                 |   8%  |                                                                              |======                                                                |   8%  |                                                                              |======                                                                |   9%  |                                                                              |=======                                                               |   9%  |                                                                              |=======                                                               |  10%  |                                                                              |=======                                                               |  11%  |                                                                              |========                                                              |  11%  |                                                                              |========                                                              |  12%  |                                                                              |=========                                                             |  12%  |                                                                              |=========                                                             |  13%  |                                                                              |=========                                                             |  14%  |                                                                              |==========                                                            |  14%  |                                                                              |==========                                                            |  15%  |                                                                              |===========                                                           |  15%  |                                                                              |===========                                                           |  16%  |                                                                              |============                                                          |  16%  |                                                                              |============                                                          |  17%  |                                                                              |============                                                          |  18%  |                                                                              |=============                                                         |  18%  |                                                                              |=============                                                         |  19%  |                                                                              |==============                                                        |  19%  |                                                                              |==============                                                        |  20%  |                                                                              |==============                                                        |  21%  |                                                                              |===============                                                       |  21%  |                                                                              |===============                                                       |  22%  |                                                                              |================                                                      |  22%  |                                                                              |================                                                      |  23%  |                                                                              |================                                                      |  24%  |                                                                              |=================                                                     |  24%  |                                                                              |=================                                                     |  25%  |                                                                              |==================                                                    |  25%  |                                                                              |==================                                                    |  26%  |                                                                              |===================                                                   |  26%  |                                                                              |===================                                                   |  27%  |                                                                              |===================                                                   |  28%  |                                                                              |====================                                                  |  28%  |                                                                              |====================                                                  |  29%  |                                                                              |=====================                                                 |  29%  |                                                                              |=====================                                                 |  30%  |                                                                              |=====================                                                 |  31%  |                                                                              |======================                                                |  31%  |                                                                              |======================                                                |  32%  |                                                                              |=======================                                               |  32%  |                                                                              |=======================                                               |  33%  |                                                                              |=======================                                               |  34%  |                                                                              |========================                                              |  34%  |                                                                              |========================                                              |  35%  |                                                                              |=========================                                             |  35%  |                                                                              |=========================                                             |  36%  |                                                                              |==========================                                            |  36%  |                                                                              |==========================                                            |  37%  |                                                                              |==========================                                            |  38%  |                                                                              |===========================                                           |  38%  |                                                                              |===========================                                           |  39%  |                                                                              |============================                                          |  39%  |                                                                              |============================                                          |  40%  |                                                                              |============================                                          |  41%  |                                                                              |=============================                                         |  41%  |                                                                              |=============================                                         |  42%  |                                                                              |==============================                                        |  42%  |                                                                              |==============================                                        |  43%  |                                                                              |==============================                                        |  44%  |                                                                              |===============================                                       |  44%  |                                                                              |===============================                                       |  45%  |                                                                              |================================                                      |  45%  |                                                                              |================================                                      |  46%  |                                                                              |=================================                                     |  46%  |                                                                              |=================================                                     |  47%  |                                                                              |=================================                                     |  48%  |                                                                              |==================================                                    |  48%  |                                                                              |==================================                                    |  49%  |                                                                              |===================================                                   |  49%  |                                                                              |===================================                                   |  50%  |                                                                              |===================================                                   |  51%  |                                                                              |====================================                                  |  51%  |                                                                              |====================================                                  |  52%  |                                                                              |=====================================                                 |  52%  |                                                                              |=====================================                                 |  53%  |                                                                              |=====================================                                 |  54%  |                                                                              |======================================                                |  54%  |                                                                              |======================================                                |  55%  |                                                                              |=======================================                               |  55%  |                                                                              |=======================================                               |  56%  |                                                                              |========================================                              |  56%  |                                                                              |========================================                              |  57%  |                                                                              |========================================                              |  58%  |                                                                              |=========================================                             |  58%  |                                                                              |=========================================                             |  59%  |                                                                              |==========================================                            |  59%  |                                                                              |==========================================                            |  60%  |                                                                              |==========================================                            |  61%  |                                                                              |===========================================                           |  61%  |                                                                              |===========================================                           |  62%  |                                                                              |============================================                          |  62%  |                                                                              |============================================                          |  63%  |                                                                              |============================================                          |  64%  |                                                                              |=============================================                         |  64%  |                                                                              |=============================================                         |  65%  |                                                                              |==============================================                        |  65%  |                                                                              |==============================================                        |  66%  |                                                                              |===============================================                       |  66%  |                                                                              |===============================================                       |  67%  |                                                                              |===============================================                       |  68%  |                                                                              |================================================                      |  68%  |                                                                              |================================================                      |  69%  |                                                                              |=================================================                     |  69%  |                                                                              |=================================================                     |  70%  |                                                                              |=================================================                     |  71%  |                                                                              |==================================================                    |  71%  |                                                                              |==================================================                    |  72%  |                                                                              |===================================================                   |  72%  |                                                                              |===================================================                   |  73%  |                                                                              |===================================================                   |  74%  |                                                                              |====================================================                  |  74%  |                                                                              |====================================================                  |  75%  |                                                                              |=====================================================                 |  75%  |                                                                              |=====================================================                 |  76%  |                                                                              |======================================================                |  76%  |                                                                              |======================================================                |  77%  |                                                                              |======================================================                |  78%  |                                                                              |=======================================================               |  78%  |                                                                              |=======================================================               |  79%  |                                                                              |========================================================              |  79%  |                                                                              |========================================================              |  80%  |                                                                              |========================================================              |  81%  |                                                                              |=========================================================             |  81%  |                                                                              |=========================================================             |  82%  |                                                                              |==========================================================            |  82%  |                                                                              |==========================================================            |  83%  |                                                                              |==========================================================            |  84%  |                                                                              |===========================================================           |  84%  |                                                                              |===========================================================           |  85%  |                                                                              |============================================================          |  85%  |                                                                              |============================================================          |  86%  |                                                                              |=============================================================         |  86%  |                                                                              |=============================================================         |  87%  |                                                                              |=============================================================         |  88%  |                                                                              |==============================================================        |  88%  |                                                                              |==============================================================        |  89%  |                                                                              |===============================================================       |  89%  |                                                                              |===============================================================       |  90%  |                                                                              |===============================================================       |  91%  |                                                                              |================================================================      |  91%  |                                                                              |================================================================      |  92%  |                                                                              |=================================================================     |  92%  |                                                                              |=================================================================     |  93%  |                                                                              |=================================================================     |  94%  |                                                                              |==================================================================    |  94%  |                                                                              |==================================================================    |  95%  |                                                                              |===================================================================   |  95%  |                                                                              |===================================================================   |  96%  |                                                                              |====================================================================  |  96%  |                                                                              |====================================================================  |  97%  |                                                                              |====================================================================  |  98%  |                                                                              |===================================================================== |  98%  |                                                                              |===================================================================== |  99%  |                                                                              |======================================================================|  99%  |                                                                              |======================================================================| 100%
-> 
-> # 
-> Astrocyte_Draft <- mapReactions(reactionList = woFlux,
-+                                 referenceData = Astrocyte_Draft,
-+                                 by = "ID",
-+                                 inverse = TRUE)
-> 
-> #
-> DMEM@obj_coef <- rep(0,DMEM@react_num)
-> DMEM <- addReact(DMEM, id="MC", met=c("glu_L[e]","gln_L[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- RECON[getFluxDist(optimizeProb(DMEM))!=0,3]
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("nh4[e]","glu_L[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("ca2[e]","glu_L[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("gly[e]","ser_D[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("ser_L[c]","ser_D[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("glc_D[e]","lac_L[e]"),
-+                  Scoef=c(-1,2), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("glc_D[c]","atp[e]"),
-+                  Scoef=c(-1,36), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("cys_L[e]","glu_L[c]","gly[c]","gthrd[e]"),
-+                  Scoef=c(-1,-1,-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","h2o2[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","o2s[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","prostgd2[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","prostge1[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","prostge2[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","prostgh2[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","prostgi2[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02208[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02210[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02213[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02214[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02216[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","HC02217[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","leuktrB4[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","leuktrE4[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> DMEM <- addReact(DMEM, id="MC", met=c("hdca[c]","no[e]"),
-+                  Scoef=c(-1,1), reversible=FALSE,
-+                  lb=0, ub=1000, obj=1)
-> Enrichment <- unique(c(Enrichment,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> 
-> 
-> #
-> Astrocyte_Reconstruction <- mapReactions(reactionList = unique(c(Enrichment,Astrocyte_Draft$REACTION)),
-+                                          referenceData = RECON,
-+                                          by = "REACTION")
-> # 
-> # # Tibolone Mecanism
-> # lowbnd(DMEM)[react_id(DMEM) == 'EX_estradiol(e)'] <- -1
-> # lowbnd(DMEM)[react_id(DMEM) == 'EX_crtsl(e)'] <- -1
-> # lowbnd(DMEM)[react_id(DMEM) == 'EX_aldstrn(e)'] <- -1
-> # lowbnd(DMEM)[react_id(DMEM) == 'EX_prgstrn(e)'] <- -1
-> # lowbnd(DMEM)[react_id(DMEM) == 'EX_tststerone(e)'] <- -1
-> # RECON$LOWER.BOUND <- DMEM@lowbnd
-> # RECON$UPPER.BOUND <- DMEM@uppbnd
-> # DMEM <- addReact(DMEM, id="MC", met=c("estradiol[e]","hdca[e]","h2o2[e]"),
-> #                  Scoef=c(-1,-1,1), reversible=FALSE,
-> #                  lb=0, ub=1000, obj=1)
-> # Tibolone <- RECON[getFluxDist(optimizeProb(DMEM))!=0,3]
-> # 
-> # DMEM <- addReact(DMEM, id="MC", met=c("estradiol[e]","hdca[e]","o2s[e]"),
-> #                  Scoef=c(-1,-1,1), reversible=FALSE,
-> #                  lb=0, ub=1000, obj=1)
-> # Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> # 
-> # DMEM <- addReact(DMEM, id="MC", met=c("crtsl[e]","hdca[e]","h2o2[e]"),
-> #                  Scoef=c(-1,-1,1), reversible=FALSE,
-> #                  lb=0, ub=1000, obj=1)
-> # Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> # 
-> # DMEM <- addReact(DMEM, id="MC", met=c("crtsl[e]","hdca[e]","o2s[e]"),
-> #                  Scoef=c(-1,-1,1), reversible=FALSE,
-> #                  lb=0, ub=1000, obj=1)
-> # Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> # 
-> # DMEM <- addReact(DMEM, id="MC", met=c("aldstrn[e]","hdca[e]","o2s[e]"),
-> #                  Scoef=c(-1,-1,1), reversible=FALSE,
-> #                  lb=0, ub=1000, obj=1)
-> # Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> # 
-> # DMEM <- addReact(DMEM, id="MC", met=c("aldstrn[e]","hdca[e]","h2o2[e]"),
-> #                  Scoef=c(-1,-1,1), reversible=FALSE,
-> #                  lb=0, ub=1000, obj=1)
-> # Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> # 
-> # DMEM <- addReact(DMEM, id="MC", met=c("prgstrn[e]","hdca[e]","o2s[e]"),
-> #                  Scoef=c(-1,-1,1), reversible=FALSE,
-> #                  lb=0, ub=1000, obj=1)
-> # Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> # 
-> # DMEM <- addReact(DMEM, id="MC", met=c("prgstrn[e]","hdca[e]","h2o2[e]"),
-> #                  Scoef=c(-1,-1,1), reversible=FALSE,
-> #                  lb=0, ub=1000, obj=1)
-> # Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> # 
-> # 
-> # DMEM <- addReact(DMEM, id="MC", met=c("tststerone[e]","hdca[e]","o2s[e]"),
-> #                  Scoef=c(-1,-1,1), reversible=FALSE,
-> #                  lb=0, ub=1000, obj=1)
-> # Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> # 
-> # DMEM <- addReact(DMEM, id="MC", met=c("tststerone[e]","hdca[e]","h2o2[e]"),
-> #                  Scoef=c(-1,-1,1), reversible=FALSE,
-> #                  lb=0, ub=1000, obj=1)
-> # Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-> # Tibolone <- mapReactions(reactionList = Tibolone[!Tibolone%in%Astrocyte_Reconstruction$REACTION],referenceData = RECON,by = "REACTION")
-> # write.csv2(x = Tibolone,file = "Results/TiboloneReactions.csv",row.names = FALSE)
-> # #
-> # Astrocyte_Reconstruction <- rbind(Astrocyte_Reconstruction,Tibolone)
-> # write.csv2(x = Astrocyte_Reconstruction,file = "Results/Astrocyte.csv",row.names = FALSE)
-> convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")
-> 
-> proc.time()
-    user   system  elapsed 
-2827.263   12.105 2996.906 

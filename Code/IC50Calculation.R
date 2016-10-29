@@ -1,7 +1,7 @@
 require(sybilSBML)
 
 # FBA
-matureAstrocyte_Model <- readSBMLmod("Results/ageModels/matureAstrocyte.xml")
+matureAstrocyte_Model <- readSBMLmod("Results/matureAstrocyte.xml")
 model_FBA <- optimizeProb(matureAstrocyte_Model)
 # Minimizing the total absolute fluxes MTF (Evaluando las múltiples posibles soluciones)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))

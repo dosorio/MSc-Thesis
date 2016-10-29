@@ -44,66 +44,48 @@ par(mfcol=c(1,4))
 # Fetal
 Astrocyte_ExpressionSet <- ExpressionSet(Astrocyte_Expression[,c(1:6)])
 fetalAstrocyte_Model <- exp2flux(Astrocyte_Model,Astrocyte_ExpressionSet,scale = FALSE)
+plot(fluxVar(fetalAstrocyte_Model),ylim=c(-250,250),main=paste0("Fetal: ",round(optimizeProb(fetalAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
 fetalAstrocyte_Modelcsv <- Astrocyte_Modelcsv
 fetalAstrocyte_Modelcsv$LOWER.BOUND <- fetalAstrocyte_Model@lowbnd
 fetalAstrocyte_Modelcsv$UPPER.BOUND <- fetalAstrocyte_Model@uppbnd
-write.csv2(fetalAstrocyte_Modelcsv,file = "Results/ageModels/fetalAstrocyteTibolone.csv",row.names = FALSE)
-convert2sbml(fetalAstrocyte_Modelcsv,"Results/ageModels/fetalAstrocyteTibolone.xml")
-fetalAstrocyte_Modelcsv$LOWER.BOUND[fetalAstrocyte_Modelcsv$ID%in%Tibolone_Reactions$ID] <- 0
-fetalAstrocyte_Modelcsv$UPPER.BOUND[fetalAstrocyte_Modelcsv$ID%in%Tibolone_Reactions$ID] <- 0
-fetalAstrocyte_Model@lowbnd[fetalAstrocyte_Model@react_id%in%Tibolone_Reactions$ID] <- 0
-fetalAstrocyte_Model@uppbnd[fetalAstrocyte_Model@react_id%in%Tibolone_Reactions$ID] <- 0
-write.csv2(fetalAstrocyte_Modelcsv,file = "Results/ageModels/fetalAstrocyte.csv",row.names = FALSE)
-convert2sbml(fetalAstrocyte_Modelcsv,"Results/ageModels/fetalAstrocyte.xml")
-plot(fluxVar(fetalAstrocyte_Model),ylim=c(-250,250),main=paste0("Fetal: ",round(optimizeProb(fetalAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
-
+write.csv2(fetalAstrocyte_Modelcsv,file = "Results/fetalAstrocyte.csv",row.names = FALSE)
+convert2sbml(fetalAstrocyte_Modelcsv,"Results/fetalAstrocyte.xml")
 
 # Young
 Astrocyte_ExpressionSet <- ExpressionSet(Astrocyte_Expression[,c(7:9)])
 youngAstrocyte_Model <- exp2flux(Astrocyte_Model,Astrocyte_ExpressionSet,scale = FALSE)
+plot(fluxVar(youngAstrocyte_Model),ylim=c(-250,250),main=paste0("Young (8-16 yo): ",round(optimizeProb(youngAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
 youngAstrocyte_Modelcsv <- Astrocyte_Modelcsv
 youngAstrocyte_Modelcsv$LOWER.BOUND <- youngAstrocyte_Model@lowbnd
 youngAstrocyte_Modelcsv$UPPER.BOUND <- youngAstrocyte_Model@uppbnd
-write.csv2(youngAstrocyte_Modelcsv,file = "Results/ageModels/youngAstrocyteTibolone.csv",row.names = FALSE)
-convert2sbml(youngAstrocyte_Modelcsv,"Results/ageModels/youngAstrocyteTibolone.xml")
-youngAstrocyte_Modelcsv$LOWER.BOUND[youngAstrocyte_Modelcsv$ID%in%Tibolone_Reactions$ID] <- 0
-youngAstrocyte_Modelcsv$UPPER.BOUND[youngAstrocyte_Modelcsv$ID%in%Tibolone_Reactions$ID] <- 0
-youngAstrocyte_Model@lowbnd[youngAstrocyte_Model@react_id%in%Tibolone_Reactions$ID] <- 0
-youngAstrocyte_Model@uppbnd[youngAstrocyte_Model@react_id%in%Tibolone_Reactions$ID] <- 0
-write.csv2(youngAstrocyte_Modelcsv,file = "Results/ageModels/youngAstrocyte.csv",row.names = FALSE)
-convert2sbml(youngAstrocyte_Modelcsv,"Results/ageModels/youngAstrocyte.xml")
-plot(fluxVar(youngAstrocyte_Model),ylim=c(-250,250),main=paste0("Young (8-16 yo): ",round(optimizeProb(youngAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
+write.csv2(youngAstrocyte_Modelcsv,file = "Results/youngAstrocyte.csv",row.names = FALSE)
+convert2sbml(youngAstrocyte_Modelcsv,"Results/youngAstrocyte.xml")
 
 # Adult
 Astrocyte_ExpressionSet <- ExpressionSet(Astrocyte_Expression[,c(10:12)])
 adultAstrocyte_Model <- exp2flux(Astrocyte_Model,Astrocyte_ExpressionSet,scale = FALSE)
+plot(fluxVar(adultAstrocyte_Model),ylim=c(-250,250),main=paste0("Adult (21-35 yo): ",round(optimizeProb(adultAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
 adultAstrocyte_Modelcsv <- Astrocyte_Modelcsv
 adultAstrocyte_Modelcsv$LOWER.BOUND <- adultAstrocyte_Model@lowbnd
 adultAstrocyte_Modelcsv$UPPER.BOUND <- adultAstrocyte_Model@uppbnd
-write.csv2(adultAstrocyte_Modelcsv,file = "Results/ageModels/adultAstrocyteTibolone.csv",row.names = FALSE)
-convert2sbml(adultAstrocyte_Modelcsv,"Results/ageModels/adultAstrocyteTibolone.xml")
-adultAstrocyte_Modelcsv$LOWER.BOUND[adultAstrocyte_Modelcsv$ID%in%Tibolone_Reactions$ID] <- 0
-adultAstrocyte_Modelcsv$UPPER.BOUND[adultAstrocyte_Modelcsv$ID%in%Tibolone_Reactions$ID] <- 0
-adultAstrocyte_Model@lowbnd[adultAstrocyte_Model@react_id%in%Tibolone_Reactions$ID] <- 0
-adultAstrocyte_Model@uppbnd[adultAstrocyte_Model@react_id%in%Tibolone_Reactions$ID] <- 0
-write.csv2(adultAstrocyte_Modelcsv,file = "Results/ageModels/adultAstrocyte.csv",row.names = FALSE)
-convert2sbml(adultAstrocyte_Modelcsv,"Results/ageModels/adultAstrocyte.xml")
-plot(fluxVar(adultAstrocyte_Model),ylim=c(-250,250),main=paste0("Adult (21-35 yo): ",round(optimizeProb(adultAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
-
+write.csv2(adultAstrocyte_Modelcsv,file = "Results/adultAstrocyte.csv",row.names = FALSE)
+convert2sbml(adultAstrocyte_Modelcsv,"Results/adultAstrocyte.xml")
 
 # Mature
 Astrocyte_ExpressionSet <- ExpressionSet(Astrocyte_Expression[,c(13:18)])
 matureAstrocyte_Model <- exp2flux(Astrocyte_Model,Astrocyte_ExpressionSet,scale = FALSE)
+plot(fluxVar(matureAstrocyte_Model),ylim=c(-250,250),main=paste0("Mature (47-63 yo): ",round(optimizeProb(matureAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
 matureAstrocyte_Modelcsv <- Astrocyte_Modelcsv
 matureAstrocyte_Modelcsv$LOWER.BOUND <- matureAstrocyte_Model@lowbnd
 matureAstrocyte_Modelcsv$UPPER.BOUND <- matureAstrocyte_Model@uppbnd
-write.csv2(matureAstrocyte_Modelcsv,file = "Results/ageModels/matureAstrocyteTibolone.csv",row.names = FALSE)
-convert2sbml(matureAstrocyte_Modelcsv,"Results/ageModels/matureAstrocyteTibolone.xml")
-matureAstrocyte_Modelcsv$LOWER.BOUND[matureAstrocyte_Modelcsv$ID%in%Tibolone_Reactions$ID] <- 0
-matureAstrocyte_Modelcsv$UPPER.BOUND[matureAstrocyte_Modelcsv$ID%in%Tibolone_Reactions$ID] <- 0
-matureAstrocyte_Model@lowbnd[matureAstrocyte_Model@react_id%in%Tibolone_Reactions$ID] <- 0
-matureAstrocyte_Model@uppbnd[matureAstrocyte_Model@react_id%in%Tibolone_Reactions$ID] <- 0
-write.csv2(matureAstrocyte_Modelcsv,file = "Results/ageModels/matureAstrocyte.csv",row.names = FALSE)
-convert2sbml(matureAstrocyte_Modelcsv,"Results/ageModels/matureAstrocyte.xml")
-plot(fluxVar(matureAstrocyte_Model),ylim=c(-250,250),main=paste0("Mature (47-63 yo): ",round(optimizeProb(matureAstrocyte_Model)@lp_obj,3)),ylab="Biomass Flux",xlab="Reaction")
+write.csv2(matureAstrocyte_Modelcsv,file = "Results/matureAstrocyte.csv",row.names = FALSE)
+convert2sbml(matureAstrocyte_Modelcsv,"Results/matureAstrocyte.xml")
+## Tibolone
+Tibolone <- read.csv2("Results/TiboloneReactions.csv")
+convert2sbml(Tibolone,"Results/Tibolone.xml")
+Tibolone_Model <- readSBMLmod("Results/Tibolone.xml")
+Tibolone_Model <- exp2flux(Tibolone_Model,Astrocyte_ExpressionSet)
+Tibolone$LOWER.BOUND <- Tibolone_Model@lowbnd
+Tibolone$UPPER.BOUND <- Tibolone_Model@uppbnd
+write.csv2(Tibolone,file = "Results/matureTiboloneReactions.csv",row.names = FALSE)
 dev.off()

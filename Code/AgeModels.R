@@ -79,6 +79,7 @@ matureAstrocyte_Modelcsv$LOWER.BOUND <- matureAstrocyte_Model@lowbnd
 matureAstrocyte_Modelcsv$UPPER.BOUND <- matureAstrocyte_Model@uppbnd
 write.csv2(matureAstrocyte_Modelcsv,file = "Results/matureAstrocyte.csv",row.names = FALSE)
 convert2sbml(matureAstrocyte_Modelcsv,"Results/matureAstrocyte.xml")
+
 ## Tibolone
 Tibolone <- read.csv2("Results/TiboloneReactions.csv")
 convert2sbml(Tibolone,"Results/Tibolone.xml")

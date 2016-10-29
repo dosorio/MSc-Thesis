@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  28 OCT 2016 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  29 OCT 2016 10:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1064,11 +1064,11 @@ Overfull \vbox (5.02393pt too high) detected at line 62
 
 [5
 
- <./Figures/IC50.pdf>] <Figures/minval.pdf, id=131, 364.1906pt x 273.1505pt>
-File: Figures/minval.pdf Graphic file (type pdf)
+ <./Figures/IC50.pdf>] <Figures/g2f.pdf, id=131, 364.1906pt x 273.1505pt>
+File: Figures/g2f.pdf Graphic file (type pdf)
 
-<use Figures/minval.pdf>
-Package pdftex.def Info: Figures/minval.pdf used on input line 67.
+<use Figures/g2f.pdf>
+Package pdftex.def Info: Figures/g2f.pdf used on input line 67.
 (pdftex.def)             Requested size: 307.28987pt x 230.47432pt.
 
 Overfull \vbox (35.89316pt too high) detected at line 67
@@ -1076,11 +1076,11 @@ Overfull \vbox (35.89316pt too high) detected at line 67
 
 [6
 
- <./Figures/minval.pdf>] <Figures/g2f.pdf, id=183, 364.1906pt x 273.1505pt>
-File: Figures/g2f.pdf Graphic file (type pdf)
+ <./Figures/g2f.pdf>] <Figures/minval.pdf, id=182, 364.1906pt x 273.1505pt>
+File: Figures/minval.pdf Graphic file (type pdf)
 
-<use Figures/g2f.pdf>
-Package pdftex.def Info: Figures/g2f.pdf used on input line 72.
+<use Figures/minval.pdf>
+Package pdftex.def Info: Figures/minval.pdf used on input line 72.
 (pdftex.def)             Requested size: 307.28987pt x 230.47432pt.
 
 Overfull \vbox (35.89316pt too high) detected at line 72
@@ -1088,8 +1088,8 @@ Overfull \vbox (35.89316pt too high) detected at line 72
 
 [7
 
- <./Figures/g2f.pdf>]
-<Figures/exp2flux.pdf, id=234, 364.1906pt x 273.1505pt>
+ <./Figures/minval.pdf>]
+<Figures/exp2flux.pdf, id=251, 364.1906pt x 273.1505pt>
 File: Figures/exp2flux.pdf Graphic file (type pdf)
 
 <use Figures/exp2flux.pdf>
@@ -1104,25 +1104,25 @@ Overfull \vbox (35.89316pt too high) detected at line 77
  <./Figures/exp2flux.pdf>] [9
 
 ]
-<Figures/Events.pdf, id=296, 771.13884pt x 123.72011pt>
+<Figures/Events.pdf, id=313, 771.13884pt x 123.72011pt>
 File: Figures/Events.pdf Graphic file (type pdf)
 
 <use Figures/Events.pdf>
 Package pdftex.def Info: Figures/Events.pdf used on input line 105.
 (pdftex.def)             Requested size: 307.28987pt x 49.30026pt.
- <Figures/IS3B.png, id=297, 151.2852pt x 96.36pt>
+ <Figures/IS3B.png, id=314, 151.2852pt x 96.36pt>
 File: Figures/IS3B.png Graphic file (type png)
 
 <use Figures/IS3B.png>
 Package pdftex.def Info: Figures/IS3B.png used on input line 105.
 (pdftex.def)             Requested size: 92.1879pt x 58.71921pt.
- <Figures/ICSB.png, id=299, 315.1775pt x 200.75pt>
+ <Figures/ICSB.png, id=316, 315.1775pt x 200.75pt>
 File: Figures/ICSB.png Graphic file (type png)
 
 <use Figures/ICSB.png>
 Package pdftex.def Info: Figures/ICSB.png used on input line 105.
 (pdftex.def)             Requested size: 92.1879pt x 58.71837pt.
- <Figures/ICGEB.pdf, id=300, 315.1775pt x 200.75pt>
+ <Figures/ICGEB.pdf, id=317, 315.1775pt x 200.75pt>
 File: Figures/ICGEB.pdf Graphic file (type pdf)
 
 <use Figures/ICGEB.pdf>
@@ -1132,20 +1132,20 @@ Package pdftex.def Info: Figures/ICGEB.pdf used on input line 105.
 
  <./Figures/Events.pdf, page is rotated 270 degrees> <./Figures/IS3B.png> <./Fi
 gures/ICSB.png> <./Figures/ICGEB.pdf>]
-<Figures/logoIG.png, id=483, 401.5pt x 102.3825pt>
+<Figures/logoIG.png, id=500, 401.5pt x 102.3825pt>
 File: Figures/logoIG.png Graphic file (type png)
  <use Figures/logoIG.png>
 Package pdftex.def Info: Figures/logoIG.png used on input line 130.
 (pdftex.def)             Requested size: 78.10532pt x 19.91684pt.
 
-<Figures/logoGIBBS.png, id=484, 307.1475pt x 112.42pt>
+<Figures/logoGIBBS.png, id=501, 307.1475pt x 112.42pt>
 File: Figures/logoGIBBS.png Graphic file (type png)
 
 <use Figures/logoGIBBS.png>
 Package pdftex.def Info: Figures/logoGIBBS.png used on input line 130.
 (pdftex.def)             Requested size: 54.41243pt x 19.91684pt.
 
-<Figures/GIBBS.jpg, id=485, 2689.04625pt x 718.685pt>
+<Figures/GIBBS.jpg, id=502, 2689.04625pt x 718.685pt>
 File: Figures/GIBBS.jpg Graphic file (type jpg)
  <use Figures/GIBBS.jpg>
 Package pdftex.def Info: Figures/GIBBS.jpg used on input line 130.
@@ -1192,18 +1192,19 @@ Here is how much of TeX's memory you used:
  16710 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,55p,442b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-
-Output written on masterThesis.pdf (11 pages, 4534455 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regul
+ar.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
+.pfb>
+Output written on masterThesis.pdf (11 pages, 4583661 bytes).
 PDF statistics:
- 531 PDF objects out of 1000 (max. 8388607)
- 360 compressed objects within 4 object streams
+ 549 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
  29 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

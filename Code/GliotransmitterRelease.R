@@ -182,6 +182,21 @@ model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
 
+# Essential reactions
+oV <- optimizeProb(matureAstrocyte_Model)@lp_obj
+E <- NULL
+for(reactionID in Tibolone$ID){
+  lb <- lowbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID]
+  ub <- uppbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID]
+  lowbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID] <- 0
+  uppbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID] <- 0
+  if(optimizeProb(matureAstrocyte_Model)@lp_obj < (oV - (oV*0.1))){
+    E <- c(E,reactionID)
+  }
+  lowbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID] <- 0
+  uppbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID] <- 0
+}
+
 # Glu-Gln
 sink("Results/Tibolone/Glu-Gln.txt")
 matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("glu_L[e]","gln_L[e]"),

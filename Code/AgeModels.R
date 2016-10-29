@@ -35,6 +35,7 @@ Astrocyte_Expression <- Astrocyte_Expression[!is.na(rownames(Astrocyte_Expressio
 Astrocyte_Modelcsv <- read.csv2("Results/Astrocyte.csv")
 Astrocyte_Model <- readSBMLmod("Results/Astrocyte.xml")
 Astrocyte_Model
+Tibolone_Reactions <- read.csv2("Results/TiboloneReactions.csv")
 
 # División del gráfico
 pdf(file = "Slides/Figures/Astrocyte_MetabolicChanges.pdf",width = 10,height = 6.5)

@@ -31,17 +31,6 @@ Astrocyte_Activated <- Astrocyte_Expression[(rowSums(scale(Astrocyte_Expression)
 Human <- (UniProt.ws(taxId=9606))
 Astrocyte_Genes <- select(Human,keys=toupper(rownames(Astrocyte_Activated)),columns = c("ENTREZ_GENE","ENSEMBL","EC"),keytype ="GENECARDS")
 
-# Identifico Rutas Metabolicas
-metabolicPathways <- kegg.gsets(species = "hsa", id.type = "kegg")
-metabolicPathways <- matrix(gsub("[[:digit:]]+$","",names(unlist(metabolicPathways$kg.sets))),dimnames = list(as.vector(unlist(metabolicPathways$kg.sets)),c()))
-metabolicPathways[,1] <- gsub("hsa[[:digit:]]+[[:blank:]]+","",metabolicPathways[,1])
-Astrocyte_oPathways <- metabolicPathways[Astrocyte_Genes$ENTREZ_GENE[Astrocyte_Genes$ENTREZ_GENE%in%rownames(metabolicPathways)],]
-Astrocyte_oPathways <- round(table(Astrocyte_oPathways)/table(metabolicPathways[metabolicPathways%in%Astrocyte_oPathways]),2)
-Astrocyte_oPathways <- sort(sort(Astrocyte_oPathways,decreasing = TRUE)[1:50])
-pdf(file = "Slides/Figures/AstrocytePathways.pdf",width = 10,height = 6.5)
-par(las=1,mar=c(5,28,3,3))
-barplot(Astrocyte_oPathways*100,horiz = TRUE,xlab = "% Pathway")
-dev.off()
 # Leyendo RECON para usarla como referencia
 RECON <- read.csv(file = "Data/RECON.csv",
                   sep = ";",
@@ -370,6 +359,9 @@ Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
 Tibolone <- mapReactions(reactionList = Tibolone[!Tibolone%in%Astrocyte_Reconstruction$REACTION],referenceData = RECON,by = "REACTION")
 tiboloneGenes <- unique(unlist(strsplit(gsub("\\(|\\)|and|or","",Tibolone$GPR)," ")))
 tiboloneGenes <- tiboloneGenes[nchar(tiboloneGenes)>0]
+metabolicPathways <- kegg.gsets(species = "hsa", id.type = "kegg")
+metabolicPathways <- matrix(gsub("[[:digit:]]+$","",names(unlist(metabolicPathways$kg.sets))),dimnames = list(as.vector(unlist(metabolicPathways$kg.sets)),c()))
+metabolicPathways[,1] <- gsub("hsa[[:digit:]]+[[:blank:]]+","",metabolicPathways[,1])
 tibolonePathways <- table(metabolicPathways[tiboloneGenes[tiboloneGenes%in%rownames(metabolicPathways)],])
 tibolonePathways <- sort(round(tibolonePathways/sum(tibolonePathways),2),decreasing = TRUE)[1:10]
 tibolonePathways <- sort(tibolonePathways,decreasing = FALSE)
@@ -379,7 +371,6 @@ barplot(tibolonePathways,horiz = TRUE,main = "Tibolone Associated Metabolic Path
 dev.off()
 write.csv2(x = Tibolone,file = "Results/TiboloneReactions.csv",row.names = FALSE)
 # #
-Astrocyte_Reconstruction <- rbind(Astrocyte_Reconstruction,Tibolone)
+#Astrocyte_Reconstruction <- rbind(Astrocyte_Reconstruction,Tibolone)
 write.csv2(x = Astrocyte_Reconstruction,file = "Results/Astrocyte.csv",row.names = FALSE)
 convert2sbml(Astrocyte_Reconstruction,"Results/Astrocyte.xml")
-

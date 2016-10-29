@@ -79,4 +79,12 @@ matureAstrocyte_Modelcsv$LOWER.BOUND <- matureAstrocyte_Model@lowbnd
 matureAstrocyte_Modelcsv$UPPER.BOUND <- matureAstrocyte_Model@uppbnd
 write.csv2(matureAstrocyte_Modelcsv,file = "Results/matureAstrocyte.csv",row.names = FALSE)
 convert2sbml(matureAstrocyte_Modelcsv,"Results/matureAstrocyte.xml")
+## Tibolone
+Tibolone <- read.csv2("Results/TiboloneReactions.csv")
+convert2sbml(Tibolone,"Results/Tibolone.xml")
+Tibolone_Model <- readSBMLmod("Results/Tibolone.xml")
+Tibolone_Model <- exp2flux(Tibolone_Model,Astrocyte_ExpressionSet)
+Tibolone$LOWER.BOUND <- Tibolone_Model@lowbnd
+Tibolone$UPPER.BOUND <- Tibolone_Model@uppbnd
+write.csv2(Tibolone,file = "Results/matureTiboloneReactions.csv",row.names = FALSE)
 dev.off()

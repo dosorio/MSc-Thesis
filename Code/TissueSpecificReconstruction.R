@@ -6,6 +6,7 @@
 # install_github("gibbslab/g2f")
 # install_github("gibbslab/minval")
 # biocLite("ReactomePA")
+# biocLite("gage")
 # install.packages("sybilSBML")
 require(UniProt.ws)
 require(GEOquery)
@@ -13,6 +14,7 @@ require(g2f)
 require(minval)
 require(ReactomePA)
 require(sybilSBML)
+library(gage)
 
 # Descarga FPKM Astrocitos de Corteza Saludables
 getGEOSuppFiles(GEO = "GSE73721",makeDirectory = TRUE,baseDir = "Data/")
@@ -354,8 +356,19 @@ DMEM <- addReact(DMEM, id="MC", met=c("estradiol[e]","cys_L[e]","glu_L[c]","gly[
                  Scoef=c(-1,-1,-1,-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
 Tibolone <- unique(c(Tibolone,(RECON[getFluxDist(optimizeProb(DMEM))!=0,3])))
-
 Tibolone <- mapReactions(reactionList = Tibolone[!Tibolone%in%Astrocyte_Reconstruction$REACTION],referenceData = RECON,by = "REACTION")
+tiboloneGenes <- unique(unlist(strsplit(gsub("\\(|\\)|and|or","",Tibolone$GPR)," ")))
+tiboloneGenes <- tiboloneGenes[nchar(tiboloneGenes)>0]
+metabolicPathways <- kegg.gsets(species = "hsa", id.type = "kegg")
+metabolicPathways <- matrix(gsub("[[:digit:]]+$","",names(unlist(metabolicPathways$kg.sets))),dimnames = list(as.vector(unlist(metabolicPathways$kg.sets)),c()))
+metabolicPathways[,1] <- gsub("hsa[[:digit:]]+[[:blank:]]+","",metabolicPathways[,1])
+tibolonePathways <- table(metabolicPathways[tiboloneGenes[tiboloneGenes%in%rownames(metabolicPathways)],])
+tibolonePathways <- sort(round(tibolonePathways/sum(tibolonePathways),2),decreasing = TRUE)[1:10]
+tibolonePathways <- sort(tibolonePathways,decreasing = FALSE)
+pdf(file = "Slides/Figures/TibolonePathways.pdf",width = 10,height = 6.5)
+par(las=1,mar=c(3,28,3,3))
+barplot(tibolonePathways,horiz = TRUE,main = "Tibolone Associated Metabolic Pathways")
+dev.off()
 write.csv2(x = Tibolone,file = "Results/TiboloneReactions.csv",row.names = FALSE)
 # #
 #Astrocyte_Reconstruction <- rbind(Astrocyte_Reconstruction,Tibolone)

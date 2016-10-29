@@ -68815,7 +68815,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.374"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -68841,7 +68841,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="6.544"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -68864,8 +68864,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-0.374"/>
+      <parameter id="UPPER_BOUND" value="0.374"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -68886,8 +68886,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-0.436"/>
+      <parameter id="UPPER_BOUND" value="0.436"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -68912,7 +68912,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -68936,7 +68936,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -68958,7 +68958,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -68981,8 +68981,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-30.973"/>
+      <parameter id="UPPER_BOUND" value="30.973"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69003,8 +69003,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69029,7 +69029,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69050,8 +69050,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69072,8 +69072,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69094,8 +69094,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69119,7 +69119,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="51.228"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69141,7 +69141,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="31.846"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69166,7 +69166,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="4.362"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69190,7 +69190,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="18.26"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69215,7 +69215,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69236,8 +69236,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69260,7 +69260,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.499"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69287,7 +69287,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69308,8 +69308,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69333,7 +69333,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="41.942"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69358,7 +69358,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69379,8 +69379,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69407,7 +69407,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="8.787"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69428,8 +69428,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69453,7 +69453,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.623"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69477,7 +69477,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="26.486"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69501,7 +69501,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="9.286"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69523,7 +69523,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="31.846"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69544,8 +69544,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69569,7 +69569,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="2.306"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69593,7 +69593,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69617,7 +69617,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69639,7 +69639,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69661,7 +69661,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69683,7 +69683,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69705,7 +69705,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69727,7 +69727,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69748,8 +69748,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-1.371"/>
+      <parameter id="UPPER_BOUND" value="1.371"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69770,8 +69770,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69795,7 +69795,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="3.739"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69816,8 +69816,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69841,7 +69841,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.748"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69865,7 +69865,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.748"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69889,7 +69889,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.748"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69913,7 +69913,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.748"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69937,7 +69937,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.748"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69961,7 +69961,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.748"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -69985,7 +69985,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.748"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70010,7 +70010,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="8.102"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70031,8 +70031,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70054,8 +70054,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-156.114"/>
+      <parameter id="UPPER_BOUND" value="156.114"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70102,7 +70102,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="2.493"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70123,8 +70123,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70145,8 +70145,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70176,7 +70176,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="60.825"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70204,7 +70204,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.436"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70230,7 +70230,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="8.413"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70255,7 +70255,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.81"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70280,7 +70280,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="47.115"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70305,7 +70305,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="47.115"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70329,7 +70329,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="12.713"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70350,8 +70350,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70375,7 +70375,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="17.699"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70399,7 +70399,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="24.804"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70423,7 +70423,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="6.232"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70447,7 +70447,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="6.232"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70472,7 +70472,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="1.807"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70496,7 +70496,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.561"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70520,7 +70520,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.561"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70544,7 +70544,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.561"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70568,7 +70568,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.561"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70592,7 +70592,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.561"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70617,7 +70617,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70639,7 +70639,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="31.846"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70661,7 +70661,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70686,7 +70686,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.436"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70711,7 +70711,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.436"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70736,7 +70736,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.436"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70761,7 +70761,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.436"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70786,7 +70786,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70811,7 +70811,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70836,7 +70836,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70861,7 +70861,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70886,7 +70886,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70911,7 +70911,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70935,7 +70935,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70957,7 +70957,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -70981,7 +70981,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.374"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71005,7 +71005,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.374"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71029,7 +71029,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.374"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71053,7 +71053,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.374"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71074,8 +71074,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71099,7 +71099,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="26.486"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71124,7 +71124,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71149,7 +71149,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71173,7 +71173,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="38.577"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71198,7 +71198,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="36.645"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71222,7 +71222,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="38.577"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71246,7 +71246,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="40.82"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71270,7 +71270,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="40.82"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71294,7 +71294,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="40.82"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71320,7 +71320,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="25.178"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71346,7 +71346,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="25.178"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71372,7 +71372,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="25.178"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71397,7 +71397,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71418,8 +71418,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71444,7 +71444,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="4.3"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71471,7 +71471,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.997"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71499,7 +71499,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.997"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71525,7 +71525,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71549,7 +71549,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="51.602"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71571,7 +71571,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="39.823"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71595,7 +71595,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="1.807"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71623,7 +71623,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71651,7 +71651,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71678,7 +71678,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.436"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71699,8 +71699,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71725,7 +71725,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.81"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71749,7 +71749,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71770,8 +71770,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71796,7 +71796,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="1.807"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71821,7 +71821,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="79.521"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71846,7 +71846,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="2.804"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71871,7 +71871,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="1.807"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71892,8 +71892,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71920,7 +71920,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="25.302"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71945,7 +71945,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="15.331"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71969,7 +71969,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -71993,7 +71993,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72014,8 +72014,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72040,7 +72040,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.796"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72065,7 +72065,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.796"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72090,7 +72090,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="84.819"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72115,7 +72115,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="84.819"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72140,7 +72140,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="84.819"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72165,7 +72165,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72190,7 +72190,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72214,8 +72214,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72239,8 +72239,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72264,8 +72264,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72290,7 +72290,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.807"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72315,7 +72315,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.807"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72339,8 +72339,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-6.98"/>
+      <parameter id="UPPER_BOUND" value="6.98"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72365,7 +72365,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="22.622"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72390,7 +72390,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="22.622"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72414,8 +72414,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-32.282"/>
+      <parameter id="UPPER_BOUND" value="32.282"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72439,8 +72439,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-32.282"/>
+      <parameter id="UPPER_BOUND" value="32.282"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72464,8 +72464,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-32.282"/>
+      <parameter id="UPPER_BOUND" value="32.282"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72489,8 +72489,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-1.496"/>
+      <parameter id="UPPER_BOUND" value="1.496"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72514,8 +72514,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-1.496"/>
+      <parameter id="UPPER_BOUND" value="1.496"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72539,8 +72539,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-1.496"/>
+      <parameter id="UPPER_BOUND" value="1.496"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72565,7 +72565,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="1.683"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72589,7 +72589,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="4.861"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72610,8 +72610,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72632,8 +72632,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72658,7 +72658,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="1.683"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72683,7 +72683,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.748"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72708,7 +72708,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.561"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72733,7 +72733,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72758,7 +72758,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72782,7 +72782,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="1.122"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72806,7 +72806,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="26.486"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72831,7 +72831,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="3.428"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72854,8 +72854,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72878,8 +72878,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-15.206"/>
+      <parameter id="UPPER_BOUND" value="15.206"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72900,8 +72900,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-2.555"/>
+      <parameter id="UPPER_BOUND" value="2.555"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72925,7 +72925,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72946,8 +72946,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72973,7 +72973,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -72998,7 +72998,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="15.082"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73023,7 +73023,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="4.923"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73048,7 +73048,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73073,8 +73073,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73098,7 +73098,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="12.402"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73125,7 +73125,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="25.302"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73150,7 +73150,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="4.923"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73174,8 +73174,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-81.329"/>
+      <parameter id="UPPER_BOUND" value="81.329"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73197,7 +73197,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73221,7 +73221,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73245,7 +73245,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.872"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73266,8 +73266,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73291,7 +73291,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73315,7 +73315,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73339,7 +73339,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.872"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73365,7 +73365,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="186.464"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73387,7 +73387,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73409,7 +73409,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73431,7 +73431,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73453,7 +73453,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73477,7 +73477,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.872"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73503,7 +73503,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73529,7 +73529,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73555,7 +73555,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73581,7 +73581,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73607,7 +73607,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73633,7 +73633,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73659,7 +73659,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73685,7 +73685,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73711,7 +73711,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73737,7 +73737,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73763,7 +73763,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73789,7 +73789,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73815,7 +73815,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73841,7 +73841,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73867,7 +73867,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="5.734"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73891,7 +73891,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.499"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73915,7 +73915,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.499"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73939,7 +73939,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.499"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73963,7 +73963,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.499"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -73987,7 +73987,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.499"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74011,7 +74011,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.499"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74035,7 +74035,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.499"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74059,7 +74059,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.499"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74083,7 +74083,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.499"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74107,7 +74107,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.499"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74133,7 +74133,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.561"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74159,7 +74159,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.561"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74185,7 +74185,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.561"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74211,7 +74211,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.561"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74235,7 +74235,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="31.846"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74259,7 +74259,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74286,7 +74286,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="31.472"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74310,8 +74310,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-184.781"/>
+      <parameter id="UPPER_BOUND" value="184.781"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74337,7 +74337,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="220.865"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74361,8 +74361,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74384,8 +74384,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74409,8 +74409,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-59.267"/>
+      <parameter id="UPPER_BOUND" value="59.267"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74434,8 +74434,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74462,7 +74462,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74485,8 +74485,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74509,8 +74509,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-46.242"/>
+      <parameter id="UPPER_BOUND" value="46.242"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74533,8 +74533,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-46.242"/>
+      <parameter id="UPPER_BOUND" value="46.242"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74556,8 +74556,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-12.838"/>
+      <parameter id="UPPER_BOUND" value="12.838"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74580,8 +74580,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74607,7 +74607,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74633,7 +74633,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74657,8 +74657,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-3.303"/>
+      <parameter id="UPPER_BOUND" value="3.303"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74683,8 +74683,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-3.303"/>
+      <parameter id="UPPER_BOUND" value="3.303"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74705,8 +74705,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74727,8 +74727,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74751,8 +74751,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74774,8 +74774,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-12.838"/>
+      <parameter id="UPPER_BOUND" value="12.838"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74799,8 +74799,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-184.781"/>
+      <parameter id="UPPER_BOUND" value="184.781"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74821,8 +74821,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-80.83"/>
+      <parameter id="UPPER_BOUND" value="80.83"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74846,8 +74846,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-0.686"/>
+      <parameter id="UPPER_BOUND" value="0.686"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74873,7 +74873,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="231.46"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74896,8 +74896,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74921,8 +74921,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-1.807"/>
+      <parameter id="UPPER_BOUND" value="1.807"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74946,8 +74946,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-13.212"/>
+      <parameter id="UPPER_BOUND" value="13.212"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74972,8 +74972,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-34.339"/>
+      <parameter id="UPPER_BOUND" value="34.339"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -74996,8 +74996,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-522.872"/>
+      <parameter id="UPPER_BOUND" value="522.872"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75022,7 +75022,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75043,8 +75043,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-23.512"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75069,7 +75069,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="2.431"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75092,8 +75092,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-26.486"/>
+      <parameter id="UPPER_BOUND" value="26.486"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75116,8 +75116,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-11.903"/>
+      <parameter id="UPPER_BOUND" value="11.903"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75138,8 +75138,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-31.846"/>
+      <parameter id="UPPER_BOUND" value="31.846"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75169,7 +75169,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="24.367"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75197,7 +75197,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="113.05"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75221,7 +75221,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="24.367"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75243,7 +75243,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="1.807"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75268,7 +75268,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="122.398"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75290,7 +75290,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="1.807"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75320,7 +75320,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="24.367"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75348,7 +75348,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="24.367"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75378,7 +75378,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="12.838"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75408,7 +75408,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="12.838"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75431,8 +75431,8 @@
 <ci>FLUX_VALUE</ci>
     </math>
     <listOfParameters>
-      <parameter id="LOWER_BOUND" value="-1000"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="LOWER_BOUND" value="-26.486"/>
+      <parameter id="UPPER_BOUND" value="26.486"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75478,7 +75478,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.436"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75501,7 +75501,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75525,7 +75525,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="1.309"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75549,7 +75549,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="0.686"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75571,7 +75571,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>
@@ -75593,7 +75593,7 @@
     </math>
     <listOfParameters>
       <parameter id="LOWER_BOUND" value="0"/>
-      <parameter id="UPPER_BOUND" value="1000"/>
+      <parameter id="UPPER_BOUND" value="23.512"/>
       <parameter id="OBJECTIVE_COEFFICIENT" value="0"/>
       <parameter id="FLUX_VALUE" value="0"/>
     </listOfParameters>

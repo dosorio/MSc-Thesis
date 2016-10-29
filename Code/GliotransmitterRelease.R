@@ -158,7 +158,7 @@ sink()
 
 # Reading Model
 matureAstrocyte_Model <- read.csv2("Results/matureAstrocyte.csv")
-Tibolone <- read.csv2("Results/TiboloneReactions.csv")
+Tibolone <- read.csv2("Results/matureTiboloneReactions.csv")
 matureAstrocyte_Model <- rbind(matureAstrocyte_Model,Tibolone)
 convert2sbml(matureAstrocyte_Model,"Results/matureAstrocyte_Tibolone.xml")
 matureAstrocyte_Model <- readSBMLmod("Results/matureAstrocyte_Tibolone.xml")

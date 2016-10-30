@@ -5,43 +5,43 @@ number of variables:                      3027
 number of constraints:                    2125
 return value of solver:                   solution process was successful
 solution status:                          solution is optimal
-value of objective function (fba):        1.908249
-value of objective function (model):      1.908249
+value of objective function (fba):        1.893377
+value of objective function (model):      1.893377
 uptake reaction rates (absolute values):
- EX_asn_L(e)           0.906574
+ EX_asn_L(e)           0.949063
  EX_asp_L(e)           1.000000
- EX_chol(e)            0.068449
- EX_cys_L(e)           0.995372
+ EX_chol(e)            0.064834
+ EX_cys_L(e)           1.000540
  EX_fe3(e)             1.000000
  EX_glc(e)             1.000000
  EX_glu_L(e)           1.000000
- EX_gly(e)             0.193077
- EX_h2o(e)             1.542786
+ EX_gly(e)             0.066882
+ EX_h2o(e)             1.765236
  EX_hdca(e)            0.208000
- EX_his_L(e)           1.121074
- EX_ile_L(e)           0.113883
- EX_inost(e)           0.009281
- EX_leu_L(e)           0.217170
- EX_lys_L(e)           0.235708
- EX_met_L(e)           0.060915
+ EX_his_L(e)           1.206722
+ EX_ile_L(e)           0.107870
+ EX_inost(e)           0.008791
+ EX_leu_L(e)           0.205703
+ EX_lys_L(e)           0.223262
+ EX_met_L(e)           0.057698
  EX_o2(e)              0.530000
- EX_phe_L(e)           0.103290
- EX_pi(e)              0.430137
- EX_Rtotal(e)          0.112535
- EX_Rtotal2(e)         0.105575
+ EX_phe_L(e)           0.097836
+ EX_pi(e)              0.407425
+ EX_Rtotal(e)          0.106593
+ EX_Rtotal2(e)         0.100000
  EX_ser_L(e)           1.000000
- EX_thr_L(e)           0.124476
- EX_thymd(e)           0.005211
- EX_trp_L(e)           0.005297
- EX_tyr_L(e)           0.063562
- EX_val_L(e)           0.140368
+ EX_thr_L(e)           0.117904
+ EX_thymd(e)           0.004936
+ EX_trp_L(e)           0.005017
+ EX_tyr_L(e)           0.060206
+ EX_val_L(e)           0.132956
 
 excretion reaction rates (absolute values):
  EX_co2(e)             0.515000
  EX_fe2(e)             1.000000
- EX_gln_L(e)           1.965452
- EX_gthrd(e)           0.976833
- EX_lac_L(e)           2.330981
+ EX_gln_L(e)           2.132771
+ EX_gthrd(e)           0.982980
+ EX_lac_L(e)           2.320527
 
 unused exchange reactions [abs(rate) < 1e-06]:
  [1] "EX_ala_L(e)"     "EX_arg_L(e)"     "EX_asn_L(e)"     "EX_asp_L(e)"     "EX_atp(e)"       "EX_ca2(e)"       "EX_chol(e)"      "EX_cl(e)"       

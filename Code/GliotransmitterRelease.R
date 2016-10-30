@@ -28,7 +28,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("glu_L[e
 model_FBA <- optimizeProb(matureAstrocyte_Model)
 model_FBA
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
-print(print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model)))))
+print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
 
 # Gly-serD

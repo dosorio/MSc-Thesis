@@ -6,7 +6,7 @@ require(exp2flux)
 require(minval)
 
 # Loading Gene Expression data
-Astrocyte_Expression <- as.matrix(read.csv(file = "~/Documents/masterThesis/Data/GSE73721/GSE73721_Human_and_mouse_table.csv.gz",
+Astrocyte_Expression <- as.matrix(read.csv(file = "Data/GSE73721/GSE73721_Human_and_mouse_table.csv.gz",
                                            header = TRUE,row.names = "Gene")[,c(9:26)])
 
 # Extraigo ID's genes en diferentes bases de datos

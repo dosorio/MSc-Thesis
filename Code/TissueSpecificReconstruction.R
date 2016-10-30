@@ -17,10 +17,10 @@ require(sybilSBML)
 library(gage)
 
 # Descarga FPKM Astrocitos de Corteza Saludables
-getGEOSuppFiles(GEO = "GSE73721",makeDirectory = TRUE,baseDir = "Data/")
+# getGEOSuppFiles(GEO = "GSE73721",makeDirectory = TRUE,baseDir = "Data/")
 
 # Removiendo otros tipos de datos
-Astrocyte_Expression <- read.csv(file = "~/Documents/masterThesis/Data/GSE73721/GSE73721_Human_and_mouse_table.csv.gz",
+Astrocyte_Expression <- read.csv(file = "Data/GSE73721/GSE73721_Human_and_mouse_table.csv.gz",
                                  header = TRUE,
                                  row.names = "Gene")[,c(9:26)]
 

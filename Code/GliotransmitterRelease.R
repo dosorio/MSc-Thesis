@@ -15,7 +15,7 @@ dir.create("Results/healthyAstrocyte")
 # BO Healthy
 sink("Results/healthyAstrocyte/BO.txt")
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -26,7 +26,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("glu_L[e
                  Scoef=c(-1,1), reversible=FALSE,
                  lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -37,7 +37,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("gly[e]"
                                   Scoef=c(-1,1), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -48,7 +48,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("glc_D[e
                                   Scoef=c(-1,2), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -60,7 +60,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("glc_D[e
                                   Scoef=c(-1,36), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -71,7 +71,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("cys_L[e
                                   Scoef=c(-1,-1,-1,1), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -96,7 +96,7 @@ dir.create("Results/inflammatedAstrocyte")
 # BO Inflammated
 sink("Results/inflammatedAstrocyte/BO.txt")
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -107,7 +107,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("glu_L[e
                                   Scoef=c(-1,1), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -118,7 +118,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("gly[e]"
                                   Scoef=c(-1,1), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -129,7 +129,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("glc_D[e
                                   Scoef=c(-1,2), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -141,7 +141,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("glc_D[e
                                   Scoef=c(-1,36), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -152,7 +152,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("cys_L[e
                                   Scoef=c(-1,-1,-1,1), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -182,7 +182,7 @@ dir.create("Results/Tibolone")
 # BO Inflammated
 sink("Results/Tibolone/BO.txt")
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -208,7 +208,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("glu_L[e
                                   Scoef=c(-1,1), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -219,7 +219,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("gly[e]"
                                   Scoef=c(-1,1), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -230,7 +230,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("glc_D[e
                                   Scoef=c(-1,2), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -242,7 +242,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("glc_D[e
                                   Scoef=c(-1,36), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()
@@ -253,7 +253,7 @@ matureAstrocyte_Model <- addReact(matureAstrocyte_Model, id="MC", met=c("cys_L[e
                                   Scoef=c(-1,-1,-1,1), reversible=FALSE,
                                   lb=0, ub=1000, obj=1)
 model_FBA <- optimizeProb(matureAstrocyte_Model)
-model_FBA
+print(model_FBA)
 model_MTF <- optimizeProb(matureAstrocyte_Model, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 print(getNetFlux(getFluxDist(model_MTF,findExchReact(matureAstrocyte_Model))))
 sink()

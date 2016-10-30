@@ -2,7 +2,7 @@
 \select@language {spanish}
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{Objectives and Methods}{3}{0}{2}
-\beamer@sectionintoc {3}{Results}{4}{0}{3}
+\beamer@sectionintoc {3}{Results}{7}{0}{3}
 \beamer@sectionintoc {4}{Conclusion}{9}{0}{4}
 \beamer@sectionintoc {5}{Events}{10}{0}{5}
 \beamer@sectionintoc {6}{Questions}{11}{0}{6}

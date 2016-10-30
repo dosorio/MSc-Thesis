@@ -8,7 +8,7 @@ library(sybilSBML)
 matureAstrocyte_Model <- readSBMLmod("Results/matureAstrocyte.xml")
 
 # Evaluate metabolic capabilities
-# system.time(healthy <- mCapabilities(matureAstrocyte_Model))
+system.time(healthy <- mCapabilities(matureAstrocyte_Model))
 
 # 
 dir.create("Results/healthyAstrocyte")
@@ -88,7 +88,7 @@ lowbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <
 uppbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.208
 
 # Evaluate metabolic capabilities
-# inflammated <- mCapabilities(matureAstrocyte_Model)
+inflammated <- mCapabilities(matureAstrocyte_Model)
 
 # Minimizing the total absolute fluxes MTF (Evaluando las múltiples posibles soluciones)
 dir.create("Results/inflammatedAstrocyte")

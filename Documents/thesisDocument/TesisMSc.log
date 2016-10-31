@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 OCT 2016 22:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 OCT 2016 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -991,10 +991,10 @@ e
 
 (./HojaTitulo/HojaTituloMSc.tex
 Package epstopdf Info: Source file: <HojaTitulo/EscudoUN.eps>
-(epstopdf)                    date: 2011-01-14 16:54:26
+(epstopdf)                    date: 2016-10-27 13:09:03
 (epstopdf)                    size: 34748 bytes
 (epstopdf)             Output file: <HojaTitulo/EscudoUN-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-05-26 08:01:30
+(epstopdf)                    date: 2016-10-27 13:09:03
 (epstopdf)                    size: 18616 bytes
 (epstopdf)             Command: <repstopdf --outfile=HojaTitulo/EscudoUN-eps-co
 nverted-to.pdf HojaTitulo/EscudoUN.eps>
@@ -1373,7 +1373,7 @@ texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on TesisMSc.pdf (22 pages, 240155 bytes).
+Output written on TesisMSc.pdf (22 pages, 240237 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream

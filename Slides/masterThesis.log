@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 OCT 2016 17:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 OCT 2016 21:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1051,33 +1051,33 @@ Overfull \vbox (5.01166pt too high) detected at line 56
 
 [4
 
- <./Figures/g2f.pdf>] <Figures/minval.pdf, id=165, 364.1906pt x 242.9065pt>
+ <./Figures/g2f.pdf>] <Figures/minval.pdf, id=165, 364.1906pt x 241.82045pt>
 File: Figures/minval.pdf Graphic file (type pdf)
 
 <use Figures/minval.pdf>
 Package pdftex.def Info: Figures/minval.pdf used on input line 61.
-(pdftex.def)             Requested size: 307.28987pt x 204.95554pt.
+(pdftex.def)             Requested size: 307.28987pt x 204.03917pt.
 
-Overfull \vbox (10.37437pt too high) detected at line 61
+Overfull \vbox (9.45801pt too high) detected at line 61
  []
 
 [5
 
  <./Figures/minval.pdf>]
-<Figures/exp2flux.pdf, id=252, 364.1906pt x 273.1505pt>
+<Figures/exp2flux.pdf, id=253, 364.1906pt x 241.90375pt>
 File: Figures/exp2flux.pdf Graphic file (type pdf)
 
 <use Figures/exp2flux.pdf>
 Package pdftex.def Info: Figures/exp2flux.pdf used on input line 66.
-(pdftex.def)             Requested size: 307.28987pt x 230.47432pt.
+(pdftex.def)             Requested size: 307.28987pt x 204.10947pt.
 
-Overfull \vbox (35.89316pt too high) detected at line 66
+Overfull \vbox (9.5283pt too high) detected at line 66
  []
 
 [6
 
  <./Figures/exp2flux.pdf>]
-<Figures/Astrocyte_MetabolicChanges.pdf, id=303, 722.7pt x 469.755pt>
+<Figures/Astrocyte_MetabolicChanges.pdf, id=344, 722.7pt x 469.755pt>
 File: Figures/Astrocyte_MetabolicChanges.pdf Graphic file (type pdf)
 
 <use Figures/Astrocyte_MetabolicChanges.pdf>
@@ -1091,7 +1091,7 @@ Overfull \vbox (5.15884pt too high) detected at line 72
 [7
 
  <./Figures/Astrocyte_MetabolicChanges.pdf>]
-<Figures/IC50.pdf, id=323, 939.51pt x 610.28pt>
+<Figures/IC50.pdf, id=365, 939.51pt x 610.28pt>
 File: Figures/IC50.pdf Graphic file (type pdf)
  <use Figures/IC50.pdf>
 Package pdftex.def Info: Figures/IC50.pdf used on input line 77.
@@ -1103,7 +1103,7 @@ Overfull \vbox (5.02393pt too high) detected at line 77
 [8
 
  <./Figures/IC50.pdf>]
-<Figures/Healthy2Inflammated.pdf, id=345, 722.7pt x 469.755pt>
+<Figures/Healthy2Inflammated.pdf, id=386, 722.7pt x 469.755pt>
 File: Figures/Healthy2Inflammated.pdf Graphic file (type pdf)
 
 <use Figures/Healthy2Inflammated.pdf>
@@ -1117,7 +1117,7 @@ Overfull \vbox (5.15884pt too high) detected at line 82
 [9
 
  <./Figures/Healthy2Inflammated.pdf>]
-<Figures/Effects.pdf, id=364, 722.7pt x 469.755pt>
+<Figures/Effects.pdf, id=405, 722.7pt x 469.755pt>
 File: Figures/Effects.pdf Graphic file (type pdf)
  <use Figures/Effects.pdf>
 Package pdftex.def Info: Figures/Effects.pdf used on input line 87.
@@ -1129,7 +1129,7 @@ Overfull \vbox (5.15884pt too high) detected at line 87
 [10
 
  <./Figures/Effects.pdf>]
-<Figures/Inflammated2Tibolone.pdf, id=383, 722.7pt x 469.755pt>
+<Figures/Inflammated2Tibolone.pdf, id=424, 722.7pt x 469.755pt>
 File: Figures/Inflammated2Tibolone.pdf Graphic file (type pdf)
 
 <use Figures/Inflammated2Tibolone.pdf>
@@ -1145,25 +1145,25 @@ Overfull \vbox (5.15884pt too high) detected at line 92
  <./Figures/Inflammated2Tibolone.pdf>] [12
 
 ]
-<Figures/Events.pdf, id=413, 771.13884pt x 123.72011pt>
+<Figures/Events.pdf, id=454, 771.13884pt x 123.72011pt>
 File: Figures/Events.pdf Graphic file (type pdf)
 
 <use Figures/Events.pdf>
 Package pdftex.def Info: Figures/Events.pdf used on input line 120.
 (pdftex.def)             Requested size: 307.28987pt x 49.30026pt.
- <Figures/IS3B.png, id=414, 151.2852pt x 96.36pt>
+ <Figures/IS3B.png, id=455, 151.2852pt x 96.36pt>
 File: Figures/IS3B.png Graphic file (type png)
 
 <use Figures/IS3B.png>
 Package pdftex.def Info: Figures/IS3B.png used on input line 120.
 (pdftex.def)             Requested size: 92.1879pt x 58.71921pt.
- <Figures/ICSB.png, id=416, 315.1775pt x 200.75pt>
+ <Figures/ICSB.png, id=457, 315.1775pt x 200.75pt>
 File: Figures/ICSB.png Graphic file (type png)
 
 <use Figures/ICSB.png>
 Package pdftex.def Info: Figures/ICSB.png used on input line 120.
 (pdftex.def)             Requested size: 92.1879pt x 58.71837pt.
- <Figures/ICGEB.pdf, id=417, 315.1775pt x 200.75pt>
+ <Figures/ICGEB.pdf, id=458, 315.1775pt x 200.75pt>
 File: Figures/ICGEB.pdf Graphic file (type pdf)
 
 <use Figures/ICGEB.pdf>
@@ -1173,20 +1173,20 @@ Package pdftex.def Info: Figures/ICGEB.pdf used on input line 120.
 
  <./Figures/Events.pdf, page is rotated 270 degrees> <./Figures/IS3B.png> <./Fi
 gures/ICSB.png> <./Figures/ICGEB.pdf>]
-<Figures/logoIG.png, id=600, 401.5pt x 102.3825pt>
+<Figures/logoIG.png, id=642, 401.5pt x 102.3825pt>
 File: Figures/logoIG.png Graphic file (type png)
  <use Figures/logoIG.png>
 Package pdftex.def Info: Figures/logoIG.png used on input line 145.
 (pdftex.def)             Requested size: 78.10532pt x 19.91684pt.
 
-<Figures/logoGIBBS.png, id=601, 307.1475pt x 112.42pt>
+<Figures/logoGIBBS.png, id=643, 307.1475pt x 112.42pt>
 File: Figures/logoGIBBS.png Graphic file (type png)
 
 <use Figures/logoGIBBS.png>
 Package pdftex.def Info: Figures/logoGIBBS.png used on input line 145.
 (pdftex.def)             Requested size: 54.41243pt x 19.91684pt.
 
-<Figures/GIBBS.jpg, id=602, 2689.04625pt x 718.685pt>
+<Figures/GIBBS.jpg, id=644, 2689.04625pt x 718.685pt>
 File: Figures/GIBBS.jpg Graphic file (type jpg)
  <use Figures/GIBBS.jpg>
 Package pdftex.def Info: Figures/GIBBS.jpg used on input line 145.
@@ -1242,10 +1242,10 @@ fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
 .pfb>
-Output written on masterThesis.pdf (14 pages, 4732181 bytes).
+Output written on masterThesis.pdf (14 pages, 5794221 bytes).
 PDF statistics:
- 651 PDF objects out of 1000 (max. 8388607)
- 449 compressed objects within 5 object streams
+ 692 PDF objects out of 1000 (max. 8388607)
+ 463 compressed objects within 5 object streams
  35 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

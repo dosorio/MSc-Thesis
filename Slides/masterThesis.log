@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  1 NOV 2016 08:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  1 NOV 2016 08:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,7 +1069,7 @@ Overfull \vbox (5.15884pt too high) detected at line 64
 
 [5
 
- <./Figures/TSR.pdf>] <Figures/g2f.pdf, id=502, 364.1906pt x 236.55077pt>
+ <./Figures/TSR.pdf>] <Figures/g2f.pdf, id=518, 364.1906pt x 236.55077pt>
 File: Figures/g2f.pdf Graphic file (type pdf)
 
 <use Figures/g2f.pdf>
@@ -1081,7 +1081,7 @@ Overfull \vbox (5.01166pt too high) detected at line 69
 
 [6
 
- <./Figures/g2f.pdf>] <Figures/minval.pdf, id=576, 364.1906pt x 241.82045pt>
+ <./Figures/g2f.pdf>] <Figures/minval.pdf, id=590, 364.1906pt x 241.82045pt>
 File: Figures/minval.pdf Graphic file (type pdf)
 
 <use Figures/minval.pdf>
@@ -1094,7 +1094,7 @@ Overfull \vbox (9.45801pt too high) detected at line 74
 [7
 
  <./Figures/minval.pdf>]
-<Figures/exp2flux.pdf, id=665, 364.1906pt x 241.90375pt>
+<Figures/exp2flux.pdf, id=679, 364.1906pt x 241.90375pt>
 File: Figures/exp2flux.pdf Graphic file (type pdf)
 
 <use Figures/exp2flux.pdf>
@@ -1107,7 +1107,7 @@ Overfull \vbox (9.5283pt too high) detected at line 79
 [8
 
  <./Figures/exp2flux.pdf>]
-<Figures/Astrocyte_MetabolicChanges.pdf, id=756, 722.7pt x 469.755pt>
+<Figures/Astrocyte_MetabolicChanges.pdf, id=770, 722.7pt x 469.755pt>
 File: Figures/Astrocyte_MetabolicChanges.pdf Graphic file (type pdf)
 
 <use Figures/Astrocyte_MetabolicChanges.pdf>
@@ -1121,7 +1121,7 @@ Overfull \vbox (5.15884pt too high) detected at line 85
 [9
 
  <./Figures/Astrocyte_MetabolicChanges.pdf>]
-<Figures/IC50.pdf, id=775, 939.51pt x 610.28pt>
+<Figures/IC50.pdf, id=789, 939.51pt x 610.28pt>
 File: Figures/IC50.pdf Graphic file (type pdf)
  <use Figures/IC50.pdf>
 Package pdftex.def Info: Figures/IC50.pdf used on input line 90.
@@ -1133,7 +1133,7 @@ Overfull \vbox (5.02393pt too high) detected at line 90
 [10
 
  <./Figures/IC50.pdf>]
-<Figures/Healthy2Inflammated.pdf, id=796, 722.7pt x 469.755pt>
+<Figures/Healthy2Inflammated.pdf, id=810, 722.7pt x 469.755pt>
 File: Figures/Healthy2Inflammated.pdf Graphic file (type pdf)
 
 <use Figures/Healthy2Inflammated.pdf>
@@ -1147,7 +1147,7 @@ Overfull \vbox (5.15884pt too high) detected at line 95
 [11
 
  <./Figures/Healthy2Inflammated.pdf>]
-<Figures/Effects.pdf, id=816, 722.7pt x 469.755pt>
+<Figures/Effects.pdf, id=830, 722.7pt x 469.755pt>
 File: Figures/Effects.pdf Graphic file (type pdf)
  <use Figures/Effects.pdf>
 Package pdftex.def Info: Figures/Effects.pdf used on input line 100.
@@ -1159,7 +1159,7 @@ Overfull \vbox (5.15884pt too high) detected at line 100
 [12
 
  <./Figures/Effects.pdf>]
-<Figures/Inflammated2Tibolone.pdf, id=835, 722.7pt x 469.755pt>
+<Figures/Inflammated2Tibolone.pdf, id=849, 722.7pt x 469.755pt>
 File: Figures/Inflammated2Tibolone.pdf Graphic file (type pdf)
 
 <use Figures/Inflammated2Tibolone.pdf>
@@ -1175,25 +1175,25 @@ Overfull \vbox (5.15884pt too high) detected at line 105
  <./Figures/Inflammated2Tibolone.pdf>] [14
 
 ]
-<Figures/Events.pdf, id=866, 771.13884pt x 123.72011pt>
+<Figures/Events.pdf, id=880, 771.13884pt x 123.72011pt>
 File: Figures/Events.pdf Graphic file (type pdf)
 
 <use Figures/Events.pdf>
 Package pdftex.def Info: Figures/Events.pdf used on input line 133.
 (pdftex.def)             Requested size: 307.28987pt x 49.30026pt.
- <Figures/IS3B.png, id=867, 151.2852pt x 96.36pt>
+ <Figures/IS3B.png, id=881, 151.2852pt x 96.36pt>
 File: Figures/IS3B.png Graphic file (type png)
 
 <use Figures/IS3B.png>
 Package pdftex.def Info: Figures/IS3B.png used on input line 133.
 (pdftex.def)             Requested size: 92.1879pt x 58.71921pt.
- <Figures/ICSB.png, id=869, 315.1775pt x 200.75pt>
+ <Figures/ICSB.png, id=883, 315.1775pt x 200.75pt>
 File: Figures/ICSB.png Graphic file (type png)
 
 <use Figures/ICSB.png>
 Package pdftex.def Info: Figures/ICSB.png used on input line 133.
 (pdftex.def)             Requested size: 92.1879pt x 58.71837pt.
- <Figures/ICGEB.pdf, id=870, 315.1775pt x 200.75pt>
+ <Figures/ICGEB.pdf, id=884, 315.1775pt x 200.75pt>
 File: Figures/ICGEB.pdf Graphic file (type pdf)
 
 <use Figures/ICGEB.pdf>
@@ -1203,20 +1203,20 @@ Package pdftex.def Info: Figures/ICGEB.pdf used on input line 133.
 
  <./Figures/Events.pdf, page is rotated 270 degrees> <./Figures/IS3B.png> <./Fi
 gures/ICSB.png> <./Figures/ICGEB.pdf>]
-<Figures/logoIG.png, id=1052, 401.5pt x 102.3825pt>
+<Figures/logoIG.png, id=1066, 401.5pt x 102.3825pt>
 File: Figures/logoIG.png Graphic file (type png)
  <use Figures/logoIG.png>
 Package pdftex.def Info: Figures/logoIG.png used on input line 158.
 (pdftex.def)             Requested size: 78.10532pt x 19.91684pt.
 
-<Figures/logoGIBBS.png, id=1053, 307.1475pt x 112.42pt>
+<Figures/logoGIBBS.png, id=1067, 307.1475pt x 112.42pt>
 File: Figures/logoGIBBS.png Graphic file (type png)
 
 <use Figures/logoGIBBS.png>
 Package pdftex.def Info: Figures/logoGIBBS.png used on input line 158.
 (pdftex.def)             Requested size: 54.41243pt x 19.91684pt.
 
-<Figures/GIBBS.jpg, id=1054, 2689.04625pt x 718.685pt>
+<Figures/GIBBS.jpg, id=1068, 2689.04625pt x 718.685pt>
 File: Figures/GIBBS.jpg Graphic file (type jpg)
  <use Figures/GIBBS.jpg>
 Package pdftex.def Info: Figures/GIBBS.jpg used on input line 158.
@@ -1258,7 +1258,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
 Here is how much of TeX's memory you used:
  18489 strings out of 493014
  348135 string characters out of 6133351
- 439609 words of memory out of 5000000
+ 439610 words of memory out of 5000000
  21535 multiletter control sequences out of 15000+600000
  16710 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1272,10 +1272,10 @@ fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
 .pfb>
-Output written on masterThesis.pdf (16 pages, 9827049 bytes).
+Output written on masterThesis.pdf (16 pages, 9841906 bytes).
 PDF statistics:
- 1106 PDF objects out of 1200 (max. 8388607)
- 530 compressed objects within 6 object streams
+ 1120 PDF objects out of 1200 (max. 8388607)
+ 540 compressed objects within 6 object streams
  39 named destinations out of 1000 (max. 500000)
  181 words of extra memory for PDF output out of 10000 (max. 10000000)
 

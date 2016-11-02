@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  1 NOV 2016 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  2 NOV 2016 08:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1153,7 +1153,7 @@ Overfull \vbox (5.15884pt too high) detected at line 96
 ] [14
 
 ]
-<Figures/Astrocyte_MetabolicChanges.pdf, id=1261, 722.7pt x 469.755pt>
+<Figures/Astrocyte_MetabolicChanges.pdf, id=1434, 722.7pt x 469.755pt>
 File: Figures/Astrocyte_MetabolicChanges.pdf Graphic file (type pdf)
 
 <use Figures/Astrocyte_MetabolicChanges.pdf>
@@ -1167,7 +1167,7 @@ Overfull \vbox (5.15884pt too high) detected at line 117
 [15
 
  <./Figures/Astrocyte_MetabolicChanges.pdf>]
-<Figures/IC50.pdf, id=1280, 939.51pt x 610.28pt>
+<Figures/IC50.pdf, id=1454, 939.51pt x 610.28pt>
 File: Figures/IC50.pdf Graphic file (type pdf)
  <use Figures/IC50.pdf>
 Package pdftex.def Info: Figures/IC50.pdf used on input line 122.
@@ -1179,7 +1179,7 @@ Overfull \vbox (5.02393pt too high) detected at line 122
 [16
 
  <./Figures/IC50.pdf>]
-<Figures/Healthy2Inflammated.pdf, id=1302, 722.7pt x 469.755pt>
+<Figures/Healthy2Inflammated.pdf, id=1475, 722.7pt x 469.755pt>
 File: Figures/Healthy2Inflammated.pdf Graphic file (type pdf)
 
 <use Figures/Healthy2Inflammated.pdf>
@@ -1193,7 +1193,7 @@ Overfull \vbox (5.15884pt too high) detected at line 127
 [17
 
  <./Figures/Healthy2Inflammated.pdf>]
-<Figures/Effects.pdf, id=1321, 722.7pt x 469.755pt>
+<Figures/Effects.pdf, id=1494, 722.7pt x 469.755pt>
 File: Figures/Effects.pdf Graphic file (type pdf)
  <use Figures/Effects.pdf>
 Package pdftex.def Info: Figures/Effects.pdf used on input line 132.
@@ -1205,7 +1205,7 @@ Overfull \vbox (5.15884pt too high) detected at line 132
 [18
 
  <./Figures/Effects.pdf>]
-<Figures/Inflammated2Tibolone.pdf, id=1340, 722.7pt x 469.755pt>
+<Figures/Inflammated2Tibolone.pdf, id=1513, 722.7pt x 469.755pt>
 File: Figures/Inflammated2Tibolone.pdf Graphic file (type pdf)
 
 <use Figures/Inflammated2Tibolone.pdf>
@@ -1221,25 +1221,25 @@ Overfull \vbox (5.15884pt too high) detected at line 137
  <./Figures/Inflammated2Tibolone.pdf>] [20
 
 ]
-<Figures/Events.pdf, id=1371, 771.13884pt x 123.72011pt>
+<Figures/Events.pdf, id=1544, 771.13884pt x 123.72011pt>
 File: Figures/Events.pdf Graphic file (type pdf)
 
 <use Figures/Events.pdf>
 Package pdftex.def Info: Figures/Events.pdf used on input line 165.
 (pdftex.def)             Requested size: 307.28987pt x 49.30026pt.
- <Figures/IS3B.png, id=1372, 151.2852pt x 96.36pt>
+ <Figures/IS3B.png, id=1545, 151.2852pt x 96.36pt>
 File: Figures/IS3B.png Graphic file (type png)
 
 <use Figures/IS3B.png>
 Package pdftex.def Info: Figures/IS3B.png used on input line 165.
 (pdftex.def)             Requested size: 92.1879pt x 58.71921pt.
- <Figures/ICSB.png, id=1374, 315.1775pt x 200.75pt>
+ <Figures/ICSB.png, id=1547, 315.1775pt x 200.75pt>
 File: Figures/ICSB.png Graphic file (type png)
 
 <use Figures/ICSB.png>
 Package pdftex.def Info: Figures/ICSB.png used on input line 165.
 (pdftex.def)             Requested size: 92.1879pt x 58.71837pt.
- <Figures/ICGEB.pdf, id=1375, 315.1775pt x 200.75pt>
+ <Figures/ICGEB.pdf, id=1548, 315.1775pt x 200.75pt>
 File: Figures/ICGEB.pdf Graphic file (type pdf)
 
 <use Figures/ICGEB.pdf>
@@ -1249,20 +1249,20 @@ Package pdftex.def Info: Figures/ICGEB.pdf used on input line 165.
 
  <./Figures/Events.pdf, page is rotated 270 degrees> <./Figures/IS3B.png> <./Fi
 gures/ICSB.png> <./Figures/ICGEB.pdf>]
-<Figures/logoIG.png, id=1557, 401.5pt x 102.3825pt>
+<Figures/logoIG.png, id=1731, 401.5pt x 102.3825pt>
 File: Figures/logoIG.png Graphic file (type png)
  <use Figures/logoIG.png>
 Package pdftex.def Info: Figures/logoIG.png used on input line 190.
 (pdftex.def)             Requested size: 78.10532pt x 19.91684pt.
 
-<Figures/logoGIBBS.png, id=1558, 307.1475pt x 112.42pt>
+<Figures/logoGIBBS.png, id=1732, 307.1475pt x 112.42pt>
 File: Figures/logoGIBBS.png Graphic file (type png)
 
 <use Figures/logoGIBBS.png>
 Package pdftex.def Info: Figures/logoGIBBS.png used on input line 190.
 (pdftex.def)             Requested size: 54.41243pt x 19.91684pt.
 
-<Figures/GIBBS.jpg, id=1559, 2689.04625pt x 718.685pt>
+<Figures/GIBBS.jpg, id=1733, 2689.04625pt x 718.685pt>
 File: Figures/GIBBS.jpg Graphic file (type jpg)
  <use Figures/GIBBS.jpg>
 Package pdftex.def Info: Figures/GIBBS.jpg used on input line 190.
@@ -1318,10 +1318,10 @@ fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
 .pfb>
-Output written on masterThesis.pdf (22 pages, 14532800 bytes).
+Output written on masterThesis.pdf (22 pages, 15799174 bytes).
 PDF statistics:
- 1613 PDF objects out of 1728 (max. 8388607)
- 660 compressed objects within 7 object streams
+ 1786 PDF objects out of 2073 (max. 8388607)
+ 673 compressed objects within 7 object streams
  51 named destinations out of 1000 (max. 500000)
  191 words of extra memory for PDF output out of 10000 (max. 10000000)
 

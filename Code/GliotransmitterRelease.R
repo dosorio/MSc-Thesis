@@ -87,6 +87,28 @@ matureAstrocyte_Model <- readSBMLmod("Results/matureAstrocyte.xml")
 lowbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.208
 uppbnd(matureAstrocyte_Model)[react_id(matureAstrocyte_Model) == 'EX_hdca(e)'] <- -0.208
 
+# ProInflamatoryReactions
+healthy <- readSBMLmod("Results/matureAstrocyte.xml")
+inflammated <- matureAstrocyte_Model
+fD <- fluxDifferences(healthy,inflammated,0)
+fD <- fD[fD[,3]!=0,]
+GPR <- NULL
+for (i in rownames(fD)){
+  GPR <- c(GPR,healthy@gpr[healthy@react_id%in%i])
+}
+fD <- fD[nchar(GPR)>0,]
+OF <- NULL
+for(reaction in rownames(fD)){
+  lb <- lowbnd(inflammated)[react_id(inflammated) == reaction]
+  ub <- uppbnd(inflammated)[react_id(inflammated) == reaction]
+  lowbnd(inflammated)[react_id(inflammated) == reaction] <- 0
+  uppbnd(inflammated)[react_id(inflammated) == reaction] <- 0
+  OF <- c(OF,optimizeProb(inflammated)@lp_obj)
+  lowbnd(inflammated)[react_id(inflammated) == reaction] <- lb
+  uppbnd(inflammated)[react_id(inflammated) == reaction] <- ub
+}
+fD[OF>round(optimizeProb(inflammated)@lp_obj,2),]
+
 # Evaluate metabolic capabilities
 # inflammated <- mCapabilities(matureAstrocyte_Model)
 

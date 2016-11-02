@@ -11,7 +11,7 @@ Astrocyte_Expression <- as.matrix(read.csv(file = "Data/GSE73721/GSE73721_Human_
 
 # Extraigo ID's genes en diferentes bases de datos
 Human <- (UniProt.ws(taxId=9606))
-Astrocyte_Genes <- select(Human,keys=rownames(Astrocyte_Expression),columns = c("ENTREZ_GENE"),keytype ="GENECARDS")
+Astrocyte_Genes <- select(Human,keys=rownames(Astrocyte_Expression),columns = c("ENTREZ_GENE","EC"),keytype ="GENECARDS")
 
 # Data Summary
 for(ID in unique(Astrocyte_Genes$ENTREZ_GENE)){
@@ -89,3 +89,8 @@ Tibolone$LOWER.BOUND <- Tibolone_Model@lowbnd
 Tibolone$UPPER.BOUND <- Tibolone_Model@uppbnd
 write.csv2(Tibolone,file = "Results/matureTiboloneReactions.csv",row.names = FALSE)
 dev.off()
+
+
+pie(c(127,200,92,32,21,23),labels = c("25.7%\nOxidoreductases","40.4%\nTransferases","18.6%\nHydrolases","6.5%\nLyases","4.2%\nIsomerases","4.6%\nLigases"),main="Enzyme Number E.C.")
+pie(c(1731,152,542,702,114,184,217,220),labels = c("44.8% Cytosol","3.9% Lysosome","14.0% Mitochondrion","18.2% Extracelullar","3.0% Nucleus","4.8% Golgi","5.6%","5.7%"),main = "Reactions by Compartment")
+

@@ -1,5 +1,6 @@
 library(sybilSBML)
 library(minval)
+library(exp2flux)
 ###########################################################################################
 # HEALTHY
 ###########################################################################################
@@ -108,7 +109,7 @@ for(reaction in rownames(fD)){
   uppbnd(inflammated)[react_id(inflammated) == reaction] <- ub
 }
 fD[OF>round(optimizeProb(inflammated)@lp_obj,2),]
-
+((OF[OF>round(optimizeProb(inflammated)@lp_obj,2)]/optimizeProb(inflammated)@lp_obj)-1)*100
 # Evaluate metabolic capabilities
 # inflammated <- mCapabilities(matureAstrocyte_Model)
 
@@ -217,11 +218,9 @@ for(reactionID in Tibolone$ID){
   ub <- uppbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID]
   lowbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID] <- 0
   uppbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID] <- 0
-  if(optimizeProb(matureAstrocyte_Model)@lp_obj < (oV - (oV*0.1))){
-    E <- c(E,reactionID)
-  }
-  lowbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID] <- 0
-  uppbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID] <- 0
+  E <- c(E,optimizeProb(matureAstrocyte_Model)@lp_obj)
+  lowbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID] <- lb
+  uppbnd(matureAstrocyte_Model)[matureAstrocyte_Model@react_id==reactionID] <- ub
 }
 
 # Glu-Gln

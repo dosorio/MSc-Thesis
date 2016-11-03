@@ -31,14 +31,55 @@
 \vskip0pt%
 }
 \author[Daniel Osorio]{\textbf{Daniel Osorio}\inst{1,2,3} \and \textbf{Janneth Gonzalez}\inst{2} \and \textbf{Andrés Pinzon}\inst{3}}
-\title[Bioinformatics Master Thesis]{Identifying proteins and metabolic pathways associated with the neuroprotective response mediated by tibolone in astrocytes under an induced inflammatory model}
+\title[Bioinformatics Master Thesis]{Identifying proteins and metabolic pathways associated to the neuroprotective response mediated by tibolone in astrocytes under an induced inflammatory model}
 \institute[]{\inst{1} Departamento de Ingeniería de Sistemas e Industrial\\Facultad de Ingeniería, Universidad Nacional de Colombia \and \inst{2} Grupo de Investigación en Bioquímica Experimental y Computacional\\Facultad de Ciencias, Pontificia Universidad Javeriana - Bogotá \and \inst{3} Grupo de Investigación en Bioinformática y Biología de Sistemas\\ Instituto de Genética, Universidad Nacional de Colombia} 
 \date[]{\scriptsize{\textbf{Universidad Nacional de Colombia, November 2016}}}
 \begin{document}
 \maketitle
 \section{Introduction}
-\begin{frame}
-
+\begin{frame}{Neuroinflammation}
+\begin{center}
+\includegraphics[width=9.5cm]{BInflam}
+\end{center}
+\begin{center}
+\fcolorbox{cyan}{cyan}{{Neurodegenerative diseases}}
+\fcolorbox{cyan}{cyan}{{Cardiovascular events}}
+\fcolorbox{cyan}{cyan}{{Stress}}
+\fcolorbox{cyan}{cyan}{{Smoke}}
+\fcolorbox{red}{red}{{Obesity (Over Nutrition or Caloric Excess)}}
+\end{center}
+\end{frame}
+\begin{frame}{Metabolic Inflammation or Metainflammation}
+\begin{center}
+\fcolorbox{black}{black}{\textcolor{white}{$\blacktriangledown$ Leptine}} + 
+\fcolorbox{black}{black}{\textcolor{white}{$\blacktriangledown$ Insuline}} $\rightarrow$ \fcolorbox{red}{red}{\textcolor{white}{$\blacktriangle$ IKK$\beta$}} + \fcolorbox{red}{red}{\textcolor{white}{$\blacktriangle$ NF$\kappa\beta$}} 
+\end{center}
+\pause
+\begin{center}
+\fcolorbox{blue}{blue}{\textcolor{white}{$\blacktriangle$ Endoplasmic reticulum stress}} $\rightarrow$ \fcolorbox{blue}{blue}{\textcolor{white}{$\blacktriangle$ UPR}}
+\end{center}
+\begin{center}
+\fcolorbox{green}{green}{{$\blacktriangle$ Reactive C Protein Ligands}}  + \fcolorbox{green}{green}{{$\blacktriangle$ TNF$\alpha$}} + \fcolorbox{green}{green}{{$\blacktriangle$ IL6}} + \fcolorbox{green}{green}{{$\blacktriangle$ ROS}} 
+\end{center}
+\end{frame}
+\begin{frame}{Astrocytes Metabolic Functions}
+\begin{center}
+\includegraphics[width=6cm]{GFAP} \pause
+\end{center}
+\begin{center}
+\fcolorbox{yellow}{yellow}{{K$^{+}$ Membrane Potential}} \pause
+\fcolorbox{yellow}{yellow}{{Ca$^{+2}$ signaling}} \pause
+\fcolorbox{yellow}{yellow}{{Lactate release}} \pause
+\fcolorbox{yellow}{yellow}{{[Dopa], [Glu], [GABA], [Gly] and [Cys] regulator}} \pause
+\fcolorbox{yellow}{yellow}{{pH maintenance}} \pause
+\fcolorbox{yellow}{yellow}{{ROS detox}} \pause
+\fcolorbox{yellow}{yellow}{{Gln, ATP and D-serine release}}
+\end{center}
+\end{frame}
+\begin{frame}{What effects does tibolone have on Astrocytic inflammatory scenarios?}
+\begin{center}
+\includegraphics[width=\textwidth]{Tibolone}
+\end{center}
 \end{frame}
 \section{Objectives and Methods}
 \begin{frame}{Objectives:}
@@ -79,11 +120,6 @@ Build a tissue specific computational model of \\astrocytes metabolism using gen
 \includegraphics[width=\textwidth]{minval}
 \end{center}
 \end{frame}
-\begin{frame}{Astrocyte Model}
-\begin{center}
-\includegraphics[width=\textwidth]{Astrocyte}
-\end{center}
-\end{frame}
 \begin{frame}{Software Development}
 \begin{center}
 \includegraphics[width=\textwidth]{exp2flux}
@@ -99,17 +135,45 @@ Build a tissue specific computational model of \\astrocytes metabolism using gen
 \begin{center}
 Evaluate the effects caused by the increase of free fatty acids and tibolone presence in astrocytes metabolism.\end{center}\end{block}
 \end{frame}
+\begin{frame}{Metabolic Scenarios}
+\includegraphics[width=\textwidth]{Scenarios}
+\end{frame}
 \begin{frame}
 \begin{block}{\textbf{OBJECTIVE 3:}}
 \begin{center}
 Determine metabolic pathways and relevant functional products in response to steroid tibolone through systems biology approximations.\end{center}\end{block}
+\end{frame}
+\begin{frame}{Metabolic Pathways Activation Pattern Changes}
+\begin{center}
+\includegraphics[width=\textwidth]{FluxDifferenes}
+\end{center}
+\end{frame}
+\begin{frame}{Changes in Metabolites Production}
+\begin{center}
+\includegraphics[width=\textwidth]{MetChanges}
+\end{center}
 \end{frame}
 \begin{frame}
 \begin{block}{\textbf{OBJECTIVE 4:}}
 \begin{center}
 Evaluate the importance of proteins and metabolic pathways previously identified on the dynamics of the metabolic model.\end{center}\end{block}
 \end{frame}
+\begin{frame}
+\begin{center}
+\includegraphics[width=\textwidth]{Networks}
+\end{center}
+\end{frame}
 \section{Results}
+\begin{frame}{Software Packages}
+\begin{center}
+\includegraphics[width=\textwidth]{SPackages}
+\end{center}
+\end{frame}
+\begin{frame}{Astrocyte Model}
+\begin{center}
+\includegraphics[width=\textwidth]{Astrocyte}
+\end{center}
+\end{frame}
 \begin{frame}{Age Related Metabolic Changes in Astrocytes}
 \begin{center}
 \includegraphics[width=\textwidth]{Astrocyte_MetabolicChanges}
@@ -125,6 +189,11 @@ Evaluate the importance of proteins and metabolic pathways previously identified
 \includegraphics[width=\textwidth]{Healthy2Inflammated}
 \end{center}
 \end{frame}
+\begin{frame}{Gliotransmitters Release Rate}
+\begin{center}
+\includegraphics[width=\textwidth]{GTi}
+\end{center}
+\end{frame}
 \begin{frame}{Tibolone Effects in Inflammated Astrocytes}
 \begin{center}
 \includegraphics[width=\textwidth]{Effects}
@@ -135,10 +204,21 @@ Evaluate the importance of proteins and metabolic pathways previously identified
 \includegraphics[width=\textwidth]{Inflammated2Tibolone}
 \end{center}
 \end{frame}
-\section{Conclusion}
-\begin{frame}
-
+\begin{frame}{Gliotransmitters Release Rate}
+\begin{center}
+\includegraphics[width=\textwidth]{GTt}
+\end{center}
 \end{frame}
+\begin{frame}{ProInflammatory Enzymes}
+\begin{center}
+\includegraphics[width=\textwidth]{ProInflammatory}
+\end{center}
+\end{frame}
+%\begin{frame}{Tibolone Related Enzymes}
+%\begin{center}
+%\includegraphics[width=\textwidth]{TiboloneEnzymes}
+%\end{center}
+%\end{frame}
 \section{Events}
 \begin{frame}{Advances of this work were presented as:}
 \begin{center}

@@ -3,5 +3,5 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{Objectives and Methods}{14}{0}{2}
 \beamer@sectionintoc {3}{Results}{29}{0}{3}
-\beamer@sectionintoc {4}{Events}{40}{0}{4}
-\beamer@sectionintoc {5}{Questions}{41}{0}{5}
+\beamer@sectionintoc {4}{Events}{41}{0}{4}
+\beamer@sectionintoc {5}{Questions}{42}{0}{5}

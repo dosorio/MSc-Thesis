@@ -109,6 +109,10 @@ for(reaction in rownames(fD)){
   uppbnd(inflammated)[react_id(inflammated) == reaction] <- ub
 }
 fD[OF>round(optimizeProb(inflammated)@lp_obj,2),]
+Ai <- fD[OF<optimizeProb(inflammated)@lp_obj & OF>0,]
+Change <- round((OF[OF<optimizeProb(inflammated)@lp_obj & OF>0]/(optimizeProb(inflammated)@lp_obj)-1),3)*100
+Ai <- cbind(Ai,Change)
+Ai <- Ai[Change!=0 & Change!=-100,]
 ((OF[OF>round(optimizeProb(inflammated)@lp_obj,2)]/optimizeProb(inflammated)@lp_obj)-1)*100
 # Evaluate metabolic capabilities
 # inflammated <- mCapabilities(matureAstrocyte_Model)

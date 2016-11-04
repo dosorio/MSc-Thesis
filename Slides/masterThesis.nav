@@ -70,18 +70,20 @@
 \headcommand {\beamer@framepages {38}{38}}
 \headcommand {\slideentry {3}{0}{11}{39/39}{}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\sectionentry {4}{Events}{40}{Events}{0}}
-\headcommand {\beamer@sectionpages {29}{39}}
-\headcommand {\beamer@subsectionpages {29}{39}}
-\headcommand {\slideentry {4}{0}{1}{40/40}{}{0}}
+\headcommand {\slideentry {3}{0}{12}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\sectionentry {5}{Questions}{41}{Questions}{0}}
-\headcommand {\beamer@sectionpages {40}{40}}
-\headcommand {\beamer@subsectionpages {40}{40}}
-\headcommand {\slideentry {5}{0}{1}{41/41}{}{0}}
+\headcommand {\sectionentry {4}{Events}{41}{Events}{0}}
+\headcommand {\beamer@sectionpages {29}{40}}
+\headcommand {\beamer@subsectionpages {29}{40}}
+\headcommand {\slideentry {4}{0}{1}{41/41}{}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\beamer@partpages {1}{41}}
-\headcommand {\beamer@subsectionpages {41}{41}}
+\headcommand {\sectionentry {5}{Questions}{42}{Questions}{0}}
 \headcommand {\beamer@sectionpages {41}{41}}
-\headcommand {\beamer@documentpages {41}}
-\headcommand {\def \inserttotalframenumber {33}}
+\headcommand {\beamer@subsectionpages {41}{41}}
+\headcommand {\slideentry {5}{0}{1}{42/42}{}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\beamer@partpages {1}{42}}
+\headcommand {\beamer@subsectionpages {42}{42}}
+\headcommand {\beamer@sectionpages {42}{42}}
+\headcommand {\beamer@documentpages {42}}
+\headcommand {\def \inserttotalframenumber {34}}

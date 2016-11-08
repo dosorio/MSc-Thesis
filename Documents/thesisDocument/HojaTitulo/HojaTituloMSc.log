@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 OCT 2016 08:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 NOV 2016 09:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -176,8 +176,8 @@ Overfull \hbox (21.72209pt too wide) in paragraph at lines 6--9
  []
 
 
-Overfull \hbox (22.361pt too wide) in paragraph at lines 6--9
- \OT1/cmr/bx/n/10 with 
+Overfull \hbox (10.22217pt too wide) in paragraph at lines 6--9
+ \OT1/cmr/bx/n/10 to 
  []
 
 
@@ -576,8 +576,8 @@ Overfull \hbox (21.72209pt too wide) in paragraph at lines 22--22
  []
 
 
-Overfull \hbox (22.361pt too wide) in paragraph at lines 22--22
- \OT1/cmr/bx/n/10 with 
+Overfull \hbox (10.22217pt too wide) in paragraph at lines 22--22
+ \OT1/cmr/bx/n/10 to 
  []
 
 
@@ -949,6 +949,13 @@ Missing character: There is no z in font nullfont!
 Missing character: There is no Ã in font nullfont!
 Missing character: There is no ³ in font nullfont!
 Missing character: There is no n in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no L in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!

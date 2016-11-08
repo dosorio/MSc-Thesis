@@ -3,7 +3,7 @@
 
 \begin{document}
 \pagenumbering{roman}
-\include{HojaTitulo/HojaTituloMSc}
+%\include{HojaTitulo/HojaTituloMSc}
 
 \renewcommand{\tablename}{\textbf{Table}}
 \renewcommand{\figurename}{\textbf{Figure}}
@@ -11,31 +11,33 @@
 \renewcommand{\listfigurename}{Figures}
 \renewcommand{\contentsname}{Content}
 
-\tableofcontents
+%\tableofcontents
 %%%%%%%%%%% SIMBOLOS:
 %\include{symbols/symbols}
 
 %%%%%%%%%%% RESUMEN:
-\include{Resumen}\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+%\include{Resumen}\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
 \pagenumbering{arabic}
 
 %%%%%%%%%%% INTRODUCCIÓN
-\include{intro/introduction}
+%\include{intro/introduction}
 
 %%%%%%%%%%%  BIOLÓGICO
 \include{neuroprotective/tibolonePaper}
 
 %%%%%%%%%%%  MINVAL
-\include{minval/minvalPaper}
+%\include{minval/minvalPaper}
 
 %%%%%%%%%%%  G2F
-\include{g2f/g2fPaper}
+%\include{g2f/g2fPaper}
 
 %%%%%%%%%%%  EXP2FLUX
-\include{exp2flux/exp2fluxPaper}
+%\include{exp2flux/exp2fluxPaper}
 
 %%%%%%%%%%%  EXP2FLUX
-\include{conclusion/conclusion}
+%\include{conclusion/conclusion}
 
 %\include{Anexos/Anexos}
+\bibliographystyle{plain}
+\bibliography{BibliMSc}
 \end{document}

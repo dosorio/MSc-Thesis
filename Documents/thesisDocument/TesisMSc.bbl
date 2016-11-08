@@ -1,3 +1,80 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{G2F}
+Kelly Botero, Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
+\newblock {\em {g2f: Find and Fill Gaps in Metabolic Networks}}, 2016.
+
+\bibitem{Carlson2016}
+Marc Carlson.
+\newblock {\em {UniProt.ws: R Interface to UniProt Web Services}}, 2016.
+
+\bibitem{Edgar2002}
+Ron Edgar, Michael Domrachev, and Alex~E Lash.
+\newblock {Gene Expression Omnibus: NCBI gene expression and hybridization
+  array data repository}.
+\newblock {\em Nucleic Acids Res}, 30(1):207--210, 2002.
+
+\bibitem{Gelius-Dietrich2013}
+Gabriel Gelius-Dietrich, Abdelmoneim Desouki, Claus Fritzemeier, and Martin~J
+  Lercher.
+\newblock {sybil – Efficient constraint-based modelling in R}.
+\newblock {\em BMC Systems Biology}, 7(1):125, 2013.
+
+\bibitem{maglott2005entrez}
+Donna Maglott, Jim Ostell, Kim~D Pruitt, and Tatiana Tatusova.
+\newblock {Entrez Gene: gene-centered information at NCBI}.
+\newblock {\em Nucleic acids research}, 33(suppl 1):D54----D58, 2005.
+
+\bibitem{Orth2010}
+Jeffrey~D Orth, Ines Thiele, and B~O Palsson.
+\newblock {What is flux balance analysis?}
+\newblock {\em Nature Biotechnology}, 28(3):245--248, 2010.
+
+\bibitem{EXP2FLUX}
+Daniel Osorio, Kelly Botero, Janneth Gonzalez, and Andres Pinzon.
+\newblock {\em {exp2flux: Convert Gene EXPression Data to FBA FLUXes}}, 2016.
+
+\bibitem{MINVAL}
+Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
+\newblock {minval: MINimal VALidation for Stoichiometric Reactions}, 2016.
+
+\bibitem{RCoreTeam2016}
+{R Core Team}.
+\newblock {\em {R: A Language and Environment for Statistical Computing}}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2016.
+
+\bibitem{Raman2009}
+Karthik Raman and Nagasuma Chandra.
+\newblock {Flux balance analysis of biological systems: Applications and
+  challenges}.
+\newblock {\em Briefings in Bioinformatics}, 10(4):435--449, 2009.
+
+\bibitem{rebhan1997genecards}
+Michael Rebhan, Vered Chalifa-Caspi, Jaime Prilusky, and Doron Lancet.
+\newblock {GeneCards: integrating information about genes, proteins and
+  diseases}.
+\newblock {\em Trends in Genetics}, 13(4):163, 1997.
+
+\bibitem{Thiele2010}
+Ines Thiele and Bernhard~{\O} Palsson.
+\newblock {A protocol for generating a high-quality genome-scale metabolic
+  reconstruction}.
+\newblock {\em Nature Protocols}, 5(1):93--121, jan 2010.
+
+\bibitem{thiele2013community}
+Ines Thiele, Neil Swainston, Ronan M~T Fleming, Andreas Hoppe, Swagatika Sahoo,
+  Maike~K Aurich, Hulda Haraldsdottir, Monica~L Mo, Ottar Rolfsson, Miranda~D
+  Stobbe, and Others.
+\newblock {A community-driven global reconstruction of human metabolism}.
+\newblock {\em Nature biotechnology}, 31(5):419--425, 2013.
+
+\bibitem{Zhang2016}
+Ye~Zhang, Steven~A. Sloan, Laura~E. Clarke, Christine Caneda, Colton~A. Plaza,
+  Paul~D. Blumenthal, Hannes Vogel, Gary~K. Steinberg, Michael S~B Edwards,
+  Gordon Li, John~A. Duncan, Samuel~H. Cheshier, Lawrence~M. Shuer, Edward~F.
+  Chang, Gerald~A. Grant, Melanie G~Hayden Gephart, and Ben~A. Barres.
+\newblock {Purification and Characterization of Progenitor and Mature Human
+  Astrocytes Reveals Transcriptional and Functional Differences with Mouse}.
+\newblock {\em Neuron}, 89(1):37--53, 2016.
 
 \end{thebibliography}

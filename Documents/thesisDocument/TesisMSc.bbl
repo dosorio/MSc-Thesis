@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{Allaman2011}
+Igor Allaman, Mireille B{\'{e}}langer, and Pierre~J. Magistretti.
+\newblock {Astrocyte–neuron metabolic relationships: for better and for
+  worse}.
+\newblock {\em Trends in Neurosciences}, 34(2):76--87, feb 2011.
+
 \bibitem{G2F}
 Kelly Botero, Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
 \newblock {\em {g2f: Find and Fill Gaps in Metabolic Networks}}, 2016.
@@ -19,6 +25,11 @@ Gabriel Gelius-Dietrich, Abdelmoneim Desouki, Claus Fritzemeier, and Martin~J
   Lercher.
 \newblock {sybil – Efficient constraint-based modelling in R}.
 \newblock {\em BMC Systems Biology}, 7(1):125, 2013.
+
+\bibitem{Kloosterboer2004}
+Helenius~J. Kloosterboer.
+\newblock {Tissue-selectivity: the mechanism of action of tibolone}.
+\newblock {\em Maturitas}, 48(SUPPL. 1):30--40, aug 2004.
 
 \bibitem{maglott2005entrez}
 Donna Maglott, Jim Ostell, Kim~D Pruitt, and Tatiana Tatusova.

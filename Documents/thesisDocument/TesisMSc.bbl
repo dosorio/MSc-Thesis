@@ -1,83 +1,90 @@
 \begin{thebibliography}{10}
 
+\bibitem{Takuma2004}
+Kazuhiro Takuma, Akemichi Baba, and Toshio Matsuda.
+\newblock {Astrocyte apoptosis: Implications for neuroprotection}.
+\newblock {\em Progress in Neurobiology}, 72:111--127, 2004.
+
+\bibitem{Lange2012}
+Sofie~C. Lange, Lasse~K. Bak, Helle~S. Waagepetersen, Arne Schousboe, and
+  Michael~D. Norenberg.
+\newblock {Primary cultures of astrocytes: Their value in understanding
+  astrocytes in health and disease}.
+\newblock {\em Neurochemical Research}, 37:2569--2588, 2012.
+
+\bibitem{Kimelberg2010}
+Harold~K Kimelberg.
+\newblock {Functions of Mature Mammalian Astrocytes: A Current View}.
+\newblock {\em The Neuroscientist}, 16(1):79--106, feb 2010.
+
+\bibitem{Allen2009}
+Nicola~J Allen and Ben Barres.
+\newblock {Neuroscience: Glia - more than just brain glue.}
+\newblock {\em Nature}, 457(7230):675--677, 2009.
+
+\bibitem{Halassa2010}
+Michael~M Halassa and Philip~G Haydon.
+\newblock {Integrated brain circuits: astrocytic networks modulate neuronal
+  activity and behavior.}
+\newblock {\em Annual review of physiology}, 72(2):335--355, 2010.
+
+\bibitem{Giaume2010}
+Christian Giaume, Annette Koulakoff, Lisa Roux, David Holcman, and Nathalie
+  Rouach.
+\newblock {Astroglial networks: a step further in neuroglial and gliovascular
+  interactions.}
+\newblock {\em Nature reviews. Neuroscience}, 11(fEbRuARy):87--99, 2010.
+
+\bibitem{Nijboer2013}
+Cora~H. Nijboer, Cobi~J. Heijnen, Vincent Degos, Hanneke L~M Willemen, Pierre
+  Gressens, and Annemieke Kavelaars.
+\newblock {Astrocyte GRK2 as a novel regulator of glutamate transport and brain
+  damage}.
+\newblock {\em Neurobiology of Disease}, 54:206--215, 2013.
+
+\bibitem{Barres2008}
+Ben Barres.
+\newblock {The mystery and magic of glia: a perspective on their roles in
+  health and disease.}
+\newblock {\em Neuron}, 60(3):430--40, nov 2008.
+
+\bibitem{Shen2013}
+Jun Shen.
+\newblock {Modeling the glutamate-glutamine neurotransmitter cycle}.
+\newblock {\em Frontiers in Neuroenergetics}, 5(JAN):1--13, 2013.
+
+\bibitem{Petrelli2016}
+Francesco Petrelli and Paola Bezzi.
+\newblock {Novel insights into gliotransmitters}.
+\newblock {\em Current Opinion in Pharmacology}, 26(Table 1):138--145, 2016.
+
+\bibitem{Durrant2014}
+Andrea~R Durrant and Uriel Heresco-levy.
+\newblock {D-Serine in Neuropsychiatric Disorders : New Advances}.
+\newblock 2014, 2014.
+
+\bibitem{Raps1989}
+Stephen~P. Raps, James C~K Lai, Leif Hertz, and Arthur J~L Cooper.
+\newblock {Glutathione is present in high concentrations in cultured astrocytes
+  but not in cultured neurons}.
+\newblock {\em Brain Research}, 493(2):398--401, 1989.
+
+\bibitem{Wang2000}
+Xue~Feng Wang and Max~S. Cynader.
+\newblock {Astrocytes provide cysteine to neurons by releasing glutathione}.
+\newblock {\em Journal of Neurochemistry}, 74(4):1434--1442, 2000.
+
 \bibitem{Allaman2011}
 Igor Allaman, Mireille B{\'{e}}langer, and Pierre~J. Magistretti.
 \newblock {Astrocyte–neuron metabolic relationships: for better and for
   worse}.
 \newblock {\em Trends in Neurosciences}, 34(2):76--87, feb 2011.
 
-\bibitem{G2F}
-Kelly Botero, Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
-\newblock {\em {g2f: Find and Fill Gaps in Metabolic Networks}}, 2016.
-
-\bibitem{Carlson2016}
-Marc Carlson.
-\newblock {\em {UniProt.ws: R Interface to UniProt Web Services}}, 2016.
-
 \bibitem{Edgar2002}
 Ron Edgar, Michael Domrachev, and Alex~E Lash.
 \newblock {Gene Expression Omnibus: NCBI gene expression and hybridization
   array data repository}.
 \newblock {\em Nucleic Acids Res}, 30(1):207--210, 2002.
-
-\bibitem{Gelius-Dietrich2013}
-Gabriel Gelius-Dietrich, Abdelmoneim Desouki, Claus Fritzemeier, and Martin~J
-  Lercher.
-\newblock {sybil – Efficient constraint-based modelling in R}.
-\newblock {\em BMC Systems Biology}, 7(1):125, 2013.
-
-\bibitem{Kloosterboer2004}
-Helenius~J. Kloosterboer.
-\newblock {Tissue-selectivity: the mechanism of action of tibolone}.
-\newblock {\em Maturitas}, 48(SUPPL. 1):30--40, aug 2004.
-
-\bibitem{maglott2005entrez}
-Donna Maglott, Jim Ostell, Kim~D Pruitt, and Tatiana Tatusova.
-\newblock {Entrez Gene: gene-centered information at NCBI}.
-\newblock {\em Nucleic acids research}, 33(suppl 1):D54----D58, 2005.
-
-\bibitem{Orth2010}
-Jeffrey~D Orth, Ines Thiele, and B~O Palsson.
-\newblock {What is flux balance analysis?}
-\newblock {\em Nature Biotechnology}, 28(3):245--248, 2010.
-
-\bibitem{EXP2FLUX}
-Daniel Osorio, Kelly Botero, Janneth Gonzalez, and Andres Pinzon.
-\newblock {\em {exp2flux: Convert Gene EXPression Data to FBA FLUXes}}, 2016.
-
-\bibitem{MINVAL}
-Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
-\newblock {minval: MINimal VALidation for Stoichiometric Reactions}, 2016.
-
-\bibitem{RCoreTeam2016}
-{R Core Team}.
-\newblock {\em {R: A Language and Environment for Statistical Computing}}.
-\newblock R Foundation for Statistical Computing, Vienna, Austria, 2016.
-
-\bibitem{Raman2009}
-Karthik Raman and Nagasuma Chandra.
-\newblock {Flux balance analysis of biological systems: Applications and
-  challenges}.
-\newblock {\em Briefings in Bioinformatics}, 10(4):435--449, 2009.
-
-\bibitem{rebhan1997genecards}
-Michael Rebhan, Vered Chalifa-Caspi, Jaime Prilusky, and Doron Lancet.
-\newblock {GeneCards: integrating information about genes, proteins and
-  diseases}.
-\newblock {\em Trends in Genetics}, 13(4):163, 1997.
-
-\bibitem{Thiele2010}
-Ines Thiele and Bernhard~{\O} Palsson.
-\newblock {A protocol for generating a high-quality genome-scale metabolic
-  reconstruction}.
-\newblock {\em Nature Protocols}, 5(1):93--121, jan 2010.
-
-\bibitem{thiele2013community}
-Ines Thiele, Neil Swainston, Ronan M~T Fleming, Andreas Hoppe, Swagatika Sahoo,
-  Maike~K Aurich, Hulda Haraldsdottir, Monica~L Mo, Ottar Rolfsson, Miranda~D
-  Stobbe, and Others.
-\newblock {A community-driven global reconstruction of human metabolism}.
-\newblock {\em Nature biotechnology}, 31(5):419--425, 2013.
 
 \bibitem{Zhang2016}
 Ye~Zhang, Steven~A. Sloan, Laura~E. Clarke, Christine Caneda, Colton~A. Plaza,
@@ -87,5 +94,67 @@ Ye~Zhang, Steven~A. Sloan, Laura~E. Clarke, Christine Caneda, Colton~A. Plaza,
 \newblock {Purification and Characterization of Progenitor and Mature Human
   Astrocytes Reveals Transcriptional and Functional Differences with Mouse}.
 \newblock {\em Neuron}, 89(1):37--53, 2016.
+
+\bibitem{rebhan1997genecards}
+Michael Rebhan, Vered Chalifa-Caspi, Jaime Prilusky, and Doron Lancet.
+\newblock {GeneCards: integrating information about genes, proteins and
+  diseases}.
+\newblock {\em Trends in Genetics}, 13(4):163, 1997.
+
+\bibitem{maglott2005entrez}
+Donna Maglott, Jim Ostell, Kim~D Pruitt, and Tatiana Tatusova.
+\newblock {Entrez Gene: gene-centered information at NCBI}.
+\newblock {\em Nucleic acids research}, 33(suppl 1):D54----D58, 2005.
+
+\bibitem{Carlson2016}
+Marc Carlson.
+\newblock {\em {UniProt.ws: R Interface to UniProt Web Services}}, 2016.
+
+\bibitem{thiele2013community}
+Ines Thiele, Neil Swainston, Ronan M~T Fleming, Andreas Hoppe, Swagatika Sahoo,
+  Maike~K Aurich, Hulda Haraldsdottir, Monica~L Mo, Ottar Rolfsson, Miranda~D
+  Stobbe, and Others.
+\newblock {A community-driven global reconstruction of human metabolism}.
+\newblock {\em Nature biotechnology}, 31(5):419--425, 2013.
+
+\bibitem{G2F}
+Kelly Botero, Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
+\newblock {\em {g2f: Find and Fill Gaps in Metabolic Networks}}, 2016.
+
+\bibitem{MINVAL}
+Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
+\newblock {minval: MINimal VALidation for Stoichiometric Reactions}, 2016.
+
+\bibitem{Thiele2010}
+Ines Thiele and Bernhard~{\O} Palsson.
+\newblock {A protocol for generating a high-quality genome-scale metabolic
+  reconstruction}.
+\newblock {\em Nature Protocols}, 5(1):93--121, jan 2010.
+
+\bibitem{EXP2FLUX}
+Daniel Osorio, Kelly Botero, Janneth Gonzalez, and Andres Pinzon.
+\newblock {\em {exp2flux: Convert Gene EXPression Data to FBA FLUXes}}, 2016.
+
+\bibitem{Gelius-Dietrich2013}
+Gabriel Gelius-dietrich, Abdelmoneim~Amer Desouki, Claus~Jonathan Fritzemeier,
+  and Martin~J Lercher.
+\newblock {sybil – Efficient constraint-based modelling in R}.
+\newblock 2013.
+
+\bibitem{RCoreTeam2016}
+{R Core Team}.
+\newblock {\em {R: A Language and Environment for Statistical Computing}}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2016.
+
+\bibitem{Orth2010}
+Jeffrey~D Orth, Ines Thiele, and B~O Palsson.
+\newblock {What is flux balance analysis?}
+\newblock {\em Nature Biotechnology}, 28(3):245--248, 2010.
+
+\bibitem{Raman2009}
+Karthik Raman and Nagasuma Chandra.
+\newblock {Flux balance analysis of biological systems: Applications and
+  challenges}.
+\newblock {\em Briefings in Bioinformatics}, 10(4):435--449, 2009.
 
 \end{thebibliography}

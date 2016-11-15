@@ -9,14 +9,19 @@
 \renewcommand{\listtablename}{Tables}
 \renewcommand{\listfigurename}{Figures}
 \renewcommand{\contentsname}{Content}
+\renewcommand{\bibname}{Bibliography}
+%%%%%%%%%%% RESUMEN:
+%\include{Resumen}
+\pagenumbering{arabic}
 
 %\tableofcontents
+%\listoffigures
+%\listoftables
 %%%%%%%%%%% SIMBOLOS:
 %\include{symbols/symbols}
 
-%%%%%%%%%%% RESUMEN:
-%\include{Resumen}\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
-\pagenumbering{arabic}
+%%%%%%%%%%% OBJETIVOS:
+%\include{objectives}
 
 %%%%%%%%%%% INTRODUCCIÓN
 %\include{intro/introduction}
@@ -37,6 +42,6 @@
 %\include{conclusion/conclusion}
 
 %\include{Anexos/Anexos}
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{BibliMSc}
 \end{document}

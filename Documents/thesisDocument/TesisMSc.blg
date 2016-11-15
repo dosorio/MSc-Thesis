@@ -14,45 +14,45 @@ Repeated entry---line 7733 of file BibliMSc.bib
 I'm skipping whatever remains of this entry
 Warning--empty journal in Durrant2014
 Warning--empty journal in Gelius-Dietrich2013
-You've used 28 entries,
+You've used 29 entries,
             1791 wiz_defined-function locations,
-            642 strings with 8794 characters,
-and the built_in function-call counts, 6488 in all, are:
-= -- 557
-> -- 357
+            648 strings with 9000 characters,
+and the built_in function-call counts, 6780 in all, are:
+= -- 581
+> -- 377
 < -- 0
-+ -- 130
-- -- 102
-* -- 532
-:= -- 1076
-add.period$ -- 80
-call.type$ -- 28
-change.case$ -- 24
++ -- 137
+- -- 108
+* -- 560
+:= -- 1125
+add.period$ -- 83
+call.type$ -- 29
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 238
-empty$ -- 596
-format.name$ -- 102
-if$ -- 1361
+cite$ -- 31
+duplicate$ -- 247
+empty$ -- 620
+format.name$ -- 108
+if$ -- 1421
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 23
-newline$ -- 139
-num.names$ -- 28
-pop$ -- 51
+int.to.str$ -- 29
+missing$ -- 24
+newline$ -- 144
+num.names$ -- 29
+pop$ -- 52
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 90
+skip$ -- 93
 stack$ -- 0
-substring$ -- 489
-swap$ -- 30
+substring$ -- 514
+swap$ -- 31
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 69
-width$ -- 30
-write$ -- 295
+while$ -- 72
+width$ -- 31
+write$ -- 306
 (There were 2 error messages)

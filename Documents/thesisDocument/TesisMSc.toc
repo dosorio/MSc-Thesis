@@ -1,6 +1,20 @@
 \select@language {spanish}
-\contentsline {chapter}{\numberline {1}Neuroprotective effects of tibolone during astrocytic metabolic inflammation: a network based approach}{2}
-\contentsline {section}{\numberline {1.1}Introduction}{2}
-\contentsline {section}{\numberline {1.2}Material and Methods}{4}
-\contentsline {section}{\numberline {1.3}Results}{7}
-\contentsline {section}{\numberline {1.4}Conclusion}{7}
+\contentsline {chapter}{\numberline {1}Neuroprotective effects of tibolone during astrocytic metabolic inflammation: a network based approach}{3}
+\contentsline {section}{\numberline {1.1}Introduction}{3}
+\contentsline {section}{\numberline {1.2}Material and Methods}{5}
+\contentsline {section}{\numberline {1.3}Results}{8}
+\contentsline {section}{\numberline {1.4}Conclusion}{8}
+\contentsline {chapter}{\numberline {2}minval: An R package for MINimal VALidation of stoichiometric reactions}{9}
+\contentsline {section}{\numberline {2.1}Abstract}{9}
+\contentsline {section}{\numberline {2.2}Introduction}{9}
+\contentsline {section}{\numberline {2.3}Installation and functions}{11}
+\contentsline {subsection}{\numberline {2.3.1}Inputs and syntaxis}{11}
+\contentsline {subsection}{\numberline {2.3.2}Syntax Validation}{11}
+\contentsline {subsection}{\numberline {2.3.3}Reactants and Products}{12}
+\contentsline {subsection}{\numberline {2.3.4}Metabolites}{12}
+\contentsline {subsection}{\numberline {2.3.5}Orphan Metabolites}{12}
+\contentsline {subsection}{\numberline {2.3.6}Compartments}{14}
+\contentsline {subsection}{\numberline {2.3.7}Association with ChEBI}{14}
+\contentsline {subsection}{\numberline {2.3.8}Mass Balance Validation}{15}
+\contentsline {section}{\numberline {2.4}Summary}{16}
+\contentsline {section}{\numberline {2.5}Bibliography}{16}

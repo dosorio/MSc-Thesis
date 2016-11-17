@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  15 NOV 2016 21:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 NOV 2016 08:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1073,10 +1073,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 10.
-LaTeX Info: Redefining \% on input line 10.
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
 
 
 Package Fancyhdr Warning: \headheight is too small (18.125pt): 
@@ -1085,38 +1083,37 @@ Package Fancyhdr Warning: \headheight is too small (18.125pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-LaTeX Info: Redefining \. on input line 22.
-LaTeX Info: Redefining \% on input line 22.
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
  [3]
-LaTeX Info: Redefining \. on input line 57.
-LaTeX Info: Redefining \% on input line 57.
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
  [4]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 1874) in paragraph at lines 94--95
+Underfull \hbox (badness 1874) in paragraph at lines 91--92
 []|$\OT1/cmr/m/n/12 ^^A$\T1/aer/m/n/12 -4Tibolone iso-mer for-ma-tion from
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 98--99
+Underfull \hbox (badness 1902) in paragraph at lines 95--96
 []|\T1/aer/m/n/12 3$\OML/cmm/m/it/12 $\T1/aer/m/n/12 hidroxytibolone in-ter-co
 n-ver-tion to
  []
 
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
-[5]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 115.
-LaTeX Info: Redefining \% on input line 115.
-[6])
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+ [6])
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
- [7] (./TesisMSc.bbl [8
+
+[7] (./TesisMSc.bbl [8
 
 
 ]
@@ -1134,10 +1131,10 @@ LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 8754 strings out of 493014
- 129715 string characters out of 6133351
- 305272 words of memory out of 5000000
- 12066 multiletter control sequences out of 15000+600000
+ 8747 strings out of 493014
+ 129622 string characters out of 6133351
+ 301272 words of memory out of 5000000
+ 12059 multiletter control sequences out of 15000+600000
  36056 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,13n,66p,8514b,674s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1151,7 +1148,7 @@ cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/l
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on TesisMSc.pdf (11 pages, 147974 bytes).
+Output written on TesisMSc.pdf (11 pages, 145295 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream

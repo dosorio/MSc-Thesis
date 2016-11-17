@@ -59,9 +59,9 @@ Francesco Petrelli and Paola Bezzi.
 \newblock {\em Current Opinion in Pharmacology}, 26(Table 1):138--145, 2016.
 
 \bibitem{Durrant2014}
-Andrea~R Durrant and Uriel Heresco-levy.
-\newblock {D-Serine in Neuropsychiatric Disorders : New Advances}.
-\newblock 2014, 2014.
+Andrea~R Durrant and Uriel Heresco-Levy.
+\newblock {D-Serine in Neuropsychiatric Disorders: New Advances}.
+\newblock {\em Advances in Psychiatry}, 2014:1--16, 2014.
 
 \bibitem{Raps1989}
 Stephen~P. Raps, James C~K Lai, Leif Hertz, and Arthur J~L Cooper.
@@ -86,6 +86,24 @@ Xue~Feng Wang and Max~S. Cynader.
 \newblock {Astrocytes provide cysteine to neurons by releasing glutathione}.
 \newblock {\em Journal of Neurochemistry}, 74(4):1434--1442, 2000.
 
+\bibitem{Maragakis2006}
+Nicholas~J Maragakis and Jeffrey~D Rothstein.
+\newblock {Mechanisms of Disease: astrocytes in neurodegenerative disease.}
+\newblock {\em Nature clinical practice. Neurology}, 2(12):679--689, 2006.
+
+\bibitem{Avila-Rodriguez2014}
+Marco Avila-Rodriguez, Luis~Miguel Garcia-Segura, Ricardo Cabezas, Daniel
+  Torrente, Francisco Capani, Janneth Gonzalez, and George~E. Barreto.
+\newblock {Tibolone protects T98G cells from glucose deprivation}.
+\newblock {\em The Journal of Steroid Biochemistry and Molecular Biology},
+  144(8):294--303, 2014.
+
+\bibitem{Hussain2013}
+Ghulam Hussain, Florent Schmitt, Jean-Philippe Loeffler, and Jose-Luis~Gonzalez
+  de~Aguilar.
+\newblock {Fatting the brain: a brief of recent research.}
+\newblock {\em Frontiers in cellular neuroscience}, 7(September):144, 2013.
+
 \bibitem{Masel2010}
 Brent~E Masel and Douglas~S DeWitt.
 \newblock {Traumatic brain injury: a disease process, not an event.}
@@ -93,8 +111,9 @@ Brent~E Masel and Douglas~S DeWitt.
 
 \bibitem{Yan2013}
 Qing Yan.
-\newblock {\em {Systems biology in drug discovery and development.}}
-\newblock 2013.
+\newblock {\em {Systems Biology in Drug Discovery and Development}}, volume 662
+  of {\em Methods in Molecular Biology}.
+\newblock Humana Press, Totowa, NJ, 2010.
 
 \bibitem{Fitch2008}
 Michael~T. Fitch and Jerry Silver.
@@ -132,10 +151,77 @@ Sudarshana Purkayastha and Dongsheng Cai.
 \newblock {\em Molecular Metabolism}, 2(4):356--363, 2015.
 
 \bibitem{K.2006}
-Suk K.
+Kyoungho Suk.
 \newblock {Proteomics-based discovery of biomarkers and therapeutic targets in
-  neurodegenerative diseases: Perspective of microglia and neuroinflammation}.
-\newblock {\em Expert Opinion on Therapeutic Patents}, 16(3):237--247, 2006.
+  neurodegenerative diseases: perspective of microglia and neuroinflammation}.
+\newblock {\em Expert Opinion on Therapeutic Patents}, 16(3):237--247, mar
+  2006.
+
+\bibitem{Vodovotz2010}
+Yoram Vodovotz.
+\newblock {Translational systems biology of inflammation and healing}.
+\newblock {\em Wound Repair and Regeneration}, 18(1):3--7, 2010.
+
+\bibitem{Vodovotz2008}
+Yoram Vodovotz, Yoram Vodovotz, Marie Csete, Marie Csete, John Bartels, John
+  Bartels, Steven Chang, Steven Chang, Gary An, and Gary An.
+\newblock {Translational Systems Biology of Inflammation}.
+\newblock {\em PLoS Comput Biol}, 4(4), 2008.
+
+\bibitem{An2011}
+Gary An, John Bartels, and Yoram Vodovotz.
+\newblock {In silico augmentation of the drug development pipeline: Examples
+  from the study of acute inflammation}.
+\newblock {\em Drug Development Research}, 72(2):187--200, 2011.
+
+\bibitem{Mi2010}
+Qi~Mi, Nicole Yee-Key Li, Cordelia Ziraldo, Ali Ghuma, Maxim Mikheev, Robert
+  Squires, David~O Okonkwo, Katherine Verdolini-Abbott, Gregory Constantine,
+  Gary An, and Yoram Vodovotz.
+\newblock {Translational systems biology of inflammation: potential
+  applications to personalized medicine}.
+\newblock {\em Personalized Medicine}, 7(5):549--559, 2010.
+
+\bibitem{Laveti2013}
+Durgaprasad Laveti, Manoj Kumar, R~Hemalatha, Ramakrishna Sistla, V~G~M Naidu,
+  Venu Talla, Vinod Verma, Navrinder Kaur, and Ravinder Nagpal.
+\newblock {Anti-inflammatory treatments for chronic diseases: a review.}
+\newblock {\em Inflammation {\&} allergy drug targets}, 12(5):349--61, 2013.
+
+\bibitem{Albertazzi1998}
+Paola Albertazzi, Raffaele {Di Micco}, and Ettore Zanardi.
+\newblock {Tibolone: A review}, 1998.
+
+\bibitem{Wojtal2006}
+Katarzyna Wojtal, Micha{\l}~K. Trojnar, and Stanis{\l}aw~J. Czuczwar.
+\newblock {Endogenous neuroprotective factors: Neurosteroids}, 2006.
+
+\bibitem{Kloosterboer2001}
+H.~J. Kloosterboer.
+\newblock {Tibolone: A steroid with a tissue-specific mode of action}.
+\newblock In {\em Journal of Steroid Biochemistry and Molecular Biology},
+  volume~76, pages 231--238, 2001.
+
+\bibitem{Sharma2006}
+Sudhaa Sharma, Annil Mahajan, Sudesh Kumar, and Vishal~R. Tandon.
+\newblock {Tibolone: A selective tissue estrogenic activity regulator}, 2006.
+
+\bibitem{Timmer2002}
+Cees~J. Timmer, H.~A~M Verheul, and D.~P. Doorstam.
+\newblock {Pharmacokinetics of tibolone in early and late postmenopausal
+  women}.
+\newblock {\em British Journal of Clinical Pharmacology}, 54(2):101--106, 2002.
+
+\bibitem{Altinoz2009}
+M~A Altinoz, S~B Albayrak, A~Karasu, P~A Sabanci, M~Imer, and A~Bilir.
+\newblock {The effects of tibolone on the human primary glioblastoma multiforme
+  cell culture and the rat C6 glioma model}.
+\newblock {\em Neurol Res}, 31(9):923--927, 2009.
+
+\bibitem{Kloosterboer2004}
+Helenius~J. Kloosterboer.
+\newblock {Tissue-selectivity: the mechanism of action of tibolone}.
+\newblock {\em Maturitas}, 48(SUPPL. 1):30--40, aug 2004.
 
 \bibitem{Edgar2002}
 Ron Edgar, Michael Domrachev, and Alex~E Lash.

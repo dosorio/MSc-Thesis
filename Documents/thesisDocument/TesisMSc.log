@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 NOV 2016 08:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 NOV 2016 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1083,32 +1083,24 @@ Package Fancyhdr Warning: \headheight is too small (18.125pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
  [3]
-LaTeX Info: Redefining \. on input line 56.
-LaTeX Info: Redefining \% on input line 56.
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
  [4]
-Underfull \hbox (badness 1874) in paragraph at lines 91--92
-[]|$\OT1/cmr/m/n/12 ^^A$\T1/aer/m/n/12 -4Tibolone iso-mer for-ma-tion from
- []
-
-
-Underfull \hbox (badness 1902) in paragraph at lines 95--96
+Underfull \hbox (badness 1902) in paragraph at lines 61--62
 []|\T1/aer/m/n/12 3$\OML/cmm/m/it/12 $\T1/aer/m/n/12 hidroxytibolone in-ter-co
 n-ver-tion to
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-LaTeX Info: Redefining \. on input line 110.
-LaTeX Info: Redefining \% on input line 110.
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
 [5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2753) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
  [6])
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
@@ -1117,27 +1109,30 @@ LaTeX Info: Redefining \% on input line 30.
 
 
 ]
-LaTeX Info: Redefining \. on input line 145.
-LaTeX Info: Redefining \% on input line 145.
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
  [9]
-LaTeX Info: Redefining \. on input line 216.
-LaTeX Info: Redefining \% on input line 216.
- [10])
+LaTeX Info: Redefining \. on input line 214.
+LaTeX Info: Redefining \% on input line 214.
+ [10]
+LaTeX Info: Redefining \. on input line 280.
+LaTeX Info: Redefining \% on input line 280.
+ [11])
 LaTeX Info: Redefining \. on input line 47.
 LaTeX Info: Redefining \% on input line 47.
- [11] (./TesisMSc.aux
+ [12] (./TesisMSc.aux
 (./neuroprotective/tibolonePaper.aux)
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 8747 strings out of 493014
- 129622 string characters out of 6133351
- 301272 words of memory out of 5000000
- 12059 multiletter control sequences out of 15000+600000
+ 8794 strings out of 493014
+ 130540 string characters out of 6133351
+ 302512 words of memory out of 5000000
+ 12106 multiletter control sequences out of 15000+600000
  36056 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,13n,66p,8514b,674s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,13n,66p,8514b,710s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
@@ -1148,10 +1143,10 @@ cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/l
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on TesisMSc.pdf (11 pages, 145295 bytes).
+Output written on TesisMSc.pdf (12 pages, 150849 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

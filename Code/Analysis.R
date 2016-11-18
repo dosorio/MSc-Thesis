@@ -2,7 +2,12 @@ library(exp2flux)
 library(gage)
 library(gridExtra)
 library(minval)
+library(sybilSBML)
 
+Astrocyte <- read.csv2("Results/Astrocyte.csv")
+length(grep("EX_",Astrocyte$ID))
+table(Astrocyte$GPR[lengths(sapply(Astrocyte$REACTION[!grepl("EX_",Astrocyte$ID)], compartments))>1]!="")
+RXN <- AGenes[AGenes$ENTREZ_GENE%in%unique(unlist(strsplit(gsub("\\(|or|and|\\)","",Astrocyte$GPR[lengths(sapply(Astrocyte$REACTION[!grepl("EX_",Astrocyte$ID)], compartments))==1]),"[[:blank:]]+"))),]
 
 metabolicChanges <- function(model1,model2,main){
   differences <- fluxDifferences(model1,model2)

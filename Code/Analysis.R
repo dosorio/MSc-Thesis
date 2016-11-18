@@ -1,6 +1,8 @@
 library(exp2flux)
 library(gage)
 library(gridExtra)
+library(minval)
+
 
 metabolicChanges <- function(model1,model2,main){
   differences <- fluxDifferences(model1,model2)

@@ -9,6 +9,46 @@ length(grep("EX_",Astrocyte$ID))
 table(Astrocyte$GPR[lengths(sapply(Astrocyte$REACTION[!grepl("EX_",Astrocyte$ID)], compartments))>1]!="")
 RXN <- AGenes[AGenes$ENTREZ_GENE%in%unique(unlist(strsplit(gsub("\\(|or|and|\\)","",Astrocyte$GPR[lengths(sapply(Astrocyte$REACTION[!grepl("EX_",Astrocyte$ID)], compartments))==1]),"[[:blank:]]+"))),]
 
+layout(matrix(c(1,2,3,1,4,5), 2, 3, byrow = TRUE))
+par(las=2,mar=c(5,30,2,3),cex=0.5)
+#data <- try(kegg.gsets(species = "hsa", id.type = "entrez")) 
+#data <- matrix(gsub("[[:digit:]]+$","",names(unlist(data$kg.sets))),dimnames = list(as.vector(unlist(data$kg.sets)),c()))
+#data[,1] <- gsub("hsa[[:digit:]]+ ","",data[,1])
+#genes <- unique(unlist(strsplit(gsub("\\(|or|and|\\)","",Astrocyte$GPR)," ")))
+barplot(sort(table(data[as.character(genes[genes%in%rownames(data)]),])/sum(table(data[as.character(genes[genes%in%rownames(data)]),]))*100),
+        horiz = TRUE,main = "A",xlab="% Reactions",)
+par(mar=c(3,3,2,3),cex=0.7)
+pie(c(60,1080,1607),
+    labels = c("2.2%\nExchange\nReactions",
+               "39.3%\nTransport\nReactions",
+               "58.5%\nCompartmentalized\nReactions"),main="B")
+
+pie(c(859,245),labels=c("77.8%\nFacilitated or Active\nTransport","22.2%\nPassive\nTransport"),main="C")
+
+pie(c(407,138,291,126,54,17,28),
+    labels=c("25.3%\nExpontaneous\nReactions",
+             "15.8%\nOxidoreductases",
+             "33.2%\nTransferases",
+             "14.4%\nHydrolases",
+             "6.2%\nLyases",
+             "1.9%\nIsomerases",
+             "2.3%\nLigases"),main="D")
+
+pie(table(sapply(Astrocyte$REACTION[lengths(sapply(Astrocyte$REACTION[!grepl("EX_",Astrocyte$REACTION)],compartments))==1],compartments)),
+    labels = c("39.1%\nCytoplasm",
+               "5.5%\nExtracellular",
+               "8.7%\nGolgi\napparatus",
+               "6.3%\nLysosome",
+               "20.9%\nMitochondrion",
+               "4.2%\nNucleus",
+               "6.9%\nEndoplasmic\nReticulum",
+               "8.5%\nPeroxisome"),main="E")
+
+
+
+
+
+
 metabolicChanges <- function(model1,model2,main){
   differences <- fluxDifferences(model1,model2)
   metabolicPathways <- kegg.gsets(species = "hsa", id.type = "kegg")

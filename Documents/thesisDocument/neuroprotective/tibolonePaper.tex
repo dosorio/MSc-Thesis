@@ -79,16 +79,34 @@ Identification of enzymes involved in proinflammatory and antiinflammatory respo
 \subsection*{Tissue Specific Metabolic Model}
 Astrocyte tissue-specific metabolism model has a total of 2747 reactions, with 60 exchange reactions and 1080 transport reactions. Reactions included in astrocytes metabolism model can be classified on the basis of required enzymatic activity to be catalized (Enzyme Commission numbers), sub-cellular locations (compartments), and metabolic pathways (Fig. \ref{}). 
 
-Based in the associated enzyme to each reaction X\% of them are catalyzed by an oxidoreductase enzyme, X\% by an enzyme, X\% by a
+Based in the associated enzyme to each biochemical reaction \% of them are catalyzed by an oxidoreductase enzyme, X\% by an enzyme, X\% by a
 
 A large number of the reactions in the model belonged to the class 1 category of enzyme classification i.e., theoxidoreductases (22 \%).These set of enzymes catalyze the oxidation of one chemical species and the simultaneous reduction of the other bytransfer of electrons fromone species to another. The other classes of enzymes in this classification scheme were the transferases (14 \%) followed by lyases (10 \%), hydrolases (4 \%), isomerases (2 \%), and ligases (2 \%). Another 28 \% of the reactions belonged to transport reactions and 16\% to extracellular exchange reactions,which occurred spontaneously in the system (Fig. 1a). The reactions can also be classified on the basis of their
 association with genes to understand gene reaction asso- ciations (Fig. 1b). 60\% of the model reactions were gene- associated, out of which 6\% were transport reactions. 
 The rest of the reactions were classified as: Non-Gene associ- ated Exchange Reactions (16 \%), Non-Gene associated Intracellular Reactions (2\%) and Non-Gene associated Transport Reactions (22\%). In In the classification shown in Fig. 1c, the cytosolic and
 mitochondrial reactions contributed to 54\% of the total reactions in the model. 2\%of the reactions belonged to the mitochondrial intermembrane space model compartment that specifically accounted for oxidative phosphorylation. The transport reactions were categorized according to the membrane to which it is associated. Transports accounted for 30\% of the total reactions: Mitochondrial membrane spanning (11\%), Nuclear membrane spanning (2\%) and Plasma Membrane spanning (17\%). With reference to the metabolic processes, 23\% of the
 reactions belonged to fatty acid metabolism inclusive of both biosynthesis and beta oxidation of palmitic acid. The rest of the pathways contributed to 30\% of the total count of which 14\% belonged to Glycolytic, PPP, TCA cycle and Oxidative phosphorylation pathway and 2\% were contributed each by Glycine–Serine Metabolism, Cysteine Metabolism, Methionine Metabolism and Glutamate Metabolism, without taking into account the transport and exchange reactions. Another set of reactions, namely, cytosolic ATPase (ATPS), cytoplasmic malate dehydro- genase (MDH(Cyto)), Phosphoenolpyruvate carboxykinase (GTP) (PEP\_CarbK\_1), mitochondrial pyruvate carboxy- lase (Pyr\_Carbm) which could not be assigned strictly under any particular pathway, were categorized as ‘Others’ which contributed 2\% of reactions to the (Fig. 1d).
+\includegraphics[width=\textwidth]{neuroprotective/RXN}
 \subsection*{Healthy Scenario}
 \subsection*{Inflammated Scenario}
-\subsection*{Medicated Scenario}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth]{neuroprotective/IC50}
+\end{center}
+\caption{Robutness analysis to calculate IC50 value for each objective function described in table \ref{OF}. Red line represents the calculated IC50 value.}
+\end{figure}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth]{neuroprotective/Exchanges}
+\end{center}
+\caption{}
+\end{figure}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth]{neuroprotective/Healthy2Inflammated}
+\end{center}
+\caption{Metabolic pathways affected by inflammation. Activation and inactivation percentage was measured in comparison with genes associated to each pathway in the KEGG database.}
+\end{figure}
 %Neuronal injury releases glutamate as an important neurotransmitter and this may result in the recruitment and entrapment of neurons in the neuroinflammatory process [Kumar12, 13].
 %Neuroinflammation can also lead to homeostatic disturbances, such as iron accumulation, within CNS cells. Iron accumulation has been demonstrated in numerous CNS disorders, including MS, AD, and PD, where it has been postulated to promote disease by augmenting microglial proinflammatory activity, altering mitochondrial function, and inducing ROS production [Kumar18].
 %a prominent increase in the expression of the intermediate filament glial fibrillary acidic protein (GFAP) and aldehyde dehydrogenase 1 family member L1 (ALDH1L1) [32]
@@ -96,22 +114,11 @@ reactions belonged to fatty acid metabolism inclusive of both biosynthesis and b
 %Their study fur- ther
 %demonstrates that activated microglia work
 %with astrocytes to cause an elevation of extracellular L-Glu in the early stages of neuroinflammation[110].
-%\begin{figure}[h]
-%\begin{center}
-%\includegraphics[width=\textwidth]{neuroprotective/IC50}
-%\end{center}
-%\caption{Robutness analysis to calculate IC50 value for each objective function described in table \ref{OF}. Red line represents the calculated IC50 value.}
-%\end{figure}
-%\begin{figure}[h]
-%\begin{center}
-%\includegraphics[width=\textwidth]{neuroprotective/Healthy2Inflammated}
-%\end{center}
-%\caption{Metabolic pathways affected by inflammation. Activation and inactivation percentage was measured in comparison with genes associated to each pathway in the KEGG database.}
-%\end{figure}
-%\begin{figure}[h]
-%\begin{center}
-%\includegraphics[width=\textwidth]{neuroprotective/Inflammated2Tibolone}
-%\end{center}
-%\caption{•}
-%\end{figure}
+\subsection*{Medicated Scenario}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth]{neuroprotective/Inflammated2Tibolone}
+\end{center}
+\caption{•}
+\end{figure}
 \section{Conclusion}

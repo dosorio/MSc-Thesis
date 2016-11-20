@@ -12,52 +12,53 @@ Repeated entry---line 3499 of file BibliMSc.bib
  : @article{Gelius-Dietrich2013
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 7854 of file BibliMSc.bib
+Repeated entry---line 7870 of file BibliMSc.bib
  : @article{Raman2009
  :                   ,
 I'm skipping whatever remains of this entry
 Warning--can't use both author and editor fields in Yan2013
 Warning--can't use both volume and number fields in Kloosterboer2001
 Warning--empty journal in Gelius-Dietrich2013
-You've used 63 entries,
+Warning--empty journal in Baslow2003
+You've used 70 entries,
             1791 wiz_defined-function locations,
-            877 strings with 16383 characters,
-and the built_in function-call counts, 15445 in all, are:
-= -- 1347
-> -- 832
+            930 strings with 17887 characters,
+and the built_in function-call counts, 17319 in all, are:
+= -- 1515
+> -- 929
 < -- 4
-+ -- 302
-- -- 239
-* -- 1250
-:= -- 2495
-add.period$ -- 182
-call.type$ -- 63
-change.case$ -- 58
++ -- 337
+- -- 267
+* -- 1418
+:= -- 2797
+add.period$ -- 203
+call.type$ -- 70
+change.case$ -- 65
 chr.to.int$ -- 0
-cite$ -- 66
-duplicate$ -- 591
-empty$ -- 1403
-format.name$ -- 239
-if$ -- 3296
+cite$ -- 74
+duplicate$ -- 654
+empty$ -- 1573
+format.name$ -- 267
+if$ -- 3689
 int.to.chr$ -- 0
-int.to.str$ -- 63
-missing$ -- 56
-newline$ -- 311
-num.names$ -- 63
-pop$ -- 113
+int.to.str$ -- 70
+missing$ -- 63
+newline$ -- 346
+num.names$ -- 70
+pop$ -- 122
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 271
+skip$ -- 293
 stack$ -- 0
-substring$ -- 1176
-swap$ -- 118
+substring$ -- 1357
+swap$ -- 124
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 161
-width$ -- 65
-write$ -- 673
+warning$ -- 4
+while$ -- 182
+width$ -- 72
+write$ -- 749
 (There were 3 error messages)

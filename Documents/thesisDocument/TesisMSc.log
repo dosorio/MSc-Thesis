@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 NOV 2016 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 NOV 2016 23:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1059,22 +1059,27 @@ LaTeX Font Info:    Try loading font information for T1+aess on input line 1.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
+Underfull \vbox (badness 4608) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 
 
 Package Fancyhdr Warning: \headheight is too small (18.125pt): 
@@ -1083,134 +1088,146 @@ Package Fancyhdr Warning: \headheight is too small (18.125pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
  [3]
-LaTeX Info: Redefining \. on input line 22.
-LaTeX Info: Redefining \% on input line 22.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
  [4]
-Underfull \hbox (badness 1902) in paragraph at lines 61--62
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+
+[5]
+Underfull \hbox (badness 1902) in paragraph at lines 70--71
 []|\T1/aer/m/n/12 3$\OML/cmm/m/it/12 $\T1/aer/m/n/12 hidroxytibolone in-ter-co
 n-ver-tion to
  []
 
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
-[5]
-Underfull \vbox (badness 2753) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
- [6]
-<neuroprotective/RXN.pdf, id=29, 671.50874pt x 189.70876pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+[6] <neuroprotective/RXN.pdf, id=30, 671.50874pt x 189.70876pt>
 File: neuroprotective/RXN.pdf Graphic file (type pdf)
 
 <use neuroprotective/RXN.pdf>
-Package pdftex.def Info: neuroprotective/RXN.pdf used on input line 86.
+Package pdftex.def Info: neuroprotective/RXN.pdf used on input line 93.
 (pdftex.def)             Requested size: 469.47046pt x 132.63022pt.
-LaTeX Info: Redefining \. on input line 95.
-LaTeX Info: Redefining \% on input line 95.
- [7 <./neuroprotective/RXN.pdf>]
-<neuroprotective/Pathways.pdf, id=61, 1016.66826pt x 1017.75232pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 98.
+LaTeX Info: Redefining \% on input line 98.
+ [7]
+<neuroprotective/Pathways.pdf, id=35, 1016.66826pt x 1017.75232pt>
 File: neuroprotective/Pathways.pdf Graphic file (type pdf)
 
 <use neuroprotective/Pathways.pdf>
-Package pdftex.def Info: neuroprotective/Pathways.pdf used on input line 99.
-(pdftex.def)             Requested size: 328.62788pt x 328.97968pt.
+Package pdftex.def Info: neuroprotective/Pathways.pdf used on input line 106.
+(pdftex.def)             Requested size: 469.47046pt x 469.97319pt.
 
-<neuroprotective/Exchanges.pdf, id=62, 650.43pt x 289.08pt>
+Underfull \vbox (badness 5417) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+ [8 <./neuroprotective/RXN.pdf>]
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+ [9 <./neuroprotective/Pathways.pdf>]
+<neuroprotective/Exchanges.pdf, id=99, 650.43pt x 289.08pt>
 File: neuroprotective/Exchanges.pdf Graphic file (type pdf)
 
 <use neuroprotective/Exchanges.pdf>
-Package pdftex.def Info: neuroprotective/Exchanges.pdf used on input line 108.
+Package pdftex.def Info: neuroprotective/Exchanges.pdf used on input line 117.
 (pdftex.def)             Requested size: 469.47046pt x 208.65793pt.
-LaTeX Info: Redefining \. on input line 113.
-LaTeX Info: Redefining \% on input line 113.
- [8 <./neuroprotective/Pathways.pdf>]
-<neuroprotective/IC50.pdf, id=96, 939.51pt x 610.28pt>
+
+<neuroprotective/IC50.pdf, id=100, 939.51pt x 610.28pt>
 File: neuroprotective/IC50.pdf Graphic file (type pdf)
 
 <use neuroprotective/IC50.pdf>
-Package pdftex.def Info: neuroprotective/IC50.pdf used on input line 116.
+Package pdftex.def Info: neuroprotective/IC50.pdf used on input line 126.
 (pdftex.def)             Requested size: 469.47046pt x 304.953pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<neuroprotective/Healthy2Inflammated.pdf, id=97, 722.7pt x 469.755pt>
+LaTeX Info: Redefining \. on input line 134.
+LaTeX Info: Redefining \% on input line 134.
+[10 <./neuroprotective/Exchanges.pdf>]
+LaTeX Info: Redefining \. on input line 134.
+LaTeX Info: Redefining \% on input line 134.
+ [11 <./neuroprotective/IC50.pdf>]
+<neuroprotective/Healthy2Inflammated.pdf, id=120, 722.7pt x 469.755pt>
 File: neuroprotective/Healthy2Inflammated.pdf Graphic file (type pdf)
 
 <use neuroprotective/Healthy2Inflammated.pdf>
 Package pdftex.def Info: neuroprotective/Healthy2Inflammated.pdf used on input 
-line 125.
+line 137.
 (pdftex.def)             Requested size: 469.47046pt x 305.15794pt.
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
- [9 <./neuroprotective/Exchanges.pdf>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<neuroprotective/Inflammated2Tibolone.pdf, id=107, 722.7pt x 469.755pt>
+<neuroprotective/Inflammated2Tibolone.pdf, id=121, 722.7pt x 469.755pt>
 File: neuroprotective/Inflammated2Tibolone.pdf Graphic file (type pdf)
 
 <use neuroprotective/Inflammated2Tibolone.pdf>
 Package pdftex.def Info: neuroprotective/Inflammated2Tibolone.pdf used on input
- line 137.
+ line 147.
 (pdftex.def)             Requested size: 469.47046pt x 305.15794pt.
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 139.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 149.
 
-LaTeX Font Info:    No file TS1aer.fd. on input line 139.
+LaTeX Font Info:    No file TS1aer.fd. on input line 149.
 
 
 LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 139.
+(Font)              for symbol `textbullet' on input line 149.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<neuroprotective/Effects.pdf, id=108, 722.7pt x 469.755pt>
+<neuroprotective/Effects.pdf, id=122, 722.7pt x 469.755pt>
 File: neuroprotective/Effects.pdf Graphic file (type pdf)
 
 <use neuroprotective/Effects.pdf>
-Package pdftex.def Info: neuroprotective/Effects.pdf used on input line 143.
+Package pdftex.def Info: neuroprotective/Effects.pdf used on input line 153.
 (pdftex.def)             Requested size: 469.47046pt x 305.15794pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
- [10 <./neuroprotective/IC50.pdf>]
+ [12 <./neuroprotective/Healthy2Inflammated.pdf>]
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
- [11 <./neuroprotective/Healthy2Inflammated.pdf>]
+ [13 <./neuroprotective/Inflammated2Tibolone.pdf>]
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
- [12 <./neuroprotective/Inflammated2Tibolone.pdf>]
-LaTeX Info: Redefining \. on input line 30.
-LaTeX Info: Redefining \% on input line 30.
- [13 <./neuroprotective/Effects.pdf>] (./TesisMSc.bbl [14
+ [14 <./neuroprotective/Effects.pdf>] (./TesisMSc.bbl [15
 
 
 ]
 LaTeX Info: Redefining \. on input line 147.
 LaTeX Info: Redefining \% on input line 147.
- [15]
+ [16]
 LaTeX Info: Redefining \. on input line 214.
 LaTeX Info: Redefining \% on input line 214.
- [16]
+
+[17]
 LaTeX Info: Redefining \. on input line 281.
 LaTeX Info: Redefining \% on input line 281.
- [17]
+ [18]
 LaTeX Info: Redefining \. on input line 356.
 LaTeX Info: Redefining \% on input line 356.
- [18])
+ [19])
 LaTeX Info: Redefining \. on input line 47.
 LaTeX Info: Redefining \% on input line 47.
- [19] (./TesisMSc.aux
-(./neuroprotective/tibolonePaper.aux)
+ [20] (./TesisMSc.aux (./neuroprotective/tibolonePaper.aux)
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -1219,13 +1236,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8865 strings out of 493014
- 132265 string characters out of 6133351
- 300722 words of memory out of 5000000
- 12173 multiletter control sequences out of 15000+600000
+ 8888 strings out of 493014
+ 132630 string characters out of 6133351
+ 302849 words of memory out of 5000000
+ 12196 multiletter control sequences out of 15000+600000
  27759 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,13n,66p,8514b,759s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,13n,66p,8514b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
@@ -1237,10 +1254,10 @@ ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local
 /texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on TesisMSc.pdf (19 pages, 525168 bytes).
+Output written on TesisMSc.pdf (20 pages, 532020 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
+ 206 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

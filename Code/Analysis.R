@@ -48,11 +48,11 @@ barplot(d,horiz = TRUE,main = "Percentage of Reactions by Metabolic Pathway",xla
 dev.off()
 
 # par(mfcol=c(1,2))
-healty <- readSBMLmod("Results/matureAstrocyte.xml")
+healthy <- readSBMLmod("Results/matureAstrocyte.xml")
 model_FBA <- optimizeProb(healty)
 model_MTF <- optimizeProb(healty, algorithm = "mtf", wtobj = mod_obj(model_FBA))
 h <- getNetFlux(getFluxDist(model_MTF,findExchReact(healty)))
-inflammated <- healty
+inflammated <- healthy
 lowbnd(inflammated)[inflammated@react_id=="EX_hdca(e)"] <- -0.208
 uppbnd(inflammated)[inflammated@react_id=="EX_hdca(e)"] <- -0.208
 model_FBA <- optimizeProb(inflammated)
@@ -103,8 +103,6 @@ metabolicChanges <- function(model1,model2,main){
   genesK <- table(metabolicPathways)
   genesK <- genesK[names(genesK)%in%names(genesA)]
   genesA <- sort((genesA/genesK)*100)
-  par(mfcol=c(1,2),las=1,mar=c(3,15,3,3))
-  barplot(genesA,horiz = TRUE,main = "Pathway % Activation",cex.names = 0.7,adj=1)
   genesD <- rownames(differences)[differences[,3]<0]
   genesD <- unique(unlist(model1@genes[model1@react_id%in%genesD]))
   genesD <- genesD[genesD%in%rownames(metabolicPathways)]
@@ -112,7 +110,11 @@ metabolicChanges <- function(model1,model2,main){
   genesK <- table(metabolicPathways)
   genesK <- genesK[names(genesK)%in%names(genesD)]
   genesD <- sort((genesD/genesK)*100)
-  barplot(genesD,horiz = TRUE,main = "Pathway % Inactivation",cex.names = 0.7,adj=1)
+  par(mfcol=c(1,2),las=1,mar=c(3,15,3,3))
+  genesAD <- genesA[!names(genesA)%in%names(genesD)]
+  genesDD <- genesD[!names(genesD)%in%names(genesA)]
+  barplot(genesAD,horiz = TRUE,main = "Pathway % Activation",cex.names = 0.7,adj=1)
+  barplot(genesDD,horiz = TRUE,main = "Pathway % Inactivation",cex.names = 0.7,adj=1)
 }
 pdf(file = "Slides/Figures/Healthy2Inflammated.pdf",width = 10,height = 6.5)
 metabolicChanges(healthy,inflammated)

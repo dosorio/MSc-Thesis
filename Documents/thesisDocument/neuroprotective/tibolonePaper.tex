@@ -75,45 +75,63 @@ Metabolic changes across metabolic scenarios were measured through two different
 Additionally, to obtain a full perspective about inflammation effects in metabolites production, the production of each metabolite was set as objective function in each metabolic scenario and differences were evaluated as well as flux differences.
 \subsection*{Proinflammatory, Antiinflammatory and Tibolone Action Mechanism Associated Enzymes}
 Identification of enzymes involved in proinflammatory and antiinflammatory responses as well as in the tibolone action mechanism were identified through several sensitivity analysis as follows: Proinflammatory enzymes, are those that catalyze reactions that being knocked out allows an increase of objective function value. Antiinflammatory enzymes, are those associated to reactions that being knocked out reduce even more the objective function value. Tibolone action mechanism associated enzymes are those that catalyze reactions that being knocked out inhibit entirely the metabolic effect of tibolone.
+
 \section{Results}
 \subsection*{Tissue Specific Metabolic Model}
-Astrocyte tissue-specific metabolism model has a total of 2747 reactions, with 60 exchange reactions and 1080 transport reactions. Reactions included in astrocytes metabolism model can be classified on the basis of required enzymatic activity to be catalized (Enzyme Commission numbers), sub-cellular locations (compartments), and metabolic pathways (Fig. \ref{}). 
+Generated astrocyte tissue-specific model describe the metabolism of 1956 compounds in a total of 2747 biochemical reactions associated to 1262 unique genes. Biochemical reactions include 60 exchange and 1080 transport reactions (79\% gene associated, facilitated or active transport) as is shown in figure \ref{Reactions}\textbf{A}. 
 
-Based in the associated enzyme to each biochemical reaction \% of them are catalyzed by an oxidoreductase enzyme, X\% by an enzyme, X\% by a
-
-A large number of the reactions in the model belonged to the class 1 category of enzyme classification i.e., theoxidoreductases (22 \%).These set of enzymes catalyze the oxidation of one chemical species and the simultaneous reduction of the other bytransfer of electrons fromone species to another. The other classes of enzymes in this classification scheme were the transferases (14 \%) followed by lyases (10 \%), hydrolases (4 \%), isomerases (2 \%), and ligases (2 \%). Another 28 \% of the reactions belonged to transport reactions and 16\% to extracellular exchange reactions,which occurred spontaneously in the system (Fig. 1a). The reactions can also be classified on the basis of their
-association with genes to understand gene reaction asso- ciations (Fig. 1b). 60\% of the model reactions were gene- associated, out of which 6\% were transport reactions. 
-The rest of the reactions were classified as: Non-Gene associ- ated Exchange Reactions (16 \%), Non-Gene associated Intracellular Reactions (2\%) and Non-Gene associated Transport Reactions (22\%). In In the classification shown in Fig. 1c, the cytosolic and
-mitochondrial reactions contributed to 54\% of the total reactions in the model. 2\%of the reactions belonged to the mitochondrial intermembrane space model compartment that specifically accounted for oxidative phosphorylation. The transport reactions were categorized according to the membrane to which it is associated. Transports accounted for 30\% of the total reactions: Mitochondrial membrane spanning (11\%), Nuclear membrane spanning (2\%) and Plasma Membrane spanning (17\%). With reference to the metabolic processes, 23\% of the
-reactions belonged to fatty acid metabolism inclusive of both biosynthesis and beta oxidation of palmitic acid. The rest of the pathways contributed to 30\% of the total count of which 14\% belonged to Glycolytic, PPP, TCA cycle and Oxidative phosphorylation pathway and 2\% were contributed each by Glycine–Serine Metabolism, Cysteine Metabolism, Methionine Metabolism and Glutamate Metabolism, without taking into account the transport and exchange reactions. Another set of reactions, namely, cytosolic ATPase (ATPS), cytoplasmic malate dehydro- genase (MDH(Cyto)), Phosphoenolpyruvate carboxykinase (GTP) (PEP\_CarbK\_1), mitochondrial pyruvate carboxy- lase (Pyr\_Carbm) which could not be assigned strictly under any particular pathway, were categorized as ‘Others’ which contributed 2\% of reactions to the (Fig. 1d).
+To describe the astrocyte tissue specific metabolic model, reactions were classified on the basis of required enzymatic activity to be catalized according to their Enzyme Commission (E.C) numbers (Fig. \ref{Reactions}\textbf{B}), sub-cellular locations according to metabolites compartment (Fig. \ref{Reactions}\textbf{C}), and metabolic pathways assigned in the KEGG database (Fig. \ref{Pathways}). 
+\begin{figure}[h]
+\begin{center}
 \includegraphics[width=\textwidth]{neuroprotective/RXN}
+\end{center}
+\caption{Reaction Classification based in \textbf{A:} Type, \textbf{B:} Catalytic Activity Required and \textbf{C:} Distribution by Compartment }
+\label{Reactions}
+\end{figure}
+
+Based in the associated enzyme to each biochemical reaction 33.2\% of them are catalyzed by a transferase enzyme, 15.8\% by an oxidoreductase, 14.4\% by a hydrolase, 6.2\% by a lyase, 2.3\% by a ligase, 1.9\% by an isomerase enzyme and 25.3\% of them are spontaneous reactions without enzyme or gene associated. 
+
+In the classification shown in Fig. \ref{Reactions}\textbf{C}, the cytosolic and mitochondrial reactions contributed to 60\% of the total reactions in the model. The other 40\% of reactions are distributed in six other compartments as follows: 8.7\% occurs in golgi apparatus, 8.5\% in peroxisome, 6.9\% in the endoplasmic reticulum, 6.3\% in the lysosome, 4.2\% in nucleus, finally 5.5\% of them occurs outside the cell, in the extracellular space.
+
+Reactions included in astrocyte model are associated to 113 metabolic pathways reported in the KEGG database. Almost 50\% reactions are associated to 10 main metabolic pathways, highly related to astrocytes metabolism and neuron support metabolic functions \cite{Fitch1997,Ciccarelli2001,Cakir2007,Giaume2010, Sertbas2014, Sa2016}. Entirely distribution of reactions in metabolic pathways is shown in figure \ref{Pathways}.
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{neuroprotective/Pathways}
+\end{center}
+\caption{Pathways associated to biochemical reactions included in the astrocyte tissue-specific metabolic model. Pathway association was asigned based in the categorization of the KEGG database.}
+\label{Pathways}
+\end{figure}
 \subsection*{Healthy Scenario}
+As previously reported by a wet lab, healthy human astrocytes grow up in DMEM culture medium \cite{Das2010}. Our metabolic simulation allow to predict an astrocytes slow grow rate  (0.37 mMgWD$^{-1}$h$^{-1}$) under DMEM medium. In our healthy scenario (shown in figure \ref{Exchanges}), astrocytes activates the 52\% of model reactions and prefer a glucose based metabolism. Glucose is catabolized and constitutively released as lactate without any stimuli \cite{LeFoll2016}. This observation is highly expected due astrocytes release large amounts of lactate in the extracellular space which can be used by neurons to supply their energy needs \cite{Allaman2011}.  In our simulations, other gliotransmitters are synthetized and released by astrocytes only under specific stimulus (objective functions) and their release rate was used as reference to comparison between scenarios (Fig. \ref{Effects}). 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth]{neuroprotective/Exchanges}
+\end{center}
+\caption{Comparative exchange rate of metabolites between metabolic scenarios using the generic biomass reaction included in RECON 2.04 as objective function.}
+\label{Exchanges}
+\end{figure}
 \subsection*{Inflammated Scenario}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\textwidth]{neuroprotective/IC50}
 \end{center}
-\caption{Robutness analysis to calculate IC50 value for each objective function described in table \ref{OF}. Red line represents the calculated IC50 value.}
+\caption{Robutness analysis to calculate palmitate induced IC50 value for each objective function described in table \ref{OF}. Red line represents the calculated IC50 value.}
 \end{figure}
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=\textwidth]{neuroprotective/Exchanges}
-\end{center}
-\caption{}
-\end{figure}
+In the model, the healthy scenario was perturbed to generate the inflammated scenario. The palmitate induced IC50 value calculated for all metabolic capabilities was 0.208 $\pm$ 0.024 mMgDW$^{-1}$h$^{-1}$. Calculated IC50 value is the same (0.2 mM) used by Liu \emph{et al.} in wet lab to induce an astrogliosis reaction \cite{Liu2013}. Inflammated scenario increases the demand of L-asparagine, L-aspartato, Fe$^{+3}$, glucose, glutamate, histidine, L-serine and the release of glutamine and lactate (shown in figure \ref{Exchanges}). These response is typical of astrocytes in astrogliosis where neuroinflammation lead homeostatic disturbances \cite{Rangel-Aldao2015}, such as iron accumulation, within CNS cells \cite{Jha2016}. Iron accumulation has been demonstrated in several neurodegenerative diseases as AD, and PD, where it has been postulated to promote disease by augmenting microglial proinflammatory activity, altering mitochondrial function, and inducing ROS production \cite{Williams2012}.
+
+Inflammation although induce neuronal release of glutamate that may result in the recruitment of neurons in the neuroinflammatory process [Kumar12, 13]. Glutamate uptake into astrocytes disinhibits glycolytic enzymes that results in glucose uptake;  this glucose is generally processed glycolytically, leading to the synthesis and release of lactate \cite{Jha2016}.
+
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\textwidth]{neuroprotective/Healthy2Inflammated}
 \end{center}
 \caption{Metabolic pathways affected by inflammation. Activation and inactivation percentage was measured in comparison with genes associated to each pathway in the KEGG database.}
 \end{figure}
-%Neuronal injury releases glutamate as an important neurotransmitter and this may result in the recruitment and entrapment of neurons in the neuroinflammatory process [Kumar12, 13].
-%Neuroinflammation can also lead to homeostatic disturbances, such as iron accumulation, within CNS cells. Iron accumulation has been demonstrated in numerous CNS disorders, including MS, AD, and PD, where it has been postulated to promote disease by augmenting microglial proinflammatory activity, altering mitochondrial function, and inducing ROS production [Kumar18].
+%Neuronal injury .
+
 %a prominent increase in the expression of the intermediate filament glial fibrillary acidic protein (GFAP) and aldehyde dehydrogenase 1 family member L1 (ALDH1L1) [32]
 %Similarly, brain astrocyte- derived ROS, MMP-9, and heme oxygenase-1 (HO-1)/carbon monoxide may contribute to neuronal death [79]
-%Their study fur- ther
-%demonstrates that activated microglia work
-%with astrocytes to cause an elevation of extracellular L-Glu in the early stages of neuroinflammation[110].
+%Their study further demonstrates that activated microglia work with astrocytes to cause an elevation of extracellular L-Glu in the early stages of neuroinflammation[110].
 \subsection*{Medicated Scenario}
 \begin{figure}[h]
 \begin{center}
@@ -121,4 +139,12 @@ reactions belonged to fatty acid metabolism inclusive of both biosynthesis and b
 \end{center}
 \caption{•}
 \end{figure}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth]{neuroprotective/Effects}
+\end{center}
+\caption{}
+\label{Effects}
+\end{figure}
+
 \section{Conclusion}

@@ -17,7 +17,7 @@ IC50 <- function(model, controlReaction, range, Smain){
   plot(R,ylim=c(0,3),xlab="HDCA uptake rate \n mM/gWD*h",main=Smain,ylab="Objective Function Value")
   title(main=Smain,outer=F)
   abline(v = abs(IC),col="red")
-  abline(h = robValues@lp_obj[1000]/2,col="red")
+  #abline(h = robValues@lp_obj[1000]/2,col="red")
   text(abs(IC),robValues@lp_obj[1000],substitute(IC[50]==t0, list(t0 = abs(round(IC,3)))),pos = 4)
   return(IC)
 }

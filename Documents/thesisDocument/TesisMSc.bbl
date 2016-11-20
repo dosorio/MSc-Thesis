@@ -300,4 +300,68 @@ Karthik Raman and Nagasuma Chandra.
   challenges}.
 \newblock {\em Briefings in Bioinformatics}, 10(4):435--449, 2009.
 
+\bibitem{Fitch1997}
+M~T Fitch and J~Silver.
+\newblock {Activated macrophages and the blood-brain barrier: inflammation
+  after CNS injury leads to increases in putative inhibitory molecules.}
+\newblock {\em Experimental Neurology}, 148(2):587--603, 1997.
+
+\bibitem{Ciccarelli2001}
+R.~Ciccarelli, P.~Ballerini, G.~Sabatino, M.~P. Rathbone, M.~D'Onofrio,
+  F.~Caciagli, and P.~{Di Iorio}.
+\newblock {Involvement of astrocytes in purine-mediated reparative processes in
+  the brain}.
+\newblock {\em International Journal of Developmental Neuroscience},
+  19(4):395--414, 2001.
+
+\bibitem{Cakir2007}
+Tunahan Cakir, Selma Alsan, Hale Saybaşili, Ata Akin, and Kutlu~O Ulgen.
+\newblock {Reconstruction and flux analysis of coupling between metabolic
+  pathways of astrocytes and neurons: application to cerebral hypoxia.}
+\newblock {\em Theoretical biology {\&} medical modelling}, 4(1):48, 2007.
+
+\bibitem{Sertbas2014}
+Mustafa Sertbaş, Kutlu {\"{U}}lgen, and Tunahan {\c{C}}akir.
+\newblock {Systematic analysis of transcription-level effects of
+  neurodegenerative diseases on human brain metabolism by a newly reconstructed
+  brain-specific metabolic network}.
+\newblock {\em FEBS Open Bio}, 4:542--553, 2014.
+
+\bibitem{Sa2016}
+Jo{\~{a}}o~V. S{\'{a}}, Susanne Kleiderman, Catarina Brito, Ursula Sonnewald,
+  Marcel Leist, Ana~P. Teixeira, and Paula~M. Alves.
+\newblock {Quantification of Metabolic Rearrangements During Neural Stem Cells
+  Differentiation into Astrocytes by Metabolic Flux Analysis}.
+\newblock {\em Neurochemical Research}, 2016.
+
+\bibitem{Das2010}
+Arabinda Das, Naren~L. Banik, and Swapan~K. Ray.
+\newblock {Flavonoids activated caspases for apoptosis in human glioblastoma
+  T98G and U87MG cells but not in human normal astrocytes}.
+\newblock {\em Cancer}, 116(1):164--176, 2010.
+
+\bibitem{LeFoll2016}
+Christelle {Le Foll} and Barry~E Levin.
+\newblock {Fatty acid-induced astrocyte ketone production and the control of
+  food intake.}
+\newblock {\em American journal of physiology. Regulatory, integrative and
+  comparative physiology}, page ajpregu.00113.2016, 2016.
+
+\bibitem{Liu2013}
+Li~Liu, Rebecca Martin, and Christina Chan.
+\newblock {Palmitate-activated astrocytes via serine palmitoyltransferase
+  increase BACE1 in primary neurons by sphingomyelinases}.
+\newblock {\em Neurobiology of Aging}, 34(2):540--550, 2013.
+
+\bibitem{Rangel-Aldao2015}
+Rafael Rangel-Aldao.
+\newblock {The unfolded protein response, inflammation, oscillators, and
+  disease: a systems biology approach}.
+\newblock {\em Endoplasmic Reticulum Stress in Diseases}, 2(1):30--52, 2015.
+
+\bibitem{Williams2012}
+Rachel Williams, Cassandra~L. Buchheit, Nancy E~J Berman, and Steven~M. Levine.
+\newblock {Pathogenic implications of iron accumulation in multiple sclerosis}.
+\newblock {\em Journal of Neurochemistry}, 120(1):7--25, 2012.
+
 \end{thebibliography}

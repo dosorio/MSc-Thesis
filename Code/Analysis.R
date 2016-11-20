@@ -10,22 +10,12 @@ length(grep("EX_",Astrocyte$ID))
 table(Astrocyte$GPR[lengths(sapply(Astrocyte$REACTION[!grepl("EX_",Astrocyte$ID)], compartments))>1]!="")
 RXN <- AGenes[AGenes$ENTREZ_GENE%in%unique(unlist(strsplit(gsub("\\(|or|and|\\)","",Astrocyte$GPR[lengths(sapply(Astrocyte$REACTION[!grepl("EX_",Astrocyte$ID)], compartments))==1]),"[[:blank:]]+"))),]
 
-pdf("Documents/thesisDocument/neuroprotective/RXN.pdf",width = 13.5,height = 8)
-layout(matrix(c(1,2,3,1,4,5), 2, 3, byrow = TRUE),widths = c(0.5,0.25,0.25))
-par(las=2,mar=c(5,30,4,0.5),cex=0.5)
-# data <- try(kegg.gsets(species = "hsa", id.type = "entrez"))
-# data <- matrix(gsub("[[:digit:]]+$","",names(unlist(data$kg.sets))),dimnames = list(as.vector(unlist(data$kg.sets)),c()))
-# data[,1] <- gsub("hsa[[:digit:]]+ ","",data[,1])
-genes <- unique(unlist(strsplit(gsub("\\(|or|and|\\)","",Astrocyte$GPR)," ")))
-barplot(sort(table(data[as.character(genes[genes%in%rownames(data)]),])/sum(table(data[as.character(genes[genes%in%rownames(data)]),]))*100),
-        horiz = TRUE,main = "A: Percentage of Reactions by Metabolic Pathway",xlab="% Reactions",cex.main=1.7)
-par(mar=c(4,4,4,4),cex=0.7)
+#pdf("Documents/thesisDocument/neuroprotective/RXN.pdf",width = 8,height = 8)
+par(mfcol=c(1,3))
 pie(c(60,1080,1607),
     labels = c("2.2%\nExchange\nReactions",
                "39.3%\nTransport Reactions\n",
-               "\n\n58.5%\nCompartmentalized\nReactions"),main="B: Type of Reactions")
-
-pie(c(859,245),labels=c("77.8%\nFacilitated or Active\nTransport\n","\n22.2%\nPassive\nTransport"),main="C: Type of Transport Reactions")
+               "\n\n58.5%\nCompartmentalized\nReactions"),main="A: Type of Reactions")
 
 pie(c(407,138,291,126,54,17,28),
     labels=c("25.3%\nExpontaneous\nReactions\n\n",
@@ -34,7 +24,7 @@ pie(c(407,138,291,126,54,17,28),
              "14.4%\nHydrolases",
              "6.2%\nLyases",
              "1.9% Isomerases",
-             "2.3% Ligases"),main="D: Catalytic Activity Required")
+             "2.3% Ligases"),main="B: Catalytic Activity Required")
 
 pie(table(sapply(Astrocyte$REACTION[lengths(sapply(Astrocyte$REACTION[!grepl("EX_",Astrocyte$REACTION)],compartments))==1],compartments)),
     labels = c("39.1%\nCytoplasm\n",
@@ -44,10 +34,18 @@ pie(table(sapply(Astrocyte$REACTION[lengths(sapply(Astrocyte$REACTION[!grepl("EX
                "\n20.9%\nMitochondrion",
                "\n4.2%\nNucleus",
                "\n6.9%\nEndoplasmic\nReticulum",
-               "8.5%\nPeroxisome"),main="E: Reactions Distribution by Compartment")
+               "8.5%\nPeroxisome"),main="C: Reactions Distribution by Compartment")
 
 dev.off()
-
+pdf("Documents/thesisDocument/neuroprotective/Pathways.pdf",height = 15,width = 15)
+par(las=2,mar=c(4,30,5,5),cex=0.9)
+# data <- try(kegg.gsets(species = "hsa", id.type = "entrez"))
+# data <- matrix(gsub("[[:digit:]]+$","",names(unlist(data$kg.sets))),dimnames = list(as.vector(unlist(data$kg.sets)),c()))
+# data[,1] <- gsub("hsa[[:digit:]]+ ","",data[,1])
+# genes <- unique(unlist(strsplit(gsub("\\(|or|and|\\)","",Astrocyte$GPR)," ")))
+d <- sort(table(data[as.character(genes[genes%in%rownames(data)]),])/sum(table(data[as.character(genes[genes%in%rownames(data)]),]))*100,decreasing = FALSE)
+barplot(d,horiz = TRUE,main = "Percentage of Reactions by Metabolic Pathway",xlab="% Reactions")
+dev.off()
 
 # par(mfcol=c(1,2))
 healty <- readSBMLmod("Results/matureAstrocyte.xml")

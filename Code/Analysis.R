@@ -128,10 +128,28 @@ i2t <- fluxDifferences(inflammated,tibolone)
 pdf(file = "Slides/Figures/Effects.pdf",width = 10,height = 6.5,encoding = 'ISOLatin2.enc')
 par(mfcol=c(1,6),las=2,mar=c(7,3,4,3))
 barplot(c(Healthy=0.377,Inflammated=0.318,Tibolone=0.427),col=c("darkblue","red","dodgerblue2"),main="BIOMASS\nDMEM medium")
-barplot(c(Healthy=4.652,Inflammated=1.893,Tibolone=1.893),col=c("darkblue","red","dodgerblue2"),main="CYS[e] to GTHRD[e]\nConvertion")
-barplot(c(Healthy=1.813,Inflammated=0.507,Tibolone=0.507),col=c("darkblue","red","dodgerblue2"),main="GLC[e] to ATP[e]\nConvertion")
-barplot(c(Healthy=1.792,Inflammated=0.458,Tibolone=0.458),col=c("darkblue","red","dodgerblue2"),main="GLC[e] to LACTATE[e]\nConvertion")
-barplot(c(Healthy=3.185,Inflammated=1.029,Tibolone=1.029),col=c("darkblue","red","dodgerblue2"),main="GLU[e] to GLN[e]\nConvertion")
-barplot(c(Healthy=1000.377,Inflammated=1000.377,Tibolone=1000.377),col=c("darkblue","red","dodgerblue2"),main="GLY[e] to dSER[e]\nConvertion")
+barplot(c(Healthy=4.652,Inflammated=1.893,Tibolone=1.893),col=c("darkblue","red","dodgerblue2"),main="CYS[e] to GTHRD[e]\nConversion")
+barplot(c(Healthy=1.813,Inflammated=0.507,Tibolone=0.507),col=c("darkblue","red","dodgerblue2"),main="GLC[e] to ATP[e]\nConversion")
+barplot(c(Healthy=1.792,Inflammated=0.458,Tibolone=0.458),col=c("darkblue","red","dodgerblue2"),main="GLC[e] to LACTATE[e]\nConversion")
+barplot(c(Healthy=3.185,Inflammated=1.029,Tibolone=1.029),col=c("darkblue","red","dodgerblue2"),main="GLU[e] to GLN[e]\nConversion")
+barplot(c(Healthy=1000.377,Inflammated=1000.377,Tibolone=1000.377),col=c("darkblue","red","dodgerblue2"),main="GLY[e] to dSER[e]\nConversion")
 dev.off()
+round((1.029-3.185)/3.185*100,1)
+h <- matrix(data = c(1,0,0,0,0,0,
+                     0,1,0,0,0,0,
+                     0,0,1,0,1,0,
+                     1,0,1,0,0,0,
+                     0,0,1,0,0,1,
+                     1,0,0,0,0,1),nrow = 6,ncol = 6, dimnames = list(c("Lactate","Reduced\nGluthatione","Glutamine","Glutamate","ATP","D-serine"),c("BIOMASS\nDMEM medium","CYS[e] to GTHRD[e]\nConversion","GLC[e] to ATP[e]\nConversion","GLC[e] to LACTATE[e]\nConversion","GLU[e] to GLN[e]\nConversion","GLY[e] to dSER[e]\nConversion")))
+levelplot(h,at=seq(-1,1, length.out=96),colorkey=list(space="top"),xlab="Gliotransmitter",ylab="Objective Function")
+h <- matrix(data = c(53,0,2.993974,0,0,0,
+                     2.3205,-2.8069,2.132771,0,0,0,
+                     0,0,1,0,1,0,
+                     1,0,1,0,0,0,
+                     0,0,1,0,0,1,
+                     1,0,0,0,0,1),nrow = 6,ncol = 6, dimnames = list(c("Lactate","Reduced\nGluthatione","Glutamine","Glutamate","ATP","D-serine"),c("BIOMASS\nDMEM medium","CYS[e] to GTHRD[e]\nConversion","GLC[e] to ATP[e]\nConversion","GLC[e] to LACTATE[e]\nConversion","GLU[e] to GLN[e]\nConversion","GLY[e] to dSER[e]\nConversion")))
+levelplot(h,at=seq(-55,55, length.out=96),colorkey=list(space="top"),xlab="Gliotransmitter",ylab="Objective Function")
+
+
+
 

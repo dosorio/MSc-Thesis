@@ -114,6 +114,7 @@ Change <- round((OF[OF<optimizeProb(inflammated)@lp_obj & OF>0]/(optimizeProb(in
 Ai <- cbind(Ai,Change)
 Ai <- Ai[Change!=0 & Change!=-100,]
 ((OF[OF>round(optimizeProb(inflammated)@lp_obj,2)]/optimizeProb(inflammated)@lp_obj)-1)*100
+
 # Evaluate metabolic capabilities
 # inflammated <- mCapabilities(matureAstrocyte_Model)
 

@@ -1,22 +1,6 @@
 \select@language {spanish}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Symbols}{4}
-\contentsline {chapter}{\numberline {1}Introduction}{6}
-\contentsline {chapter}{\numberline {2}Exploring the neuroprotective effects of tibolone during astrocytic metabolic inflammation: a flux balance analysis approach}{7}
-\contentsline {section}{\numberline {2.1}Introduction}{7}
-\contentsline {section}{\numberline {2.2}Material and Methods}{10}
-\contentsline {section}{\numberline {2.3}Results}{13}
-\contentsline {section}{\numberline {2.4}Conclusion}{17}
-\contentsline {chapter}{\numberline {3}minval: An R package for MINimal VALidation of stoichiometric reactions}{20}
-\contentsline {section}{\numberline {3.1}Abstract}{20}
-\contentsline {section}{\numberline {3.2}Introduction}{20}
-\contentsline {section}{\numberline {3.3}Installation and functions}{22}
-\contentsline {subsection}{\numberline {3.3.1}Inputs and syntaxis}{22}
-\contentsline {subsection}{\numberline {3.3.2}Syntax Validation}{22}
-\contentsline {subsection}{\numberline {3.3.3}Reactants and Products}{23}
-\contentsline {subsection}{\numberline {3.3.4}Metabolites}{23}
-\contentsline {subsection}{\numberline {3.3.5}Orphan Metabolites}{23}
-\contentsline {subsection}{\numberline {3.3.6}Compartments}{25}
-\contentsline {subsection}{\numberline {3.3.7}Association with ChEBI}{25}
-\contentsline {subsection}{\numberline {3.3.8}Mass Balance Validation}{26}
-\contentsline {section}{\numberline {3.4}Summary}{27}
-\contentsline {section}{\numberline {3.5}Bibliography}{27}
+\contentsline {chapter}{\numberline {1}Exploring the neuroprotective effects of tibolone during astrocytic metabolic inflammation: a flux balance analysis approach}{4}
+\contentsline {section}{\numberline {1.1}Introduction}{5}
+\contentsline {section}{\numberline {1.2}Material and Methods}{8}
+\contentsline {section}{\numberline {1.3}Results}{11}
+\contentsline {section}{\numberline {1.4}Conclusion}{16}

@@ -63,6 +63,12 @@ Andrea~R Durrant and Uriel Heresco-Levy.
 \newblock {D-Serine in Neuropsychiatric Disorders: New Advances}.
 \newblock {\em Advances in Psychiatry}, 2014:1--16, 2014.
 
+\bibitem{Cakir2007}
+Tunahan Cakir, Selma Alsan, Hale Saybaşili, Ata Akin, and Kutlu~O Ulgen.
+\newblock {Reconstruction and flux analysis of coupling between metabolic
+  pathways of astrocytes and neurons: application to cerebral hypoxia.}
+\newblock {\em Theoretical biology {\&} medical modelling}, 4(1):48, 2007.
+
 \bibitem{Raps1989}
 Stephen~P. Raps, James C~K Lai, Leif Hertz, and Arthur J~L Cooper.
 \newblock {Glutathione is present in high concentrations in cultured astrocytes
@@ -314,12 +320,6 @@ R.~Ciccarelli, P.~Ballerini, G.~Sabatino, M.~P. Rathbone, M.~D'Onofrio,
 \newblock {\em International Journal of Developmental Neuroscience},
   19(4):395--414, 2001.
 
-\bibitem{Cakir2007}
-Tunahan Cakir, Selma Alsan, Hale Saybaşili, Ata Akin, and Kutlu~O Ulgen.
-\newblock {Reconstruction and flux analysis of coupling between metabolic
-  pathways of astrocytes and neurons: application to cerebral hypoxia.}
-\newblock {\em Theoretical biology {\&} medical modelling}, 4(1):48, 2007.
-
 \bibitem{Sertbas2014}
 Mustafa Sertbaş, Kutlu {\"{U}}lgen, and Tunahan {\c{C}}akir.
 \newblock {Systematic analysis of transcription-level effects of
@@ -407,5 +407,72 @@ Leonard~T. Rael, Gregory~W. Thomas, Raphael Bar-Or, Michael~L. Craun, and David
   astroglial cells}.
 \newblock {\em Biochemical and Biophysical Research Communications},
   319(3):847--853, 2004.
+
+\bibitem{Chaudhry1999}
+F~a Chaudhry, R~J Reimer, D~Krizaj, D~Barber, J~Storm-Mathisen, D~R Copenhagen,
+  and R~H Edwards.
+\newblock {Molecular analysis of system N suggests novel physiological roles in
+  nitrogen metabolism and synaptic transmission.}
+\newblock {\em Cell}, 99(7):769--80, 1999.
+
+\bibitem{Doengi2009}
+Michael Doengi, Daniela Hirnet, Philippe Coulon, Hans-Christian Pape, Joachim~W
+  Deitmer, and Christian Lohr.
+\newblock {GABA uptake-dependent Ca(2+) signaling in developing olfactory bulb
+  astrocytes.}
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 106:17570--17575, 2009.
+
+\bibitem{Green2014}
+D.~R. Green, L.~Galluzzi, and G.~Kroemer.
+\newblock {Metabolic control of cell death}.
+\newblock {\em Science}, 345(6203):1250256--1250256, 2014.
+
+\bibitem{Murphy1988}
+Sean Murphy, Brian Pearce, James Jeremy, and Paresh Dandona.
+\newblock {Astrocytes as eicosanoid???producing cells}.
+\newblock {\em Glia}, 1(4):241--245, 1988.
+
+\bibitem{Fernando2013}
+Harshica Fernando, John~E. Wiktorowicz, Kizhake~V. Soman, Bhupendra~S.
+  Kaphalia, M.~Firoze Khan, and G.~A. {Shakeel Ansari}.
+\newblock {Liver proteomics in progressive alcoholic steatosis}.
+\newblock {\em Toxicology and Applied Pharmacology}, 266(3):470--480, 2013.
+
+\bibitem{Varemo2015}
+Leif V{\"{a}}remo, Camilla Scheele, Christa Broholm, Adil Mardinoglu, Caroline
+  Kampf, Anna Asplund, Intawat Nookaew, Mathias Uhl{\'{e}}n, BenteKlarlund
+  Pedersen, and Jens Nielsen.
+\newblock {Proteome- and Transcriptome-Driven Reconstruction of the Human
+  Myocyte Metabolic Network and Its Use for Identification of Markers for
+  Diabetes}.
+\newblock {\em Cell Reports}, 11(6):921--933, 2015.
+
+\bibitem{Saparov2007}
+Sapar~M. Saparov, Kun Liu, Peter Agre, and Peter Pohl.
+\newblock {Fast and selective ammonia transport by aquaporin-8}.
+\newblock {\em Journal of Biological Chemistry}, 282(8):5296--5301, 2007.
+
+\bibitem{TeVelde2008}
+Anje~a {Te Velde}, Inge Pronk, Floor de~Kort, and Pieter C~F Stokkers.
+\newblock {Glutathione peroxidase 2 and aquaporin 8 as new markers for colonic
+  inflammation in experimental colitis and inflammatory bowel diseases: an
+  important role for H2O2?}
+\newblock {\em European journal of gastroenterology {\&} hepatology},
+  20:555--560, 2008.
+
+\bibitem{Landriscina1972}
+Clemente Landriscina, Gabriele~V Gnoni, and Ernesto Quaqliariello.
+\newblock {Fatty -Acid Bios y nt hesis Present in Microsomes and Mitochondria
+  of Rat Liver}.
+\newblock 196:188--196, 1972.
+
+\bibitem{Tamura2009}
+Kenji Tamura, Asami Makino, Fran{\c{c}}oise Hullin-Matsuda, Toshihide
+  Kobayashi, Mutsuo Furihata, Suyoun Chung, Shingo Ashida, Tsuneharu Miki,
+  Tomoaki Fujioka, Taro Shuin, Yusuke Nakamura, and Hidewaki Nakagawa.
+\newblock {Novel lipogenic enzyme ELOVL7 is involved in prostate cancer growth
+  through saturated long-chain fatty acid metabolism}.
+\newblock {\em Cancer Research}, 69(20):8133--8140, 2009.
 
 \end{thebibliography}

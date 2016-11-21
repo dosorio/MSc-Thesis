@@ -4,15 +4,15 @@ The top-level auxiliary file: TesisMSc.aux
 A level-1 auxiliary file: neuroprotective/tibolonePaper.aux
 The style file: unsrt.bst
 Database file #1: BibliMSc.bib
-Repeated entry---line 1446 of file BibliMSc.bib
+Repeated entry---line 1456 of file BibliMSc.bib
  : @article{Cakir2007
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3499 of file BibliMSc.bib
+Repeated entry---line 3558 of file BibliMSc.bib
  : @article{Gelius-Dietrich2013
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 7870 of file BibliMSc.bib
+Repeated entry---line 8030 of file BibliMSc.bib
  : @article{Raman2009
  :                   ,
 I'm skipping whatever remains of this entry
@@ -20,45 +20,46 @@ Warning--can't use both author and editor fields in Yan2013
 Warning--can't use both volume and number fields in Kloosterboer2001
 Warning--empty journal in Gelius-Dietrich2013
 Warning--empty journal in Baslow2003
-You've used 70 entries,
+Warning--empty journal in Landriscina1972
+You've used 80 entries,
             1791 wiz_defined-function locations,
-            930 strings with 17887 characters,
-and the built_in function-call counts, 17319 in all, are:
-= -- 1515
-> -- 929
+            1000 strings with 20533 characters,
+and the built_in function-call counts, 20345 in all, are:
+= -- 1769
+> -- 1126
 < -- 4
-+ -- 337
-- -- 267
-* -- 1418
-:= -- 2797
-add.period$ -- 203
-call.type$ -- 70
-change.case$ -- 65
++ -- 406
+- -- 326
+* -- 1702
+:= -- 3298
+add.period$ -- 233
+call.type$ -- 80
+change.case$ -- 75
 chr.to.int$ -- 0
-cite$ -- 74
-duplicate$ -- 654
-empty$ -- 1573
-format.name$ -- 267
-if$ -- 3689
+cite$ -- 85
+duplicate$ -- 744
+empty$ -- 1825
+format.name$ -- 326
+if$ -- 4313
 int.to.chr$ -- 0
-int.to.str$ -- 70
-missing$ -- 63
-newline$ -- 346
-num.names$ -- 70
-pop$ -- 122
+int.to.str$ -- 80
+missing$ -- 73
+newline$ -- 396
+num.names$ -- 80
+pop$ -- 134
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 293
+skip$ -- 323
 stack$ -- 0
-substring$ -- 1357
-swap$ -- 124
+substring$ -- 1652
+swap$ -- 133
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 182
-width$ -- 72
-write$ -- 749
+warning$ -- 5
+while$ -- 212
+width$ -- 82
+write$ -- 858
 (There were 3 error messages)

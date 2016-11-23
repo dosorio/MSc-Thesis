@@ -4,62 +4,61 @@ The top-level auxiliary file: TesisMSc.aux
 A level-1 auxiliary file: neuroprotective/tibolonePaper.aux
 The style file: unsrt.bst
 Database file #1: BibliMSc.bib
-Repeated entry---line 1456 of file BibliMSc.bib
- : @article{Cakir2007
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3558 of file BibliMSc.bib
- : @article{Gelius-Dietrich2013
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8030 of file BibliMSc.bib
+Repeated entry---line 1476 of file BibliMSc.bib
  : @article{Raman2009
  :                   ,
 I'm skipping whatever remains of this entry
-Warning--can't use both author and editor fields in Yan2013
+Repeated entry---line 3140 of file BibliMSc.bib
+ : @article{Gelius-dietrich2013
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5541 of file BibliMSc.bib
+ : @article{Cakir2007
+ :                   ,
+I'm skipping whatever remains of this entry
 Warning--can't use both volume and number fields in Kloosterboer2001
-Warning--empty journal in Gelius-Dietrich2013
+Warning--can't use both author and editor fields in Yan2013
 Warning--empty journal in Baslow2003
 Warning--empty journal in Landriscina1972
-You've used 80 entries,
+You've used 92 entries,
             1791 wiz_defined-function locations,
-            1000 strings with 20533 characters,
-and the built_in function-call counts, 20345 in all, are:
-= -- 1769
-> -- 1126
+            1085 strings with 23116 characters,
+and the built_in function-call counts, 23421 in all, are:
+= -- 2048
+> -- 1277
 < -- 4
-+ -- 406
-- -- 326
-* -- 1702
-:= -- 3298
-add.period$ -- 233
-call.type$ -- 80
-change.case$ -- 75
++ -- 461
+- -- 369
+* -- 1979
+:= -- 3795
+add.period$ -- 269
+call.type$ -- 92
+change.case$ -- 87
 chr.to.int$ -- 0
-cite$ -- 85
-duplicate$ -- 744
-empty$ -- 1825
-format.name$ -- 326
-if$ -- 4313
+cite$ -- 96
+duplicate$ -- 852
+empty$ -- 2108
+format.name$ -- 369
+if$ -- 4961
 int.to.chr$ -- 0
-int.to.str$ -- 80
-missing$ -- 73
-newline$ -- 396
-num.names$ -- 80
-pop$ -- 134
+int.to.str$ -- 92
+missing$ -- 85
+newline$ -- 456
+num.names$ -- 92
+pop$ -- 144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 323
+skip$ -- 362
 stack$ -- 0
-substring$ -- 1652
-swap$ -- 133
+substring$ -- 1936
+swap$ -- 146
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 212
-width$ -- 82
-write$ -- 858
+warning$ -- 4
+while$ -- 247
+width$ -- 94
+write$ -- 991
 (There were 3 error messages)

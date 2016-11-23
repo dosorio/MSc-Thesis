@@ -1,6 +1,9 @@
-\chapter{minval: An R package for MINimal VALidation of stoichiometric reactions}
-\textbf{Written by:} \textit{Daniel Osorio, Janneth Gonzalez and Andrés Pinzón-Velasco}.\\
-\section{Abstract}
+\chapter{Building a metabolic reconstruction: Doing a MINimal VALidation of stoichiometric reactions through `minval' R package.}
+\begin{tabular}{rm{12cm}}
+\textsf{\textbf{Original title:}}& minval: An R package for MINimal VALidation of stoichiometric reactions.\\
+\textsf{\textbf{Written by:}} & \textit{Daniel Osorio, Janneth Gonzalez and Andrés Pinzón-Velasco}\\ 
+\end{tabular}
+\section*{Abstract}
 The genome-scale metabolic reconstructions, a compilation of all stoichiometric reactions that can describe the entire cellular metabolism of an organism, have become an indispensable tool for our understanding of biological phenomena, covering fields that range from systems biology to bioengineering. Evaluation of metabolic reconstructions are generally carried through Flux Balance Analysis, an optimization method where the biological sense of optimal solution is sensitive to thermodynamic unbalance, caused by the presence of stoichiometric reactions whose compounds are not produced or consumed in any other reaction (orphan metabolites) and by mass unbalanced stoichiometric reactions.  The \textbf{minval} package was designed as a tool to identify orphan metabolites and the mass unbalanced reactions in a set of stoichometry reactions, it also permits to extract all reactants, products, metabolite names and compartments from a metabolic reconstruction, moreover specific functions to map compound names associated to the Chemical Entities of Biological Interest (ChEBI) database are also included.
 \section{Introduction}
 A chemical reaction is a process where a set of chemical compounds called \emph{reactants} are transformed into another compounds called \emph{products} \cite{Chen2013}. The accepted way to represent a chemical reaction is called a \emph{stoichiometric reaction}, where reactants are placed on the left and the products on the right separated by an arrow which indicates the direction of the reaction as is showed in the equation \ref{sr} \cite{Hendrickson1997}. In biochemistry a set of chemical reactions that transform a substrate into a product, after several chemical transformations is called a metabolic pathway \cite{Lambert2011}. The compilation of all stoichiometric reactions included in all metabolic pathways that can describe the entire cellular metabolism encoded in the genome of a particular organism is known as a \emph{genome-scale metabolic reconstruction} \cite{Park2009} and has become an indispensable tool for studying metabolism of biological entities at the systems level \cite{Thiele2010}.
@@ -27,9 +30,9 @@ Comprehensive R Archive Network. To install and load it, just type:
 \end{Sinput}
 \end{Schunk}
 The \texttt{minval} package requires R version 2.10 or higher. Development releases of the package are available on the GitHub repository \texttt{http://github.com/gibbslab/minval}.
-\subsection{Inputs and syntaxis}
+\subsection*{Inputs and syntaxis}
 The functions included in \texttt{minval} package take as input a string list with stoichiometric reactions. The data loading from traditional human-readable spreadsheets can be carried through other CRAN-available packages as \texttt{gdata}, \texttt{readxl} or \texttt{xlsx}. Each reaction string must contain metabolites, with an optional compartment label between square brackets. The metabolites should be separated by a plus symbol (\texttt{+}) between two blank spaces and may have just one stoichiometric number before the name. The reactants should be separated of products by an arrow using the following symbol \texttt{=>} for irreversible reactions and \texttt{<=>} for reversible reactions.
-\subsection{Syntax Validation}
+\subsection*{Syntax Validation}
 Flux Balance Analysis method is implemented in a variety of software under different programming languages. Some of the most popular implementations are \texttt{COBRA} \cite{Becker2007} and \texttt{RAVEN} \cite{Agren2013} under matlab language as well as \texttt{sybil} and \texttt{abcdeFBA} under R language. The \texttt{is.validsyntax} function validate the well accepted compartmentalized stoichiometric syntax (Equation \ref{sr}) for several FBA implementations and returns a boolean value TRUE if syntax is correct. In this example we show the stoichiometric syntax for the inter-convertion of  malate to fumaric acid and water in astrocytes cytoplasm.
 \begin{Schunk}
 \begin{Sinput}
@@ -39,7 +42,7 @@ Flux Balance Analysis method is implemented in a variety of software under diffe
 [1] TRUE
 \end{Soutput}
 \end{Schunk}
-\subsection{Reactants and Products}
+\subsection*{Reactants and Products}
 As defined in introduction, stoichiometric reactions represent the transformation of reactants into products in a chemical reaction. The \texttt{reactants} and \texttt{products} functions extract and return all reactants and products present in a stoichiometric reaction  as a vector. In this example we show the extraction of the reactants (quinone and succinic acid) and products (hydroquinone and fumaric acid) in a reaction that occurs in astrocytes mitochondrias.
 \begin{Schunk}
 \begin{Sinput}
@@ -55,7 +58,7 @@ As defined in introduction, stoichiometric reactions represent the transformatio
 [1] "Hydroquinone[m_a]" "fumaric acid[m_a]"
 \end{Soutput}
 \end{Schunk}
-\subsection{Metabolites}
+\subsection*{Metabolites}
 Two of the more popular packages that implement FBA analysis such as \texttt{COBRA} \cite{Becker2007} and \texttt{RAVEN} \cite{Agren2013} require the complete list of metabolites included in the metabolic reconstruction, in a particular section of the human-readable input file. The \texttt{metabolites} function automatically identifies and lists  all metabolites (with and without compartments) for a specific or a set of stoichiometric reactions.  In this example we show how to extract all metabolites (reactants and products) with and without compartment for the Ubiquinol and FAD production reaction in astrocytes mitochondrias.
 \begin{Schunk}
 \begin{Sinput}
@@ -74,7 +77,7 @@ As was mentioned before, the report option without compartment was added:
 [1] "FADH2"        "ubiquinone-0" "FAD"          "Ubiquinol"   
 \end{Soutput}
 \end{Schunk}
-\subsection{Orphan Metabolites}
+\subsection*{Orphan Metabolites}
 Orphan metabolites, compounds that are not produced or consumed in any other reaction are one of the main causes of mass unbalance in metabolic reconstructions. The \texttt{orphan.reactants} function, identifies compounds that are not produced internally by any other reaction and should be added to the reconstruction as an exchange reaction following the protocol proposed by \cite{Thiele2010}.  In this examples we show how to extract all orphan compounds for all reactions included in the glutamate/glutamine cycle.
 \begin{Schunk}
 \begin{Sinput}
@@ -125,7 +128,7 @@ $m_a
 [3] "Ferricytochrome c2[m_a]"
 \end{Soutput}
 \end{Schunk}
-\subsection{Compartments}
+\subsection*{Compartments}
 As well as in cells, where not all reactions occur in all compartments,  stoichiometric reactions in a metabolic reconstruction can be labeled to be restricted for a single compartment during FBA, by the assignment of  a compartment label after the stoichiometric coefficient and name of each metabolite. Some FBA implementations require the report of all compartments included in the metabolic reconstruction as an independent part of the human-readable input file. In this example we show how to extrac all compartments for all reactions included in the glutamate/glutamine cycle.
 \begin{Schunk}
 \begin{Sinput}
@@ -135,7 +138,7 @@ As well as in cells, where not all reactions occur in all compartments,  stoichi
 [1] "c_n" "r_n" "m_n" "c_a" "r_a" "m_a"
 \end{Soutput}
 \end{Schunk}
-\subsection{Association with ChEBI}
+\subsection*{Association with ChEBI}
 The Chemical Entities of Biological Interest (\texttt{ChEBI}) database  is a freely available dictionary of molecular entities focused on 'small' chemical compounds involved in biochemical reactions \cite{Degtyarenko2007}. Amongst other characteristics, the release 136 of ChEBI database contains a set of standardized metabolite names, synonyms and molecular formula for at least 52521 chemical compounds. The use of standardized metabolite names facilitate the sharing process and inter-convertion to another metabolite names  or identifiers \cite{Bernard2014, Ravikrishnan2015}. The \texttt{minval} package contains five functions to check and extract values from a local copy of the ChEBI database release 136. The \texttt{is.chebi} function takes a compound name as input, compares it against all the compounds names in ChEBI and returns a logical value TRUE if a match is found. In this next four examples we show the potential use of the functions using as input the acetyl-CoA compound.
 \begin{Schunk}
 \begin{Sinput}
@@ -182,7 +185,7 @@ The \texttt{to.ChEBI} function translates the compounds names of a stoichiometri
 [1] "1 C27H35N9O15P2 + 1 C9H10O4 => 1 C27H33N9O15P2 + 1 C9H12O4(C5H8)n"
 \end{Soutput}
 \end{Schunk}
-\subsection{Mass Balance Validation}
+\subsection*{Mass Balance Validation}
 Thermodynamic unbalance of genome-scale metabolic reconstructions can also be promoted by stoichiometric mistakes. In a well balanced stoichiometric reaction according to the Lomonósov-Lavoisier law, the mass comprising the reactants should be the same mass present in the products. The \texttt{unbalanced} function converts the metabolites identifiers to molecular formulas, multiplies the atom numbers by their respective stoichiometric coefficient, and establishes  if the atomic composition of reactants and products are the same, it returns a logical value TRUE if mass is unbalanced. In this example we show the mass balance evaluation for the first twenty reactions of the glutamate/glutamine cycle.
 \begin{Schunk}
 \begin{Sinput}
@@ -214,7 +217,5 @@ The \texttt{unbalanced} function also include an option to show the molecular fo
 \end{Soutput}
 \end{Schunk}
 
-\section{Summary}
+\section{Conclusion}
 We introduced the \texttt{minval} package to evaluate mass balancing correctness of metabolic reconstructions and to extract all reactants, products, orphan metabolites, metabolite names and compartments for a set of stoichiometric reactions. We show step by step the minimal evaluation process of mass balance using the 128 non-exchange reactions included in the glutamate/glutamine cycle included in the ``\texttt{glugln}'' dataset. Also some examples of metabolites names - ChEBI database association was showed.
-
-\section{Bibliography}

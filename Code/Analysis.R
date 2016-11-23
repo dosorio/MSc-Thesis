@@ -49,9 +49,9 @@ dev.off()
 
 # par(mfcol=c(1,2))
 healthy <- readSBMLmod("Results/matureAstrocyte.xml")
-model_FBA <- optimizeProb(healty)
-model_MTF <- optimizeProb(healty, algorithm = "mtf", wtobj = mod_obj(model_FBA))
-h <- getNetFlux(getFluxDist(model_MTF,findExchReact(healty)))
+model_FBA <- optimizeProb(healthy)
+model_MTF <- optimizeProb(healthy, algorithm = "mtf", wtobj = mod_obj(model_FBA))
+h <- getNetFlux(getFluxDist(model_MTF,findExchReact(healthy)))
 inflammated <- healthy
 lowbnd(inflammated)[inflammated@react_id=="EX_hdca(e)"] <- -0.208
 uppbnd(inflammated)[inflammated@react_id=="EX_hdca(e)"] <- -0.208
@@ -125,9 +125,9 @@ dev.off()
 
 h2i <- fluxDifferences(healthy,inflammated)
 i2t <- fluxDifferences(inflammated,tibolone)
-pdf(file = "Slides/Figures/Effects.pdf",width = 10,height = 6.5,encoding = 'ISOLatin2.enc')
+pdf(file = "Slides/Figures/Effects.pdf",width = 10,height = 4,encoding = 'ISOLatin2.enc')
 par(mfcol=c(1,6),las=2,mar=c(7,3,4,3))
-barplot(c(Healthy=0.377,Inflammated=0.318,Tibolone=0.427),col=c("darkblue","red","dodgerblue2"),main="BIOMASS\nDMEM medium")
+barplot(c(Healthy=0.377,Inflammated=0.318,Tibolone=0.427),col=c("darkblue","red","dodgerblue2"),main="BIOMASS\nDMEM medium",ylab="Objective Function Value")
 barplot(c(Healthy=4.652,Inflammated=1.893,Tibolone=1.893),col=c("darkblue","red","dodgerblue2"),main="CYS[e] to GTHRD[e]\nConversion")
 barplot(c(Healthy=1.813,Inflammated=0.507,Tibolone=0.507),col=c("darkblue","red","dodgerblue2"),main="GLC[e] to ATP[e]\nConversion")
 barplot(c(Healthy=1.792,Inflammated=0.458,Tibolone=0.458),col=c("darkblue","red","dodgerblue2"),main="GLC[e] to LACTATE[e]\nConversion")

@@ -3,9 +3,9 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: tibolonePaper.aux
 I found no \bibdata command---while reading file tibolonePaper.aux
 I found no \bibstyle command---while reading file tibolonePaper.aux
-You've used 62 entries,
+You've used 82 entries,
             0 wiz_defined-function locations,
-            204 strings with 1793 characters,
+            244 strings with 2217 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

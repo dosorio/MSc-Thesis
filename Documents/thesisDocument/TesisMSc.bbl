@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{Kloosterboer2001}
+H.~J. Kloosterboer.
+\newblock {Tibolone: A steroid with a tissue-specific mode of action}.
+\newblock In {\em Journal of Steroid Biochemistry and Molecular Biology},
+  volume~76, pages 231--238, 2001.
+
 \bibitem{Takuma2004}
 Kazuhiro Takuma, Akemichi Baba, and Toshio Matsuda.
 \newblock {Astrocyte apoptosis: Implications for neuroprotection}.
@@ -202,12 +208,6 @@ Paola Albertazzi, Raffaele {Di Micco}, and Ettore Zanardi.
 Katarzyna Wojtal, Micha{\l}~K. Trojnar, and Stanis{\l}aw~J. Czuczwar.
 \newblock {Endogenous neuroprotective factors: Neurosteroids}, 2006.
 
-\bibitem{Kloosterboer2001}
-H.~J. Kloosterboer.
-\newblock {Tibolone: A steroid with a tissue-specific mode of action}.
-\newblock In {\em Journal of Steroid Biochemistry and Molecular Biology},
-  volume~76, pages 231--238, 2001.
-
 \bibitem{Sharma2006}
 Sudhaa Sharma, Annil Mahajan, Sudesh Kumar, and Vishal~R. Tandon.
 \newblock {Tibolone: A selective tissue estrogenic activity regulator}, 2006.
@@ -285,10 +285,10 @@ Daniel Osorio, Kelly Botero, Janneth Gonzalez, and Andres Pinzon.
 \newblock {\em {exp2flux: Convert Gene EXPression Data to FBA FLUXes}}, 2016.
 
 \bibitem{Gelius-Dietrich2013}
-Gabriel Gelius-dietrich, Abdelmoneim~Amer Desouki, Claus~Jonathan Fritzemeier,
-  and Martin~J Lercher.
+Gabriel Gelius-Dietrich, Abdelmoneim Desouki, Claus Fritzemeier, and Martin~J
+  Lercher.
 \newblock {sybil – Efficient constraint-based modelling in R}.
-\newblock 2013.
+\newblock {\em BMC Systems Biology}, 7(1):125, 2013.
 
 \bibitem{RCoreTeam2016}
 {R Core Team}.
@@ -305,6 +305,11 @@ Karthik Raman and Nagasuma Chandra.
 \newblock {Flux balance analysis of biological systems: Applications and
   challenges}.
 \newblock {\em Briefings in Bioinformatics}, 10(4):435--449, 2009.
+
+\bibitem{Kanehisa2000}
+M~Kanehisa.
+\newblock {KEGG: Kyoto Encyclopedia of Genes and Genomes}.
+\newblock {\em Nucleic Acids Research}, 28(1):27--30, jan 2000.
 
 \bibitem{Fitch1997}
 M~T Fitch and J~Silver.
@@ -339,6 +344,12 @@ Arabinda Das, Naren~L. Banik, and Swapan~K. Ray.
 \newblock {Flavonoids activated caspases for apoptosis in human glioblastoma
   T98G and U87MG cells but not in human normal astrocytes}.
 \newblock {\em Cancer}, 116(1):164--176, 2010.
+
+\bibitem{Bhowmick2015}
+Rupa Bhowmick, Abhishek Subramanian, and Ram~Rup Sarkar.
+\newblock {Exploring the differences in metabolic behavior of astrocyte and
+  glioblastoma: a flux balance analysis approach}.
+\newblock {\em Systems and Synthetic Biology}, 2015.
 
 \bibitem{LeFoll2016}
 Christelle {Le Foll} and Barry~E Levin.
@@ -430,7 +441,7 @@ D.~R. Green, L.~Galluzzi, and G.~Kroemer.
 
 \bibitem{Murphy1988}
 Sean Murphy, Brian Pearce, James Jeremy, and Paresh Dandona.
-\newblock {Astrocytes as eicosanoid???producing cells}.
+\newblock {Astrocytes as eicosanoid-producing cells}.
 \newblock {\em Glia}, 1(4):241--245, 1988.
 
 \bibitem{Fernando2013}
@@ -474,5 +485,68 @@ Kenji Tamura, Asami Makino, Fran{\c{c}}oise Hullin-Matsuda, Toshihide
 \newblock {Novel lipogenic enzyme ELOVL7 is involved in prostate cancer growth
   through saturated long-chain fatty acid metabolism}.
 \newblock {\em Cancer Research}, 69(20):8133--8140, 2009.
+
+\bibitem{Ahlemeyer2002}
+Barbara Ahlemeyer, Stefan K{\"{o}}lker, Yuan Zhu, Georg~F. Hoffmann, and Josef
+  Krieglstein.
+\newblock {Increase in glutamate-induced neurotoxicity by activated astrocytes
+  involves stimulation of protein kinase C}.
+\newblock {\em Journal of Neurochemistry}, 82(3):504--515, jul 2002.
+
+\bibitem{Schuller-Levis2003}
+Georgia~B. Schuller-Levis and Eunkyue Park.
+\newblock {Taurine: new implications for an old amino acid}.
+\newblock {\em FEMS Microbiology Letters}, 226(2):195--202, sep 2003.
+
+\bibitem{Russell1992}
+D~W Russell and K~D Setchell.
+\newblock {Bile acid biosynthesis.}
+\newblock {\em Biochemistry}, 31(20):4737--49, 1992.
+
+\bibitem{Amen-Ra2006}
+Nūn Amen-Ra.
+\newblock {Humans are evolutionarily adapted to caloric restriction resulting
+  from ecologically dictated dietary deprivation imposed during the
+  Plio–Pleistocene period}.
+\newblock {\em Medical Hypotheses}, 66(5):978--984, jan 2006.
+
+\bibitem{Feist2010}
+Adam~M. Feist and Bernhard~O. Palsson.
+\newblock {The biomass objective function}.
+\newblock {\em Current Opinion in Microbiology}, 13(3):344--349, 2010.
+
+\bibitem{Colditz1993}
+Graham~A. Colditz, Kathleen~M. Egan, and Meir~J. Stampfer.
+\newblock {Hormone replacement therapy and risk of breast cancer: Results from
+  epidemiologic studies}.
+\newblock {\em American Journal of Obstetrics and Gynecology},
+  168(5):1473--1480, may 1993.
+
+\bibitem{Colditz1995}
+Graham~A. Colditz, Susan~E. Hankinson, David~J. Hunter, Walter~C. Willett,
+  JoAnn~E. Manson, Meir~J. Stampfer, Charles Hennekens, Bernard Rosner, and
+  Frank~E. Speizer.
+\newblock {The Use of Estrogens and Progestins and the Risk of Breast Cancer in
+  Postmenopausal Women}.
+\newblock {\em New England Journal of Medicine}, 332(24):1589--1593, jun 1995.
+
+\bibitem{Pessayre2001}
+Dominique Pessayre, Alain Berson, Bernard Fromenty, and Abdellah Mansouri.
+\newblock {Mitochondria in Steatohepatitis}.
+\newblock {\em Seminars in Liver Disease}, 21(01):057--070, 2001.
+
+\bibitem{Sun2009}
+F.~Sun, M.~L. Xie, L.~J. Zhu, J.~Xue, and Z.~L. Gu.
+\newblock {Inhibitory effect of osthole on alcohol-induced fatty liver in
+  mice}.
+\newblock {\em Digestive and Liver Disease}, 41(2):127--133, 2009.
+
+\bibitem{Avila-Rodriguez2016}
+Marco Avila-Rodriguez, Luis~Miguel Garcia-Segura, Oscar Hidalgo-lanussa, Eliana
+  Baez, Janneth Gonzalez, and George~E. Barreto.
+\newblock {Tibolone protects astrocytic cells from glucose deprivation through
+  a mechanism involving estrogen receptor beta and the upregulation of
+  neuroglobin expression}.
+\newblock {\em Molecular and Cellular Endocrinology}, 433:35--46, 2016.
 
 \end{thebibliography}

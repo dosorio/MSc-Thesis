@@ -1,6 +1,8 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: TesisMSc.aux
+A level-1 auxiliary file: titulo/HojaTituloMSc.aux
+A level-1 auxiliary file: Resumen.aux
 A level-1 auxiliary file: neuroprotective/tibolonePaper.aux
 The style file: unsrt.bst
 Database file #1: BibliMSc.bib
@@ -16,13 +18,13 @@ Repeated entry---line 5541 of file BibliMSc.bib
  : @article{Cakir2007
  :                   ,
 I'm skipping whatever remains of this entry
-Warning--can't use both volume and number fields in Kloosterboer2001
 Warning--can't use both author and editor fields in Yan2013
+Warning--can't use both volume and number fields in Kloosterboer2001
 Warning--empty journal in Baslow2003
 Warning--empty journal in Landriscina1972
 You've used 92 entries,
             1791 wiz_defined-function locations,
-            1085 strings with 23116 characters,
+            1087 strings with 23151 characters,
 and the built_in function-call counts, 23421 in all, are:
 = -- 2048
 > -- 1277

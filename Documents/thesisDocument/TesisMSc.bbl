@@ -1,11 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{Kloosterboer2001}
-H.~J. Kloosterboer.
-\newblock {Tibolone: A steroid with a tissue-specific mode of action}.
-\newblock In {\em Journal of Steroid Biochemistry and Molecular Biology},
-  volume~76, pages 231--238, 2001.
-
 \bibitem{Takuma2004}
 Kazuhiro Takuma, Akemichi Baba, and Toshio Matsuda.
 \newblock {Astrocyte apoptosis: Implications for neuroprotection}.
@@ -207,6 +201,12 @@ Paola Albertazzi, Raffaele {Di Micco}, and Ettore Zanardi.
 \bibitem{Wojtal2006}
 Katarzyna Wojtal, Micha{\l}~K. Trojnar, and Stanis{\l}aw~J. Czuczwar.
 \newblock {Endogenous neuroprotective factors: Neurosteroids}, 2006.
+
+\bibitem{Kloosterboer2001}
+H.~J. Kloosterboer.
+\newblock {Tibolone: A steroid with a tissue-specific mode of action}.
+\newblock In {\em Journal of Steroid Biochemistry and Molecular Biology},
+  volume~76, pages 231--238, 2001.
 
 \bibitem{Sharma2006}
 Sudhaa Sharma, Annil Mahajan, Sudesh Kumar, and Vishal~R. Tandon.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 NOV 2016 22:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  23 NOV 2016 00:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -947,10 +947,11 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 \rot@float@box=\box41
 \rot@mess@toks=\toks30
 ))
-(./Befehle.sty) (./TesisMSc.aux (./Resumen.aux)
+(./Befehle.sty) (./TesisMSc.aux (./titulo/HojaTituloMSc.aux)
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
-)
+ (./Resumen.aux)
+(./objectives/objectives.aux) (./neuroprotective/tibolonePaper.aux))
 \openout1 = `TesisMSc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1035,68 +1036,350 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\openout2 = `Resumen.aux'.
+\openout2 = `titulo/HojaTituloMSc.aux'.
 
 
-(./Resumen.tex
-LaTeX Font Info:    Try loading font information for T1+aess on input line 3.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aess.fd
-File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
-)
-[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(./titulo/HojaTituloMSc.tex
+Package epstopdf Info: Source file: <titulo/EscudoUN.eps>
+(epstopdf)                    date: 2011-01-14 16:54:26
+(epstopdf)                    size: 34748 bytes
+(epstopdf)             Output file: <titulo/EscudoUN-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-26 08:01:30
+(epstopdf)                    size: 18616 bytes
+(epstopdf)             Command: <repstopdf --outfile=titulo/EscudoUN-eps-conver
+ted-to.pdf titulo/EscudoUN.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+
+<titulo/EscudoUN-eps-converted-to.pdf, id=1, 202.7575pt x 83.31125pt>
+File: titulo/EscudoUN-eps-converted-to.pdf Graphic file (type pdf)
+
+<use titulo/EscudoUN-eps-converted-to.pdf>
+Package pdftex.def Info: titulo/EscudoUN-eps-converted-to.pdf used on input lin
+e 6.
+(pdftex.def)             Requested size: 202.757pt x 83.31104pt.
+ [1
 
 
-
-
-]
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./titul
+o/EscudoUN-eps-converted-to.pdf>]
 [2
 
-]) (./TesisMSc.bbl [1
+
+] [3] [4
+
+
+])
+\openout2 = `Resumen.aux'.
+
+ (./Resumen.tex
+LaTeX Font Info:    Try loading font information for T1+aess on input line 3.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aess.fd
+File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
+)
+LaTeX Font Info:    Try loading font information for T1+aett on input line 5.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+) [5
+
+
+
+
+] [6
+
+])
+(./TesisMSc.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+Package tocbasic Info: Using my definition of `\numberline' on input line 2.
+
+
+LaTeX Font Warning: Font shape `T1/aess/bx/sc' undefined
+(Font)              using `T1/aess/bx/n' instead on input line 2.
+
+
+Package spanish Warning: Replacing `T1/aess/bx/sc' by 
+(spanish)                faked small caps on input line 2.
+
+Package tocbasic Info: Using my definition of `\numberline' on input line 3.
+Package tocbasic Info: Using my definition of `\numberline' on input line 4.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package tocbasic Info: Using my definition of `\numberline' on input line 5.
+Package tocbasic Info: Using my definition of `\numberline' on input line 6.
+Package tocbasic Info: Using my definition of `\numberline' on input line 7.
+)
+\tf@toc=\write4
+\openout4 = `TesisMSc.toc'.
+
+ [1
 
 
 ]
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
- [2]
-LaTeX Info: Redefining \. on input line 211.
-LaTeX Info: Redefining \% on input line 211.
- [3]
+(./TesisMSc.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lof=\write5
+\openout5 = `TesisMSc.lof'.
+
+ [2
+
+] (./TesisMSc.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lot=\write6
+\openout6 = `TesisMSc.lot'.
+
+ [3
+
+]
+\openout2 = `objectives/objectives.aux'.
+
+ (./objectives/objectives.tex)
+[4
+
+
+]
+\openout2 = `neuroprotective/tibolonePaper.aux'.
+
+ (./neuroprotective/tibolonePaper.tex
+chapter 1.
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              Implementation of \float@addtolist became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Since Version 3.12 support for deprecated
+(scrbook)              \float@addtolist interface has been
+(scrbook)              restricted to only some of the KOMA-Script
+(scrbook)              features and been removed from others.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@addtolist interface .
+
+[5
+
+
+
+]
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
+
+
+Package Fancyhdr Warning: \headheight is too small (18.125pt): 
+ Make it at least 27.11194pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+ [7]
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+ [8]
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
+ [9]
+Underfull \hbox (badness 1902) in paragraph at lines 72--73
+[]|\T1/aer/m/n/12 3$\OML/cmm/m/it/12 $\T1/aer/m/n/12 hidroxytibolone in-ter-co
+n-ver-tion to
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
+[10] <neuroprotective/RXN.pdf, id=70, 671.50874pt x 189.70876pt>
+File: neuroprotective/RXN.pdf Graphic file (type pdf)
+
+<use neuroprotective/RXN.pdf>
+Package pdftex.def Info: neuroprotective/RXN.pdf used on input line 97.
+(pdftex.def)             Requested size: 469.47046pt x 132.63022pt.
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [11]
+<neuroprotective/Pathways.pdf, id=74, 1016.66826pt x 1017.75232pt>
+File: neuroprotective/Pathways.pdf Graphic file (type pdf)
+
+<use neuroprotective/Pathways.pdf>
+Package pdftex.def Info: neuroprotective/Pathways.pdf used on input line 110.
+(pdftex.def)             Requested size: 469.47046pt x 469.97319pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
+ [12 <./neuroprotective/RXN.pdf>]
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
+ [13 <./neuroprotective/Pathways.pdf>]
+<neuroprotective/Exchanges.pdf, id=139, 650.43pt x 289.08pt>
+File: neuroprotective/Exchanges.pdf Graphic file (type pdf)
+
+<use neuroprotective/Exchanges.pdf>
+Package pdftex.def Info: neuroprotective/Exchanges.pdf used on input line 121.
+(pdftex.def)             Requested size: 469.47046pt x 208.65793pt.
+
+<neuroprotective/IC50.pdf, id=140, 939.51pt x 610.28pt>
+File: neuroprotective/IC50.pdf Graphic file (type pdf)
+
+<use neuroprotective/IC50.pdf>
+Package pdftex.def Info: neuroprotective/IC50.pdf used on input line 130.
+(pdftex.def)             Requested size: 469.47046pt x 304.953pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<neuroprotective/Healthy2Inflammated.pdf, id=141, 722.7pt x 469.755pt>
+File: neuroprotective/Healthy2Inflammated.pdf Graphic file (type pdf)
+
+<use neuroprotective/Healthy2Inflammated.pdf>
+Package pdftex.def Info: neuroprotective/Healthy2Inflammated.pdf used on input 
+line 141.
+(pdftex.def)             Requested size: 469.47046pt x 305.15794pt.
+LaTeX Info: Redefining \. on input line 146.
+LaTeX Info: Redefining \% on input line 146.
+ [14 <./neuroprotective/Exchanges.pdf>]
+LaTeX Info: Redefining \. on input line 146.
+LaTeX Info: Redefining \% on input line 146.
+ [15 <./neuroprotective/IC50.pdf>]
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
+ [16 <./neuroprotective/Healthy2Inflammated.pdf>]
+Overfull \hbox (4.15097pt too wide) in paragraph at lines 154--154
+ \T1/aer/m/n/12 FLUX| 
+ []
+
+
+Overfull \hbox (4.15097pt too wide) in paragraph at lines 154--154
+ \T1/aer/m/n/12 FLUX| 
+ []
+
+
+Overfull \hbox (3.09445pt too wide) in paragraph at lines 152--161
+[][] 
+ []
+
+
+Overfull \hbox (4.15097pt too wide) in paragraph at lines 171--171
+ \T1/aer/m/n/12 FLUX| 
+ []
+
+
+Overfull \hbox (4.15097pt too wide) in paragraph at lines 171--171
+ \T1/aer/m/n/12 FLUX| 
+ []
+
+
+Overfull \hbox (2.95557pt too wide) in paragraph at lines 176--176
+ []|\T1/aer/m/n/12 NADH2_u10m| 
+ []
+
+
+Overfull \hbox (3.09445pt too wide) in paragraph at lines 169--191
+ [] 
+ []
+
+LaTeX Info: Redefining \. on input line 194.
+LaTeX Info: Redefining \% on input line 194.
+[17] <neuroprotective/Effects.pdf, id=173, 722.7pt x 289.08pt>
+File: neuroprotective/Effects.pdf Graphic file (type pdf)
+
+<use neuroprotective/Effects.pdf>
+Package pdftex.def Info: neuroprotective/Effects.pdf used on input line 202.
+(pdftex.def)             Requested size: 469.47046pt x 187.78949pt.
+LaTeX Info: Redefining \. on input line 209.
+LaTeX Info: Redefining \% on input line 209.
+ [18 <./neuroprotective/Effects.pdf>]
+<neuroprotective/Inflammated2Tibolone.pdf, id=184, 722.7pt x 469.755pt>
+File: neuroprotective/Inflammated2Tibolone.pdf Graphic file (type pdf)
+
+<use neuroprotective/Inflammated2Tibolone.pdf>
+Package pdftex.def Info: neuroprotective/Inflammated2Tibolone.pdf used on input
+ line 212.
+(pdftex.def)             Requested size: 469.47046pt x 305.15794pt.
+LaTeX Info: Redefining \. on input line 236.
+LaTeX Info: Redefining \% on input line 236.
+ [19 <./neuroprotective/Inflammated2Tibolone.pdf>])
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+ [20]
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+ [21] (./TesisMSc.bbl [22
+
+
+]
+LaTeX Info: Redefining \. on input line 142.
+LaTeX Info: Redefining \% on input line 142.
+ [23]
+LaTeX Info: Redefining \. on input line 214.
+LaTeX Info: Redefining \% on input line 214.
+ [24]
 LaTeX Info: Redefining \. on input line 277.
 LaTeX Info: Redefining \% on input line 277.
- [4]
+ [25]
 LaTeX Info: Redefining \. on input line 353.
 LaTeX Info: Redefining \% on input line 353.
- [5]
+ [26]
 LaTeX Info: Redefining \. on input line 422.
 LaTeX Info: Redefining \% on input line 422.
- [6]
+ [27]
 LaTeX Info: Redefining \. on input line 495.
 LaTeX Info: Redefining \% on input line 495.
- [7])
+
+[28])
 LaTeX Info: Redefining \. on input line 45.
 LaTeX Info: Redefining \% on input line 45.
- [8] (./TesisMSc.aux
-(./Resumen.aux)
+ [29] (./TesisMSc.aux (./titulo/HojaTituloMSc.aux)
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
-) ) 
+ (./Resumen.aux)
+(./objectives/objectives.aux) (./neuroprotective/tibolonePaper.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8843 strings out of 493014
- 131607 string characters out of 6133351
- 297095 words of memory out of 5000000
- 12186 multiletter control sequences out of 15000+600000
- 20599 words of font info for 40 fonts, out of 8000000 for 9000
+ 9083 strings out of 493014
+ 136018 string characters out of 6133351
+ 304418 words of memory out of 5000000
+ 12325 multiletter control sequences out of 15000+600000
+ 46644 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,12n,66p,8514b,836s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
->
-Output written on TesisMSc.pdf (10 pages, 85701 bytes).
+ 47i,13n,66p,8514b,846s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on TesisMSc.pdf (35 pages, 618192 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 268 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

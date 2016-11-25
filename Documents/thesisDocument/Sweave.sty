@@ -29,9 +29,9 @@
 \ifthenelse{\boolean{Sweave@inconsolata}}{%
  \IfFileExists{inconsolata.sty}{\usepackage{inconsolata}}{\usepackage{zi4}}}{}
 
-\DefineVerbatimEnvironment{Sinput}{Verbatim}{fontshape=sl}
-\DefineVerbatimEnvironment{Soutput}{Verbatim}{}
-\DefineVerbatimEnvironment{Scode}{Verbatim}{fontshape=sl}
+\DefineVerbatimEnvironment{Sinput}{Verbatim}{fontshape=sl,fontsize=\footnotesize}
+\DefineVerbatimEnvironment{Soutput}{Verbatim}{fontsize=\footnotesize}
+\DefineVerbatimEnvironment{Scode}{Verbatim}{fontshape=sl,fontsize=\footnotesize}
 
 \ifdefined\Schunk%
   \message{\string Environment Schunk is already defined, stay with former definition}%

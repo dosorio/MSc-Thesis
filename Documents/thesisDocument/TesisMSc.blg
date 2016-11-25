@@ -1,66 +1,49 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: TesisMSc.aux
-A level-1 auxiliary file: titulo/HojaTituloMSc.aux
-A level-1 auxiliary file: Resumen.aux
-A level-1 auxiliary file: neuroprotective/tibolonePaper.aux
+A level-1 auxiliary file: g2f/g2fPaper.aux
 The style file: unsrt.bst
+I found no \citation commands---while reading file TesisMSc.aux
 Database file #1: BibliMSc.bib
-Repeated entry---line 1476 of file BibliMSc.bib
- : @article{Raman2009
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3140 of file BibliMSc.bib
- : @article{Gelius-dietrich2013
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5541 of file BibliMSc.bib
- : @article{Cakir2007
- :                   ,
-I'm skipping whatever remains of this entry
-Warning--can't use both author and editor fields in Yan2013
-Warning--can't use both volume and number fields in Kloosterboer2001
-Warning--empty journal in Baslow2003
-Warning--empty journal in Landriscina1972
-You've used 92 entries,
+You've used 0 entries,
             1791 wiz_defined-function locations,
-            1087 strings with 23151 characters,
-and the built_in function-call counts, 23421 in all, are:
-= -- 2048
-> -- 1277
-< -- 4
-+ -- 461
-- -- 369
-* -- 1979
-:= -- 3795
-add.period$ -- 269
-call.type$ -- 92
-change.case$ -- 87
+            446 strings with 3538 characters,
+and the built_in function-call counts, 18 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 96
-duplicate$ -- 852
-empty$ -- 2108
-format.name$ -- 369
-if$ -- 4961
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 0
-int.to.str$ -- 92
-missing$ -- 85
-newline$ -- 456
-num.names$ -- 92
-pop$ -- 144
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 362
+skip$ -- 1
 stack$ -- 0
-substring$ -- 1936
-swap$ -- 146
-text.length$ -- 4
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 247
-width$ -- 94
-write$ -- 991
-(There were 3 error messages)
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 2
+(There was 1 error message)

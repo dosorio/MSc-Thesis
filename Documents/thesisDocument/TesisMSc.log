@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  23 NOV 2016 00:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 NOV 2016 21:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -951,7 +951,12 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
  (./Resumen.aux)
-(./objectives/objectives.aux) (./neuroprotective/tibolonePaper.aux))
+(./minval/minvalPaper.aux) (./g2f/g2fPaper.aux) (./exp2flux/exp2fluxPaper.aux)
+(./neuroprotective/tibolonePaper.aux
+
+LaTeX Warning: Label `fC' multiply defined.
+
+))
 \openout1 = `TesisMSc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -968,8 +973,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 3.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 3.
@@ -1117,6 +1121,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Package tocbasic Info: Using my definition of `\numberline' on input line 5.
 Package tocbasic Info: Using my definition of `\numberline' on input line 6.
 Package tocbasic Info: Using my definition of `\numberline' on input line 7.
+Package tocbasic Info: Using my definition of `\numberline' on input line 8.
+Package tocbasic Info: Using my definition of `\numberline' on input line 9.
+Package tocbasic Info: Using my definition of `\numberline' on input line 10.
+Package tocbasic Info: Using my definition of `\numberline' on input line 11.
+Package tocbasic Info: Using my definition of `\numberline' on input line 12.
+Package tocbasic Info: Using my definition of `\numberline' on input line 13.
+Package tocbasic Info: Using my definition of `\numberline' on input line 14.
+Package tocbasic Info: Using my definition of `\numberline' on input line 15.
+Package tocbasic Info: Using my definition of `\numberline' on input line 16.
+Package tocbasic Info: Using my definition of `\numberline' on input line 17.
+Package tocbasic Info: Using my definition of `\numberline' on input line 18.
+Package tocbasic Info: Using my definition of `\numberline' on input line 19.
+Package tocbasic Info: Using my definition of `\numberline' on input line 20.
+Package tocbasic Info: Using my definition of `\numberline' on input line 21.
+Package tocbasic Info: Using my definition of `\numberline' on input line 22.
+Package tocbasic Info: Using my definition of `\numberline' on input line 23.
 )
 \tf@toc=\write4
 \openout4 = `TesisMSc.toc'.
@@ -1141,19 +1161,12 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write6
 \openout6 = `TesisMSc.lot'.
 
- [9
+ [1
 
 ]
-\openout2 = `objectives/objectives.aux'.
+\openout2 = `minval/minvalPaper.aux'.
 
- (./objectives/objectives.tex)
-[10
-
-
-]
-\openout2 = `neuroprotective/tibolonePaper.aux'.
-
- (./neuroprotective/tibolonePaper.tex
+ (./minval/minvalPaper.tex
 chapter 1.
 
 Class scrbook Warning: \float@addtolists detected!
@@ -1170,216 +1183,1205 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-[1
 
+Package natbib Warning: Citation `Chen2013' on page 2 undefined on input line 9
+.
+
+
+Package natbib Warning: Citation `Hendrickson1997' on page 2 undefined on input
+ line 9.
+
+
+Package natbib Warning: Citation `Lambert2011' on page 2 undefined on input lin
+e 9.
+
+
+Package natbib Warning: Citation `Park2009' on page 2 undefined on input line 9
+.
+
+
+Package natbib Warning: Citation `Thiele2010' on page 2 undefined on input line
+ 9.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+[2
 
 
 ]
-LaTeX Info: Redefining \. on input line 14.
-LaTeX Info: Redefining \% on input line 14.
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
+ []
+
+
+Package natbib Warning: Citation `Kanehisa2000' on page 3 undefined on input li
+ne 16.
+
+
+Package natbib Warning: Citation `Caspi2014' on page 3 undefined on input line 
+16.
+
+
+Package natbib Warning: Citation `Croft2014' on page 3 undefined on input line 
+16.
+
+
+Package natbib Warning: Citation `Chang2015' on page 3 undefined on input line 
+16.
+
+
+Package natbib Warning: Citation `Jewison2014' on page 3 undefined on input lin
+e 16.
+
+
+Package natbib Warning: Citation `Thiele2010' on page 3 undefined on input line
+ 16.
+
+
+Package natbib Warning: Citation `Gevorgyan2008' on page 3 undefined on input l
+ine 16.
+
+
+Package natbib Warning: Citation `Lakshmanan2014' on page 3 undefined on input 
+line 16.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Package natbib Warning: Citation `Kim2008' on page 3 undefined on input line 18
+.
+
+
+Package natbib Warning: Citation `Park2009' on page 3 undefined on input line 1
+8.
+
+
+Package natbib Warning: Citation `Reznik2013' on page 3 undefined on input line
+ 18.
+
+
+Package natbib Warning: Citation `Park2009' on page 3 undefined on input line 1
+8.
+
+
+Package natbib Warning: Citation `Thiele2010' on page 3 undefined on input line
+ 18.
+
+
+Overfull \hbox (3.17027pt too wide) in paragraph at lines 18--19
+[]\T1/aer/m/n/12 Genome-scale me-ta-bo-lic re-cons-truc-tions are usually in-te
+-rro-ga-ted th-rough \T1/aer/m/it/12 Flux Ba-lan-ce Analy-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
+[3]
+
+Package natbib Warning: Citation `Becker2007' on page 4 undefined on input line
+ 36.
+
+
+Package natbib Warning: Citation `Agren2013' on page 4 undefined on input line 
+36.
+
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
 
 Package Fancyhdr Warning: \headheight is too small (18.125pt): 
  Make it at least 27.11194pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
- [3]
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
- [4]
-LaTeX Info: Redefining \. on input line 33.
-LaTeX Info: Redefining \% on input line 33.
- [5]
-Underfull \hbox (badness 1902) in paragraph at lines 72--73
+[4]
+
+Package natbib Warning: Citation `Becker2007' on page 5 undefined on input line
+ 62.
+
+
+Package natbib Warning: Citation `Agren2013' on page 5 undefined on input line 
+62.
+
+
+Package natbib Warning: Citation `Thiele2010' on page 5 undefined on input line
+ 81.
+
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+[5]
+
+Package natbib Warning: Citation `Thiele2010' on page 6 undefined on input line
+ 103.
+
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+[6]
+
+Package natbib Warning: Citation `Degtyarenko2007' on page 7 undefined on input
+ line 142.
+
+
+Package natbib Warning: Citation `Bernard2014' on page 7 undefined on input lin
+e 142.
+
+
+Package natbib Warning: Citation `Ravikrishnan2015' on page 7 undefined on inpu
+t line 142.
+
+LaTeX Info: Redefining \. on input line 158.
+LaTeX Info: Redefining \% on input line 158.
+[7]
+LaTeX Info: Redefining \. on input line 206.
+LaTeX Info: Redefining \% on input line 206.
+ [8])
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+ [9]
+\openout2 = `g2f/g2fPaper.aux'.
+
+ (./g2f/g2fPaper.tex
+chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+[10
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 13.
+LaTeX Font Info:    No file TS1aer.fd. on input line 13.
+
+LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
+(Font)              using `TS1/cmr/m/n' instead
+(Font)              for symbol `textregistered' on input line 13.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
+Underfull \vbox (badness 2875) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
+ [11])
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+
+[12]
+\openout2 = `exp2flux/exp2fluxPaper.aux'.
+
+ (./exp2flux/exp2fluxPaper.tex
+chapter 3.
+
+Package natbib Warning: Citation `szappanos2011integrated' on page 13 undefined
+ on input line 9.
+
+
+Package natbib Warning: Citation `price2004genome' on page 13 undefined on inpu
+t line 9.
+
+
+Package natbib Warning: Citation `liu2010use' on page 13 undefined on input lin
+e 9.
+
+
+Package natbib Warning: Citation `schellenberger2011quantitative' on page 13 un
+defined on input line 9.
+
+
+Package natbib Warning: Citation `seaver2012frontiers' on page 13 undefined on 
+input line 9.
+
+
+Package natbib Warning: Citation `varma1994metabolic' on page 13 undefined on i
+nput line 9.
+
+
+Package natbib Warning: Citation `szappanos2011integrated' on page 13 undefined
+ on input line 9.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+[13
+
+
+
+]
+
+Package natbib Warning: Citation `palsson2002silico' on page 14 undefined on in
+put line 11.
+
+
+Package natbib Warning: Citation `chen2012metabolic' on page 14 undefined on in
+put line 11.
+
+
+Package natbib Warning: Citation `lewis2012constraining' on page 14 undefined o
+n input line 11.
+
+
+Package natbib Warning: Citation `topfer2013integration' on page 14 undefined o
+n input line 11.
+
+
+Package natbib Warning: Citation `Oberhardt2009' on page 14 undefined on input 
+line 11.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+
+Package natbib Warning: Citation `Machado2014' on page 14 undefined on input li
+ne 13.
+
+
+Package natbib Warning: Citation `covert2002transcriptional' on page 14 undefin
+ed on input line 13.
+
+
+Package natbib Warning: Citation `aakesson2004integration' on page 14 undefined
+ on input line 13.
+
+
+Package natbib Warning: Citation `covert2004integrating' on page 14 undefined o
+n input line 13.
+
+
+Package natbib Warning: Citation `schellenberger2011quantitative' on page 14 un
+defined on input line 13.
+
+
+Package natbib Warning: Citation `reed2012shrinking' on page 14 undefined on in
+put line 13.
+
+
+Package natbib Warning: Citation `blazier2012integration' on page 14 undefined 
+on input line 13.
+
+
+Package natbib Warning: Citation `machado2014systematic' on page 14 undefined o
+n input line 13.
+
+
+Package natbib Warning: Citation `blazier2012integration' on page 14 undefined 
+on input line 13.
+
+
+Package natbib Warning: Citation `topfer2013integration' on page 14 undefined o
+n input line 13.
+
+
+Package natbib Warning: Citation `machado2014systematic' on page 14 undefined o
+n input line 13.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
+Package natbib Warning: Citation `colijn2009interpreting' on page 14 undefined 
+on input line 15.
+
+
+Package natbib Warning: Citation `Carbonell2016' on page 14 undefined on input 
+line 15.
+
+
+Package natbib Warning: Citation `Thiele2010' on page 14 undefined on input lin
+e 15.
+
+
+Package natbib Warning: Citation `colijn2009interpreting' on page 14 undefined 
+on input line 15.
+
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+[15]
+LaTeX Font Info:    Try loading font information for TS1+aett on input line 64.
+
+LaTeX Font Info:    No file TS1aett.fd. on input line 64.
+
+
+LaTeX Font Warning: Font shape `TS1/aett/m/n' undefined
+(Font)              using `TS1/cmr/m/n' instead
+(Font)              for symbol `textquotesingle' on input line 64.
+
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
+[16] <exp2flux/exp2flux-001.pdf, id=99, 433.62pt x 433.62pt>
+File: exp2flux/exp2flux-001.pdf Graphic file (type pdf)
+
+<use exp2flux/exp2flux-001.pdf>
+Package pdftex.def Info: exp2flux/exp2flux-001.pdf used on input line 108.
+(pdftex.def)             Requested size: 234.73523pt x 234.74017pt.
+LaTeX Info: Redefining \. on input line 124.
+LaTeX Info: Redefining \% on input line 124.
+ [17 <./exp2flux/exp2flux-001.pdf>])
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+ [18]
+\openout2 = `neuroprotective/tibolonePaper.aux'.
+
+
+(./neuroprotective/tibolonePaper.tex
+chapter 4.
+[19
+
+
+
+]
+
+Package natbib Warning: Citation `Takuma2004' on page 20 undefined on input lin
+e 9.
+
+
+Package natbib Warning: Citation `Lange2012' on page 20 undefined on input line
+ 9.
+
+
+Package natbib Warning: Citation `Kimelberg2010' on page 20 undefined on input 
+line 9.
+
+
+Package natbib Warning: Citation `Allen2009' on page 20 undefined on input line
+ 9.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Package natbib Warning: Citation `Halassa2010' on page 20 undefined on input li
+ne 11.
+
+
+Package natbib Warning: Citation `Giaume2010' on page 20 undefined on input lin
+e 11.
+
+
+Package natbib Warning: Citation `Nijboer2013' on page 20 undefined on input li
+ne 11.
+
+
+Package natbib Warning: Citation `Barres2008' on page 20 undefined on input lin
+e 11.
+
+
+Package natbib Warning: Citation `Shen2013' on page 20 undefined on input line 
+11.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+
+Package natbib Warning: Citation `Petrelli2016' on page 20 undefined on input l
+ine 13.
+
+
+Package natbib Warning: Citation `Halassa2010' on page 20 undefined on input li
+ne 13.
+
+
+Package natbib Warning: Citation `Barres2008' on page 20 undefined on input lin
+e 13.
+
+
+Package natbib Warning: Citation `Durrant2014' on page 20 undefined on input li
+ne 13.
+
+
+Package natbib Warning: Citation `Cakir2007' on page 20 undefined on input line
+ 13.
+
+
+Package natbib Warning: Citation `Raps1989' on page 20 undefined on input line 
+13.
+
+
+Package natbib Warning: Citation `Jha2016' on page 20 undefined on input line 1
+3.
+
+
+Package natbib Warning: Citation `Allaman2011' on page 20 undefined on input li
+ne 13.
+
+
+Package natbib Warning: Citation `Wang2000' on page 20 undefined on input line 
+13.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
+[20]
+
+Package natbib Warning: Citation `Maragakis2006' on page 21 undefined on input 
+line 15.
+
+
+Package natbib Warning: Citation `Avila-Rodriguez2014' on page 21 undefined on 
+input line 15.
+
+
+Package natbib Warning: Citation `Jha2016' on page 21 undefined on input line 1
+5.
+
+
+Package natbib Warning: Citation `Takuma2004' on page 21 undefined on input lin
+e 15.
+
+
+Package natbib Warning: Citation `Lange2012' on page 21 undefined on input line
+ 15.
+
+
+Package natbib Warning: Citation `Nijboer2013' on page 21 undefined on input li
+ne 15.
+
+
+Package natbib Warning: Citation `Hussain2013' on page 21 undefined on input li
+ne 15.
+
+
+Package natbib Warning: Citation `Masel2010' on page 21 undefined on input line
+ 18.
+
+
+Package natbib Warning: Citation `Yan2013' on page 21 undefined on input line 1
+8.
+
+
+Package natbib Warning: Citation `Jha2016' on page 21 undefined on input line 1
+8.
+
+
+Package natbib Warning: Citation `Allaman2011' on page 21 undefined on input li
+ne 18.
+
+
+Package natbib Warning: Citation `Takuma2004' on page 21 undefined on input lin
+e 18.
+
+
+Package natbib Warning: Citation `Fitch2008' on page 21 undefined on input line
+ 18.
+
+
+Package natbib Warning: Citation `Jha2016' on page 21 undefined on input line 1
+8.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Package natbib Warning: Citation `Dowell2009a' on page 21 undefined on input li
+ne 20.
+
+
+Package natbib Warning: Citation `Molofsk2012' on page 21 undefined on input li
+ne 20.
+
+
+Package natbib Warning: Citation `Sidoryk-Wegrzynowicz2013' on page 21 undefine
+d on input line 20.
+
+
+Package natbib Warning: Citation `Lange2012' on page 21 undefined on input line
+ 20.
+
+
+Package natbib Warning: Citation `Gupta2012' on page 21 undefined on input line
+ 20.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Package natbib Warning: Citation `Jha2016' on page 21 undefined on input line 2
+2.
+
+
+Package natbib Warning: Citation `Purkayastha2015' on page 21 undefined on inpu
+t line 22.
+
+
+Package natbib Warning: Citation `K.2006' on page 21 undefined on input line 22
+.
+
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+[21]
+
+Package natbib Warning: Citation `Vodovotz2010' on page 22 undefined on input l
+ine 25.
+
+
+Package natbib Warning: Citation `Vodovotz2008' on page 22 undefined on input l
+ine 25.
+
+
+Package natbib Warning: Citation `An2011' on page 22 undefined on input line 25
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Package natbib Warning: Citation `Mi2010' on page 22 undefined on input line 27
+.
+
+
+Package natbib Warning: Citation `Vodovotz2010' on page 22 undefined on input l
+ine 27.
+
+
+Package natbib Warning: Citation `Laveti2013' on page 22 undefined on input lin
+e 30.
+
+
+Package natbib Warning: Citation `Albertazzi1998' on page 22 undefined on input
+ line 30.
+
+
+Package natbib Warning: Citation `Wojtal2006' on page 22 undefined on input lin
+e 30.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Package natbib Warning: Citation `Kloosterboer2001' on page 22 undefined on inp
+ut line 32.
+
+
+Package natbib Warning: Citation `Sharma2006' on page 22 undefined on input lin
+e 32.
+
+
+Package natbib Warning: Citation `Timmer2002' on page 22 undefined on input lin
+e 32.
+
+
+Package natbib Warning: Citation `Altinoz2009' on page 22 undefined on input li
+ne 32.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Package natbib Warning: Citation `Kloosterboer2004' on page 22 undefined on inp
+ut line 34.
+
+
+Package natbib Warning: Citation `Kloosterboer2001' on page 22 undefined on inp
+ut line 34.
+
+
+Package natbib Warning: Citation `Avila-Rodriguez2014' on page 22 undefined on 
+input line 34.
+
+
+Package natbib Warning: Citation `Altinoz2009' on page 22 undefined on input li
+ne 34.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+LaTeX Info: Redefining \. on input line 35.
+LaTeX Info: Redefining \% on input line 35.
+[22]
+
+Package natbib Warning: Citation `Edgar2002' on page 23 undefined on input line
+ 39.
+
+
+Package natbib Warning: Citation `Zhang2016' on page 23 undefined on input line
+ 39.
+
+
+Package natbib Warning: Citation `rebhan1997genecards' on page 23 undefined on 
+input line 39.
+
+
+Package natbib Warning: Citation `maglott2005entrez' on page 23 undefined on in
+put line 39.
+
+
+Package natbib Warning: Citation `Carlson2016' on page 23 undefined on input li
+ne 39.
+
+
+Package natbib Warning: Citation `thiele2013community' on page 23 undefined on 
+input line 39.
+
+
+Package natbib Warning: Citation `G2F' on page 23 undefined on input line 39.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+Package natbib Warning: Citation `MINVAL' on page 23 undefined on input line 41
+.
+
+
+Package natbib Warning: Citation `Thiele2010' on page 23 undefined on input lin
+e 41.
+
+
+Package natbib Warning: Citation `EXP2FLUX' on page 23 undefined on input line 
+41.
+
+
+Package natbib Warning: Citation `Gelius-Dietrich2013' on page 23 undefined on 
+input line 41.
+
+
+Package natbib Warning: Citation `RCoreTeam2016' on page 23 undefined on input 
+line 41.
+
+
+Package natbib Warning: Citation `Orth2010' on page 23 undefined on input line 
+43.
+
+
+Package natbib Warning: Citation `Raman2009' on page 23 undefined on input line
+ 43.
+
+
+Package natbib Warning: Citation `Orth2010' on page 23 undefined on input line 
+43.
+
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+[23]
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+ [24]
+Underfull \hbox (badness 1902) in paragraph at lines 86--87
 []|\T1/aer/m/n/12 3$\OML/cmm/m/it/12 $\T1/aer/m/n/12 hidroxytibolone in-ter-co
 n-ver-tion to
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (7.70999pt too wide) in paragraph at lines 103--104
+\T1/aer/m/n/12 lo-ne ac-tion me-cha-nism we-re iden-ti-fied th-rough sen-si-ti-
+vity analy-sis as fo-llows: Pro-inflammatory
+ []
 
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
-[6] <neuroprotective/RXN.pdf, id=70, 671.50874pt x 189.70876pt>
+
+Underfull \vbox (badness 2980) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
+ [25]
+<neuroprotective/RXN.pdf, id=138, 671.50874pt x 189.70876pt>
 File: neuroprotective/RXN.pdf Graphic file (type pdf)
 
 <use neuroprotective/RXN.pdf>
-Package pdftex.def Info: neuroprotective/RXN.pdf used on input line 97.
+Package pdftex.def Info: neuroprotective/RXN.pdf used on input line 112.
 (pdftex.def)             Requested size: 469.47046pt x 132.63022pt.
-LaTeX Info: Redefining \. on input line 102.
-LaTeX Info: Redefining \% on input line 102.
- [7]
-<neuroprotective/Pathways.pdf, id=74, 1016.66826pt x 1017.75232pt>
+
+<neuroprotective/Pathways.pdf, id=139, 1016.66826pt x 1017.75232pt>
 File: neuroprotective/Pathways.pdf Graphic file (type pdf)
 
 <use neuroprotective/Pathways.pdf>
-Package pdftex.def Info: neuroprotective/Pathways.pdf used on input line 110.
-(pdftex.def)             Requested size: 469.47046pt x 469.97319pt.
+Package pdftex.def Info: neuroprotective/Pathways.pdf used on input line 120.
+(pdftex.def)             Requested size: 281.68513pt x 281.98701pt.
+
+
+Package natbib Warning: Citation `Kanehisa2000' on page 26 undefined on input l
+ine 126.
+
+
+Package natbib Warning: Citation `Fitch1997' on page 26 undefined on input line
+ 126.
+
+
+Package natbib Warning: Citation `Ciccarelli2001' on page 26 undefined on input
+ line 126.
+
+
+Package natbib Warning: Citation `Cakir2007' on page 26 undefined on input line
+ 126.
+
+
+Package natbib Warning: Citation `Giaume2010' on page 26 undefined on input lin
+e 126.
+
+
+Package natbib Warning: Citation `Sertbas2014' on page 26 undefined on input li
+ne 126.
+
+
+Package natbib Warning: Citation `Sa2016' on page 26 undefined on input line 12
+6.
+
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+[26 <./neuroprotective/RXN.pdf>]
+
+Package natbib Warning: Citation `Das2010' on page 27 undefined on input line 1
+28.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
- [8 <./neuroprotective/RXN.pdf>]
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
- [9 <./neuroprotective/Pathways.pdf>]
-<neuroprotective/Exchanges.pdf, id=139, 650.43pt x 289.08pt>
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+ [27 <./neuroprotective/Pathways.pdf>]
+<neuroprotective/Exchanges.pdf, id=204, 650.43pt x 289.08pt>
 File: neuroprotective/Exchanges.pdf Graphic file (type pdf)
 
 <use neuroprotective/Exchanges.pdf>
-Package pdftex.def Info: neuroprotective/Exchanges.pdf used on input line 121.
+Package pdftex.def Info: neuroprotective/Exchanges.pdf used on input line 132.
 (pdftex.def)             Requested size: 469.47046pt x 208.65793pt.
 
-<neuroprotective/IC50.pdf, id=140, 939.51pt x 610.28pt>
+
+Package natbib Warning: Citation `Cakir2007' on page 28 undefined on input line
+ 138.
+
+
+Package natbib Warning: Citation `Bhowmick2015' on page 28 undefined on input l
+ine 138.
+
+
+Package natbib Warning: Citation `LeFoll2016' on page 28 undefined on input lin
+e 138.
+
+
+Package natbib Warning: Citation `Allaman2011' on page 28 undefined on input li
+ne 138.
+
+<neuroprotective/IC50.pdf, id=205, 939.51pt x 610.28pt>
 File: neuroprotective/IC50.pdf Graphic file (type pdf)
 
 <use neuroprotective/IC50.pdf>
-Package pdftex.def Info: neuroprotective/IC50.pdf used on input line 130.
+Package pdftex.def Info: neuroprotective/IC50.pdf used on input line 143.
 (pdftex.def)             Requested size: 469.47046pt x 304.953pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<neuroprotective/Healthy2Inflammated.pdf, id=141, 722.7pt x 469.755pt>
+
+Package natbib Warning: Citation `Liu2013' on page 28 undefined on input line 1
+48.
+
+
+Package natbib Warning: Citation `Rangel-Aldao2015' on page 28 undefined on inp
+ut line 148.
+
+
+Package natbib Warning: Citation `Jha2016' on page 28 undefined on input line 1
+48.
+
+
+Package natbib Warning: Citation `Williams2012' on page 28 undefined on input l
+ine 148.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+[28 <./neuroprotective/Exchanges.pdf>]
+
+Package natbib Warning: Citation `Parpura2000' on page 29 undefined on input li
+ne 150.
+
+
+Package natbib Warning: Citation `Jha2016' on page 29 undefined on input line 1
+50.
+
+
+Package natbib Warning: Citation `Hertz1999' on page 29 undefined on input line
+ 150.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+
+Package natbib Warning: Citation `Niu2012' on page 29 undefined on input line 1
+52.
+
+
+Package natbib Warning: Citation `Lee2005' on page 29 undefined on input line 1
+52.
+
+
+Package natbib Warning: Citation `Son2005' on page 29 undefined on input line 1
+52.
+
+
+Package natbib Warning: Citation `Baslow2003' on page 29 undefined on input lin
+e 152.
+
+
+Package natbib Warning: Citation `Rael2004' on page 29 undefined on input line 
+152.
+
+
+Package natbib Warning: Citation `Chaudhry1999' on page 29 undefined on input l
+ine 152.
+
+
+Package natbib Warning: Citation `Doengi2009' on page 29 undefined on input lin
+e 152.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
+[29 <./neuroprotective/IC50.pdf>]
+<neuroprotective/Healthy2Inflammated.pdf, id=226, 722.7pt x 469.755pt>
 File: neuroprotective/Healthy2Inflammated.pdf Graphic file (type pdf)
 
 <use neuroprotective/Healthy2Inflammated.pdf>
 Package pdftex.def Info: neuroprotective/Healthy2Inflammated.pdf used on input 
-line 141.
+line 156.
 (pdftex.def)             Requested size: 469.47046pt x 305.15794pt.
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
- [10 <./neuroprotective/Exchanges.pdf>]
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
- [11 <./neuroprotective/IC50.pdf>]
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
- [12 <./neuroprotective/Healthy2Inflammated.pdf>]
-Overfull \hbox (4.15097pt too wide) in paragraph at lines 154--154
+
+
+Package natbib Warning: Citation `Green2014' on page 30 undefined on input line
+ 162.
+
+
+Package natbib Warning: Citation `Murphy1988' on page 30 undefined on input lin
+e 162.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+LaTeX Info: Redefining \. on input line 163.
+LaTeX Info: Redefining \% on input line 163.
+[30 <./neuroprotective/Healthy2Inflammated.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+
+Overfull \hbox (4.15097pt too wide) in paragraph at lines 171--171
  \T1/aer/m/n/12 FLUX| 
  []
 
 
-Overfull \hbox (4.15097pt too wide) in paragraph at lines 154--154
+Overfull \hbox (4.15097pt too wide) in paragraph at lines 171--171
  \T1/aer/m/n/12 FLUX| 
  []
 
 
-Overfull \hbox (3.09445pt too wide) in paragraph at lines 152--161
+Overfull \hbox (3.09445pt too wide) in paragraph at lines 169--178
 [][] 
  []
 
 
-Overfull \hbox (4.15097pt too wide) in paragraph at lines 171--171
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+
+Overfull \hbox (4.15097pt too wide) in paragraph at lines 188--188
  \T1/aer/m/n/12 FLUX| 
  []
 
 
-Overfull \hbox (4.15097pt too wide) in paragraph at lines 171--171
+Overfull \hbox (4.15097pt too wide) in paragraph at lines 188--188
  \T1/aer/m/n/12 FLUX| 
  []
 
 
-Overfull \hbox (2.95557pt too wide) in paragraph at lines 176--176
+Overfull \hbox (2.95557pt too wide) in paragraph at lines 193--193
  []|\T1/aer/m/n/12 NADH2_u10m| 
  []
 
 
-Overfull \hbox (3.09445pt too wide) in paragraph at lines 169--191
+Overfull \hbox (3.09445pt too wide) in paragraph at lines 186--208
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 194.
-LaTeX Info: Redefining \% on input line 194.
-[13] <neuroprotective/Effects.pdf, id=173, 722.7pt x 289.08pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `Fernando2013' on page 31 undefined on input l
+ine 211.
+
+
+Package natbib Warning: Citation `Varemo2015' on page 31 undefined on input lin
+e 211.
+
+
+Package natbib Warning: Citation `Saparov2007' on page 31 undefined on input li
+ne 211.
+
+
+Package natbib Warning: Citation `TeVelde2008' on page 31 undefined on input li
+ne 211.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+
+Package natbib Warning: Citation `Landriscina1972' on page 31 undefined on inpu
+t line 213.
+
+
+Package natbib Warning: Citation `Tamura2009' on page 31 undefined on input lin
+e 213.
+
+LaTeX Info: Redefining \. on input line 214.
+LaTeX Info: Redefining \% on input line 214.
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+<neuroprotective/Effects.pdf, id=239, 722.7pt x 289.08pt>
 File: neuroprotective/Effects.pdf Graphic file (type pdf)
 
 <use neuroprotective/Effects.pdf>
-Package pdftex.def Info: neuroprotective/Effects.pdf used on input line 202.
+Package pdftex.def Info: neuroprotective/Effects.pdf used on input line 220.
 (pdftex.def)             Requested size: 469.47046pt x 187.78949pt.
-LaTeX Info: Redefining \. on input line 209.
-LaTeX Info: Redefining \% on input line 209.
- [14 <./neuroprotective/Effects.pdf>]
-<neuroprotective/Inflammated2Tibolone.pdf, id=184, 722.7pt x 469.755pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `Petrelli2016' on page 32 undefined on input l
+ine 226.
+
+
+Package natbib Warning: Citation `Ahlemeyer2002' on page 32 undefined on input 
+line 226.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+
+ []
+
+
+Package natbib Warning: Citation `Schuller-Levis2003' on page 32 undefined on i
+nput line 228.
+
+
+Package natbib Warning: Citation `Amen-Ra2006' on page 32 undefined on input li
+ne 228.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+
+ []
+
+LaTeX Info: Redefining \. on input line 229.
+LaTeX Info: Redefining \% on input line 229.
+[32] <neuroprotective/Inflammated2Tibolone.pdf, id=243, 722.7pt x 469.755pt>
 File: neuroprotective/Inflammated2Tibolone.pdf Graphic file (type pdf)
 
 <use neuroprotective/Inflammated2Tibolone.pdf>
 Package pdftex.def Info: neuroprotective/Inflammated2Tibolone.pdf used on input
- line 212.
+ line 232.
 (pdftex.def)             Requested size: 469.47046pt x 305.15794pt.
-LaTeX Info: Redefining \. on input line 236.
-LaTeX Info: Redefining \% on input line 236.
- [15 <./neuroprotective/Inflammated2Tibolone.pdf>])
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
- [16]
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
- [17] (./TesisMSc.bbl [18
 
 
-]
-LaTeX Info: Redefining \. on input line 142.
-LaTeX Info: Redefining \% on input line 142.
- [19]
-LaTeX Info: Redefining \. on input line 214.
-LaTeX Info: Redefining \% on input line 214.
- [20]
-LaTeX Info: Redefining \. on input line 277.
-LaTeX Info: Redefining \% on input line 277.
- [21]
-LaTeX Info: Redefining \. on input line 353.
-LaTeX Info: Redefining \% on input line 353.
- [22]
-LaTeX Info: Redefining \. on input line 422.
-LaTeX Info: Redefining \% on input line 422.
- [23]
-LaTeX Info: Redefining \. on input line 495.
-LaTeX Info: Redefining \% on input line 495.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24])
-LaTeX Info: Redefining \. on input line 43.
-LaTeX Info: Redefining \% on input line 43.
- [25] (./TesisMSc.aux (./titulo/HojaTituloMSc.aux)
+
+Package natbib Warning: Citation `Feist2010' on page 33 undefined on input line
+ 239.
+
+
+Package natbib Warning: Citation `Takuma2004' on page 33 undefined on input lin
+e 239.
+
+
+Package natbib Warning: Citation `Colditz1993' on page 33 undefined on input li
+ne 239.
+
+
+Package natbib Warning: Citation `Colditz1995' on page 33 undefined on input li
+ne 239.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `Pessayre2001' on page 33 undefined on input l
+ine 259.
+
+
+Package natbib Warning: Citation `Sun2009' on page 33 undefined on input line 2
+59.
+
+
+Underfull \vbox (badness 1472) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 261.
+LaTeX Info: Redefining \% on input line 261.
+ [33 <./neuroprotective/Effects.pdf>]
+
+Package natbib Warning: Citation `Das2010' on page 34 undefined on input line 2
+62.
+
+
+Package natbib Warning: Citation `Liu2013' on page 34 undefined on input line 2
+62.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
+LaTeX Info: Redefining \. on input line 264.
+LaTeX Info: Redefining \% on input line 264.
+[34 <./neuroprotective/Inflammated2Tibolone.pdf>]
+
+Package natbib Warning: Citation `Petrelli2016' on page 35 undefined on input l
+ine 264.
+
+
+Package natbib Warning: Citation `Colditz1993' on page 35 undefined on input li
+ne 264.
+
+
+Package natbib Warning: Citation `Colditz1995' on page 35 undefined on input li
+ne 264.
+
+
+Package natbib Warning: Citation `Avila-Rodriguez2014' on page 35 undefined on 
+input line 264.
+
+
+Package natbib Warning: Citation `Avila-Rodriguez2016' on page 35 undefined on 
+input line 264.
+
+)
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
+ [35] (./TesisMSc.bbl
+
+Package natbib Warning: Empty `thebibliography' environment on input line 3.
+
+)
+
+Package natbib Warning: There were undefined citations.
+
+[36
+
+
+] (./TesisMSc.aux (./titulo/HojaTituloMSc.aux)
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
  (./Resumen.aux)
-(./objectives/objectives.aux) (./neuroprotective/tibolonePaper.aux))
+(./minval/minvalPaper.aux) (./g2f/g2fPaper.aux) (./exp2flux/exp2fluxPaper.aux)
+(./neuroprotective/tibolonePaper.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 9083 strings out of 493014
- 136018 string characters out of 6133351
- 304414 words of memory out of 5000000
- 12325 multiletter control sequences out of 15000+600000
- 46644 words of font info for 96 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 47i,13n,66p,8514b,846s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on TesisMSc.pdf (35 pages, 618037 bytes).
+ 8987 strings out of 493014
+ 133424 string characters out of 6133351
+ 307568 words of memory out of 5000000
+ 12197 multiletter control sequences out of 15000+600000
+ 53437 words of font info for 108 fonts, out of 8000000 for 9000
+ 1142 hyphenation exceptions out of 8191
+ 47i,22n,66p,8514b,606s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsltt10.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on TesisMSc.pdf (44 pages, 719447 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
+ 336 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,49 +1,75 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: TesisMSc.aux
+A level-1 auxiliary file: titulo/HojaTituloMSc.aux
+A level-1 auxiliary file: Resumen.aux
+A level-1 auxiliary file: objectives/objectives.aux
+A level-1 auxiliary file: minval/minvalPaper.aux
 A level-1 auxiliary file: g2f/g2fPaper.aux
+A level-1 auxiliary file: exp2flux/exp2fluxPaper.aux
+A level-1 auxiliary file: neuroprotective/tibolonePaper.aux
 The style file: unsrt.bst
-I found no \citation commands---while reading file TesisMSc.aux
 Database file #1: BibliMSc.bib
-You've used 0 entries,
+Repeated entry---line 8224 of file BibliMSc.bib
+ : @article{Gelius-Dietrich2013
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9665 of file BibliMSc.bib
+ : @article{Chen2013
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 10023 of file BibliMSc.bib
+ : @article{Cakir2007
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 10271 of file BibliMSc.bib
+ : @article{Raman2009
+ :                   ,
+I'm skipping whatever remains of this entry
+Warning--can't use both author and editor fields in Yan2013
+Warning--can't use both volume and number fields in Kloosterboer2001
+Warning--empty journal in Gelius-Dietrich2013
+Warning--empty journal in Baslow2003
+Warning--empty journal in Landriscina1972
+You've used 140 entries,
             1791 wiz_defined-function locations,
-            446 strings with 3538 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            1343 strings with 34138 characters,
+and the built_in function-call counts, 37007 in all, are:
+= -- 3158
+> -- 2159
+< -- 6
++ -- 773
+- -- 633
+* -- 3240
+:= -- 6064
+add.period$ -- 413
+call.type$ -- 140
+change.case$ -- 135
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 145
+duplicate$ -- 1299
+empty$ -- 3248
+format.name$ -- 633
+if$ -- 7779
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 140
+missing$ -- 133
+newline$ -- 696
+num.names$ -- 140
+pop$ -- 201
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 536
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 3077
+swap$ -- 211
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+warning$ -- 5
+while$ -- 376
+width$ -- 143
+write$ -- 1517
+(There were 4 error messages)

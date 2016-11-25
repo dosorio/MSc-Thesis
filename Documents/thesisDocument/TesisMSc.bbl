@@ -1,3 +1,864 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{100}
+
+\bibitem{Chen2013}
+William~Lingran Chen, David~Z Chen, and Keith~T Taylor.
+\newblock {Automatic reaction mapping and reaction center detection}.
+\newblock {\em Wiley Interdisciplinary Reviews: Computational Molecular
+  Science}, 3(6):560--593, 2013.
+
+\bibitem{Hendrickson1997}
+James~B Hendrickson.
+\newblock {Comprehensive System for Classification and Nomenclature of Organic
+  Reactions}.
+\newblock {\em Journal of Chemical Information and Computer Sciences},
+  37(97):850--852, 1997.
+
+\bibitem{Lambert2011}
+A.~Lambert, J.~Dubois, and R.~Bourqui.
+\newblock {Pathway preserving representation of metabolic networks}.
+\newblock {\em Computer Graphics Forum}, 30(3):1021--1030, 2011.
+
+\bibitem{Park2009}
+Jong~Myoung Park, Tae~Yong Kim, and Sang~Yup Lee.
+\newblock {Constraints-based genome-scale metabolic simulation for systems
+  metabolic engineering}.
+\newblock {\em Biotechnology Advances}, 27(6):979--988, 2009.
+
+\bibitem{Thiele2010}
+Ines Thiele and Bernhard~{\O} Palsson.
+\newblock {A protocol for generating a high-quality genome-scale metabolic
+  reconstruction}.
+\newblock {\em Nature Protocols}, 5(1):93--121, jan 2010.
+
+\bibitem{Kanehisa2000}
+M~Kanehisa.
+\newblock {KEGG: Kyoto Encyclopedia of Genes and Genomes}.
+\newblock {\em Nucleic Acids Research}, 28(1):27--30, jan 2000.
+
+\bibitem{Caspi2014}
+Ron Caspi, Tomer Altman, Richard Billington, Kate Dreher, Hartmut Foerster,
+  Carol~A. Fulcher, Timothy~A. Holland, Ingrid~M. Keseler, Anamika Kothari, Aya
+  Kubo, Markus Krummenacker, Mario Latendresse, Lukas~A. Mueller, Quang Ong,
+  Suzanne Paley, Pallavi Subhraveti, Daniel~S. Weaver, Deepika Weerasinghe,
+  Peifen Zhang, and Peter~D. Karp.
+\newblock {The MetaCyc database of metabolic pathways and enzymes and the
+  BioCyc collection of Pathway/Genome Databases}.
+\newblock {\em Nucleic Acids Research}, 42(D1):D459--D471, 2014.
+
+\bibitem{Croft2014}
+David Croft, Antonio~Fabregat Mundo, Robin Haw, Marija Milacic, Joel Weiser,
+  Guanming Wu, Michael Caudy, Phani Garapati, Marc Gillespie, Maulik~R. Kamdar,
+  Bijay Jassal, Steven Jupe, Lisa Matthews, Bruce May, Stanislav Palatnik,
+  Karen Rothfels, Veronica Shamovsky, Heeyeon Song, Mark Williams, Ewan Birney,
+  Henning Hermjakob, Lincoln Stein, and Peter D'Eustachio.
+\newblock {The Reactome pathway knowledgebase}.
+\newblock {\em Nucleic Acids Research}, 42(D1):D472--D477, jan 2014.
+
+\bibitem{Chang2015}
+A.~Chang, I.~Schomburg, S.~Placzek, L.~Jeske, M.~Ulbrich, M.~Xiao, C.~W.
+  Sensen, and D.~Schomburg.
+\newblock {BRENDA in 2015: exciting developments in its 25th year of
+  existence}.
+\newblock {\em Nucleic Acids Research}, 43(D1):D439--D446, jan 2015.
+
+\bibitem{Jewison2014}
+Timothy Jewison, Yilu Su, Fatemeh~Miri Disfany, Yongjie Liang, Craig Knox, Adam
+  Maciejewski, Jenna Poelzer, Jessica Huynh, You Zhou, David Arndt, Yannick
+  Djoumbou, Yifeng Liu, Lu~Deng, An~Chi Guo, Beomsoo Han, Allison Pon, Michael
+  Wilson, Shahrzad Rafatnia, Philip Liu, and David~S. Wishart.
+\newblock {SMPDB 2.0: Big Improvements to the Small Molecule Pathway Database}.
+\newblock {\em Nucleic Acids Research}, 42(D1):D478--D484, jan 2014.
+
+\bibitem{Gevorgyan2008}
+A.~Gevorgyan, M.~G. Poolman, and D.~a. Fell.
+\newblock {Detection of stoichiometric inconsistencies in biomolecular models}.
+\newblock {\em Bioinformatics}, 24(19):2245--2251, oct 2008.
+
+\bibitem{Lakshmanan2014}
+Meiyappan Lakshmanan, Geoffrey Koh, Bevan K~S Chung, and D.-Y. Lee.
+\newblock {Software applications for flux balance analysis}.
+\newblock {\em Briefings in Bioinformatics}, 15(1):108--122, jan 2014.
+
+\bibitem{Kim2008}
+Hyun~Uk Kim, Tae~Yong Kim, and Sang~Yup Lee.
+\newblock {Metabolic flux analysis and metabolic engineering of
+  microorganisms}.
+\newblock {\em Mol. BioSyst.}, 4(2):113--120, 2008.
+
+\bibitem{Reznik2013}
+Ed~Reznik, Pankaj Mehta, and Daniel Segr{\`{e}}.
+\newblock {Flux Imbalance Analysis and the Sensitivity of Cellular Growth to
+  Changes in Metabolite Pools}.
+\newblock {\em PLoS Computational Biology}, 9(8):e1003195, aug 2013.
+
+\bibitem{Becker2007}
+Scott~A Becker, Adam~M Feist, Monica~L Mo, Gregory Hannum, Bernhard~{\O}
+  Palsson, and Markus~J Herrgard.
+\newblock {Quantitative prediction of cellular metabolism with constraint-based
+  models: the COBRA Toolbox.}
+\newblock {\em Nature protocols}, 2(3):727--38, 2007.
+
+\bibitem{Agren2013}
+Rasmus Agren, Liming Liu, Saeed Shoaie, Wanwipa Vongsangnak, Intawat Nookaew,
+  and Jens Nielsen.
+\newblock {The RAVEN Toolbox and Its Use for Generating a Genome-scale
+  Metabolic Model for Penicillium chrysogenum}.
+\newblock {\em PLoS Computational Biology}, 9(3), 2013.
+
+\bibitem{Degtyarenko2007}
+Kirill Degtyarenko, P.~de~Matos, Marcus Ennis, Janna Hastings, Martin Zbinden,
+  A.~McNaught, R.~Alcantara, Michael Darsow, Micka{\"{e}}l Guedj, and Michael
+  Ashburner.
+\newblock {ChEBI: a database and ontology for chemical entities of biological
+  interest}.
+\newblock {\em Nucleic Acids Research}, 36(Database):D344--D350, dec 2007.
+
+\bibitem{Bernard2014}
+T.~Bernard, A.~Bridge, A.~Morgat, S.~Moretti, I.~Xenarios, and M.~Pagni.
+\newblock {Reconciliation of metabolites and biochemical reactions for
+  metabolic networks}.
+\newblock {\em Briefings in Bioinformatics}, 15(1):123--135, jan 2014.
+
+\bibitem{Ravikrishnan2015}
+A.~Ravikrishnan and K.~Raman.
+\newblock {Critical assessment of genome-scale metabolic networks: the need for
+  a unified standard}.
+\newblock {\em Briefings in Bioinformatics}, 16(6):1057--1068, nov 2015.
+
+\bibitem{szappanos2011integrated}
+Bal{\'{a}}zs Szappanos, K{\'{a}}roly Kov{\'{a}}cs, B{\'{e}}la Szamecz,
+  Frantisek Honti, Michael Costanzo, Anastasia Baryshnikova, Gabriel
+  Gelius-Dietrich, Martin~J Lercher, M{\'{a}}rk Jelasity, Chad~L Myers, and
+  Others.
+\newblock {An integrated approach to characterize genetic interaction networks
+  in yeast metabolism}.
+\newblock {\em Nature genetics}, 43(7):656--662, 2011.
+
+\bibitem{chen2012metabolic}
+Ning Chen, Ioscani~Jimenez del Val, Sarantos Kyriakopoulos, Karen~M Polizzi,
+  and Cleo Kontoravdi.
+\newblock {Metabolic network reconstruction: advances in in silico
+  interpretation of analytical information}.
+\newblock {\em Current opinion in biotechnology}, 23(1):77--82, 2012.
+
+\bibitem{agren2013raven}
+Rasmus Agren, Liming Liu, Saeed Shoaie, Wanwipa Vongsangnak, Intawat Nookaew,
+  and Jens Nielsen.
+\newblock {The RAVEN toolbox and its use for generating a genome-scale
+  metabolic model for Penicillium chrysogenum}.
+\newblock {\em PLoS Comput Biol}, 9(3):e1002980, 2013.
+
+\bibitem{alper2005identifying}
+Hal Alper, Yong-Su Jin, J~F Moxley, and G~Stephanopoulos.
+\newblock {Identifying gene targets for the metabolic engineering of lycopene
+  biosynthesis in Escherichia coli}.
+\newblock {\em Metabolic engineering}, 7(3):155--164, 2005.
+
+\bibitem{fong2005silico}
+Stephen~S Fong, Anthony~P Burgard, Christopher~D Herring, Eric~M Knight,
+  Frederick~R Blattner, Costas~D Maranas, and Bernhard~O Palsson.
+\newblock {In silico design and adaptive evolution of Escherichia coli for
+  production of lactic acid}.
+\newblock {\em Biotechnology and bioengineering}, 91(5):643--648, 2005.
+
+\bibitem{Thiele2014}
+I.~Thiele, N.~Vlassis, and R.~M.~T. Fleming.
+\newblock {FASTGAPFILL: efficient gap filling in metabolic networks}.
+\newblock {\em Bioinformatics}, 30(17):2529--2531, sep 2014.
+
+\bibitem{Palsson2009}
+Bernhard Palsson.
+\newblock {Metabolic systems biology}.
+\newblock {\em FEBS Letters}, 583(24):3900--3904, 2009.
+
+\bibitem{kumar2007optimization}
+Vinay~Satish Kumar, Madhukar~S Dasika, and Costas~D Maranas.
+\newblock {Optimization based automated curation of metabolic reconstructions}.
+\newblock {\em BMC bioinformatics}, 8(1):1, 2007.
+
+\bibitem{howe2008big}
+Doug Howe, Maria Costanzo, Petra Fey, Takashi Gojobori, Linda Hannick, Winston
+  Hide, David~P Hill, Renate Kania, Mary Schaeffer, Susan {St Pierre}, and
+  Others.
+\newblock {Big data: The future of biocuration}.
+\newblock {\em Nature}, 455(7209):47--50, 2008.
+
+\bibitem{bateman2010curators}
+Alex Bateman.
+\newblock {Curators of the world unite: the International Society of
+  Biocuration}.
+\newblock {\em Bioinformatics}, 26(8):991, 2010.
+
+\bibitem{heavner2015transparency}
+Benjamin~D Heavner and Nathan~D Price.
+\newblock {Transparency in metabolic network reconstruction enables scalable
+  biological discovery}.
+\newblock {\em Current opinion in biotechnology}, 34:105--109, 2015.
+
+\bibitem{lakshmanan2012software}
+Meiyappan Lakshmanan, Geoffrey Koh, Bevan K~S Chung, and Dong-Yup Lee.
+\newblock {Software applications for flux balance analysis}.
+\newblock {\em Briefings in bioinformatics}, page bbs069, 2012.
+
+\bibitem{schellenberger2011quantitative}
+Jan Schellenberger, Richard Que, Ronan M~T Fleming, Ines Thiele, Jeffrey~D
+  Orth, Adam~M Feist, Daniel~C Zielinski, Aarash Bordbar, Nathan~E Lewis,
+  Sorena Rahmanian, and Others.
+\newblock {Quantitative prediction of cellular metabolism with constraint-based
+  models: the COBRA Toolbox v2. 0}.
+\newblock {\em Nature protocols}, 6(9):1290--1307, 2011.
+
+\bibitem{caspi2016metacyc}
+Ron Caspi, Richard Billington, Luciana Ferrer, Hartmut Foerster, Carol~A
+  Fulcher, Ingrid~M Keseler, Anamika Kothari, Markus Krummenacker, Mario
+  Latendresse, Lukas~A Mueller, and Others.
+\newblock {The MetaCyc database of metabolic pathways and enzymes and the
+  BioCyc collection of pathway/genome databases}.
+\newblock {\em Nucleic acids research}, 44(D1):D471----D480, 2016.
+
+\bibitem{kanehisa2006genomics}
+Minoru Kanehisa, Susumu Goto, Masahiro Hattori, Kiyoko~F Aoki-Kinoshita, Masumi
+  Itoh, Shuichi Kawashima, Toshiaki Katayama, Michihiro Araki, and Mika
+  Hirakawa.
+\newblock {From genomics to chemical genomics: new developments in KEGG}.
+\newblock {\em Nucleic acids research}, 34(suppl 1):D354----D357, 2006.
+
+\bibitem{price2004genome}
+Nathan~D Price, Jennifer~L Reed, and Bernhard~{\O} Palsson.
+\newblock {Genome-scale models of microbial cells: evaluating the consequences
+  of constraints}.
+\newblock {\em Nature Reviews Microbiology}, 2(11):886--897, 2004.
+
+\bibitem{liu2010use}
+Liming Liu, Rasmus Agren, Sergio Bordel, and Jens Nielsen.
+\newblock {Use of genome-scale metabolic models for understanding microbial
+  physiology}.
+\newblock {\em FEBS letters}, 584(12):2556--2564, 2010.
+
+\bibitem{seaver2012frontiers}
+Samuel M~D Seaver, Christopher~S Henry, and Andrew~D Hanson.
+\newblock {Frontiers in metabolic reconstruction and modeling of plant
+  genomes}.
+\newblock {\em Journal of experimental botany}, 63(6):2247--2258, 2012.
+
+\bibitem{varma1994metabolic}
+Amlt Varma and Bemhard~O Palsson.
+\newblock {Metabolic Flux Balancing: Basic Concepts, Scientific and Practical
+  Use}.
+\newblock {\em Bio/technology}, 12, 1994.
+
+\bibitem{palsson2002silico}
+Bernhard Palsson.
+\newblock {In silico biology through “omics”}.
+\newblock {\em Nature biotechnology}, 20(7):649--650, 2002.
+
+\bibitem{lewis2012constraining}
+Nathan~E Lewis, Harish Nagarajan, and Bernhard~O Palsson.
+\newblock {Constraining the metabolic genotype--phenotype relationship using a
+  phylogeny of in silico methods}.
+\newblock {\em Nature Reviews Microbiology}, 10(4):291--305, 2012.
+
+\bibitem{topfer2013integration}
+Nadine T{\"{o}}pfer, Camila Caldana, Sergio Grimbs, Lothar Willmitzer,
+  Alisdair~R Fernie, and Zoran Nikoloski.
+\newblock {Integration of genome-scale modeling and transcript profiling
+  reveals metabolic pathways underlying light and temperature acclimation in
+  Arabidopsis}.
+\newblock {\em The Plant Cell}, 25(4):1197--1211, 2013.
+
+\bibitem{Oberhardt2009}
+Matthew~A Oberhardt, Bernhard~{\O} Palsson, and Jason~A Papin.
+\newblock {Applications of genome-scale metabolic reconstructions.}
+\newblock {\em Molecular systems biology}, 5:320, jan 2009.
+
+\bibitem{Machado2014}
+Daniel Machado and Markus Herrg{\aa}rd.
+\newblock {Systematic Evaluation of Methods for Integration of Transcriptomic
+  Data into Constraint-Based Models of Metabolism}.
+\newblock {\em PLoS Computational Biology}, 10(4):e1003580, apr 2014.
+
+\bibitem{covert2002transcriptional}
+Markus~W Covert and Bernhard~{\O} Palsson.
+\newblock {Transcriptional regulation in constraints-based metabolic models of
+  Escherichia coli}.
+\newblock {\em Journal of Biological Chemistry}, 277(31):28058--28064, 2002.
+
+\bibitem{aakesson2004integration}
+Mats {\AA}kesson, Jochen F{\"{o}}rster, and Jens Nielsen.
+\newblock {Integration of gene expression data into genome-scale metabolic
+  models}.
+\newblock {\em Metabolic engineering}, 6(4):285--293, 2004.
+
+\bibitem{covert2004integrating}
+Markus~W Covert, Eric~M Knight, Jennifer~L Reed, Markus~J Herrgard, and
+  Bernhard~O Palsson.
+\newblock {Integrating high-throughput and computational data elucidates
+  bacterial networks}.
+\newblock {\em Nature}, 429(6987):92--96, 2004.
+
+\bibitem{reed2012shrinking}
+Jennifer~L Reed.
+\newblock {Shrinking the metabolic solution space using experimental datasets}.
+\newblock {\em PLoS Comput Biol}, 8(8):e1002662, 2012.
+
+\bibitem{blazier2012integration}
+Anna~S Blazier and Jason~A Papin.
+\newblock {Integration of expression data in genome-scale metabolic network
+  reconstructions}.
+\newblock {\em Frontiers in physiology}, 3:299, 2012.
+
+\bibitem{machado2014systematic}
+Daniel Machado and Markus Herrg{\aa}rd.
+\newblock {Systematic evaluation of methods for integration of transcriptomic
+  data into constraint-based models of metabolism}.
+\newblock {\em PLoS Comput Biol}, 10(4):e1003580, 2014.
+
+\bibitem{colijn2009interpreting}
+Caroline Colijn, Aaron Brandes, Jeremy Zucker, Desmond~S Lun, Brian Weiner,
+  Maha~R Farhat, Tan-Yun Cheng, D~Branch Moody, Megan Murray, and James~E
+  Galagan.
+\newblock {Interpreting expression data with metabolic flux models: predicting
+  Mycobacterium tuberculosis mycolic acid production}.
+\newblock {\em PLoS Comput Biol}, 5(8):e1000489, 2009.
+
+\bibitem{Carbonell2016}
+Pablo Carbonell.
+\newblock {Hepatotoxicity prediction by systems biology modeling of disturbed
+  metabolic pathways using gene expression data}.
+\newblock {\em ALTEX}, pages 1--23, 2016.
+
+\bibitem{Takuma2004}
+Kazuhiro Takuma, Akemichi Baba, and Toshio Matsuda.
+\newblock {Astrocyte apoptosis: Implications for neuroprotection}.
+\newblock {\em Progress in Neurobiology}, 72:111--127, 2004.
+
+\bibitem{Lange2012}
+Sofie~C. Lange, Lasse~K. Bak, Helle~S. Waagepetersen, Arne Schousboe, and
+  Michael~D. Norenberg.
+\newblock {Primary cultures of astrocytes: Their value in understanding
+  astrocytes in health and disease}.
+\newblock {\em Neurochemical Research}, 37:2569--2588, 2012.
+
+\bibitem{Kimelberg2010}
+Harold~K Kimelberg.
+\newblock {Functions of Mature Mammalian Astrocytes: A Current View}.
+\newblock {\em The Neuroscientist}, 16(1):79--106, feb 2010.
+
+\bibitem{Allen2009}
+Nicola~J Allen and Ben Barres.
+\newblock {Neuroscience: Glia - more than just brain glue.}
+\newblock {\em Nature}, 457(7230):675--677, 2009.
+
+\bibitem{Halassa2010}
+Michael~M Halassa and Philip~G Haydon.
+\newblock {Integrated brain circuits: astrocytic networks modulate neuronal
+  activity and behavior.}
+\newblock {\em Annual review of physiology}, 72(2):335--355, 2010.
+
+\bibitem{Giaume2010}
+Christian Giaume, Annette Koulakoff, Lisa Roux, David Holcman, and Nathalie
+  Rouach.
+\newblock {Astroglial networks: a step further in neuroglial and gliovascular
+  interactions.}
+\newblock {\em Nature reviews. Neuroscience}, 11(fEbRuARy):87--99, 2010.
+
+\bibitem{Nijboer2013}
+Cora~H. Nijboer, Cobi~J. Heijnen, Vincent Degos, Hanneke L~M Willemen, Pierre
+  Gressens, and Annemieke Kavelaars.
+\newblock {Astrocyte GRK2 as a novel regulator of glutamate transport and brain
+  damage}.
+\newblock {\em Neurobiology of Disease}, 54:206--215, 2013.
+
+\bibitem{Barres2008}
+Ben Barres.
+\newblock {The mystery and magic of glia: a perspective on their roles in
+  health and disease.}
+\newblock {\em Neuron}, 60(3):430--40, nov 2008.
+
+\bibitem{Shen2013}
+Jun Shen.
+\newblock {Modeling the glutamate-glutamine neurotransmitter cycle}.
+\newblock {\em Frontiers in Neuroenergetics}, 5(JAN):1--13, 2013.
+
+\bibitem{Petrelli2016}
+Francesco Petrelli and Paola Bezzi.
+\newblock {Novel insights into gliotransmitters}.
+\newblock {\em Current Opinion in Pharmacology}, 26(Table 1):138--145, 2016.
+
+\bibitem{Durrant2014}
+Andrea~R Durrant and Uriel Heresco-Levy.
+\newblock {D-Serine in Neuropsychiatric Disorders: New Advances}.
+\newblock {\em Advances in Psychiatry}, 2014:1--16, 2014.
+
+\bibitem{Cakir2007}
+Tunahan {\c{C}}ak$\iota$r, Selma Alsan, Hale Saybaş$\iota$l$\iota$, Ata
+  Ak$\iota$n, and Kutlu~{\"{O}} {\"{U}}lgen.
+\newblock {Reconstruction and flux analysis of coupling between metabolic
+  pathways of astrocytes and neurons: application to cerebral hypoxia}.
+\newblock {\em Theoretical Biology and Medical Modelling}, 4(1):48, 2007.
+
+\bibitem{Raps1989}
+Stephen~P. Raps, James C~K Lai, Leif Hertz, and Arthur J~L Cooper.
+\newblock {Glutathione is present in high concentrations in cultured astrocytes
+  but not in cultured neurons}.
+\newblock {\em Brain Research}, 493(2):398--401, 1989.
+
+\bibitem{Jha2016}
+Mithilesh~Kumar Jha, Dong~Ho Park, Hyun Kook, In-Kyu Lee, Won-Ha Lee, and
+  Kyoungho Suk.
+\newblock {Metabolic Control of Glia-Mediated Neuroinflammation.}
+\newblock {\em Current Alzheimer research}, 13(4):387--402, 2016.
+
+\bibitem{Allaman2011}
+Igor Allaman, Mireille B{\'{e}}langer, and Pierre~J. Magistretti.
+\newblock {Astrocyte–neuron metabolic relationships: for better and for
+  worse}.
+\newblock {\em Trends in Neurosciences}, 34(2):76--87, feb 2011.
+
+\bibitem{Wang2000}
+Xue~Feng Wang and Max~S. Cynader.
+\newblock {Astrocytes provide cysteine to neurons by releasing glutathione}.
+\newblock {\em Journal of Neurochemistry}, 74(4):1434--1442, 2000.
+
+\bibitem{Maragakis2006}
+Nicholas~J Maragakis and Jeffrey~D Rothstein.
+\newblock {Mechanisms of Disease: astrocytes in neurodegenerative disease.}
+\newblock {\em Nature clinical practice. Neurology}, 2(12):679--689, 2006.
+
+\bibitem{Avila-Rodriguez2014}
+Marco Avila-Rodriguez, Luis~Miguel Garcia-Segura, Ricardo Cabezas, Daniel
+  Torrente, Francisco Capani, Janneth Gonzalez, and George~E. Barreto.
+\newblock {Tibolone protects T98G cells from glucose deprivation}.
+\newblock {\em The Journal of Steroid Biochemistry and Molecular Biology},
+  144(8):294--303, 2014.
+
+\bibitem{Hussain2013}
+Ghulam Hussain, Florent Schmitt, Jean-Philippe Loeffler, and Jose-Luis~Gonzalez
+  de~Aguilar.
+\newblock {Fatting the brain: a brief of recent research.}
+\newblock {\em Frontiers in cellular neuroscience}, 7(September):144, 2013.
+
+\bibitem{Masel2010}
+Brent~E Masel and Douglas~S DeWitt.
+\newblock {Traumatic brain injury: a disease process, not an event.}
+\newblock {\em Journal of neurotrauma}, 27(8):1529--1540, 2010.
+
+\bibitem{Yan2013}
+Qing Yan.
+\newblock {\em {Systems Biology in Drug Discovery and Development}}, volume 662
+  of {\em Methods in Molecular Biology}.
+\newblock Humana Press, Totowa, NJ, 2010.
+
+\bibitem{Fitch2008}
+Michael~T. Fitch and Jerry Silver.
+\newblock {CNS injury, glial scars, and inflammation: Inhibitory extracellular
+  matrices and regeneration failure}.
+\newblock {\em Experimental Neurology}, 209(2):294--301, 2008.
+
+\bibitem{Dowell2009a}
+James~a. Dowell, Jeffrey~a. Johnson, and Lingjun Li.
+\newblock {Identification of astrocyte secreted proteins with a combination of
+  shotgun proteomics and bioinformatics}.
+\newblock {\em Journal of Proteome Research}, 8(8):4135--4143, 2009.
+
+\bibitem{Molofsk2012}
+Anna~V. Molofsk, Robert Krenick, Erik Ullian, Hui~Hsin Tsai, Benjamin Deneen,
+  William~D. Richardson, Ben. Barres, and David~H. Rowitch.
+\newblock {Astrocytes and disease: A neurodevelopmental perspective}.
+\newblock {\em Genes and Development}, 26:891--907, 2012.
+
+\bibitem{Sidoryk-Wegrzynowicz2013}
+Marta Sidoryk-Wegrzynowicz and Michael Aschner.
+\newblock {Role of astrocytes in manganese mediated neurotoxicity.}
+\newblock {\em BMC pharmacology {\&} toxicology}, 14:23, 2013.
+
+\bibitem{Gupta2012}
+Sunita Gupta, Alecia~G. Knight, Shruti Gupta, Jeffrey~N. Keller, and
+  Annadora~J. Bruce-Keller.
+\newblock {Saturated long-chain fatty acids activate inflammatory signaling in
+  astrocytes}.
+\newblock {\em Journal of Neurochemistry}, 120(6):1060--1071, 2012.
+
+\bibitem{Purkayastha2015}
+Sudarshana Purkayastha and Dongsheng Cai.
+\newblock {Neuroinflammatory basis of metabolic syndrome}.
+\newblock {\em Molecular Metabolism}, 2(4):356--363, 2015.
+
+\bibitem{K.2006}
+Kyoungho Suk.
+\newblock {Proteomics-based discovery of biomarkers and therapeutic targets in
+  neurodegenerative diseases: perspective of microglia and neuroinflammation}.
+\newblock {\em Expert Opinion on Therapeutic Patents}, 16(3):237--247, mar
+  2006.
+
+\bibitem{Vodovotz2010}
+Yoram Vodovotz.
+\newblock {Translational systems biology of inflammation and healing}.
+\newblock {\em Wound Repair and Regeneration}, 18(1):3--7, 2010.
+
+\bibitem{Vodovotz2008}
+Yoram Vodovotz, Yoram Vodovotz, Marie Csete, Marie Csete, John Bartels, John
+  Bartels, Steven Chang, Steven Chang, Gary An, and Gary An.
+\newblock {Translational Systems Biology of Inflammation}.
+\newblock {\em PLoS Comput Biol}, 4(4), 2008.
+
+\bibitem{An2011}
+Gary An, John Bartels, and Yoram Vodovotz.
+\newblock {In silico augmentation of the drug development pipeline: Examples
+  from the study of acute inflammation}.
+\newblock {\em Drug Development Research}, 72(2):187--200, 2011.
+
+\bibitem{Mi2010}
+Qi~Mi, Nicole Yee-Key Li, Cordelia Ziraldo, Ali Ghuma, Maxim Mikheev, Robert
+  Squires, David~O Okonkwo, Katherine Verdolini-Abbott, Gregory Constantine,
+  Gary An, and Yoram Vodovotz.
+\newblock {Translational systems biology of inflammation: potential
+  applications to personalized medicine}.
+\newblock {\em Personalized Medicine}, 7(5):549--559, 2010.
+
+\bibitem{Laveti2013}
+Durgaprasad Laveti, Manoj Kumar, R~Hemalatha, Ramakrishna Sistla, V~G~M Naidu,
+  Venu Talla, Vinod Verma, Navrinder Kaur, and Ravinder Nagpal.
+\newblock {Anti-inflammatory treatments for chronic diseases: a review.}
+\newblock {\em Inflammation {\&} allergy drug targets}, 12(5):349--61, 2013.
+
+\bibitem{Albertazzi1998}
+Paola Albertazzi, Raffaele {Di Micco}, and Ettore Zanardi.
+\newblock {Tibolone: A review}, 1998.
+
+\bibitem{Wojtal2006}
+Katarzyna Wojtal, Micha{\l}~K. Trojnar, and Stanis{\l}aw~J. Czuczwar.
+\newblock {Endogenous neuroprotective factors: Neurosteroids}, 2006.
+
+\bibitem{Kloosterboer2001}
+H.~J. Kloosterboer.
+\newblock {Tibolone: A steroid with a tissue-specific mode of action}.
+\newblock In {\em Journal of Steroid Biochemistry and Molecular Biology},
+  volume~76, pages 231--238, 2001.
+
+\bibitem{Sharma2006}
+Sudhaa Sharma, Annil Mahajan, Sudesh Kumar, and Vishal~R. Tandon.
+\newblock {Tibolone: A selective tissue estrogenic activity regulator}, 2006.
+
+\bibitem{Timmer2002}
+Cees~J. Timmer, H.~A~M Verheul, and D.~P. Doorstam.
+\newblock {Pharmacokinetics of tibolone in early and late postmenopausal
+  women}.
+\newblock {\em British Journal of Clinical Pharmacology}, 54(2):101--106, 2002.
+
+\bibitem{Altinoz2009}
+M~A Altinoz, S~B Albayrak, A~Karasu, P~A Sabanci, M~Imer, and A~Bilir.
+\newblock {The effects of tibolone on the human primary glioblastoma multiforme
+  cell culture and the rat C6 glioma model}.
+\newblock {\em Neurol Res}, 31(9):923--927, 2009.
+
+\bibitem{Kloosterboer2004}
+Helenius~J. Kloosterboer.
+\newblock {Tissue-selectivity: the mechanism of action of tibolone}.
+\newblock {\em Maturitas}, 48(SUPPL. 1):30--40, aug 2004.
+
+\bibitem{Edgar2002}
+Ron Edgar, Michael Domrachev, and Alex~E Lash.
+\newblock {Gene Expression Omnibus: NCBI gene expression and hybridization
+  array data repository}.
+\newblock {\em Nucleic Acids Res}, 30(1):207--210, 2002.
+
+\bibitem{Zhang2016}
+Ye~Zhang, Steven~A. Sloan, Laura~E. Clarke, Christine Caneda, Colton~A. Plaza,
+  Paul~D. Blumenthal, Hannes Vogel, Gary~K. Steinberg, Michael S~B Edwards,
+  Gordon Li, John~A. Duncan, Samuel~H. Cheshier, Lawrence~M. Shuer, Edward~F.
+  Chang, Gerald~A. Grant, Melanie G~Hayden Gephart, and Ben~A. Barres.
+\newblock {Purification and Characterization of Progenitor and Mature Human
+  Astrocytes Reveals Transcriptional and Functional Differences with Mouse}.
+\newblock {\em Neuron}, 89(1):37--53, 2016.
+
+\bibitem{rebhan1997genecards}
+Michael Rebhan, Vered Chalifa-Caspi, Jaime Prilusky, and Doron Lancet.
+\newblock {GeneCards: integrating information about genes, proteins and
+  diseases}.
+\newblock {\em Trends in Genetics}, 13(4):163, 1997.
+
+\bibitem{maglott2005entrez}
+Donna Maglott, Jim Ostell, Kim~D Pruitt, and Tatiana Tatusova.
+\newblock {Entrez Gene: gene-centered information at NCBI}.
+\newblock {\em Nucleic acids research}, 33(suppl 1):D54----D58, 2005.
+
+\bibitem{Carlson2016}
+Marc Carlson.
+\newblock {\em {UniProt.ws: R Interface to UniProt Web Services}}, 2016.
+
+\bibitem{thiele2013community}
+Ines Thiele, Neil Swainston, Ronan M~T Fleming, Andreas Hoppe, Swagatika Sahoo,
+  Maike~K Aurich, Hulda Haraldsdottir, Monica~L Mo, Ottar Rolfsson, Miranda~D
+  Stobbe, and Others.
+\newblock {A community-driven global reconstruction of human metabolism}.
+\newblock {\em Nature biotechnology}, 31(5):419--425, 2013.
+
+\bibitem{G2F}
+Kelly Botero, Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
+\newblock {\em {g2f: Find and Fill Gaps in Metabolic Networks}}, 2016.
+
+\bibitem{MINVAL}
+Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
+\newblock {minval: MINimal VALidation for Stoichiometric Reactions}, 2016.
+
+\bibitem{EXP2FLUX}
+Daniel Osorio, Kelly Botero, Janneth Gonzalez, and Andres Pinzon.
+\newblock {\em {exp2flux: Convert Gene EXPression Data to FBA FLUXes}}, 2016.
+
+\bibitem{Gelius-Dietrich2013}
+Gabriel Gelius-dietrich, Abdelmoneim~Amer Desouki, Claus~Jonathan Fritzemeier,
+  and Martin~J Lercher.
+\newblock {sybil – Efficient constraint-based modelling in R}.
+\newblock 2013.
+
+\bibitem{RCoreTeam2016}
+{R Core Team}.
+\newblock {\em {R: A Language and Environment for Statistical Computing}}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2016.
+
+\bibitem{Orth2010}
+Jeffrey~D Orth, Ines Thiele, and B~O Palsson.
+\newblock {What is flux balance analysis?}
+\newblock {\em Nature Biotechnology}, 28(3):245--248, 2010.
+
+\bibitem{Raman2009}
+Karthik Raman and Nagasuma Chandra.
+\newblock {Flux balance analysis of biological systems: Applications and
+  challenges}.
+\newblock {\em Briefings in Bioinformatics}, 10(4):435--449, 2009.
+
+\bibitem{Fitch1997}
+M~T Fitch and J~Silver.
+\newblock {Activated macrophages and the blood-brain barrier: inflammation
+  after CNS injury leads to increases in putative inhibitory molecules.}
+\newblock {\em Experimental Neurology}, 148(2):587--603, 1997.
+
+\bibitem{Ciccarelli2001}
+R.~Ciccarelli, P.~Ballerini, G.~Sabatino, M.~P. Rathbone, M.~D'Onofrio,
+  F.~Caciagli, and P.~{Di Iorio}.
+\newblock {Involvement of astrocytes in purine-mediated reparative processes in
+  the brain}.
+\newblock {\em International Journal of Developmental Neuroscience},
+  19(4):395--414, 2001.
+
+\bibitem{Sertbas2014}
+Mustafa Sertbaş, Kutlu {\"{U}}lgen, and Tunahan {\c{C}}akir.
+\newblock {Systematic analysis of transcription-level effects of
+  neurodegenerative diseases on human brain metabolism by a newly reconstructed
+  brain-specific metabolic network}.
+\newblock {\em FEBS Open Bio}, 4:542--553, 2014.
+
+\bibitem{Sa2016}
+Jo{\~{a}}o~V. S{\'{a}}, Susanne Kleiderman, Catarina Brito, Ursula Sonnewald,
+  Marcel Leist, Ana~P. Teixeira, and Paula~M. Alves.
+\newblock {Quantification of Metabolic Rearrangements During Neural Stem Cells
+  Differentiation into Astrocytes by Metabolic Flux Analysis}.
+\newblock {\em Neurochemical Research}, 2016.
+
+\bibitem{Das2010}
+Arabinda Das, Naren~L. Banik, and Swapan~K. Ray.
+\newblock {Flavonoids activated caspases for apoptosis in human glioblastoma
+  T98G and U87MG cells but not in human normal astrocytes}.
+\newblock {\em Cancer}, 116(1):164--176, 2010.
+
+\bibitem{Bhowmick2015}
+Rupa Bhowmick, Abhishek Subramanian, and Ram~Rup Sarkar.
+\newblock {Exploring the differences in metabolic behavior of astrocyte and
+  glioblastoma: a flux balance analysis approach}.
+\newblock {\em Systems and Synthetic Biology}, 2015.
+
+\bibitem{LeFoll2016}
+Christelle {Le Foll} and Barry~E Levin.
+\newblock {Fatty acid-induced astrocyte ketone production and the control of
+  food intake.}
+\newblock {\em American journal of physiology. Regulatory, integrative and
+  comparative physiology}, page ajpregu.00113.2016, 2016.
+
+\bibitem{Liu2013}
+Li~Liu, Rebecca Martin, and Christina Chan.
+\newblock {Palmitate-activated astrocytes via serine palmitoyltransferase
+  increase BACE1 in primary neurons by sphingomyelinases}.
+\newblock {\em Neurobiology of Aging}, 34(2):540--550, 2013.
+
+\bibitem{Rangel-Aldao2015}
+Rafael Rangel-Aldao.
+\newblock {The unfolded protein response, inflammation, oscillators, and
+  disease: a systems biology approach}.
+\newblock {\em Endoplasmic Reticulum Stress in Diseases}, 2(1):30--52, 2015.
+
+\bibitem{Williams2012}
+Rachel Williams, Cassandra~L. Buchheit, Nancy E~J Berman, and Steven~M. Levine.
+\newblock {Pathogenic implications of iron accumulation in multiple sclerosis}.
+\newblock {\em Journal of Neurochemistry}, 120(1):7--25, 2012.
+
+\bibitem{Parpura2000}
+V~Parpura and P~G Haydon.
+\newblock {Physiological astrocytic calcium levels stimulate glutamate release
+  to modulate adjacent neurons}.
+\newblock {\em Proc.Natl.Acad.Sci.U.S.A}, 97(0027-8424):8629--8634, 2000.
+
+\bibitem{Hertz1999}
+Leif Hertz, Ralf Dringen, Arne Schousboe, and Stephen~R. Robinson.
+\newblock {Astrocytes: Glutamate producers for neurons}.
+\newblock {\em Journal of Neuroscience Research}, 57(4):417--428, 1999.
+
+\bibitem{Niu2012}
+Yu-Cun Niu, Ren-Nan Feng, Yan Hou, Kang Li, Zhen Kang, Jian Wang, Chang-Hao
+  Sun, and Ying Li.
+\newblock {Histidine and arginine are associated with inflammation and
+  oxidative stress in obese women}.
+\newblock {\em British Journal of Nutrition}, 108(01):57--61, 2012.
+
+\bibitem{Lee2005}
+Yuan~Ti Lee, Cheng~Chin Hsu, Meng~Hsiao Lin, Keh~Sen Liu, and Mei~Chin Yin.
+\newblock {Histidine and carnosine delay diabetic deterioration in mice and
+  protect human low density lipoprotein against oxidation and glycation}.
+\newblock {\em European Journal of Pharmacology}, 513(1-2):145--150, 2005.
+
+\bibitem{Son2005}
+Dong~Ok Son, Hideo Satsu, and Makoto Shimizu.
+\newblock {Histidine inhibits oxidative stress- and TNF-??-induced
+  interleukin-8 secretion in intestinal epithelial cells}.
+\newblock {\em FEBS Letters}, 579(21):4671--4677, 2005.
+
+\bibitem{Baslow2003}
+Morris~H Baslow.
+\newblock {N -Acetylaspartate in the Vertebrate Brain : Metabolism and
+  Function}.
+\newblock 28(6):941--953, 2003.
+
+\bibitem{Rael2004}
+Leonard~T. Rael, Gregory~W. Thomas, Raphael Bar-Or, Michael~L. Craun, and David
+  Bar-Or.
+\newblock {An anti-inflammatory role for N-acetyl aspartate in stimulated human
+  astroglial cells}.
+\newblock {\em Biochemical and Biophysical Research Communications},
+  319(3):847--853, 2004.
+
+\bibitem{Chaudhry1999}
+F~a Chaudhry, R~J Reimer, D~Krizaj, D~Barber, J~Storm-Mathisen, D~R Copenhagen,
+  and R~H Edwards.
+\newblock {Molecular analysis of system N suggests novel physiological roles in
+  nitrogen metabolism and synaptic transmission.}
+\newblock {\em Cell}, 99(7):769--80, 1999.
+
+\bibitem{Doengi2009}
+Michael Doengi, Daniela Hirnet, Philippe Coulon, Hans-Christian Pape, Joachim~W
+  Deitmer, and Christian Lohr.
+\newblock {GABA uptake-dependent Ca(2+) signaling in developing olfactory bulb
+  astrocytes.}
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 106:17570--17575, 2009.
+
+\bibitem{Green2014}
+D.~R. Green, L.~Galluzzi, and G.~Kroemer.
+\newblock {Metabolic control of cell death}.
+\newblock {\em Science}, 345(6203):1250256--1250256, 2014.
+
+\bibitem{Murphy1988}
+Sean Murphy, Brian Pearce, James Jeremy, and Paresh Dandona.
+\newblock {Astrocytes as eicosanoid-producing cells}.
+\newblock {\em Glia}, 1(4):241--245, 1988.
+
+\bibitem{Fernando2013}
+Harshica Fernando, John~E. Wiktorowicz, Kizhake~V. Soman, Bhupendra~S.
+  Kaphalia, M.~Firoze Khan, and G.~A. {Shakeel Ansari}.
+\newblock {Liver proteomics in progressive alcoholic steatosis}.
+\newblock {\em Toxicology and Applied Pharmacology}, 266(3):470--480, 2013.
+
+\bibitem{Varemo2015}
+Leif V{\"{a}}remo, Camilla Scheele, Christa Broholm, Adil Mardinoglu, Caroline
+  Kampf, Anna Asplund, Intawat Nookaew, Mathias Uhl{\'{e}}n, BenteKlarlund
+  Pedersen, and Jens Nielsen.
+\newblock {Proteome- and Transcriptome-Driven Reconstruction of the Human
+  Myocyte Metabolic Network and Its Use for Identification of Markers for
+  Diabetes}.
+\newblock {\em Cell Reports}, 11(6):921--933, 2015.
+
+\bibitem{Saparov2007}
+Sapar~M. Saparov, Kun Liu, Peter Agre, and Peter Pohl.
+\newblock {Fast and selective ammonia transport by aquaporin-8}.
+\newblock {\em Journal of Biological Chemistry}, 282(8):5296--5301, 2007.
+
+\bibitem{TeVelde2008}
+Anje~a {Te Velde}, Inge Pronk, Floor de~Kort, and Pieter C~F Stokkers.
+\newblock {Glutathione peroxidase 2 and aquaporin 8 as new markers for colonic
+  inflammation in experimental colitis and inflammatory bowel diseases: an
+  important role for H2O2?}
+\newblock {\em European journal of gastroenterology {\&} hepatology},
+  20:555--560, 2008.
+
+\bibitem{Landriscina1972}
+Clemente Landriscina, Gabriele~V Gnoni, and Ernesto Quaqliariello.
+\newblock {Fatty -Acid Bios y nt hesis Present in Microsomes and Mitochondria
+  of Rat Liver}.
+\newblock 196:188--196, 1972.
+
+\bibitem{Tamura2009}
+Kenji Tamura, Asami Makino, Fran{\c{c}}oise Hullin-Matsuda, Toshihide
+  Kobayashi, Mutsuo Furihata, Suyoun Chung, Shingo Ashida, Tsuneharu Miki,
+  Tomoaki Fujioka, Taro Shuin, Yusuke Nakamura, and Hidewaki Nakagawa.
+\newblock {Novel lipogenic enzyme ELOVL7 is involved in prostate cancer growth
+  through saturated long-chain fatty acid metabolism}.
+\newblock {\em Cancer Research}, 69(20):8133--8140, 2009.
+
+\bibitem{Ahlemeyer2002}
+Barbara Ahlemeyer, Stefan K{\"{o}}lker, Yuan Zhu, Georg~F. Hoffmann, and Josef
+  Krieglstein.
+\newblock {Increase in glutamate-induced neurotoxicity by activated astrocytes
+  involves stimulation of protein kinase C}.
+\newblock {\em Journal of Neurochemistry}, 82(3):504--515, jul 2002.
+
+\bibitem{Schuller-Levis2003}
+Georgia~B. Schuller-Levis and Eunkyue Park.
+\newblock {Taurine: new implications for an old amino acid}.
+\newblock {\em FEMS Microbiology Letters}, 226(2):195--202, sep 2003.
+
+\bibitem{Amen-Ra2006}
+Nūn Amen-Ra.
+\newblock {Humans are evolutionarily adapted to caloric restriction resulting
+  from ecologically dictated dietary deprivation imposed during the
+  Plio–Pleistocene period}.
+\newblock {\em Medical Hypotheses}, 66(5):978--984, jan 2006.
+
+\bibitem{Feist2010}
+Adam~M. Feist and Bernhard~O. Palsson.
+\newblock {The biomass objective function}.
+\newblock {\em Current Opinion in Microbiology}, 13(3):344--349, 2010.
+
+\bibitem{Colditz1993}
+Graham~A. Colditz, Kathleen~M. Egan, and Meir~J. Stampfer.
+\newblock {Hormone replacement therapy and risk of breast cancer: Results from
+  epidemiologic studies}.
+\newblock {\em American Journal of Obstetrics and Gynecology},
+  168(5):1473--1480, may 1993.
+
+\bibitem{Colditz1995}
+Graham~A. Colditz, Susan~E. Hankinson, David~J. Hunter, Walter~C. Willett,
+  JoAnn~E. Manson, Meir~J. Stampfer, Charles Hennekens, Bernard Rosner, and
+  Frank~E. Speizer.
+\newblock {The Use of Estrogens and Progestins and the Risk of Breast Cancer in
+  Postmenopausal Women}.
+\newblock {\em New England Journal of Medicine}, 332(24):1589--1593, jun 1995.
+
+\bibitem{Pessayre2001}
+Dominique Pessayre, Alain Berson, Bernard Fromenty, and Abdellah Mansouri.
+\newblock {Mitochondria in Steatohepatitis}.
+\newblock {\em Seminars in Liver Disease}, 21(01):057--070, 2001.
+
+\bibitem{Sun2009}
+F.~Sun, M.~L. Xie, L.~J. Zhu, J.~Xue, and Z.~L. Gu.
+\newblock {Inhibitory effect of osthole on alcohol-induced fatty liver in
+  mice}.
+\newblock {\em Digestive and Liver Disease}, 41(2):127--133, 2009.
+
+\bibitem{Avila-Rodriguez2016}
+Marco Avila-Rodriguez, Luis~Miguel Garcia-Segura, Oscar Hidalgo-lanussa, Eliana
+  Baez, Janneth Gonzalez, and George~E. Barreto.
+\newblock {Tibolone protects astrocytic cells from glucose deprivation through
+  a mechanism involving estrogen receptor beta and the upregulation of
+  neuroglobin expression}.
+\newblock {\em Molecular and Cellular Endocrinology}, 433:35--46, 2016.
 
 \end{thebibliography}

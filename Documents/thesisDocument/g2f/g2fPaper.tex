@@ -4,15 +4,19 @@
 \textsf{\textbf{Written by:}} & \textit{Kelly Botero, Daniel Osorio, Janneth Gonzalez and Andrés Pinzón-Velasco}\\ 
 \end{tabular}
 \section*{Abstract}
-The g2f package was designed as a tool to find the gaps (metabolites not produced or not consumed in any other reaction), and fill it from the stoichiometric reactions of a reference metabolic reconstruction using a weighting function. Also the option to download all the set of gene-associated stoichiometric reactions for a specific organism from the KEGG database is available.
+During the building of a genome-scale metabolic network reconstruction, several dead-end metabolites which cannot be imported/produced, or that are not used as substrates or released by not any of the reactions are incorporated into the network. The presence of dead-end metabolites can block out the net flux of the objective function when is evaluated through Flux Balance Analysis (FBA), and when it is not blocked, bias in the biological conclusions increase. The refinement to restore the connectivity of the network can be carried out manually or using computational algorithms. The \textbf{g2f} package was designed as a tool to find the dead-end metabolites, and fill it from the stoichiometric reactions of a reference, filtering candidate reactions using a weighting function. Also the option to download all the set of gene-associated stoichiometric reactions for a specific organism from the KEGG database is available.
 \section{Introduction}
-Genome-scale metabolic network reconstructions (GMNR) specify the chemical reactions catalyzed by hundreds of enzymes (registered in enzyme commission – E.C.) and cover the molecular function of a substantial fraction of a genome [1]. The main goal of these network reconstructions is to relate the genome of a given organism with its physiology, incorporating every metabolic transformation that this organism can perform [2], [3]. The GMNR are converted into computational models for simulation of metabolism and gain insight into the complex interactions that give rise to the metabolic capabilities [4], [5]. The predictive accuracy of a model depends on the comprehensiveness and biochemical fidelity of the reconstruction [6]. The GMNR construction process can be synthesized into two fundamental stages: (1) draft network reconstruction, here the reactions associated with the enzymes that participate in the metabolism of a particular organism, are downloaded from specialized genome, biochemical and metabolic databases; and (2) refinement of the network manually or using computational algorithms. Similar steps are performed during the construction of a tissue-specific metabolic reconstruction, defined as subsets of reactions included in a genome-scale metabolic reconstruction that are highly associated with  the metabolism of a specific tissue. They are constructed from measured gene expression or proteomic data and permit characterize or predict the metabolic behavior for each tissue under any physiological condition. Due to only the reactions associated with an enzyme or gene can be mapped from the measured data, the spontaneous reactions, and non-facilitated diffusion are missing in first stages of a tissue-specific reconstruction.\\
+Genome-scale metabolic network reconstructions (GMNR) specify the chemical reactions catalyzed by hundreds of enzymes (registered in enzyme commission – E.C.) and cover the molecular function of a substantial fraction of a genome \cite{szappanos2011integrated}. The main goal of these network reconstructions is to relate the genome of a given organism with its physiology, incorporating every metabolic transformation that this organism can perform \cite{chen2012metabolic,agren2013raven}. The GMNR are converted into computational models for simulation of metabolism and gain insight into the complex interactions that give rise to the metabolic capabilities \cite{alper2005identifying,fong2005silico}. The predictive accuracy of a model depends on the comprehensiveness and biochemical fidelity of the reconstruction \cite{Thiele2014}. \\
 
-The refinement stage of the reconstruction is a process to restore the connectivity network, where network gaps in the draft reconstruction are identified, and candidate reactions to fill the gap are find in literature and databases [7], [8]. Since the network reconstructions typically involve thousands of metabolic reactions, the refinement of them can be a very complex task [3].The network gaps can be associated with dead-end metabolites which cannot be imported/produced by any of the reactions in the network; or metabolites that are not used as substrates or released by any of the reactions in the network. When the metabolic network is transformed into a metabolic steady-state model to optimize the distribution of metabolic flux under an objective function, the presence of this type of metabolites can be problematic, due to the flux cannot pass through them due to the incomplete connectivity with the rest of the network [8].  In a high-quality model, all reactions should be able to carry flux if all relevant exchange reactions are available [3]. The lack of flux in dead-end metabolites is propagated downstream/upstream, depending if the metabolites are not produced or not consumed, giving rise to additional metabolites that cannot carry any flux [8]. This can block out the net flux of the objective function and when it is not blocked, bias in the biological conclusions increase. The manual refinement is an iterative process to assemble a higher confidence compendium of organism-specific metabolism in a draft metabolic network reconstruction [9]–[11]. This type refinement requires time and a labor intensive of use of available literature, databases and experimental data [11], [12]. For example, if the genome annotation of the target organism is present in KEGG [13], reactions associated with the genes can be identified in KEGG maps and track dead-end metabolites under the organism-specific metabolic environment [7]. Given GMNR account for hundreds or thousands of biochemical reactions, this task is very complex and can lead to both, the introduction of new errors and to overlook some others.\\
+The GMNR construction process can be synthesized into two fundamental stages: (1) draft network reconstruction, here the reactions associated with the enzymes that participate in the metabolism of a particular organism, are downloaded from specialized genome, biochemical and metabolic databases; and (2) refinement of the network manually or using computational algorithms. Similar steps are performed during the construction of a tissue-specific metabolic reconstruction, defined as a subset of reactions included in a genome-scale metabolic reconstruction that are highly associated with  the metabolism of a specific tissue\cite{Palsson2009}. They are constructed from measured gene expression or proteomic data and permit characterize or predict the metabolic behavior of a tissue under any physiological condition. Due to only the reactions associated with an enzyme or gene can be mapped from the measured data, the spontaneous reactions, and non-facilitated transport reactions are missing in first stages of a tissue-specific reconstruction.\\
 
-Network gap refinement also can be performed using implemented algorithms to identify blocked reactions through the optimization of the metabolic model, and to fill metabolic functions gaps, by means of the search of reactions associated with the missing functions in available databases [3], [6]. However, this approach only fill gaps for a single biological objective function; other implemented approaches based on the identification and filling of dead-ends metabolites included in GAMS [8] and COBRA [14] packages, allows fill the networks gaps for all metabolism, generating a list of reactions that permit restore the network connectivity and eliminate blocked reactions that no carry flux in a model steady state [11]. However, implemented COBRA [14] gap fill algorithm operate as tools under the commercial  MATLAB® environment and GAMS [8] only allow the gap fill using MetaCyc databases as reference [15].\\
+The refinement stage of the reconstruction is a process to restore the connectivity network, where network gaps in the draft reconstruction are identified, and candidate reactions to fill the gap are find in literature and databases \cite{Thiele2010, kumar2007optimization}. Since the network reconstructions typically involve thousands of metabolic reactions, the refinement of them can be a very complex task \cite{agren2013raven}.The network gaps can be associated with dead-end metabolites which cannot be imported/produced by any of the reactions in the network; or metabolites that are not used as substrates or released by any of the reactions in the network. When the metabolic network is transformed into a metabolic steady-state model to optimize the distribution of metabolic flux under an objective function, the presence of this type of metabolites can be problematic, due to the flux cannot pass through them due to the incomplete connectivity with the rest of the network \cite{kumar2007optimization}.\\
 
-With the aim of offering an open source tool that facilitates the refinement and depuration of drafts network reconstructions and metabolic models, we introduce the ‘g2f’ R package. It includes five functions to identify and fill gaps, as well as, to depurate metabolic networks of blocked reactions (no activated under any scenario) and a function to associate GPR to reactions included in a metabolic reconstruction using the KEGG database as a reference. To identify network gaps in a metabolic network, two mechanisms were implemented: (1) Identification of the dead-end metabolites based on the stoichiometric matrix, and (2) the identification of all blocked through an iterative process of model optimization under all possible objective functions (each reaction by optimization). To gap fill, we identify by metabolite mapping a set of candidate reactions to restore the connectivity network from a reference metabolic database. Reference could be user-provided or created from the KEGG database [13], [16] for a customized organism through an implemented function.
+In a high-quality model, all reactions should be able to carry flux if all relevant exchange reactions are available \cite{agren2013raven}. The lack of flux in dead-end metabolites is propagated downstream/upstream, depending if the metabolites are not produced or not consumed, giving rise to additional metabolites that cannot carry any flux  \cite{kumar2007optimization}. This can block out the net flux of the objective function and when it is not blocked, bias in the biological conclusions increase. The manual refinement is an iterative process to assemble a higher confidence compendium of organism-specific metabolism in a draft metabolic network reconstruction \cite{howe2008big,bateman2010curators,heavner2015transparency}. This type refinement requires time and a labor intensive of use of available literature, databases and experimental data \cite{heavner2015transparency, lakshmanan2012software}. Given GMNR account for hundreds or thousands of biochemical reactions, this task is very complex and can lead to both, the introduction of new errors and to overlook some others.\\
+
+Network gap refinement also can be performed using implemented algorithms to identify blocked reactions through the optimization of the metabolic model, and to fill metabolic functions gaps, by means of the search of reactions associated with the missing functions in available databases \cite{agren2013raven, Thiele2014}. However, this approach only fill gaps for a single biological objective function; other implemented approaches based on the identification and filling of dead-ends metabolites included in GAMS \cite{kumar2007optimization} and COBRA \cite{schellenberger2011quantitative} packages, allows fill the networks gaps for all metabolism, generating a list of reactions that permit restore the network connectivity and eliminate blocked reactions that no carry flux in a model steady state \cite{heavner2015transparency}. However, implemented COBRA \cite{schellenberger2011quantitative} gap fill algorithm operate as tools under the commercial  MATLAB$^{\circledR}$ environment and GAMS \cite{kumar2007optimization} only allow the gap fill using MetaCyc databases as reference \cite{caspi2016metacyc}.\\
+
+With the aim of offering an open source tool that facilitates the refinement and depuration of drafts network reconstructions and metabolic models, we introduce the ‘g2f’ R package. It includes five functions to identify and fill gaps, as well as, to calculate the addition cost of a reaction, depurate metabolic networks of blocked reactions (no activated under any scenario) and a function to associate GPR to reactions included in a metabolic reconstruction using the KEGG database as a reference.
 \section{Installation and functions}
 \texttt{g2f} includes four functions and is available for download and installation from CRAN, the
 Comprehensive R Archive Network. To install and load it, just type:
@@ -23,9 +27,80 @@ Comprehensive R Archive Network. To install and load it, just type:
 \end{Sinput}
 \end{Schunk}
 The \texttt{g2f} package requires R version 2.10 or higher. Development releases of the package are available on the GitHub repository \texttt{http://github.com/gibbslab/g2f}.
-\subsection{Downloading a reference from the KEGG database}
-\subsection{Calculating the addition cost}
-\subsection{Performing a gap find and fill}
-\subsection{Identifying blocked reactions}
+\subsection*{Downloading a reference from the KEGG database}
+The KEGG database is a collection of databases widely used as a reference in genomics, metagenomics, metabolomics and other omics studies, as well as for modeling and simulation in systems biology \cite{kanehisa2006genomics}. At today, the database includes genomes, biological pathways and its associated stoichiometric reactions for 346 eukaryotes, 3947 bacteria, and 238 archaea. The \texttt{getReference} function download from the KEGG database all the KO-associated stoichiometric reactions, and their correspondent E.C. numbers for a customized organism (using KEGG organism ID). Based in the KOs associated to a reaction, their respective GPR is construed as follows: All gene associated to a determined KO are linked by an \texttt{AND} operator, after that, when a reaction has more than one KO associated, previously linked genes are now joined by an \texttt{OR} operator. As an example, to download all (1392 reactions) stoichiometric reactions associated to \textit{Escherichia coli} just type:
+\begin{Schunk}
+\begin{Sinput}
+> E.coli <- getReference(organism = "eco")
+\end{Sinput}
+\end{Schunk}
+\subsection*{Calculating the addition cost}
+The reactions mapping based on metabolites and posterior addition is a very basic solution for gap fill process which increases the number of dead-end metabolites. As a way to reduce the addition of new dead-end metabolites, the \texttt{additionCost} function calculates based on metabolites that constituted the new reaction and those that constitute the stoichiometric reactions present in the metabolic reconstruction a cost (in terms of new metabolites) to be added following the equation \ref{Cost}.
+\begin{equation}
+\label{Cost}
+additionCost = \dfrac{n(metabolites(\text{\texttt{newReaction}})\not\in metabolites(\text{\texttt{reactionList}}))}{n(metabolites(\text{\texttt{newReaction}}))}
+\end{equation}
+As an example, we select a sample of reactions from the downloaded reference for \emph{E. coli} and calculate the addition cost for the remaining reactions (6 first values are showed).
+\begin{Schunk}
+\begin{Sinput}
+> reactionList <- sample(E.coli$reaction,10)
+> head(
++   additionCost(reaction = E.coli$reaction,
++                reference = reactionList)
++ )
+\end{Sinput}
+\begin{Soutput}
+[1] 0.4000000 0.4000000 0.4000000 0.4000000 0.3333333 0.3333333
+\end{Soutput}
+\end{Schunk}
+\subsection*{Performing a gap find and fill}
+To identify network gaps in a metabolic network and fill it from a reference, the \texttt{gapFill} function perform internally several steps: (1) The dead-end metabolites are identified from the stoichiometric matrix using functions included in the \texttt{minval} package, (2) the candidate reactions to be added are identified by metabolite mapping, (3) the addition cost of each candidate reaction is calculated, (4) the candidate reactions with an addition cost lower or equal that the user-defined limit are added to the reaction list and finally (5) process return to step 1 until no more original-gaps can be filled under the user-defined limit. Function returns a set of candidate stoichiometric reactions to fill the original-gaps included in the metabolic network.\\
+As an example, we show how to fill the dead-end metabolites included in the previously selected sample using all downloaded stoichiometric reactions from the KEGG database for \emph{E. coli} as the reference.
 
+\begin{Schunk}
+\begin{Sinput}
+> gapFill(reactionList = reactionList,
++         reference = E.coli$reaction,
++         limit = 1/4
++ )
+\end{Sinput}
+\begin{Soutput}
+23 Orphan reactants found
+12 Orphan reactants found
+11 Orphan reactants found
+11 Orphan products found
+ [1] "D-Mannonate + NAD+ <=> D-Fructuronate + NADH + H+"                               
+ [2] "ATP + Thymidine <=> ADP + dTMP"                                                  
+ [3] "dTTP + H2O <=> dTMP + Diphosphate"                                               
+ [4] "(R,R)-Tartaric acid + NAD+ <=> 2-Hydroxy-3-oxosuccinate + NADH + H+"             
+ [5] "Hypoxanthine + NAD+ + H2O <=> Xanthine + NADH + H+"                              
+ [6] "Ammonia + 3 NAD+ + 2 H2O <=> Nitrite + 3 NADH + 3 H+"                            
+ [7] "L-Glutamine + H2O <=> L-Glutamate + Ammonia"                                     
+ [8] "ATP + Deamino-NAD+ + Ammonia <=> AMP + Diphosphate + NAD+"                       
+ [9] "Ammonia + NAD+ + H2O <=> Hydroxylamine + NADH + H+"                              
+[10] "ATP + Glutathione + Spermidine <=> ADP + Orthophosphate + Glutathionylspermidine"
+[11] "2 Glutathione + NAD+ <=> Glutathione disulfide + NADH + H+"                      
+[12] "Glutathione + H2O <=> Cys-Gly + L-Glutamate"                                     
+[13] "L-Proline + NAD+ <=> (S)-1-Pyrroline-5-carboxylate + NADH + H+"                  
+[14] "L-Glutamate 5-semialdehyde + NAD+ + H2O <=> L-Glutamate + NADH + H+"             
+[15] "ATP + Pantothenate <=> ADP + D-4'-Phosphopantothenate"      
+\end{Soutput}
+\end{Schunk}
+
+\subsection*{Identifying blocked reactions}
+To identify the blocked reactions included in a metabolic model, the \texttt{blockedReactions} function set each one of the reactions included in the model (one by time) as the objective function and optimize through Flux Balance Analysis the model. Reactions that not participate in any possible solution during all evaluations are returned as a blocked reaction.\\
+
+As an example, we identify the blocked reactions in the \emph{E. coli} core metabolic model included in the \texttt{`sybil'} package.
+
+\begin{Schunk}
+\begin{Sinput}
+> data("Ec_core")
+> blockedReactions(Ec_core)
+\end{Sinput}
+\begin{Soutput}
+  |======================================================================| 100%
+[1] "EX_fru(e)"   "EX_fum(e)"   "EX_mal_L(e)" "FUMt2_2"     "MALt2_2"   
+\end{Soutput}
+\end{Schunk}
 \section{Summary}
+We introduced the \texttt{g2f} package to find the dead-end metabolites included in a metabolic reconstruction, and fill it from the stoichiometric reactions of a reference, filtering candidate reactions using a weighting function and a user-defined limit. We show step by step the functionality of each procedure included in the package using a reference downloaded from the KEGG database for \emph{E. coli}, and the core metabolic model included in the \texttt{`sybil'} package.

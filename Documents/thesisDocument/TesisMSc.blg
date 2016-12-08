@@ -10,66 +10,65 @@ A level-1 auxiliary file: exp2flux/exp2fluxPaper.aux
 A level-1 auxiliary file: neuroprotective/tibolonePaper.aux
 The style file: unsrt.bst
 Database file #1: BibliMSc.bib
-Repeated entry---line 8224 of file BibliMSc.bib
- : @article{Gelius-Dietrich2013
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9665 of file BibliMSc.bib
- : @article{Chen2013
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10023 of file BibliMSc.bib
+Repeated entry---line 1551 of file BibliMSc.bib
  : @article{Cakir2007
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10271 of file BibliMSc.bib
+Repeated entry---line 2014 of file BibliMSc.bib
+ : @article{Chen2013
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3753 of file BibliMSc.bib
+ : @article{Gelius-Dietrich2013
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8389 of file BibliMSc.bib
  : @article{Raman2009
  :                   ,
 I'm skipping whatever remains of this entry
 Warning--can't use both author and editor fields in Yan2013
-Warning--can't use both volume and number fields in Kloosterboer2001
+Warning--empty institution in MINVAL
 Warning--empty journal in Gelius-Dietrich2013
-Warning--empty journal in Baslow2003
 Warning--empty journal in Landriscina1972
-You've used 140 entries,
+You've used 141 entries,
             1791 wiz_defined-function locations,
-            1343 strings with 34138 characters,
-and the built_in function-call counts, 37007 in all, are:
-= -- 3158
-> -- 2159
-< -- 6
-+ -- 773
-- -- 633
-* -- 3240
-:= -- 6064
-add.period$ -- 413
-call.type$ -- 140
-change.case$ -- 135
+            1348 strings with 34268 characters,
+and the built_in function-call counts, 37181 in all, are:
+= -- 3178
+> -- 2167
+< -- 4
++ -- 776
+- -- 635
+* -- 3299
+:= -- 6143
+add.period$ -- 420
+call.type$ -- 141
+change.case$ -- 137
 chr.to.int$ -- 0
 cite$ -- 145
-duplicate$ -- 1299
-empty$ -- 3248
-format.name$ -- 633
-if$ -- 7779
+duplicate$ -- 1278
+empty$ -- 3273
+format.name$ -- 635
+if$ -- 7775
 int.to.chr$ -- 0
-int.to.str$ -- 140
-missing$ -- 133
-newline$ -- 696
-num.names$ -- 140
-pop$ -- 201
+int.to.str$ -- 141
+missing$ -- 137
+newline$ -- 705
+num.names$ -- 141
+pop$ -- 175
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 536
+skip$ -- 471
 stack$ -- 0
-substring$ -- 3077
-swap$ -- 211
-text.length$ -- 6
+substring$ -- 3160
+swap$ -- 167
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 376
-width$ -- 143
-write$ -- 1517
+warning$ -- 4
+while$ -- 385
+width$ -- 144
+write$ -- 1540
 (There were 4 error messages)

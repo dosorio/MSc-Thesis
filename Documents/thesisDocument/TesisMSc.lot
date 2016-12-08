@@ -5,6 +5,6 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {\textbf {4-1}}{\ignorespaces Main metabolic capabilities associated to astrocytes represented as the set of objective functions used to evaluate neuroprotective effects of Tibolone under inflamed scenarios}}{26}
 \contentsline {table}{\numberline {\textbf {4-2}}{\ignorespaces Set of reactions added to recreate the medicated scenario model over the astrocyte tissue-specific model. Reactions are the representation of tibolone metabolism in the brain following the reported by Kloosterboer (2004).}}{27}
-\contentsline {table}{\numberline {\textbf {4-3}}{\ignorespaces Set of reactions with pro-inflammatory potential identified through a sensibility analysis over inflamed scenario.}}{33}
+\contentsline {table}{\numberline {\textbf {4-3}}{\ignorespaces Set of reactions with pro-inflammatory potential identified through a sensibility analysis over inflamed scenario.}}{34}
 \contentsline {table}{\numberline {\textbf {4-4}}{\ignorespaces Set of reactions with anti-inflammatory potential identified through a sensibility analysis over inflamed scenario.}}{34}
 \contentsline {table}{\numberline {\textbf {4-5}}{\ignorespaces Set of reactions associated with tibolone required to execute its neuroprotective effects. Reactions were identified through a sensibility analysis over the medicated scenario.}}{37}

@@ -4,7 +4,7 @@
 \textsf{\textbf{Written by:}} & \textit{Daniel Osorio, Janneth Gonzalez and Andrés Pinzón-Velasco}\\ 
 \end{tabular}
 \section*{Abstract}
-The genome-scale metabolic reconstructions, a compilation of all stoichiometric reactions that can describe the entire cellular metabolism of an organism, have become an indispensable tool for our understanding of biological phenomena, covering fields that range from systems biology to bioengineering. Evaluation of metabolic reconstructions is generally carried through Flux Balance Analysis (FBA), an optimization method where the biological sense of optimal solution is sensitive to thermodynamic unbalance, caused by the presence of stoichiometric reactions whose compounds are not produced or consumed in any other reaction (orphan metabolites) and by mass unbalanced stoichiometric reactions. The \textbf{`minval'} package was designed as a tool to identify orphan metabolites and the mass-charge unbalanced reactions in a set of stoichiometric reactions, it also permit to generate the stoichiometric matrix, extract all reactants, products, metabolite names and compartments from a metabolic reconstruction, as well as download the latest version of the Chemical Entities of Biological Interest (ChEBI) database and use it as reference for mass-charge balance evaluation. The \textbf{`minval'} package allows to write validated reconstructions in TSV and SBML standard file format.
+The genome-scale metabolic reconstructions, a compilation of all stoichiometric reactions that can describe the entire cellular metabolism of an organism, have become an indispensable tool for our understanding of biological phenomena, covering fields that range from systems biology to bioengineering. Evaluation of metabolic reconstructions are generally carried through Flux Balance Analysis, an optimization method where the biological sense of optimal solution is sensitive to thermodynamic unbalance, caused by the presence of stoichiometric reactions whose compounds are not produced or consumed in any other reaction (orphan metabolites) and by mass unbalanced stoichiometric reactions.  The \textbf{minval} package was designed as a tool to identify orphan metabolites and the mass unbalanced reactions in a set of stoichometry reactions, it also permits to extract all reactants, products, metabolite names and compartments from a metabolic reconstruction, moreover specific functions to map compound names associated to the Chemical Entities of Biological Interest (ChEBI) database are also included.
 \section{Introduction}
 A chemical reaction is a process where a set of chemical compounds called \emph{reactants} are transformed into another compounds called \emph{products} \cite{Chen2013}. The accepted way to represent a chemical reaction is called a \emph{stoichiometric reaction}, where reactants are placed on the left and the products on the right separated by an arrow which indicates the direction of the reaction as is showed in the equation \ref{sr} \cite{Hendrickson1997}. In biochemistry a set of chemical reactions that transform a substrate into a product, after several chemical transformations is called a metabolic pathway \cite{Lambert2011}. The compilation of all stoichiometric reactions included in all metabolic pathways that can describe the entire cellular metabolism encoded in the genome of a particular organism is known as a \emph{genome-scale metabolic reconstruction} \cite{Park2009} and has become an indispensable tool for studying metabolism of biological entities at the systems level \cite{Thiele2010}.\\
 
@@ -17,7 +17,9 @@ Reconstruction of genome-scale metabolic models starts with a compilation of all
 
 Genome-scale metabolic reconstructions are usually interrogated through \emph{Flux Balance Analysis} (FBA), an optimization method that allows us to understand the metabolic status of the cell, improve the production capability of a desired product or make a rapid evaluation of cellular physiology at genome-scale \cite{Kim2008,Park2009}. Nevertheless FBA is sensitive to thermodynamic unbalance, so in order to asses the validity of a biological extrapolation (i.e. an optimal solution) from a FBA analysis it is mandatory to avoid this type of unbalancing in mass conservation through all model reactions \cite{Reznik2013}. Another drawback when determining  the validity of a metabolic reconstruction is the presence of  reactions with compounds that are not produced or consumed in any other reaction (dead ends), generally known as orphan metabolites  \cite{Park2009, Thiele2010}. The presence of this type of metabolites can be problematic, since they lead to an artificial cellular  accumulation of  metabolism products which therefore  bias our biological conclusions. Tracking these metabolites is also a time consuming process, which most of the time has to be performed manually or partially automatized by in-house scripting. Given that typical genome-scale metabolic reconstructions account for hundreds or thousands of biochemical reactions, the manually curation of these models is a task that can lead to both, the introduction of new errors and to overlook some others.\\
 
-The most popular FBA implementations as COBRA and RAVEN includes similar functions (\texttt{checkMassChargeBalance} and \texttt{getElementalBalance} respectively) implemented under the commercial MATLAB$^{\circledR}$ environment. These functions identify orphan metabolites and mass unbalanced reaction based in the chemical formula or the IUPAC International Chemical Identifier (InChI) supplied manually by the user for each metabolite included in the genome-scale metabolic reconstruction. With the aim to automatize the identification of orphan metabolites as well as the unbalanced stoichiometric reactions in a genome-scale metabolic reconstruction, we have developed the \textbf{minval} package. It includes fifteen functions to evaluate mass-charge balance, generate the stoichiometric matrix and extract all reactants, products, orphan metabolites, metabolite names and compartments for a set of stoichiometric reactions, moreover specific functions download the latest version of the Chemical Entities of Biological Interest (ChEBI) database and write metabolic models in TSV  (default for the \texttt{`sybil'} R package) and SBML formats are also included.
+The most popular FBA implementations as COBRA and RAVEN includes similar functions (\texttt{checkMassChargeBalance} and \texttt{getElementalBalance} respectively) implemented under the commercial MATLAB$^{\circledR}$ environment. These functions identify orphan metabolites and mass unbalanced reaction based in the chemical formula or the IUPAC International Chemical Identifier (InChI) supplied manually by the user for each metabolite included in the genome-scale metabolic reconstruction. With the aim to automatize the identification of orphan metabolites as well as the unbalanced stoichiometric reactions in a genome-scale metabolic reconstruction, we have developed the \textbf{minval} package. It includes thirteen functions to evaluate mass balance and extract all reactants, products, orphan metabolites, metabolite names and compartments for a set of stoichiometric reactions, moreover specific functions to map compound names associated to the Chemical Entities of Biological Interest (ChEBI) database are also included.\\
+
+For this version we use the included ``\texttt{glugln}'' dataset \cite{NelsonE.2015}, 128 non-exchange/sink stoichiometric reactions from the reconstruction of the glutamate/glutamine cycle constructed in-house using the KEGG database , as an example for each function included in the \textbf{minval} package with the aim to show their potential use.
 
 \section{Installation and functions}
 \texttt{minval} includes 15 functions and is available for download and installation from CRAN, the
@@ -33,10 +35,10 @@ The \texttt{minval} package requires R version 2.10 or higher. Development relea
 \subsection*{Inputs and syntaxis}
 The functions included in \texttt{minval} package take as input a string list with stoichiometric reactions. The data loading from traditional human-readable spreadsheets can be carried through other CRAN-available packages as \texttt{gdata}, \texttt{readxl} or \texttt{xlsx}. Each reaction string must contain metabolites, with an optional compartment label between square brackets. The metabolites should be separated by a plus symbol (\texttt{+}) between two blank spaces and may have just one stoichiometric number before the name. The reactants should be separated of products by an arrow using the following symbol \texttt{=>} for irreversible reactions and \texttt{<=>} for reversible reactions.
 \subsection*{Syntax Validation}
-Flux Balance Analysis method is implemented in a variety of software under different programming languages. Some of the most popular implementations are \texttt{COBRA} \cite{Becker2007} and \texttt{RAVEN} \cite{Agren2013} under matlab language as well as \texttt{sybil} and \texttt{abcdeFBA} under R language. The \texttt{is.validsyntax} function validate the well accepted compartmentalized stoichiometric syntax (Equation \ref{sr}) for several FBA implementations and returns a boolean value TRUE if syntax is correct. In this example we show the stoichiometric syntax for the inter-convertion of  malate to fumaric acid and water in astrocytes cytoplasm.
+Flux Balance Analysis method is implemented in a variety of software under different programming languages. Some of the most popular implementations are \texttt{COBRA} \cite{Becker2007} and \texttt{RAVEN} \cite{Agren2013} under matlab language as well as \texttt{sybil} and \texttt{abcdeFBA} under R language. The \texttt{\mbox{isValidSyntax}} function validate the well accepted compartmentalized stoichiometric syntax (Equation \ref{sr}) for several FBA implementations and returns a boolean value TRUE if syntax is correct. In this example we show the stoichiometric syntax for the inter-convertion of  malate to fumaric acid and water in astrocytes cytoplasm.
 \begin{Schunk}
 \begin{Sinput}
-> is.validsyntax("(S)-malate(2-)[c_a] <=> fumaric acid[c_a] + water[c_a]")
+> isValidSyntax("(S)-malate(2-)[c_a] <=> fumaric acid[c_a] + water[c_a]")
 \end{Sinput}
 \begin{Soutput}
 [1] TRUE
@@ -78,11 +80,11 @@ As was mentioned before, the report option without compartment was added:
 \end{Soutput}
 \end{Schunk}
 \subsection*{Orphan Metabolites}
-Orphan metabolites, compounds that are not produced or consumed in any other reaction are one of the main causes of mass unbalance in metabolic reconstructions. The \texttt{orphan.reactants} function, identifies compounds that are not produced internally by any other reaction and should be added to the reconstruction as an exchange reaction following the protocol proposed by \cite{Thiele2010}.  In this examples we show how to extract all orphan compounds for all reactions included in the glutamate/glutamine cycle.
+Orphan metabolites, compounds that are not produced or consumed in any other reaction are one of the main causes of mass unbalance in metabolic reconstructions. The \texttt{\mbox{orphanReactants}} function, identifies compounds that are not produced internally by any other reaction and should be added to the reconstruction as an exchange reaction following the protocol proposed by \cite{Thiele2010}.  In this examples we show how to extract all orphan compounds for all reactions included in the glutamate/glutamine cycle.
 \begin{Schunk}
 \begin{Sinput}
 > data("glugln")
-> orphan.reactants(glugln)
+> orphanReactants(glugln)
 \end{Sinput}
 \begin{Soutput}
  [1] "alpha-D-Glucose 6-phosphate[r_n]"    "water[r_n]"
@@ -100,9 +102,9 @@ Orphan metabolites, compounds that are not produced or consumed in any other rea
 [25] "FADH2[m_a]"                          "oxygen atom[m_a]"
 [27] "Ferrocytochrome c2[m_a]"             "diphosphate(4-)[m_a]"
 \end{Soutput}
-The \texttt{orphan.products} function, identifies compounds that are not consumed internally by any other reaction and should be added to the reconstruction as an sink reaction following the protocol proposed by \cite{Thiele2010}. In this example we show the option added to \texttt{orphan.*} functions, that permits to report the orphan metabolites as a list grouped by compartment:
+The \texttt{orphanProducts} function, identifies compounds that are not consumed internally by any other reaction and should be added to the reconstruction as an sink reaction following the protocol proposed by \cite{Thiele2010}. In this example we show the option added to \texttt{orphan*} functions, that permits to report the orphan metabolites as a list grouped by compartment:
 \begin{Sinput}
-> orphan.products(glugln, byCompartment = TRUE)
+> orphanProducts(glugln, byCompartment = TRUE)
 \end{Sinput}
 \begin{Soutput}
 $r_n
@@ -186,18 +188,18 @@ The \texttt{to.ChEBI} function translates the compounds names of a stoichiometri
 \end{Soutput}
 \end{Schunk}
 \subsection*{Mass Balance Validation}
-Thermodynamic unbalance of genome-scale metabolic reconstructions can also be promoted by stoichiometric mistakes. In a well balanced stoichiometric reaction according to the Lomonósov-Lavoisier law, the mass comprising the reactants should be the same mass present in the products. The \texttt{unbalanced} function converts the metabolites identifiers to molecular formulas, multiplies the atom numbers by their respective stoichiometric coefficient, and establishes  if the atomic composition of reactants and products are the same, it returns a logical value TRUE if mass is unbalanced. In this example we show the mass balance evaluation for the first twenty reactions of the glutamate/glutamine cycle.
+Thermodynamic unbalance of genome-scale metabolic reconstructions can also be promoted by stoichiometric mistakes. In a well balanced stoichiometric reaction according to the Lomonósov-Lavoisier law, the mass comprising the reactants should be the same mass present in the products. The \texttt{\mbox{isBalanced}} function converts the metabolites identifiers to molecular formulas, multiplies the atom numbers by their respective stoichiometric coefficient, and establishes  if the atomic composition of reactants and products are the same, it returns a logical value TRUE if mass is unbalanced. In this example we show the mass balance evaluation for the first twenty reactions of the glutamate/glutamine cycle.
 \begin{Schunk}
 \begin{Sinput}
-> unbalanced(glugln[1:20])
+> isBalanced(glugln[1:20])
 \end{Sinput}
 \begin{Soutput}
  [1] FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 [13] FALSE  TRUE FALSE FALSE  TRUE  TRUE  TRUE  TRUE
 \end{Soutput}
-The \texttt{unbalanced} function also include an option to show the molecular formula of mass unbalanced formulas through the option \texttt{show.formulas}.
+The \texttt{isBalanced} function also include an option to show the molecular formula of mass unbalanced formulas through the option \texttt{show.formulas}.
 \begin{Sinput}
-> unbalanced(glugln[1:20], show.formulas = TRUE)
+> isBalanced(glugln[1:20], show.formulas = TRUE)
 \end{Sinput}
 \begin{Soutput}
      [,1]

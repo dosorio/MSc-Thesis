@@ -1,0 +1,46 @@
+\chapter{MINVAL algorithms}
+\renewcommand*{\algorithmcfname}{MINVAL algorithm}
+\begin{algorithm}
+\SetKwInOut{Input}{input}
+\SetKw{create}{create}
+\SetKw{verify}{verify}
+\SetKw{add}{add}
+\SetKwInOut{Output}{output}
+\Input{A A set of stoichiometric reaction with the following format: \texttt{H2O[c] + Urea-1-carboxylate[c] <=>\ 2 CO2[c] + 2 NH3[c]}. Where arrows and plus signs are surrounded by a ``space character''. It is also expected that stoichiometry coefficients are surrounded by spaces. It also expects arrows to be in the form \texttt{=>} or \texttt{<=>}. Meaning that arrows like \texttt{==>}, \texttt{<==>}, \texttt{-->} or \texttt{->} will not be parsed and will lead to errors.}
+\Output{A boolean value \texttt{TRUE} or \texttt{FALSE} for each stoichiometric reaction}
+\BlankLine
+\ForEach {stoichiometric reaction}{
+\create {an empty boolean vector $V$}\;
+\eIf{each metabolite has only just one coefficient}{\add{\texttt{TRUE}} \KwTo $V$}{\add{\texttt{FALSE}} \KwTo $V$}
+\eIf{metabolites coefficients are not surrounded by parentheses}{\add{\texttt{TRUE}} \KwTo $V$}{\add{\texttt{FALSE}} \KwTo $V$}
+\eIf{arrow symbol is between blank spaces}{\add{\texttt{TRUE}} \KwTo $V$}{\add{\texttt{FALSE}} \KwTo $V$}
+\eIf{arrow symbol is \texttt{<=>} or \texttt{=>}}{\add{\texttt{TRUE}} \KwTo $V$}{\add{\texttt{FALSE}} \KwTo $V$}
+\eIf{metabolites names are separated by a plus symbol \texttt{(+)} between blank spaces}{\add{\texttt{TRUE}} \KwTo $V$}{\add{\texttt{FALSE}} \KwTo $V$}
+\eIf{substituents position are joined by an hyphen to the metabolite name}{\add{\texttt{TRUE}} \KwTo $V$}{\add{\texttt{FALSE}} \KwTo $V$}d
+\eIf{all elements of $V$ are TRUE}{\KwRet TRUE}{\KwRet FALSE}
+}
+\caption{isValidSyntax}
+\end{algorithm}
+%%%%
+%%%%
+\begin{algorithm}
+\SetKwInOut{Input}{input}
+\SetKw{create}{create}
+\SetKwFunction{extract}{extract}
+\SetKw{add}{add}
+\SetKwInOut{Output}{output}
+\Input{\begin{description}
+\item reactionList: A set of stoichiometric reaction with the following format: \texttt{H2O[c] + Urea-1-carboxylate[c] <=>\ 2 CO2[c] + 2 NH3[c]}. Where arrows and plus signs are surrounded by a ``space character''. It is also expected that stoichiometry coefficients are surrounded by spaces. It also expects arrows to be in the form \texttt{=>} or \texttt{<=>}. Meaning that arrows like \texttt{==>}, \texttt{<==>}, \texttt{-->} or \texttt{->} will not be parsed and will lead to errors.
+\item referenceData: A chemical table containing data to evaluate the balance
+\item ids: A mandatory id of metabolites id column in the referenceData
+\item mFormula: An optional id of molecular formula column in the referenceData
+\item mWeight: An optional id of molecular weight column in the referenceData
+\item mCharge: An optional id of net charge column in the referenceData
+\end{description} }
+\Output{A boolean value \texttt{TRUE} or \texttt{FALSE} for each stoichiometric reaction}
+\BlankLine
+\ForEach{stoichiometric reaction}{
+\extract{reactants}
+}
+\caption{isBalanced}
+\end{algorithm}

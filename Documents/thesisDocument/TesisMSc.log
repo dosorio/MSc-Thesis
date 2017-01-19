@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  25 NOV 2016 09:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 JAN 2017 07:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -132,6 +132,62 @@ LaTeX Info: Redefining \textsubscript on input line 4771.
 \c@table=\count88
 Class scrbook Info: Redefining `\numberline' on input line 5776.
 \bibindent=\dimen103
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count89
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip56
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+********************************************************
+Package `algorithm2e' Release 5.1 -- october 19 2015 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
+********************************************************
+\skiptotal=\skip57
+\skiplinenumber=\skip58
+\skiprule=\skip59
+\skiphlne=\skip60
+\skiptext=\skip61
+\skiplength=\skip62
+\algomargin=\skip63
+\skipalgocfslide=\skip64
+\algowidth=\dimen104
+\inoutsize=\dimen105
+\inoutindent=\dimen106
+\interspacetitleruled=\dimen107
+\interspacealgoruled=\dimen108
+\interspacetitleboxruled=\dimen109
+\algocf@ruledwidth=\skip65
+\algocf@inoutbox=\box28
+\algocf@inputbox=\box29
+\AlCapSkip=\skip66
+\AlCapHSkip=\skip67
+\algoskipindent=\skip68
+\algocf@nlbox=\box30
+\algocf@hangingbox=\box31
+\algocf@untilbox=\box32
+\algocf@skipuntil=\skip69
+\algocf@capbox=\box33
+\algoheightruledefault=\skip70
+\algoheightrule=\skip71
+\algotitleheightruledefault=\skip72
+\algotitleheightrule=\skip73
+\c@algocfline=\count90
+\c@algocfproc=\count91
+\c@algocf=\count92
+\algocf@algoframe=\box34
+\algocf@algobox=\box35
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks15
@@ -454,11 +510,11 @@ Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/04/23 3.9r Babel common definitions
-\babel@savecnt=\count89
-\U@D=\dimen104
+\babel@savecnt=\count93
+\U@D=\dimen110
 )
 \es@quottoks=\toks17
-\es@quotdepth=\count90
+\es@quotdepth=\count94
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -466,7 +522,7 @@ Package babel Info: Making > an active character on input line 707.
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/10 v2.15b AMS math features
-\@mathmargin=\skip56
+\@mathmargin=\skip74
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -475,49 +531,49 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
-\ex@=\dimen105
+\ex@=\dimen111
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen106
+\pmbraise@=\dimen112
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count91
+\inf@bad=\count95
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count92
-\leftroot@=\count93
+\uproot@=\count96
+\leftroot@=\count97
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count94
-\DOTSCASE@=\count95
+\classnum@=\count98
+\DOTSCASE@=\count99
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen107
+\Mathstrutbox@=\box36
+\strutbox@=\box37
+\big@size=\dimen113
 LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count96
-\c@MaxMatrixCols=\count97
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count98
-\dspbrk@lvl=\count99
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
 \tag@help=\toks19
-\row@=\count100
-\column@=\count101
-\maxfields@=\count102
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
 \andhelp@=\toks20
-\eqnshift@=\dimen108
-\alignsep@=\dimen109
-\tagshift@=\dimen110
-\tagwidth@=\dimen111
-\totwidth@=\dimen112
-\lineht@=\dimen113
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
 \@envbody=\toks21
-\multlinegap=\skip57
-\multlinetaggap=\skip58
+\multlinegap=\skip75
+\multlinetaggap=\skip76
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
@@ -541,15 +597,15 @@ Class scrbook Warning: Usage of package `fancyhdr' together
 (scrbook)              package `fancyhdr' on input line 9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip59
-\f@ncyO@elh=\skip60
-\f@ncyO@erh=\skip61
-\f@ncyO@olh=\skip62
-\f@ncyO@orh=\skip63
-\f@ncyO@elf=\skip64
-\f@ncyO@erf=\skip65
-\f@ncyO@olf=\skip66
-\f@ncyO@orf=\skip67
+\fancy@headwidth=\skip77
+\f@ncyO@elh=\skip78
+\f@ncyO@erh=\skip79
+\f@ncyO@olh=\skip80
+\f@ncyO@orh=\skip81
+\f@ncyO@elf=\skip82
+\f@ncyO@erf=\skip83
+\f@ncyO@olf=\skip84
+\f@ncyO@orf=\skip85
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
@@ -577,76 +633,74 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count103
+\Gread@gobject=\count107
 ))
-\Gin@req@height=\dimen114
-\Gin@req@width=\dimen115
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
 )
-\epsfxsize=\dimen116
-\epsfysize=\dimen117
+\epsfxsize=\dimen122
+\epsfysize=\dimen123
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/eepic/epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
-\@@multicnt=\count104
-\d@lta=\count105
-\@delta=\dimen118
-\@@delta=\dimen119
-\@gridcnt=\count106
-\@joinkind=\count107
-\@dotgap=\dimen120
-\@ddotgap=\dimen121
-\@x@diff=\count108
-\@y@diff=\count109
-\x@diff=\dimen122
-\y@diff=\dimen123
-\@dotbox=\box30
-\num@segments=\count110
-\num@segmentsi=\count111
+\@@multicnt=\count108
+\d@lta=\count109
+\@delta=\dimen124
+\@@delta=\dimen125
+\@gridcnt=\count110
+\@joinkind=\count111
+\@dotgap=\dimen126
+\@ddotgap=\dimen127
+\@x@diff=\count112
+\@y@diff=\count113
+\x@diff=\dimen128
+\y@diff=\dimen129
+\@dotbox=\box38
+\num@segments=\count114
+\num@segmentsi=\count115
 \@datafile=\read1
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen124
-\extrarowheight=\dimen125
+\col@sep=\dimen130
+\extrarowheight=\dimen131
 \NC@list=\toks23
-\extratabsurround=\skip68
-\backup@length=\skip69
+\extratabsurround=\skip86
+\backup@length=\skip87
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/eepic/eepic.sty
 Extension to Epic and LaTeX. Version 1.1e - Released Dec 21, 1999
-\@gphlinewidth=\count112
-\@eepictcnt=\count113
-\@tempdimc=\dimen126
-\maxovaldiam=\dimen127
-\@filltype=\box31
+\@gphlinewidth=\count116
+\@eepictcnt=\count117
+\@tempdimc=\dimen132
+\maxovaldiam=\dimen133
+\@filltype=\box39
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/ncctools/nccmath.sty
 Package: nccmath 2005/02/21 v1.2 Additional Math Commands (NCC)
-\NCC@fracrulewidth=\dimen128
+\NCC@fracrulewidth=\dimen134
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box32
+\@tempboxb=\box40
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amscd.sty
 Package: amscd 1999/11/29 v2.0 AMS Commutatitive Diagrams
 \athelp@=\toks24
-\minaw@=\dimen129
-\bigaw@=\dimen130
-\minCDarrowwidth=\dimen131
+\minaw@=\dimen135
+\bigaw@=\dimen136
+\minCDarrowwidth=\dimen137
 )
 (./Sweave.sty
 Package: Sweave 
- (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count114
+\FV@CodeLineNo=\count118
 \FV@InFile=\read2
-\FV@TabBox=\box33
-\c@FancyVerbLine=\count115
-\FV@StepNumber=\count116
+\FV@TabBox=\box41
+\c@FancyVerbLine=\count119
+\FV@StepNumber=\count120
 \FV@OutFile=\write3
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty
@@ -830,121 +884,117 @@ File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/here/here.sty)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count117
+\c@float@type=\count121
 \float@exts=\toks25
-\float@box=\box34
+\float@box=\box42
 \@float@everytoks=\toks26
-\@floatcapt=\box35
+\@floatcapt=\box43
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-\c@blindtext=\count118
-\c@Blindtext=\count119
-\c@blind@countparstart=\count120
-\blind@countxx=\count121
-\blindtext@numBlindtext=\count122
-\blind@countyy=\count123
-\c@blindlist=\count124
-\c@blindlistlevel=\count125
-\c@blindlist@level=\count126
-\blind@listitem=\count127
-\c@blind@listcount=\count128
-\c@blind@levelcount=\count129
-\blind@mathformula=\count130
-\blind@Mathformula=\count131
-\c@blind@randomcount=\count132
-\c@blind@randommax=\count133
-\c@blind@pangramcount=\count134
-\c@blind@pangrammax=\count135
+\c@blindtext=\count122
+\c@Blindtext=\count123
+\c@blind@countparstart=\count124
+\blind@countxx=\count125
+\blindtext@numBlindtext=\count126
+\blind@countyy=\count127
+\c@blindlist=\count128
+\c@blindlistlevel=\count129
+\c@blindlist@level=\count130
+\blind@listitem=\count131
+\c@blind@listcount=\count132
+\c@blind@levelcount=\count133
+\blind@mathformula=\count134
+\blind@Mathformula=\count135
+\c@blind@randomcount=\count136
+\c@blind@randommax=\count137
+\c@blind@pangramcount=\count138
+\c@blind@pangrammax=\count139
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
-\TX@col@width=\dimen132
-\TX@old@table=\dimen133
-\TX@old@col=\dimen134
-\TX@target=\dimen135
-\TX@delta=\dimen136
-\TX@cols=\count136
+\TX@col@width=\dimen138
+\TX@old@table=\dimen139
+\TX@old@col=\dimen140
+\TX@target=\dimen141
+\TX@delta=\dimen142
+\TX@cols=\count140
 \TX@ftn=\toks27
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip70
-\subfigcapskip=\skip71
-\subfigcaptopadj=\dimen137
-\subfigbottomskip=\skip72
-\subfigcapmargin=\dimen138
-\subfiglabelskip=\skip73
-\c@subfigure=\count137
-\c@lofdepth=\count138
-\c@subtable=\count139
-\c@lotdepth=\count140
+\subfigtopskip=\skip88
+\subfigcapskip=\skip89
+\subfigcaptopadj=\dimen143
+\subfigbottomskip=\skip90
+\subfigcapmargin=\dimen144
+\subfiglabelskip=\skip91
+\c@subfigure=\count141
+\c@lofdepth=\count142
+\c@subtable=\count143
+\c@lotdepth=\count144
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/local/texlive/2016/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip74
-\subfig@bottom=\skip75
+\subfig@top=\skip92
+\subfig@bottom=\skip93
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip76
-\LTright=\skip77
-\LTpre=\skip78
-\LTpost=\skip79
-\LTchunksize=\count141
-\LTcapwidth=\dimen139
-\LT@head=\box36
-\LT@firsthead=\box37
-\LT@foot=\box38
-\LT@lastfoot=\box39
-\LT@cols=\count142
-\LT@rows=\count143
-\c@LT@tables=\count144
-\c@LT@chunks=\count145
+\LTleft=\skip94
+\LTright=\skip95
+\LTpre=\skip96
+\LTpost=\skip97
+\LTchunksize=\count145
+\LTcapwidth=\dimen145
+\LT@head=\box44
+\LT@firsthead=\box45
+\LT@foot=\box46
+\LT@lastfoot=\box47
+\LT@cols=\count146
+\LT@rows=\count147
+\c@LT@tables=\count148
+\c@LT@chunks=\count149
 \LT@p@ftn=\toks28
 )
 Class scrbook Info: longtable captions redefined on input line 25.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count146
+\linenopenalty=\count150
 \output=\toks29
-\linenoprevgraf=\count147
-\linenumbersep=\dimen140
-\linenumberwidth=\dimen141
-\c@linenumber=\count148
-\c@pagewiselinenumber=\count149
-\c@LN@truepage=\count150
-\c@internallinenumber=\count151
-\c@internallinenumbers=\count152
-\quotelinenumbersep=\dimen142
-\bframerule=\dimen143
-\bframesep=\dimen144
-\bframebox=\box40
+\linenoprevgraf=\count151
+\linenumbersep=\dimen146
+\linenumberwidth=\dimen147
+\c@linenumber=\count152
+\c@pagewiselinenumber=\count153
+\c@LN@truepage=\count154
+\c@internallinenumber=\count155
+\c@internallinenumbers=\count156
+\quotelinenumbersep=\dimen148
+\bframerule=\dimen149
+\bframesep=\dimen150
+\bframebox=\box48
 LaTeX Info: Redefining \\ on input line 3056.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip80
-\bibsep=\skip81
+\bibhang=\skip98
+\bibsep=\skip99
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count153
+\c@NAT@ctr=\count157
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-\c@r@tfl@t=\count154
-\rotFPtop=\skip82
-\rotFPbot=\skip83
-\rot@float@box=\box41
+\c@r@tfl@t=\count158
+\rotFPtop=\skip100
+\rotFPbot=\skip101
+\rot@float@box=\box49
 \rot@mess@toks=\toks30
 ))
 (./Befehle.sty) (./TesisMSc.aux (./titulo/HojaTituloMSc.aux)
@@ -956,7 +1006,7 @@ LaTeX Info: Redefining \% on input line 8.
 
 LaTeX Warning: Label `fC' multiply defined.
 
-))
+) (./MINVAL_algorithms.aux))
 \openout1 = `TesisMSc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -973,7 +1023,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 3.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 3.
@@ -982,16 +1033,16 @@ LaTeX Info: Redefining \% on input line 3.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count155
-\scratchdimen=\dimen145
-\scratchbox=\box42
-\nofMPsegments=\count156
-\nofMParguments=\count157
+\scratchcounter=\count159
+\scratchdimen=\dimen151
+\scratchbox=\box50
+\nofMPsegments=\count160
+\nofMParguments=\count161
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count158
-\MPscratchDim=\dimen146
-\MPnumerator=\count159
-\makeMPintoPDFobject=\count160
+\MPscratchCnt=\count162
+\MPscratchDim=\dimen152
+\MPnumerator=\count163
+\makeMPintoPDFobject=\count164
 \everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
@@ -1133,6 +1184,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 16.
 Package tocbasic Info: Using my definition of `\numberline' on input line 17.
 Package tocbasic Info: Using my definition of `\numberline' on input line 18.
 Package tocbasic Info: Using my definition of `\numberline' on input line 19.
+Package tocbasic Info: Using my definition of `\numberline' on input line 20.
 )
 \tf@toc=\write4
 \openout4 = `TesisMSc.toc'.
@@ -1250,8 +1302,8 @@ LaTeX Info: Redefining \% on input line 160.
 LaTeX Info: Redefining \. on input line 208.
 LaTeX Info: Redefining \% on input line 208.
  [7])
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
  [8]
 \openout2 = `g2f/g2fPaper.aux'.
 
@@ -1309,11 +1361,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
  []
 
 )
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
  [13]
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
  [14]
 \openout2 = `exp2flux/exp2fluxPaper.aux'.
 
@@ -1359,8 +1411,8 @@ Package pdftex.def Info: exp2flux/exp2flux-001.pdf used on input line 108.
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
  [19 <./exp2flux/exp2flux-001.pdf>])
-LaTeX Info: Redefining \. on input line 30.
-LaTeX Info: Redefining \% on input line 30.
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
  [20]
 \openout2 = `neuroprotective/tibolonePaper.aux'.
 
@@ -1641,21 +1693,163 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--263
  []
 
 )
-LaTeX Info: Redefining \. on input line 33.
-LaTeX Info: Redefining \% on input line 33.
- [37] (./TesisMSc.bbl [38
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+ [37]
+\openout2 = `MINVAL_algorithms.aux'.
+
+ (./MINVAL_algorithms.tex
+chapter A.
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 22.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 45.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 45.
+
+
+Overfull \hbox (20.0pt too wide) detected at line 46
+[][] 
+ []
+
+) [38
+
+
+
+] [39] (./TesisMSc.bbl [40
 
 
 ]
 LaTeX Info: Redefining \. on input line 133.
 LaTeX Info: Redefining \% on input line 133.
- [39]
+ [41]
 LaTeX Info: Redefining \. on input line 208.
 LaTeX Info: Redefining \% on input line 208.
- [40]
+ [42]
 LaTeX Info: Redefining \. on input line 275.
 LaTeX Info: Redefining \% on input line 275.
- [41]
+ [43]
 Underfull \hbox (badness 1102) in paragraph at lines 287--291
 \T1/aer/m/n/12 based me-ta-bo-lic mo-dels of Es-che-ri-chia co-li.  \T1/aer/m/i
 t/12 Jour-nal of Bio-lo-gi-cal Che-mistry\T1/aer/m/n/12 ,
@@ -1663,19 +1857,19 @@ t/12 Jour-nal of Bio-lo-gi-cal Che-mistry\T1/aer/m/n/12 ,
 
 LaTeX Info: Redefining \. on input line 347.
 LaTeX Info: Redefining \% on input line 347.
-[42]
+[44]
 LaTeX Info: Redefining \. on input line 422.
 LaTeX Info: Redefining \% on input line 422.
- [43]
+ [45]
 LaTeX Info: Redefining \. on input line 491.
 LaTeX Info: Redefining \% on input line 491.
- [44]
+ [46]
 LaTeX Info: Redefining \. on input line 556.
 LaTeX Info: Redefining \% on input line 556.
- [45]
+ [47]
 LaTeX Info: Redefining \. on input line 623.
 LaTeX Info: Redefining \% on input line 623.
- [46]
+ [48]
 Underfull \hbox (badness 1755) in paragraph at lines 654--659
 []\T1/aer/m/n/12 Mustafa Sert-ba³, Kutlu Ül-gen, and Tu-nahan Ça-kir.  Sys-te-m
 a-tic analy-sis of
@@ -1683,10 +1877,10 @@ a-tic analy-sis of
 
 LaTeX Info: Redefining \. on input line 697.
 LaTeX Info: Redefining \% on input line 697.
-[47]
+[49]
 LaTeX Info: Redefining \. on input line 765.
 LaTeX Info: Redefining \% on input line 765.
- [48]
+ [50]
 Underfull \hbox (badness 1077) in paragraph at lines 806--812
 []\T1/aer/m/n/12 Kenji Ta-mu-ra, Asa-mi Ma-kino, Fra-nçoi-se Hullin-Matsuda, To
 s-hihi-de Ko-ba-yas-hi,
@@ -1694,54 +1888,65 @@ s-hihi-de Ko-ba-yas-hi,
 
 LaTeX Info: Redefining \. on input line 837.
 LaTeX Info: Redefining \% on input line 837.
-[49])
-LaTeX Info: Redefining \. on input line 37.
-LaTeX Info: Redefining \% on input line 37.
- [50] (./TesisMSc.aux (./titulo/HojaTituloMSc.aux)
+[51])
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+ [52] (./TesisMSc.aux (./titulo/HojaTituloMSc.aux)
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
  (./Resumen.aux)
 (./objectives/objectives.aux) (./minval/minvalPaper.aux) (./g2f/g2fPaper.aux)
-(./exp2flux/exp2fluxPaper.aux) (./neuroprotective/tibolonePaper.aux))
+(./exp2flux/exp2fluxPaper.aux) (./neuroprotective/tibolonePaper.aux)
+(./MINVAL_algorithms.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 1061 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 9318 strings out of 493014
- 140948 string characters out of 6133351
- 310576 words of memory out of 5000000
- 12522 multiletter control sequences out of 15000+600000
- 53744 words of font info for 109 fonts, out of 8000000 for 9000
+ 10481 strings out of 493014
+ 160271 string characters out of 6133351
+ 356170 words of memory out of 5000000
+ 13652 multiletter control sequences out of 15000+600000
+ 64597 words of font info for 128 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 47i,22n,66p,8514b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsltt10.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on TesisMSc.pdf (60 pages, 769670 bytes).
+ 47i,22n,66p,8566b,8874s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm
+-super-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmc
+sc10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmit
+t10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsltt10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on TesisMSc.pdf (62 pages, 829463 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
- 257 compressed objects within 3 object streams
+ 413 PDF objects out of 1000 (max. 8388607)
+ 280 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

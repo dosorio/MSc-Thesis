@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 JAN 2017 11:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 JAN 2017 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2112,18 +2112,74 @@ Overfull \hbox (20.0pt too wide) detected at line 20
 
 
 Package relsize Warning: Font size 5.55556pt is too small.
-(relsize)                Using 6.0pt instead on input line 35.
+(relsize)                Using 6.0pt instead on input line 32.
 
 
 Package relsize Warning: Font size 5.55556pt is too small.
-(relsize)                Using 6.0pt instead on input line 36.
+(relsize)                Using 6.0pt instead on input line 40.
 
 
 Package relsize Warning: Font size 5.55556pt is too small.
-(relsize)                Using 6.0pt instead on input line 37.
+(relsize)                Using 6.0pt instead on input line 40.
 
 
-Overfull \hbox (20.0pt too wide) detected at line 39
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 40.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 40.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 40.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 40.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 40.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 63.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 63.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 63.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 64.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 64.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 65.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 65.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 65.
+
+
+Package relsize Warning: Font size 5.55556pt is too small.
+(relsize)                Using 6.0pt instead on input line 66.
+
+
+Overfull \hbox (20.0pt too wide) detected at line 66
 [][] 
  []
 
@@ -2131,19 +2187,22 @@ Overfull \hbox (20.0pt too wide) detected at line 39
 
 
 
-] (./TesisMSc.bbl [42
+]
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+ [42] (./TesisMSc.bbl [43
 
 
 ]
 LaTeX Info: Redefining \. on input line 133.
 LaTeX Info: Redefining \% on input line 133.
- [43]
+ [44]
 LaTeX Info: Redefining \. on input line 208.
 LaTeX Info: Redefining \% on input line 208.
- [44]
+ [45]
 LaTeX Info: Redefining \. on input line 275.
 LaTeX Info: Redefining \% on input line 275.
- [45]
+ [46]
 Underfull \hbox (badness 1102) in paragraph at lines 287--291
 \T1/aer/m/n/12 based me-ta-bo-lic mo-dels of Es-che-ri-chia co-li.  \T1/aer/m/i
 t/12 Jour-nal of Bio-lo-gi-cal Che-mistry\T1/aer/m/n/12 ,
@@ -2151,19 +2210,19 @@ t/12 Jour-nal of Bio-lo-gi-cal Che-mistry\T1/aer/m/n/12 ,
 
 LaTeX Info: Redefining \. on input line 347.
 LaTeX Info: Redefining \% on input line 347.
-[46]
+[47]
 LaTeX Info: Redefining \. on input line 422.
 LaTeX Info: Redefining \% on input line 422.
- [47]
+ [48]
 LaTeX Info: Redefining \. on input line 491.
 LaTeX Info: Redefining \% on input line 491.
- [48]
+ [49]
 LaTeX Info: Redefining \. on input line 556.
 LaTeX Info: Redefining \% on input line 556.
- [49]
+ [50]
 LaTeX Info: Redefining \. on input line 623.
 LaTeX Info: Redefining \% on input line 623.
- [50]
+ [51]
 Underfull \hbox (badness 1755) in paragraph at lines 654--659
 []\T1/aer/m/n/12 Mustafa Sert-ba³, Kutlu Ül-gen, and Tu-nahan Ça-kir.  Sys-te-m
 a-tic analy-sis of
@@ -2171,10 +2230,10 @@ a-tic analy-sis of
 
 LaTeX Info: Redefining \. on input line 697.
 LaTeX Info: Redefining \% on input line 697.
-[51]
+[52]
 LaTeX Info: Redefining \. on input line 765.
 LaTeX Info: Redefining \% on input line 765.
- [52]
+ [53]
 Underfull \hbox (badness 1077) in paragraph at lines 806--812
 []\T1/aer/m/n/12 Kenji Ta-mu-ra, Asa-mi Ma-kino, Fra-nçoi-se Hullin-Matsuda, To
 s-hihi-de Ko-ba-yas-hi,
@@ -2182,10 +2241,10 @@ s-hihi-de Ko-ba-yas-hi,
 
 LaTeX Info: Redefining \. on input line 837.
 LaTeX Info: Redefining \% on input line 837.
-[53])
+[54])
 LaTeX Info: Redefining \. on input line 44.
 LaTeX Info: Redefining \% on input line 44.
- [54] (./TesisMSc.aux (./titulo/HojaTituloMSc.aux)
+ [55] (./TesisMSc.aux (./titulo/HojaTituloMSc.aux)
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
  (./Resumen.aux)
@@ -2204,13 +2263,13 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10499 strings out of 493014
- 160553 string characters out of 6133351
+ 10510 strings out of 493014
+ 160715 string characters out of 6133351
  365954 words of memory out of 5000000
- 13663 multiletter control sequences out of 15000+600000
+ 13674 multiletter control sequences out of 15000+600000
  67317 words of font info for 130 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 48i,24n,66p,8566b,8878s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,24n,66p,8566b,8888s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm
 -super-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
@@ -2237,10 +2296,10 @@ l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/
 texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on TesisMSc.pdf (64 pages, 839125 bytes).
+Output written on TesisMSc.pdf (65 pages, 844562 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
+ 422 PDF objects out of 1000 (max. 8388607)
+ 286 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -26,14 +26,41 @@ rxnMet $\leftarrow$ extract all metabolites from reaction \tcc*{Applying regular
 \SetKw{verify}{verify}
 \SetKw{add}{add}
 \SetKwInOut{Output}{output}
-\Input{\begin{description}
-\item reaction: A stoichiometric reaction with the following format: \texttt{H2O[c] + Urea-1-carboxylate[c] <=>\ 2 CO2[c] + 2 NH3[c]}. Where arrows and plus signs are surrounded by a ``space character''. It is also expected that stoichiometry coefficients are surrounded by spaces. It also expects arrows to be in the form \texttt{=>} or \texttt{<=>}. Meaning that arrows like \texttt{==>}, \texttt{<==>}, \texttt{-->} or \texttt{->} will not be parsed and will lead to errors.
-\item reference: A set of stoichiometric reactions with the same format of reaction
-\end{description}}
-\Output{The addition cost of a stoichiometric reaction based in the metabolites that compound a reference}
+\Input{A valid model for the `\texttt{sybil}' R package. An object of class \texttt{modelorg}.}
+\Output{A set of ID's associated to reactions without flux under all scenarios.}
 \BlankLine
-refMet $\leftarrow$ extract all metabolites from reference \tcc*{Applying regular expressions}
-rxnMet $\leftarrow$ extract all metabolites from reaction \tcc*{Applying regular expressions}
-\KwRet $\dfrac{\left(\mid\text{rxnMet}\mid-\mid\text{rxnMet}\in\text{refMet}\mid\right)}{\mid\text{rxnMet}\mid}$
+create a empty vector F\;
+\ForEach{reaction in the model}{
+set all objective coefficients as 0\;
+assign selected reaction as objective function\;
+optimize the model\;
+identify reactions with flux different to 0\;
+add IDs of identified reactions to F\;
+}
+\KwRet model reaction IDs $\not \in$ F
 \caption{blockedReactions}
+\end{algorithm}
+%%%%
+%%%%
+\begin{algorithm}
+\SetKwInOut{Input}{input}
+\SetKw{create}{create}
+\SetKw{verify}{verify}
+\SetKw{add}{add}
+\SetKwInOut{Output}{output}
+\SetKwRepeat{Do}{do}{while}
+\Input{\begin{description}
+\item reactionList: A set of stoichiometric reactions with the following format: \texttt{H2O[c] + Urea-1-carboxylate[c] <=>\ 2 CO2[c] + 2 NH3[c]}. Where arrows and plus signs are surrounded by a ``space character''. It is also expected that stoichiometry coefficients are surrounded by spaces. It also expects arrows to be in the form \texttt{=>} or \texttt{<=>}. Meaning that arrows like \texttt{==>}, \texttt{<==>}, \texttt{-->} or \texttt{->} will not be parsed and will lead to errors.
+\item reference: A set of stoichiometric reaction with the same format of \texttt{reactionList}
+\item limit: An addition cost value to be used as a limit to select reactions to be added. Is calculated as $\dfrac{NumberNewMetabolites}{NumerOfMetabolites}$ for each reaction.
+\item woCompartment: A boolean value \texttt{TRUE} to define if compartment labels should be removed of the \texttt{reactionList} stoichiometric reactions, \texttt{FALSE} is used as default.
+\item consensus: A boolean value \texttt{TRUE} to define if reactionList and newReactions should be reported as a unique vector or \texttt{FALSE} if just newReactions should be reported.
+\end{description}}
+\Output{A set of stoichiometric reactions that fill the model gaps.}
+\BlankLine
+\caption{gapFill}
+\If{woCompartment is \texttt{TRUE}}{remove compartments of \texttt{reactionList} and \texttt{reference} metabolites \tcc*{Applying regular expressions}}
+extract orphans $\left(\text{orphanReactant} \cup \text{orphanProducts}\right)$\;
+\Do{}{}
+\eIf{consensus is \texttt{TRUE}}{\KwRet \texttt{reactionList} $\cup$ \texttt{newReactions}}{\KwRet \texttt{newReactions}}
 \end{algorithm}

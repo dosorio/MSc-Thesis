@@ -6,7 +6,7 @@
 \SetKw{verify}{verify}
 \SetKw{add}{add}
 \SetKwInOut{Output}{output}
-\Input{A A set of stoichiometric reaction with the following format: \texttt{H2O[c] + Urea-1-carboxylate[c] <=>\ 2 CO2[c] + 2 NH3[c]}. Where arrows and plus signs are surrounded by a ``space character''. It is also expected that stoichiometry coefficients are surrounded by spaces. It also expects arrows to be in the form \texttt{=>} or \texttt{<=>}. Meaning that arrows like \texttt{==>}, \texttt{<==>}, \texttt{-->} or \texttt{->} will not be parsed and will lead to errors.}
+\Input{A set of stoichiometric reaction with the following format: \texttt{H2O[c] + Urea-1-carboxylate[c] <=>\ 2 CO2[c] + 2 NH3[c]}. Where arrows and plus signs are surrounded by a ``space character''. It is also expected that stoichiometry coefficients are surrounded by spaces. It also expects arrows to be in the form \texttt{=>} or \texttt{<=>}. Meaning that arrows like \texttt{==>}, \texttt{<==>}, \texttt{-->} or \texttt{->} will not be parsed and will lead to errors.}
 \Output{A boolean value \texttt{TRUE} or \texttt{FALSE} for each stoichiometric reaction}
 \BlankLine
 \ForEach {stoichiometric reaction}{
@@ -16,7 +16,7 @@
 \eIf{arrow symbol is between blank spaces}{\add{\texttt{TRUE}} \KwTo $V$}{\add{\texttt{FALSE}} \KwTo $V$}
 \eIf{arrow symbol is \texttt{<=>} or \texttt{=>}}{\add{\texttt{TRUE}} \KwTo $V$}{\add{\texttt{FALSE}} \KwTo $V$}
 \eIf{metabolites names are separated by a plus symbol \texttt{(+)} between blank spaces}{\add{\texttt{TRUE}} \KwTo $V$}{\add{\texttt{FALSE}} \KwTo $V$}
-\eIf{substituents position are joined by an hyphen to the metabolite name}{\add{\texttt{TRUE}} \KwTo $V$}{\add{\texttt{FALSE}} \KwTo $V$}d
+\eIf{substituents position are joined by an hyphen to the metabolite name}{\add{\texttt{TRUE}} \KwTo $V$}{\add{\texttt{FALSE}} \KwTo $V$}
 \eIf{all elements of $V$ are TRUE}{\KwRet TRUE}{\KwRet FALSE}
 }
 \caption{isValidSyntax}
@@ -27,6 +27,8 @@
 \SetKwInOut{Input}{input}
 \SetKw{create}{create}
 \SetKwFunction{extract}{extract}
+\SetKwFunction{map}{map}
+\SetKwFunction{mtiply}{multiply}
 \SetKw{add}{add}
 \SetKwInOut{Output}{output}
 \Input{\begin{description}
@@ -40,7 +42,69 @@
 \Output{A boolean value \texttt{TRUE} or \texttt{FALSE} for each stoichiometric reaction}
 \BlankLine
 \ForEach{stoichiometric reaction}{
-\extract{reactants}
+extract reactants \tcc*{Applying regular expressions}
+extract reactants coefficients \tcc*{Applying regular expressions}
+multiply reactants by coefficients\;
+map reactants in referenceData using the given \texttt{id}\;
+\eIf{all reactants were mapped}{\eIf{mFormula is given}{split molecular formulas and sum all atoms \tcc*{Applying regular expressions}}{\eIf{mWeight is given}{sum all molecular weights}{\eIf{mCharge is given}{sum all molecular charges}{\KwRet NA}}}}{\KwRet NA}
+extract products \tcc*{Applying regular expressions}
+extract products coefficients \tcc*{Applying regular expressions}
+multiply products by coefficients\;
+map products in referenceData using the given \texttt{id}\;
+\eIf{all products were mapped}{\eIf{mFormula is given}{split molecular formulas and sum all atoms \tcc*{Applying regular expressions}}{\eIf{mWeight is given}{sum all molecular weights}{\eIf{mCharge is given}{sum all molecular charges}{\KwRet NA}}}}{\KwRet NA}
 }
+\eIf{sum of reactants is equal to sum of products}{\KwRet TRUE}{\KwRet FALSE}
 \caption{isBalanced}
+\end{algorithm}
+%%%%%
+%%%%%
+\begin{algorithm}
+\SetKwInOut{Input}{input}
+\SetKw{create}{create}
+\SetKw{verify}{verify}
+\SetKw{add}{add}
+\SetKwInOut{Output}{output}
+\Input{A set of stoichiometric reaction with the following format: \texttt{H2O[c] + Urea-1-carboxylate[c] <=>\ 2 CO2[c] + 2 NH3[c]}. Where arrows and plus signs are surrounded by a ``space character''. It is also expected that stoichiometry coefficients are surrounded by spaces. It also expects arrows to be in the form \texttt{=>} or \texttt{<=>}. Meaning that arrows like \texttt{==>}, \texttt{<==>}, \texttt{-->} or \texttt{->} will not be parsed and will lead to errors.}
+\Output{A set of metabolites that are not produced in any other reaction or just are involved in just one reaction.}
+\BlankLine
+create three empty vectors $m$, $r$ and $p$\;
+\ForEach {stoichiometric reaction}{
+split stoichiometric reaction by arrow \texttt{(<=>)} and plus symbol \texttt{(+)}\;
+remove stoichiometric coefficients\;
+remove all blank spaces\;
+add metabolites to $m$\;
+}
+compute the absolute frequency for each metabolite\;
+remove from $m$ vector all metabolites with frequencies greater or equal than 2\;
+\For {all irreversible reactions}{
+r $\leftarrow$ extract reactants \tcc*{Applying regular expressions}
+p $\leftarrow$ extract products \tcc*{Applying regular expressions}}
+\KwRet elements of $\left(\left( r \not\in p \right) \cup m \right)$
+\caption{orphanReactants}
+\end{algorithm}
+%%%%%
+%%%%%
+\begin{algorithm}
+\SetKwInOut{Input}{input}
+\SetKw{create}{create}
+\SetKw{verify}{verify}
+\SetKw{add}{add}
+\SetKwInOut{Output}{output}
+\Input{A set of stoichiometric reaction with the following format: \texttt{H2O[c] + Urea-1-carboxylate[c] <=>\ 2 CO2[c] + 2 NH3[c]}. Where arrows and plus signs are surrounded by a ``space character''. It is also expected that stoichiometry coefficients are surrounded by spaces. It also expects arrows to be in the form \texttt{=>} or \texttt{<=>}. Meaning that arrows like \texttt{==>}, \texttt{<==>}, \texttt{-->} or \texttt{->} will not be parsed and will lead to errors.}
+\Output{A set of metabolites that are not produced in any other reaction or just are involved in just one reaction.}
+\BlankLine
+create three empty vectors $m$, $r$ and $p$\;
+\ForEach {stoichiometric reaction}{
+split stoichiometric reaction by arrow \texttt{(<=>)} and plus symbol \texttt{(+)}\;
+remove stoichiometric coefficients\;
+remove all blank spaces\;
+add metabolites to $m$\;
+}
+compute the absolute frequency for each metabolite\;
+remove from $m$ vector all metabolites with frequencies greater or equal than 2\;
+\For {all irreversible reactions}{
+r $\leftarrow$ extract reactants \tcc*{Applying regular expressions}
+p $\leftarrow$ extract products \tcc*{Applying regular expressions}}
+\KwRet elements of $\left(\left( p \not\in r \right) \cup m \right)$
+\caption{orphanProducts}
 \end{algorithm}

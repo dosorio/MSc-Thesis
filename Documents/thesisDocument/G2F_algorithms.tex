@@ -18,3 +18,22 @@ rxnMet $\leftarrow$ extract all metabolites from reaction \tcc*{Applying regular
 \KwRet $\dfrac{\left(\mid\text{rxnMet}\mid-\mid\text{rxnMet}\in\text{refMet}\mid\right)}{\mid\text{rxnMet}\mid}$
 \caption{additionCost}
 \end{algorithm}
+%%%%
+%%%%
+\begin{algorithm}
+\SetKwInOut{Input}{input}
+\SetKw{create}{create}
+\SetKw{verify}{verify}
+\SetKw{add}{add}
+\SetKwInOut{Output}{output}
+\Input{\begin{description}
+\item reaction: A stoichiometric reaction with the following format: \texttt{H2O[c] + Urea-1-carboxylate[c] <=>\ 2 CO2[c] + 2 NH3[c]}. Where arrows and plus signs are surrounded by a ``space character''. It is also expected that stoichiometry coefficients are surrounded by spaces. It also expects arrows to be in the form \texttt{=>} or \texttt{<=>}. Meaning that arrows like \texttt{==>}, \texttt{<==>}, \texttt{-->} or \texttt{->} will not be parsed and will lead to errors.
+\item reference: A set of stoichiometric reactions with the same format of reaction
+\end{description}}
+\Output{The addition cost of a stoichiometric reaction based in the metabolites that compound a reference}
+\BlankLine
+refMet $\leftarrow$ extract all metabolites from reference \tcc*{Applying regular expressions}
+rxnMet $\leftarrow$ extract all metabolites from reaction \tcc*{Applying regular expressions}
+\KwRet $\dfrac{\left(\mid\text{rxnMet}\mid-\mid\text{rxnMet}\in\text{refMet}\mid\right)}{\mid\text{rxnMet}\mid}$
+\caption{blockedReactions}
+\end{algorithm}

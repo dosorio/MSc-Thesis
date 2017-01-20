@@ -49,6 +49,11 @@ add IDs of identified reactions to F\;
 \SetKw{add}{add}
 \SetKwInOut{Output}{output}
 \SetKwRepeat{Do}{do}{while}
+\SetKwFunction{orphans}{orphanMetabolites}
+\SetKwFunction{oreactants}{orphanReactants}
+\SetKwFunction{acost}{additionCost}
+\SetKwFunction{Unique}{unique}
+\SetKwFunction{oproducts}{orphanProducts}
 \Input{\begin{description}
 \item reactionList: A set of stoichiometric reactions with the following format: \texttt{H2O[c] + Urea-1-carboxylate[c] <=>\ 2 CO2[c] + 2 NH3[c]}. Where arrows and plus signs are surrounded by a ``space character''. It is also expected that stoichiometry coefficients are surrounded by spaces. It also expects arrows to be in the form \texttt{=>} or \texttt{<=>}. Meaning that arrows like \texttt{==>}, \texttt{<==>}, \texttt{-->} or \texttt{->} will not be parsed and will lead to errors.
 \item reference: A set of stoichiometric reaction with the same format of \texttt{reactionList}
@@ -60,7 +65,23 @@ add IDs of identified reactions to F\;
 \BlankLine
 \caption{gapFill}
 \If{woCompartment is \texttt{TRUE}}{remove compartments of \texttt{reactionList} and \texttt{reference} metabolites \tcc*{Applying regular expressions}}
-extract orphans $\left(\text{orphanReactant} \cup \text{orphanProducts}\right)$\;
-\Do{}{}
+\texttt{orphanOriginal} $\leftarrow$ \oreactants{reactionList} $\cup$ \oproducts{reactionList}\;
+to.add $\leftarrow$ \texttt{reactionList}\;
+\Do{$\mid$\texttt{orphanOriginal} $\in$ \oreactants(reactionList)$\mid$ $\geq$ $\mid$\texttt{orphanOriginal} $\in$ \oreactants{reactionList $\cup$ to.add}$\mid$}{
+Compute \acost{reference}\;
+Select stoichiometric reactions with \acost{reference} $\leq$ \texttt{limit}\;
+Extract \oreactants{reactionList}\;
+Compute $\mid$\oreactants{reactionList} $\in$ \texttt{orphanOriginal}$\mid$\;
+Add stoichiometric reaction that include the \oreactants{reactionList} within selected stoichiometric reactions with \acost{reference} $\leq$ \texttt{limit} to \texttt{to.add} array\;
+}
+\texttt{newReactions} $\leftarrow$ \Unique{to.add}\;
+\Do{$\mid$\texttt{orphanOriginal} $\in$ \oproducts(reactionList)$\mid$ $\geq$ $\mid$\texttt{orphanOriginal} $\in$ \oproducts{\Unique{reactionList $\cup$ to.add}}$\mid$}{
+Compute \acost{reference}\;
+Select stoichiometric reactions with \acost{reference} $\leq$ \texttt{limit}\;
+Extract \oproducts{reactionList}\;
+Compute $\mid$\oproducts{reactionList} $\in$ \texttt{orphanOriginal}$\mid$\;
+Add stoichiometric reaction that include the \oproducts{reactionList} within selected stoichiometric reactions with \acost{reference} $\leq$ \texttt{limit} to \texttt{to.add} array\;
+}
+\texttt{newReactions} $\leftarrow$  \Unique{to.add $\cup$ newReactions} $\not \in$ \texttt{reactionList}\;
 \eIf{consensus is \texttt{TRUE}}{\KwRet \texttt{reactionList} $\cup$ \texttt{newReactions}}{\KwRet \texttt{newReactions}}
 \end{algorithm}

@@ -16,7 +16,7 @@
 fluxModel1 $\leftarrow$ extract \fluxDistribution{\optimize{model1}}\;
 fluxModel2 $\leftarrow$ extract \fluxDistribution{\optimize{model2}}\;
 \ForEach{$\text{reaction} \in (model1 \cap model2)$}{
-\eIf{fluxModel1$_{reaction}$ is equal to 0}{\KwRet fluxModel2$_{reaction}$}{\KwRet 1-(fluxModel2$_{reaction}$/fluxModel1$_{reaction}$)}
+\eIf{fluxModel1$_{reaction}$ is equal to 0}{\KwRet fluxModel2$_{reaction}$}{\If{(1-(fluxModel2$_{reaction}$/fluxModel1$_{reaction}$ $\leq$ \texttt{foldReport)}}{\KwRet 1-(fluxModel2$_{reaction}$/fluxModel1$_{reaction}$)}}
 }
 \caption{fluxDifferences}
 \end{algorithm}
@@ -25,9 +25,39 @@ fluxModel2 $\leftarrow$ extract \fluxDistribution{\optimize{model2}}\;
 \begin{algorithm}
 \SetKwInOut{Input}{input}
 \SetKwInOut{Output}{output}
-\Input{}
+\Input{\begin{description}
+\item model: A valid model for the \texttt{`sybil'} package.
+\item expression: A valid \texttt{ExpressionSet} object (one by treatment).
+\item organism: A valid organism identifier for the KEGG database. List of valid organism identifiers are available in: http://rest.kegg.jp/list/organism.
+\item typeID: A string to define the type of ID used in GPR's. One of \texttt{entrez} or \texttt{kegg} must be given
+\item missing: A character string specifying the value to be used in missing cases; must be one of \texttt{min}, \texttt{1q}, \texttt{mean}, \texttt{median}, \texttt{3q}, or \texttt{max}.
+\item scale: A boolean value to specify if data must be scaled to assign a value of 1000 as max.
+\end{description}}
 \Output{}
 \BlankLine
+\If{organism and typeID is given}{Download from the KEGG database the metabolic pathways associated to each gene}
+\ForEach{non exchange reaction $\in$ model}{
+\eIf{GPR is given}{
+split associated GPR by \texttt{`or'} conectors to extract complex\;
+\ForEach{complex}{split complex by the \texttt{`and'} conector to extract associated genes\;
+\ForEach{gene $\in$ complex}{
+\eIf{gene $\in$ ExpressionSet}{extract associated expression value from the ExpressionSet\;
+\KwRet expression value for selected gene}{\eIf{organism and typeID is given}{
+identify associated pathways to gene\;
+select main pathway (more genes present in the model)\;
+extract associated expression values to main pathway\;
+compute the selected metric for \texttt{missing} to all expression data associated to the selected pathway}{\KwRet 0}
+}}
+find the minimal expression value of all genes associated in the complex\;
+\KwRet identified min value}
+compute sum the minimal expression values associated to all genes included in the complex that conform the GPR\;
+\KwRet computed sum
+}{compute the selected metric for \texttt{missing} to all expression data included in the ExpressionSet\;
+\KwRet computed value}
+replace \texttt{lower.bound} with computed value multiplied by -1\;
+replace \texttt{upper.bound} with computed value
+}
+\KwRet the model with \texttt{lower} and \texttt{upper} bound modified
 \caption{exp2flux}
 \end{algorithm}
 %%%%

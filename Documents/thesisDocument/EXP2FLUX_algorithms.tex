@@ -1,1 +1,34 @@
 \chapter{EXP2FLUX algorithms}
+\setcounter{algocf}{0}
+\renewcommand*{\algorithmcfname}{EXP2FLUX algorithm}
+\begin{algorithm}
+\SetKwInOut{Input}{input}
+\SetKwInOut{Output}{output}
+\SetKwFunction{optimize}{optimize}
+\SetKwFunction{fluxDistribution}{fluxDistribution}
+\Input{\begin{description}
+\item model1: A valid model for the `sybil' package.
+\item model2: A valid model for the `sybil' package. Must have the same reactions (reaction number and reaction identifiers) as ``model1'' with different restrictions.
+\item foldReport: A threshold value to be reported. All reactions with a greater or equal fold change than the given threshold are reported.
+\end{description}}
+\Output{The calculated fold change for the fluxes of two given metabolic models.}
+\BlankLine
+fluxModel1 $\leftarrow$ extract \fluxDistribution{\optimize{model1}}\;
+fluxModel2 $\leftarrow$ extract \fluxDistribution{\optimize{model2}}\;
+\ForEach{$\text{reaction} \in (model1 \cap model2)$}{
+\eIf{fluxModel1$_{reaction}$ is equal to 0}{\KwRet fluxModel2$_{reaction}$}{\KwRet 1-(fluxModel2$_{reaction}$/fluxModel1$_{reaction}$)}
+}
+\caption{fluxDifferences}
+\end{algorithm}
+%%%%
+%%%%
+\begin{algorithm}
+\SetKwInOut{Input}{input}
+\SetKwInOut{Output}{output}
+\Input{}
+\Output{}
+\BlankLine
+\caption{exp2flux}
+\end{algorithm}
+%%%%
+%%%%

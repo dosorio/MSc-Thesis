@@ -19,3 +19,4 @@
 \contentsline {section}{\numberline {4.4}Conclusion}{37}
 \contentsline {chapter}{\numberline {A}MINVAL algorithms}{38}
 \contentsline {chapter}{\numberline {B}G2F algorithms}{41}
+\contentsline {chapter}{\numberline {C}EXP2FLUX algorithms}{43}

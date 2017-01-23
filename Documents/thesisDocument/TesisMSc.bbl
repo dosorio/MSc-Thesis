@@ -206,21 +206,33 @@ Meiyappan Lakshmanan, Geoffrey Koh, Bevan K~S Chung, and Dong-Yup Lee.
 \newblock {Software applications for flux balance analysis}.
 \newblock {\em Briefings in bioinformatics}, page bbs069, 2012.
 
-\bibitem{schellenberger2011quantitative}
-Jan Schellenberger, Richard Que, Ronan M~T Fleming, Ines Thiele, Jeffrey~D
-  Orth, Adam~M Feist, Daniel~C Zielinski, Aarash Bordbar, Nathan~E Lewis,
-  Sorena Rahmanian, and Others.
-\newblock {Quantitative prediction of cellular metabolism with constraint-based
-  models: the COBRA Toolbox v2. 0}.
-\newblock {\em Nature protocols}, 6(9):1290--1307, 2011.
+\bibitem{Reed2006}
+Jennifer~L Reed, Trina~R Patel, Keri~H Chen, Andrew~R Joyce, Margaret~K
+  Applebee, Christopher~D Herring, Olivia~T Bui, Eric~M Knight, Stephen~S Fong,
+  and Bernhard~O Palsson.
+\newblock {Systems approach to refining genome annotation}.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  103(46):17480--17484, nov 2006.
 
-\bibitem{caspi2016metacyc}
-Ron Caspi, Richard Billington, Luciana Ferrer, Hartmut Foerster, Carol~A
-  Fulcher, Ingrid~M Keseler, Anamika Kothari, Markus Krummenacker, Mario
-  Latendresse, Lukas~A Mueller, and Others.
-\newblock {The MetaCyc database of metabolic pathways and enzymes and the
-  BioCyc collection of pathway/genome databases}.
-\newblock {\em Nucleic acids research}, 44(D1):D471----D480, 2016.
+\bibitem{SatishKumar2007}
+Vinay {Satish Kumar}, Madhukar~S Dasika, and Costas~D Maranas.
+\newblock {Optimization based automated curation of metabolic reconstructions}.
+\newblock {\em BMC Bioinformatics}, 8(1):212, 2007.
+
+\bibitem{Kumar2009gf}
+Vinay~Satish Kumar and Costas~D Maranas.
+\newblock {GrowMatch: An Automated Method for Reconciling In Silico/In Vivo
+  Growth Predictions}.
+\newblock {\em PLoS Computational Biology}, 5(3):e1000308, mar 2009.
+
+\bibitem{Thiele2014gf}
+Ines Thiele, Nikos Vlassis, and Ronan M~T Fleming.
+\newblock {FASTGAPFILL: efficient gap filling in metabolic networks}.
+\newblock {\em Bioinformatics}, 30(17):2529--2531, sep 2014.
+
+\bibitem{G2F}
+Kelly Botero, Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
+\newblock {\em {g2f: Find and Fill Gaps in Metabolic Networks}}, 2016.
 
 \bibitem{kanehisa2006genomics}
 Minoru Kanehisa, Susumu Goto, Masahiro Hattori, Kiyoko~F Aoki-Kinoshita, Masumi
@@ -240,6 +252,14 @@ Liming Liu, Rasmus Agren, Sergio Bordel, and Jens Nielsen.
 \newblock {Use of genome-scale metabolic models for understanding microbial
   physiology}.
 \newblock {\em FEBS letters}, 584(12):2556--2564, 2010.
+
+\bibitem{schellenberger2011quantitative}
+Jan Schellenberger, Richard Que, Ronan M~T Fleming, Ines Thiele, Jeffrey~D
+  Orth, Adam~M Feist, Daniel~C Zielinski, Aarash Bordbar, Nathan~E Lewis,
+  Sorena Rahmanian, and Others.
+\newblock {Quantitative prediction of cellular metabolism with constraint-based
+  models: the COBRA Toolbox v2. 0}.
+\newblock {\em Nature protocols}, 6(9):1290--1307, 2011.
 
 \bibitem{seaver2012frontiers}
 Samuel M~D Seaver, Christopher~S Henry, and Andrew~D Hanson.
@@ -600,10 +620,6 @@ Ines Thiele, Neil Swainston, Ronan M~T Fleming, Andreas Hoppe, Swagatika Sahoo,
   Stobbe, and Others.
 \newblock {A community-driven global reconstruction of human metabolism}.
 \newblock {\em Nature biotechnology}, 31(5):419--425, 2013.
-
-\bibitem{G2F}
-Kelly Botero, Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
-\newblock {\em {g2f: Find and Fill Gaps in Metabolic Networks}}, 2016.
 
 \bibitem{MINVAL}
 Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.

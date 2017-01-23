@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 JAN 2017 12:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  23 JAN 2017 15:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1339,33 +1339,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-LaTeX Info: Redefining \. on input line 33.
-LaTeX Info: Redefining \% on input line 33.
-[11]
-LaTeX Info: Redefining \. on input line 66.
-LaTeX Info: Redefining \% on input line 66.
- [12]
-LaTeX Font Info:    Try loading font information for TS1+aett on input line 86.
 
-LaTeX Font Info:    No file TS1aett.fd. on input line 86.
+Overfull \hbox (1.9785pt too wide) in alignment at lines 19--24
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (1.9785pt too wide) in alignment at lines 24--29
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 32--33
+\T1/aer/m/n/12 go-rithms iden-tify the me-ta-bo-li-
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 32--33
+\T1/aer/m/n/12 tes (\T1/aett/m/n/12 `gapFind'\T1/aer/m/n/12 ) in the me-ta-bo-
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 32--33
+\T1/aer/m/n/12 lic net-work re-cons-truc-tion which
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 32--33
+\T1/aer/m/n/12 can-not be pro-du-ced un-der any
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 32--33
+\T1/aer/m/n/12 up-ta-ke con-di-tions in both sin-gle
+ []
+
+
+Underfull \hbox (badness 5388) in paragraph at lines 32--33
+\T1/aer/m/n/12 se-quently, iden-tify the reac-tions
+ []
+
+
+Underfull \hbox (badness 5359) in paragraph at lines 32--33
+\T1/aer/m/n/12 (\T1/aett/m/n/12 `gapFill'\T1/aer/m/n/12 ) from a cus-to-mi-zed
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+aett on input line 36.
+
+LaTeX Font Info:    No file OMSaett.fd. on input line 36.
+
+LaTeX Font Warning: Font shape `OMS/aett/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead on input line 36.
+
+
+Overfull \hbox (1.9785pt too wide) in alignment at lines 29--39
+ [] [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+[11]
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+ [12]
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
+ [13]
+LaTeX Font Info:    Try loading font information for TS1+aett on input line 110
+.
+LaTeX Font Info:    No file TS1aett.fd. on input line 110.
 
 
 LaTeX Font Warning: Font shape `TS1/aett/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textquotesingle' on input line 86.
+(Font)              for symbol `textquotesingle' on input line 110.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 )
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
- [13]
+ [14]
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
- [14]
+ [15]
 \openout2 = `exp2flux/exp2fluxPaper.aux'.
 
  (./exp2flux/exp2fluxPaper.tex
@@ -1375,7 +1435,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-[15
+[16
 
 
 
@@ -1391,17 +1451,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
 LaTeX Info: Redefining \. on input line 17.
 LaTeX Info: Redefining \% on input line 17.
-[16]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
 LaTeX Info: Redefining \. on input line 39.
 LaTeX Info: Redefining \% on input line 39.
-[17]
+[18]
 LaTeX Info: Redefining \. on input line 97.
 LaTeX Info: Redefining \% on input line 97.
- [18] <exp2flux/exp2flux-001.pdf, id=112, 433.62pt x 433.62pt>
+ [19] <exp2flux/exp2flux-001.pdf, id=115, 433.62pt x 433.62pt>
 File: exp2flux/exp2flux-001.pdf Graphic file (type pdf)
 
 <use exp2flux/exp2flux-001.pdf>
@@ -1409,16 +1469,16 @@ Package pdftex.def Info: exp2flux/exp2flux-001.pdf used on input line 108.
 (pdftex.def)             Requested size: 234.73523pt x 234.74017pt.
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
- [19 <./exp2flux/exp2flux-001.pdf>])
+ [20 <./exp2flux/exp2flux-001.pdf>])
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
- [20]
+ [21]
 \openout2 = `neuroprotective/tibolonePaper.aux'.
 
 
 (./neuroprotective/tibolonePaper.tex
 chapter 4.
-[21
+[22
 
 
 
@@ -1439,7 +1499,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
-[22]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
@@ -1451,7 +1511,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
-[23]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
@@ -1473,17 +1533,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
 LaTeX Info: Redefining \. on input line 35.
 LaTeX Info: Redefining \% on input line 35.
-[24]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
-[25]
+[26]
 LaTeX Info: Redefining \. on input line 67.
 LaTeX Info: Redefining \% on input line 67.
- [26]
+ [27]
 Underfull \hbox (badness 1902) in paragraph at lines 86--87
 []|\T1/aer/m/n/12 3$\OML/cmm/m/it/12 $\T1/aer/m/n/12 hidroxytibolone in-ter-co
 n-ver-tion to
@@ -1500,15 +1560,15 @@ Underfull \vbox (badness 2980) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 104.
 LaTeX Info: Redefining \% on input line 104.
- [27]
-<neuroprotective/RXN.pdf, id=151, 671.50874pt x 189.70876pt>
+ [28]
+<neuroprotective/RXN.pdf, id=154, 671.50874pt x 189.70876pt>
 File: neuroprotective/RXN.pdf Graphic file (type pdf)
 
 <use neuroprotective/RXN.pdf>
 Package pdftex.def Info: neuroprotective/RXN.pdf used on input line 112.
 (pdftex.def)             Requested size: 469.47046pt x 132.63022pt.
 
-<neuroprotective/Pathways.pdf, id=152, 1016.66826pt x 1017.75232pt>
+<neuroprotective/Pathways.pdf, id=155, 1016.66826pt x 1017.75232pt>
 File: neuroprotective/Pathways.pdf Graphic file (type pdf)
 
 <use neuroprotective/Pathways.pdf>
@@ -1516,8 +1576,8 @@ Package pdftex.def Info: neuroprotective/Pathways.pdf used on input line 120.
 (pdftex.def)             Requested size: 469.47046pt x 469.97319pt.
 LaTeX Info: Redefining \. on input line 127.
 LaTeX Info: Redefining \% on input line 127.
- [28 <./neuroprotective/RXN.pdf>]
-<neuroprotective/Exchanges.pdf, id=183, 650.43pt x 289.08pt>
+ [29 <./neuroprotective/RXN.pdf>]
+<neuroprotective/Exchanges.pdf, id=187, 650.43pt x 289.08pt>
 File: neuroprotective/Exchanges.pdf Graphic file (type pdf)
 
 <use neuroprotective/Exchanges.pdf>
@@ -1527,7 +1587,7 @@ Package pdftex.def Info: neuroprotective/Exchanges.pdf used on input line 132.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<neuroprotective/IC50.pdf, id=184, 939.51pt x 610.28pt>
+<neuroprotective/IC50.pdf, id=188, 939.51pt x 610.28pt>
 File: neuroprotective/IC50.pdf Graphic file (type pdf)
 
 <use neuroprotective/IC50.pdf>
@@ -1544,10 +1604,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
 LaTeX Info: Redefining \. on input line 149.
 LaTeX Info: Redefining \% on input line 149.
-[29]
+[30]
 LaTeX Info: Redefining \. on input line 149.
 LaTeX Info: Redefining \% on input line 149.
- [30 <./neuroprotective/Pathways.pdf>]
+ [31 <./neuroprotective/Pathways.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
@@ -1557,7 +1617,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-<neuroprotective/Healthy2Inflammated.pdf, id=222, 722.7pt x 469.755pt>
+<neuroprotective/Healthy2Inflammated.pdf, id=225, 722.7pt x 469.755pt>
 File: neuroprotective/Healthy2Inflammated.pdf Graphic file (type pdf)
 
 <use neuroprotective/Healthy2Inflammated.pdf>
@@ -1575,14 +1635,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
 LaTeX Info: Redefining \. on input line 163.
 LaTeX Info: Redefining \% on input line 163.
-[31 <./neuroprotective/Exchanges.pdf>]
+[32 <./neuroprotective/Exchanges.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 LaTeX Info: Redefining \. on input line 165.
 LaTeX Info: Redefining \% on input line 165.
-[32 <./neuroprotective/IC50.pdf>]
+[33 <./neuroprotective/IC50.pdf>]
 Overfull \hbox (4.15097pt too wide) in paragraph at lines 171--171
  \T1/aer/m/n/12 FLUX| 
  []
@@ -1635,7 +1695,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
 LaTeX Info: Redefining \. on input line 214.
 LaTeX Info: Redefining \% on input line 214.
-[33 <./neuroprotective/Healthy2Inflammated.pdf>]
+[34 <./neuroprotective/Healthy2Inflammated.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
@@ -1645,8 +1705,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 217.
 LaTeX Info: Redefining \% on input line 217.
- [34]
-<neuroprotective/Effects.pdf, id=255, 722.7pt x 289.08pt>
+ [35]
+<neuroprotective/Effects.pdf, id=258, 722.7pt x 289.08pt>
 File: neuroprotective/Effects.pdf Graphic file (type pdf)
 
 <use neuroprotective/Effects.pdf>
@@ -1662,7 +1722,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-<neuroprotective/Inflammated2Tibolone.pdf, id=256, 722.7pt x 469.755pt>
+<neuroprotective/Inflammated2Tibolone.pdf, id=259, 722.7pt x 469.755pt>
 File: neuroprotective/Inflammated2Tibolone.pdf Graphic file (type pdf)
 
 <use neuroprotective/Inflammated2Tibolone.pdf>
@@ -1680,13 +1740,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
 LaTeX Info: Redefining \. on input line 240.
 LaTeX Info: Redefining \% on input line 240.
-[35 <./neuroprotective/Effects.pdf>]
+[36 <./neuroprotective/Effects.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Info: Redefining \. on input line 260.
 LaTeX Info: Redefining \% on input line 260.
-[36 <./neuroprotective/Inflammated2Tibolone.pdf>]
+[37 <./neuroprotective/Inflammated2Tibolone.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
@@ -1694,7 +1754,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--263
 )
 LaTeX Info: Redefining \. on input line 34.
 LaTeX Info: Redefining \% on input line 34.
- [37]
+ [38]
 \openout2 = `MINVAL_algorithms.aux'.
 
  (./MINVAL_algorithms.tex
@@ -2079,14 +2139,14 @@ Package relsize Warning: Font size 5.55556pt is too small.
 Package relsize Warning: Font size 5.55556pt is too small.
 (relsize)                Using 6.0pt instead on input line 108.
 
-) [38
+) [39
 
 
 
-] [39]
+]
 LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
- [40]
+ [40] [41]
 \openout2 = `G2F_algorithms.aux'.
 
  (./G2F_algorithms.tex
@@ -2241,14 +2301,11 @@ Overfull \hbox (20.0pt too wide) detected at line 87
 [][] 
  []
 
-) [41
+) [42
 
 
 
-]
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
- [42]
+] [43]
 \openout2 = `EXP2FLUX_algorithms.aux'.
 
  (./EXP2FLUX_algorithms.tex
@@ -2411,68 +2468,65 @@ Overfull \hbox (20.0pt too wide) detected at line 62
 [][] 
  []
 
-) [43
+) [44
 
 
 
-]
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
- [44] (./TesisMSc.bbl [45
+] [45] (./TesisMSc.bbl [46
 
 
 ]
 LaTeX Info: Redefining \. on input line 133.
 LaTeX Info: Redefining \% on input line 133.
- [46]
+ [47]
 LaTeX Info: Redefining \. on input line 208.
 LaTeX Info: Redefining \% on input line 208.
- [47]
-LaTeX Info: Redefining \. on input line 274.
-LaTeX Info: Redefining \% on input line 274.
  [48]
-Underfull \hbox (badness 1102) in paragraph at lines 287--291
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+ [49]
+Underfull \hbox (badness 1102) in paragraph at lines 307--311
 \T1/aer/m/n/12 based me-ta-bo-lic mo-dels of Es-che-ri-chia co-li.  \T1/aer/m/i
 t/12 Jour-nal of Bio-lo-gi-cal Che-mistry\T1/aer/m/n/12 ,
  []
 
-LaTeX Info: Redefining \. on input line 347.
-LaTeX Info: Redefining \% on input line 347.
-[49]
-LaTeX Info: Redefining \. on input line 422.
-LaTeX Info: Redefining \% on input line 422.
- [50]
-LaTeX Info: Redefining \. on input line 491.
-LaTeX Info: Redefining \% on input line 491.
+LaTeX Info: Redefining \. on input line 349.
+LaTeX Info: Redefining \% on input line 349.
+[50]
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
  [51]
-LaTeX Info: Redefining \. on input line 555.
-LaTeX Info: Redefining \% on input line 555.
+LaTeX Info: Redefining \. on input line 494.
+LaTeX Info: Redefining \% on input line 494.
  [52]
-LaTeX Info: Redefining \. on input line 622.
-LaTeX Info: Redefining \% on input line 622.
+LaTeX Info: Redefining \. on input line 564.
+LaTeX Info: Redefining \% on input line 564.
  [53]
-Underfull \hbox (badness 1755) in paragraph at lines 654--659
+LaTeX Info: Redefining \. on input line 632.
+LaTeX Info: Redefining \% on input line 632.
+ [54]
+Underfull \hbox (badness 1755) in paragraph at lines 670--675
 []\T1/aer/m/n/12 Mustafa Sert-ba³, Kutlu Ül-gen, and Tu-nahan Ça-kir.  Sys-te-m
 a-tic analy-sis of
  []
 
-LaTeX Info: Redefining \. on input line 697.
-LaTeX Info: Redefining \% on input line 697.
-[54]
-LaTeX Info: Redefining \. on input line 765.
-LaTeX Info: Redefining \% on input line 765.
- [55]
-Underfull \hbox (badness 1077) in paragraph at lines 806--812
+LaTeX Info: Redefining \. on input line 707.
+LaTeX Info: Redefining \% on input line 707.
+[55]
+LaTeX Info: Redefining \. on input line 776.
+LaTeX Info: Redefining \% on input line 776.
+ [56]
+Underfull \hbox (badness 1077) in paragraph at lines 822--828
 []\T1/aer/m/n/12 Kenji Ta-mu-ra, Asa-mi Ma-kino, Fra-nçoi-se Hullin-Matsuda, To
 s-hihi-de Ko-ba-yas-hi,
  []
 
-LaTeX Info: Redefining \. on input line 836.
-LaTeX Info: Redefining \% on input line 836.
-[56])
+LaTeX Info: Redefining \. on input line 847.
+LaTeX Info: Redefining \% on input line 847.
+[57])
 LaTeX Info: Redefining \. on input line 44.
 LaTeX Info: Redefining \% on input line 44.
- [57] (./TesisMSc.aux (./titulo/HojaTituloMSc.aux)
+ [58] (./TesisMSc.aux (./titulo/HojaTituloMSc.aux)
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
  (./Resumen.aux)
@@ -2491,13 +2545,13 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10543 strings out of 493014
- 161210 string characters out of 6133351
- 367760 words of memory out of 5000000
- 13697 multiletter control sequences out of 15000+600000
+ 10562 strings out of 493014
+ 161481 string characters out of 6133351
+ 366878 words of memory out of 5000000
+ 13714 multiletter control sequences out of 15000+600000
  75160 words of font info for 138 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 52i,27n,66p,8566b,8910s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,27n,66p,8566b,8908s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm
 -super-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
@@ -2525,10 +2579,10 @@ texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on TesisMSc.pdf (67 pages, 876311 bytes).
+Output written on TesisMSc.pdf (68 pages, 879124 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 294 compressed objects within 3 object streams
+ 436 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

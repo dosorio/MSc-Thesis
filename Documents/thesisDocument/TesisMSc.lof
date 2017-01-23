@@ -2,15 +2,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\textbf {3-1}}{\ignorespaces Flux differences between an unconstrained and a constrained model. Constraints were calculated through the \texttt {exp2flux} R package using simulated gene expression data.}}{19}
+\contentsline {figure}{\numberline {\textbf {3-1}}{\ignorespaces Flux differences between an unconstrained and a constrained model. Constraints were calculated through the \texttt {exp2flux} R package using simulated gene expression data.}}{20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\textbf {4-1}}{\ignorespaces Distribution of biochemical reactions included in the astrocyte tissue-specific metabolic model, classification based in \textbf {A:} Type of reaction, \textbf {B:} Catalytic activity required and \textbf {C:} Associated compartment.}}{28}
-\contentsline {figure}{\numberline {\textbf {4-2}}{\ignorespaces Pathways associated with biochemical reactions included in the astrocyte tissue-specific metabolic model. Pathway association was assigned based in the categorization of the KEGG database.}}{30}
-\contentsline {figure}{\numberline {\textbf {4-3}}{\ignorespaces The exchange rate of metabolites between metabolic scenarios using the generic biomass reaction included in RECON 2.04 as the objective function}}{31}
-\contentsline {figure}{\numberline {\textbf {4-4}}{\ignorespaces Robustness analysis to calculate palmitate-induced IC50 value for each objective function described in table \ref {OF}. The red line represents the calculated IC50 value.}}{32}
-\contentsline {figure}{\numberline {\textbf {4-5}}{\ignorespaces Metabolic pathways affected by metabolic inflammation. Percentage of activation and inactivation was calculated in comparison with genes associated with each pathway in the KEGG database}}{33}
-\contentsline {figure}{\numberline {\textbf {4-6}}{\ignorespaces The response of the main astrocytes metabolic capabilities to different modeled scenarios.}}{35}
-\contentsline {figure}{\numberline {\textbf {4-7}}{\ignorespaces Metabolic pathways affected by tibolone effects over inflamed scenario. Activation and inactivation percentage was measured in comparison with genes associated to each pathway in the KEGG database }}{36}
+\contentsline {figure}{\numberline {\textbf {4-1}}{\ignorespaces Distribution of biochemical reactions included in the astrocyte tissue-specific metabolic model, classification based in \textbf {A:} Type of reaction, \textbf {B:} Catalytic activity required and \textbf {C:} Associated compartment.}}{29}
+\contentsline {figure}{\numberline {\textbf {4-2}}{\ignorespaces Pathways associated with biochemical reactions included in the astrocyte tissue-specific metabolic model. Pathway association was assigned based in the categorization of the KEGG database.}}{31}
+\contentsline {figure}{\numberline {\textbf {4-3}}{\ignorespaces The exchange rate of metabolites between metabolic scenarios using the generic biomass reaction included in RECON 2.04 as the objective function}}{32}
+\contentsline {figure}{\numberline {\textbf {4-4}}{\ignorespaces Robustness analysis to calculate palmitate-induced IC50 value for each objective function described in table \ref {OF}. The red line represents the calculated IC50 value.}}{33}
+\contentsline {figure}{\numberline {\textbf {4-5}}{\ignorespaces Metabolic pathways affected by metabolic inflammation. Percentage of activation and inactivation was calculated in comparison with genes associated with each pathway in the KEGG database}}{34}
+\contentsline {figure}{\numberline {\textbf {4-6}}{\ignorespaces The response of the main astrocytes metabolic capabilities to different modeled scenarios.}}{36}
+\contentsline {figure}{\numberline {\textbf {4-7}}{\ignorespaces Metabolic pathways affected by tibolone effects over inflamed scenario. Activation and inactivation percentage was measured in comparison with genes associated to each pathway in the KEGG database }}{37}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -8,6 +8,9 @@ A level-1 auxiliary file: minval/minvalPaper.aux
 A level-1 auxiliary file: g2f/g2fPaper.aux
 A level-1 auxiliary file: exp2flux/exp2fluxPaper.aux
 A level-1 auxiliary file: neuroprotective/tibolonePaper.aux
+A level-1 auxiliary file: MINVAL_algorithms.aux
+A level-1 auxiliary file: G2F_algorithms.aux
+A level-1 auxiliary file: EXP2FLUX_algorithms.aux
 The style file: unsrt.bst
 Database file #1: BibliMSc.bib
 Repeated entry---line 1551 of file BibliMSc.bib
@@ -30,45 +33,45 @@ Warning--can't use both author and editor fields in Yan2013
 Warning--empty institution in MINVAL
 Warning--empty journal in Gelius-Dietrich2013
 Warning--empty journal in Landriscina1972
-You've used 141 entries,
+You've used 144 entries,
             1791 wiz_defined-function locations,
-            1348 strings with 34268 characters,
-and the built_in function-call counts, 37181 in all, are:
-= -- 3178
-> -- 2167
+            1368 strings with 34675 characters,
+and the built_in function-call counts, 37893 in all, are:
+= -- 3241
+> -- 2194
 < -- 4
-+ -- 776
-- -- 635
-* -- 3299
-:= -- 6143
-add.period$ -- 420
-call.type$ -- 141
-change.case$ -- 137
++ -- 786
+- -- 642
+* -- 3363
+:= -- 6254
+add.period$ -- 429
+call.type$ -- 144
+change.case$ -- 140
 chr.to.int$ -- 0
-cite$ -- 145
-duplicate$ -- 1278
-empty$ -- 3273
-format.name$ -- 635
-if$ -- 7775
+cite$ -- 148
+duplicate$ -- 1305
+empty$ -- 3346
+format.name$ -- 642
+if$ -- 7931
 int.to.chr$ -- 0
-int.to.str$ -- 141
-missing$ -- 137
-newline$ -- 705
-num.names$ -- 141
-pop$ -- 175
+int.to.str$ -- 144
+missing$ -- 140
+newline$ -- 720
+num.names$ -- 144
+pop$ -- 178
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 471
+skip$ -- 481
 stack$ -- 0
-substring$ -- 3160
-swap$ -- 167
+substring$ -- 3226
+swap$ -- 170
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 385
-width$ -- 144
-write$ -- 1540
+while$ -- 392
+width$ -- 147
+write$ -- 1573
 (There were 4 error messages)

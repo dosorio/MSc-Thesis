@@ -109,27 +109,25 @@ number of unique genes: 137
 objective function:     +1 Biomass_Ecoli_core_w_GAM 
 \end{Soutput}
 \end{Schunk}
-To visualize the metabolic changes induced by the incorporation of gene-expression data as FBA limits of the reactions included in the metabolic model, a Flux Variability Analysis was performed using the original \textit{E. coli} core metabolic model and the constrained one.
+To visualize the metabolic changes induced by the incorporation of gene-expression data as FBA limits of the reactions included in the metabolic model, all the fluxes that maximize the grow objective function in the original \textit{E. coli} core metabolic model and the constrained one were plotted.
 \begin{Schunk}
 \begin{Sinput}
-> par(mfcol=c(1,2))
-> plot(fluxVar(Ec_core),main="Original Model",ylim=c(-100,1000))
+> plot(
++   getFluxDist(optimizeProb(Ec_core)), type = "h", col = "gray60",
++   ylab = "Flux rate", xlab = "Reaction Number", main = "Flux Differences", lwd = 4
++ )
+> lines(
++   getFluxDist(optimizeProb(mEc_core)), type = "h", col = "red", lwd = 2
++ )
+> legend(
++   x = "topright", inset = .03, legend = c("Original\nModel", "Constrained\nModel"),
++   fill = c("gray60", "red"), horiz = TRUE
++ )
 \end{Sinput}
-\begin{Soutput}
-|            :            |            :            | 100 %
-|===================================================| :-) 
-\end{Soutput}
-\begin{Sinput}
-> plot(fluxVar(mEc_core),main="Modified Model",ylim=c(-100,1000))
-\end{Sinput}
-\begin{Soutput}
-|            :            |            :            | 100 %
-|===================================================| :-) 
-\end{Soutput}
 \end{Schunk}
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=0.5\textwidth]{exp2flux/exp2flux-001}\\
+\includegraphics[width=0.8\textwidth]{exp2flux/exp2flux-001}\\
 \caption{Flux differences between an unconstrained and a constrained model. Constraints were calculated through the \texttt{exp2flux} R package using simulated gene expression data.}
 \label{exp2fluxFlux}
 \end{center}

@@ -10,13 +10,13 @@
 \contentsline {section}{\numberline {2.3}Summary}{15}
 \contentsline {chapter}{\numberline {3}Constraining a tissue-specific metabolic reconstruction: Incorporating expression data as FBA limits through `exp2flux' R package.}{16}
 \contentsline {section}{\numberline {3.1}Introduction}{16}
-\contentsline {section}{\numberline {3.2}Installation and functions}{18}
-\contentsline {section}{\numberline {3.3}Summary}{21}
-\contentsline {chapter}{\numberline {4}Exploring the neuroprotective effects of tibolone during astrocytic metabolic inflammation: a flux balance analysis approach}{22}
-\contentsline {section}{\numberline {4.1}Introduction}{23}
-\contentsline {section}{\numberline {4.2}Material and Methods}{26}
-\contentsline {section}{\numberline {4.3}Results}{29}
-\contentsline {section}{\numberline {4.4}Conclusion}{38}
-\contentsline {chapter}{\numberline {A}MINVAL algorithms}{39}
-\contentsline {chapter}{\numberline {B}G2F algorithms}{42}
-\contentsline {chapter}{\numberline {C}EXP2FLUX algorithms}{44}
+\contentsline {section}{\numberline {3.2}Installation and functions}{19}
+\contentsline {section}{\numberline {3.3}Summary}{22}
+\contentsline {chapter}{\numberline {4}Exploring the neuroprotective effects of tibolone during astrocytic metabolic inflammation: a flux balance analysis approach}{23}
+\contentsline {section}{\numberline {4.1}Introduction}{24}
+\contentsline {section}{\numberline {4.2}Material and Methods}{27}
+\contentsline {section}{\numberline {4.3}Results}{30}
+\contentsline {section}{\numberline {4.4}Conclusion}{39}
+\contentsline {chapter}{\numberline {A}MINVAL algorithms}{40}
+\contentsline {chapter}{\numberline {B}G2F algorithms}{43}
+\contentsline {chapter}{\numberline {C}EXP2FLUX algorithms}{45}

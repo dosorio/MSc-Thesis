@@ -230,10 +230,6 @@ Ines Thiele, Nikos Vlassis, and Ronan M~T Fleming.
 \newblock {FASTGAPFILL: efficient gap filling in metabolic networks}.
 \newblock {\em Bioinformatics}, 30(17):2529--2531, sep 2014.
 
-\bibitem{G2F}
-Kelly Botero, Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
-\newblock {\em {g2f: Find and Fill Gaps in Metabolic Networks}}, 2016.
-
 \bibitem{kanehisa2006genomics}
 Minoru Kanehisa, Susumu Goto, Masahiro Hattori, Kiyoko~F Aoki-Kinoshita, Masumi
   Itoh, Shuichi Kawashima, Toshiaki Katayama, Michihiro Araki, and Mika
@@ -297,6 +293,33 @@ Matthew~A Oberhardt, Bernhard~{\O} Palsson, and Jason~A Papin.
 \newblock {Applications of genome-scale metabolic reconstructions.}
 \newblock {\em Molecular systems biology}, 5:320, 2009.
 
+\bibitem{Becker2008}
+Scott~A. Becker and Bernhard~O. Palsson.
+\newblock {Context-Specific Metabolic Networks Are Consistent with
+  Experiments}.
+\newblock {\em PLoS Computational Biology}, 4(5):e1000082, may 2008.
+
+\bibitem{Shlomi2008}
+Tomer Shlomi, Moran~N Cabili, Markus~J Herrg{\aa}rd, Bernhard~{\O} Palsson, and
+  Eytan Ruppin.
+\newblock {Network-based prediction of human tissue-specific metabolism}.
+\newblock {\em Nature Biotechnology}, 26(9):1003--1010, sep 2008.
+
+\bibitem{colijn2009interpreting}
+Caroline Colijn, Aaron Brandes, Jeremy Zucker, Desmond~S Lun, Brian Weiner,
+  Maha~R Farhat, Tan-Yun Cheng, D~Branch Moody, Megan Murray, and James~E
+  Galagan.
+\newblock {Interpreting expression data with metabolic flux models: predicting
+  Mycobacterium tuberculosis mycolic acid production}.
+\newblock {\em PLoS Comput Biol}, 5(8):e1000489, 2009.
+
+\bibitem{Chandrasekaran2010}
+Sriram Chandrasekaran and Nathan~D Price.
+\newblock {Probabilistic integrative modeling of genome-scale metabolic and
+  regulatory networks in Escherichia coli and Mycobacterium tuberculosis}.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  107(41):17845--17850, oct 2010.
+
 \bibitem{Machado2014}
 Daniel Machado and Markus Herrg{\aa}rd.
 \newblock {Systematic Evaluation of Methods for Integration of Transcriptomic
@@ -338,14 +361,6 @@ Daniel Machado and Markus Herrg{\aa}rd.
 \newblock {Systematic evaluation of methods for integration of transcriptomic
   data into constraint-based models of metabolism}.
 \newblock {\em PLoS Comput Biol}, 10(4):e1003580, 2014.
-
-\bibitem{colijn2009interpreting}
-Caroline Colijn, Aaron Brandes, Jeremy Zucker, Desmond~S Lun, Brian Weiner,
-  Maha~R Farhat, Tan-Yun Cheng, D~Branch Moody, Megan Murray, and James~E
-  Galagan.
-\newblock {Interpreting expression data with metabolic flux models: predicting
-  Mycobacterium tuberculosis mycolic acid production}.
-\newblock {\em PLoS Comput Biol}, 5(8):e1000489, 2009.
 
 \bibitem{Carbonell2016}
 Pablo Carbonell.
@@ -620,6 +635,10 @@ Ines Thiele, Neil Swainston, Ronan M~T Fleming, Andreas Hoppe, Swagatika Sahoo,
   Stobbe, and Others.
 \newblock {A community-driven global reconstruction of human metabolism}.
 \newblock {\em Nature biotechnology}, 31(5):419--425, 2013.
+
+\bibitem{G2F}
+Kelly Botero, Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.
+\newblock {\em {g2f: Find and Fill Gaps in Metabolic Networks}}, 2016.
 
 \bibitem{MINVAL}
 Daniel Osorio, Janneth Gonzalez, and Andres Pinzon.

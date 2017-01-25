@@ -61,7 +61,7 @@ Cys2GTHRD&1 cys\_L[e] + 1 glu\_L[c] + 1 gly[c] $\Rightarrow$ 1 gthrd[e]& Catch o
 \end{center}
 \end{table} 
 
-FBA for healthy, inflammated and medicated scenarios was resolved using GLPK 4.60, setting the generic human biomass reaction included in RECON 2.04 and each one of reactions described in table \ref{OF} as objective functions. Models were analyzed by comparing fluxes between scenarios, metabolites production rate and a sensitivity analysis.
+FBA for healthy, inflammated and medicated scenarios was resolved using GLPK 4.60, setting the generic human biomass reaction included in RECON 2.04 and each one of reactions described in table \ref{OF} as objective functions. Models were analyzed by comparing fluxes between scenarios, metabolites production rate and single reaction knockout analysis.
 \subsection*{Metabolic Scenarios}
 To test neuroprotective effects of tibolone during astrocytic metabolic inflammation we define three different metabolic scenarios. A `healthy' scenario, where palmitate uptake rate was freely set by optimizer; an `inflamed' scenario, where uptake rate of palmitate was forced to be stable in the mean of the half maximal inhibitory concentration (IC50) value for all objective functions included in table \ref{OF}. IC50 values were calculated through a robustness analysis performed using uptake of palmitate (`EX\_hdca(e)' in RECON 2.04) as control reaction and 1000 points in the range from 0 to 1 mMgDW$^{-1}$h$^{-1}$ for each objective function. Uptake value where each objective function reached IC50 was selected and subsequently averaged. Finally, a medicated scenario, defined as an inflamed scenario that includes 279 reactions associated with estradiol-derivated compounds and ten specific reactions associated with Tibolone action mechanism not included in RECON 2.04 described in table \ref{Tibolone}.
 
@@ -100,7 +100,7 @@ Metabolic changes across metabolic scenarios were measured through two different
 \end{ceqn}
 
 \subsection*{Pro-inflammatory, Anti-inflammatory and Tibolone Action Mechanism Associated Enzymes}
-Enzymes involved in pro-inflammatory and anti-inflammatory responses as well as in the tibolone action mechanism were identified through sensitivity analysis as follows: Pro-inflammatory enzymes, are those that catalyze reactions that being knocked out allows an increase of objective function value. Anti-inflammatory enzymes are those associated with reactions that have a fold-change greatest equal to 2, and at being knocked out reduce even more the objective function value. Tibolone action mechanism associated enzymes are those that catalyze reactions that being knocked out inhibit entirely the metabolic effect of tibolone.
+Enzymes involved in pro-inflammatory and anti-inflammatory responses as well as in the tibolone action mechanism were identified through a one per time reaction knockout analysis as follows: Pro-inflammatory enzymes, are those that catalyze reactions that being knocked out allows an increase of objective function value. Anti-inflammatory enzymes are those associated with reactions that have a fold-change greatest equal to 2, and at being knocked out reduce even more the objective function value. Tibolone action mechanism associated enzymes are those that catalyze reactions that being knocked out inhibit entirely the metabolic effect of tibolone.
 
 \section{Results}
 All data, code, software and output files used in the developing of this work, are available to be downloaded from GitHub URL: https://github.com/dosorio/masterThesis as a free repository.

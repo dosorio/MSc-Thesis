@@ -30,57 +30,56 @@
 \end{beamercolorbox}}%
 \vskip0pt%
 }
-\author[Daniel Osorio]{Presented by:\\\textbf{Daniel Camilo Osorio Hurtado}\\in partial fulfillment of requirements for the degree of\\\textbf{Master in Bioinformatics}\newline \newline Advisors: \textbf{Janneth Gonzalez PhD.} and \textbf{Andrés Pinzon PhD.}}
+\author[Daniel Osorio]{\vspace*{-0.55cm}\\\normalsize{\scriptsize{Presented by:}\\\normalsize{\textbf{Daniel Camilo Osorio Hurtado}}}\\\scriptsize{in partial fulfillment of requirements for the degree of} \normalsize{\\\textbf{Master in Bioinformatics}\newline \newline Advisors: \textbf{Janneth Gonzalez PhD.} and \textbf{Andrés Pinzon PhD.}}\\\scriptsize{Bioinformatics and Computational Systems Biology Lab}}
 \title[Bioinformatics Master Thesis]{Identifying proteins and metabolic pathways associated to the neuroprotective response mediated by tibolone in astrocytes under an induced inflammatory model}
-%\institute[]{\inst{1} Departamento de Ingeniería de Sistemas e Industrial\\Facultad de Ingeniería, Universidad Nacional de Colombia \and \inst{2} Grupo de Investigación en Bioquímica Experimental y Computacional\\Facultad de Ciencias, Pontificia Universidad Javeriana - Bogotá \and \inst{3} Grupo de Investigación en Bioinformática y Biología de Sistemas\\ Instituto de Genética, Universidad Nacional de Colombia} 
-\date[]{\scriptsize{\textbf{Universidad Nacional de Colombia, November 2016}}}
+\date[]{\scriptsize{\vspace{-1.1cm}\\\includegraphics[scale=.1]{UN}\\\textbf{Universidad Nacional de Colombia\\ Engineering Faculty - Department of Systems and Industrial Engineering\\Bogotá, Colombia}}}
 \begin{document}
 \maketitle
 \section{Introduction}
-\begin{frame}{Neuroinflammation}
-\begin{center}
-\includegraphics[width=9.5cm]{BInflam}
-\end{center}
-\begin{center}
-\fcolorbox{cyan}{cyan}{{Neurodegenerative diseases}}
-\fcolorbox{cyan}{cyan}{{Cardiovascular events}}
-\fcolorbox{cyan}{cyan}{{Stress}}
-\fcolorbox{cyan}{cyan}{{Smoke}}
-\fcolorbox{red}{red}{{Obesity (Over Nutrition or Caloric Excess)}}
-\end{center}
-\end{frame}
-\begin{frame}{Metabolic Inflammation or Metainflammation}
-\begin{center}
-\fcolorbox{black}{black}{\textcolor{white}{$\blacktriangledown$ Leptine}} + 
-\fcolorbox{black}{black}{\textcolor{white}{$\blacktriangledown$ Insuline}} $\rightarrow$ \fcolorbox{red}{red}{\textcolor{white}{$\blacktriangle$ IKK$\beta$}} + \fcolorbox{red}{red}{\textcolor{white}{$\blacktriangle$ NF$\kappa\beta$}} 
-\end{center}
-\pause
-\begin{center}
-\fcolorbox{blue}{blue}{\textcolor{white}{$\blacktriangle$ Endoplasmic reticulum stress}} $\rightarrow$ \fcolorbox{blue}{blue}{\textcolor{white}{$\blacktriangle$ UPR}}
-\end{center}
-\begin{center}
-\fcolorbox{green}{green}{{$\blacktriangle$ Reactive C Protein Ligands}}  + \fcolorbox{green}{green}{{$\blacktriangle$ TNF$\alpha$}} + \fcolorbox{green}{green}{{$\blacktriangle$ IL6}} + \fcolorbox{green}{green}{{$\blacktriangle$ ROS}} 
-\end{center}
-\end{frame}
-\begin{frame}{Astrocytes Metabolic Functions}
-\begin{center}
-\includegraphics[width=6cm]{GFAP} \pause
-\end{center}
-\begin{center}
-\fcolorbox{yellow}{yellow}{{K$^{+}$ Membrane Potential}} \pause
-\fcolorbox{yellow}{yellow}{{Ca$^{+2}$ signaling}} \pause
-\fcolorbox{yellow}{yellow}{{Lactate release}} \pause
-\fcolorbox{yellow}{yellow}{{[Dopa], [Glu], [GABA], [Gly] and [Cys] regulator}} \pause
-\fcolorbox{yellow}{yellow}{{pH maintenance}} \pause
-\fcolorbox{yellow}{yellow}{{ROS detox}} \pause
-\fcolorbox{yellow}{yellow}{{Gln, ATP and D-serine release}}
-\end{center}
-\end{frame}
-\begin{frame}{What effects does tibolone have on Astrocytic inflammatory scenarios?}
-\begin{center}
-\includegraphics[width=\textwidth]{Tibolone}
-\end{center}
-\end{frame}
+%\begin{frame}{Neuroinflammation}
+%\begin{center}
+%\includegraphics[width=9.5cm]{BInflam}
+%\end{center}
+%\begin{center}
+%\fcolorbox{cyan}{cyan}{{Neurodegenerative diseases}}
+%\fcolorbox{cyan}{cyan}{{Cardiovascular events}}
+%\fcolorbox{cyan}{cyan}{{Stress}}
+%\fcolorbox{cyan}{cyan}{{Smoke}}
+%\fcolorbox{red}{red}{{Obesity (Over Nutrition or Caloric Excess)}}
+%\end{center}
+%\end{frame}
+%\begin{frame}{Metabolic Inflammation or Metainflammation}
+%\begin{center}
+%\fcolorbox{black}{black}{\textcolor{white}{$\blacktriangledown$ Leptine}} + 
+%\fcolorbox{black}{black}{\textcolor{white}{$\blacktriangledown$ Insuline}} $\rightarrow$ \fcolorbox{red}{red}{\textcolor{white}{$\blacktriangle$ IKK$\beta$}} + \fcolorbox{red}{red}{\textcolor{white}{$\blacktriangle$ NF$\kappa\beta$}} 
+%\end{center}
+%\pause
+%\begin{center}
+%\fcolorbox{blue}{blue}{\textcolor{white}{$\blacktriangle$ Endoplasmic reticulum stress}} $\rightarrow$ \fcolorbox{blue}{blue}{\textcolor{white}{$\blacktriangle$ UPR}}
+%\end{center}
+%\begin{center}
+%\fcolorbox{green}{green}{{$\blacktriangle$ Reactive C Protein Ligands}}  + \fcolorbox{green}{green}{{$\blacktriangle$ TNF$\alpha$}} + \fcolorbox{green}{green}{{$\blacktriangle$ IL6}} + \fcolorbox{green}{green}{{$\blacktriangle$ ROS}} 
+%\end{center}
+%\end{frame}
+%\begin{frame}{Astrocytes Metabolic Functions}
+%\begin{center}
+%\includegraphics[width=6cm]{GFAP} \pause
+%\end{center}
+%\begin{center}
+%\fcolorbox{yellow}{yellow}{{K$^{+}$ Membrane Potential}} \pause
+%\fcolorbox{yellow}{yellow}{{Ca$^{+2}$ signaling}} \pause
+%\fcolorbox{yellow}{yellow}{{Lactate release}} \pause
+%\fcolorbox{yellow}{yellow}{{[Dopa], [Glu], [GABA], [Gly] and [Cys] regulator}} \pause
+%\fcolorbox{yellow}{yellow}{{pH maintenance}} \pause
+%\fcolorbox{yellow}{yellow}{{ROS detox}} \pause
+%\fcolorbox{yellow}{yellow}{{Gln, ATP and D-serine release}}
+%\end{center}
+%\end{frame}
+%\begin{frame}{What effects does tibolone have on Astrocytic inflammatory scenarios?}
+%\begin{center}
+%\includegraphics[width=\textwidth]{Tibolone}
+%\end{center}
+%\end{frame}
 \section{Objectives and Methods}
 \begin{frame}{Objectives:}
 To identify proteins and metabolic pathways involved in the neuroprotective effects of tibolone in human astrocytes based in metabolic scenarios comparation we set:
@@ -224,6 +223,12 @@ Evaluate the importance of proteins and metabolic pathways previously identified
 \includegraphics[width=\textwidth]{TiboloneEnzymes}
 \end{center}
 \end{frame}
+\section{Conclusions}
+\begin{frame}
+\begin{center}
+
+\end{center}
+\end{frame}
 \section{Events}
 \begin{frame}{Advances of this work were presented as:}
 \begin{center}
@@ -249,7 +254,7 @@ Bogotá, Colombia\\
 \end{multicols}
 \end{frame}
 \section{Questions}
-\begin{frame}{This study is under development at the:}
+\begin{frame}{This study was developed at the:}
 \begin{multicols}{2}
 \includegraphics[height=0.7cm]{logoIG}
 \begin{flushright}

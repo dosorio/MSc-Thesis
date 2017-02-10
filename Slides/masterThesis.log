@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 FEB 2017 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 FEB 2017 19:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -830,6 +830,14 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 33.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 33.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 33.
 
 
@@ -847,6 +855,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\newline' on input line 33.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 33.
 
 (./masterThesis.aux
 LaTeX Info: Redefining \. on input line 25.
@@ -854,20 +866,20 @@ LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `masterThesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -933,7 +945,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box82
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 36.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -943,66 +955,66 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count171
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
 
 (./masterThesis.out) (./masterThesis.out)
 \@outlinefile=\write6
 \openout6 = `masterThesis.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 37.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 36.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 37.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 36.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 37.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 37.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 37.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 37.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 37.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 37.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 37.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 36.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 37.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 37.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 36.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 37.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 36.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 37.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 37.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 37.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 37.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 37.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 36.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 37.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 37.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 36.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 36.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 3
-7.
+6.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-37.
+36.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 37.
+ut line 36.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1028,472 +1040,388 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 37.
+LaTeX Info: Redefining \includegraphics on input line 36.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-LaTeX Info: Redefining \. on input line 37.
-LaTeX Info: Redefining \% on input line 37.
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
 
-(./masterThesis.nav)
-Overfull \vbox (8.83862pt too high) detected at line 38
+(./masterThesis.nav) <Figures/UN.png, id=44, 382.42876pt x 168.63pt>
+File: Figures/UN.png Graphic file (type png)
+
+<use Figures/UN.png>
+Package pdftex.def Info: Figures/UN.png used on input line 37.
+(pdftex.def)             Requested size: 38.2451pt x 16.86398pt.
+
+Overfull \vbox (16.36227pt too high) detected at line 37
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <4> not available
-(Font)              size <5> substituted on input line 38.
+(Font)              size <5> substituted on input line 37.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 38.
+(Font)              size <5> substituted on input line 37.
 
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-<Figures/BInflam.pdf, id=59, 614.295pt x 344.19681pt>
-File: Figures/BInflam.pdf Graphic file (type pdf)
-
-<use Figures/BInflam.pdf>
-Package pdftex.def Info: Figures/BInflam.pdf used on input line 51.
-(pdftex.def)             Requested size: 270.30118pt x 151.4523pt.
-
-Overfull \vbox (0.75027pt too high) detected at line 51
- []
-
-[2
-
- <./Figures/BInflam.pdf>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 64.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+ <./Figures/UN.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 92.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 64.
+LaTeX Font Info:    Try loading font information for U+msb on input line 92.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 64.
+line 92.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [3
+) [2
 
-] [4
+] [3
 
-] <Figures/GFAP.jpg, id=105, 1606.0pt x 1204.5pt>
-File: Figures/GFAP.jpg Graphic file (type jpg)
+] <Figures/GE.pdf, id=93, 380.42125pt x 522.95375pt>
+File: Figures/GE.pdf Graphic file (type pdf)
 
-<use Figures/GFAP.jpg>
-Package pdftex.def Info: Figures/GFAP.jpg used on input line 78.
-(pdftex.def)             Requested size: 170.71652pt x 128.02927pt.
- [5
+<use Figures/GE.pdf>
+Package pdftex.def Info: Figures/GE.pdf used on input line 106.
+(pdftex.def)             Requested size: 142.26378pt x 195.57254pt.
+ <Figures/ActiveGenes.pdf, id=94, 361.35pt x 469.755pt>
+File: Figures/ActiveGenes.pdf Graphic file (type pdf)
 
- <./Figures/GFAP.jpg>]
-File: Figures/GFAP.jpg Graphic file (type jpg)
- <use Figures/GFAP.jpg>
-Package pdftex.def Info: Figures/GFAP.jpg used on input line 78.
-(pdftex.def)             Requested size: 170.71652pt x 128.02927pt.
- [6
+<use Figures/ActiveGenes.pdf>
+Package pdftex.def Info: Figures/ActiveGenes.pdf used on input line 106.
+(pdftex.def)             Requested size: 142.26378pt x 184.94551pt.
 
-]
-File: Figures/GFAP.jpg Graphic file (type jpg)
+Overfull \vbox (5.59138pt too high) detected at line 106
+ []
 
-<use Figures/GFAP.jpg>
-Package pdftex.def Info: Figures/GFAP.jpg used on input line 78.
-(pdftex.def)             Requested size: 170.71652pt x 128.02927pt.
- [7
+[4
 
-]
-File: Figures/GFAP.jpg Graphic file (type jpg)
- <use Figures/GFAP.jpg>
-Package pdftex.def Info: Figures/GFAP.jpg used on input line 78.
-(pdftex.def)             Requested size: 170.71652pt x 128.02927pt.
- [8
+ <./Figures/GE.pdf> <./Figures/ActiveGenes.pdf>]
+<Figures/TSR.pdf, id=463, 722.7pt x 469.755pt>
+File: Figures/TSR.pdf Graphic file (type pdf)
+ <use Figures/TSR.pdf>
+Package pdftex.def Info: Figures/TSR.pdf used on input line 111.
+(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-]
-File: Figures/GFAP.jpg Graphic file (type jpg)
- <use Figures/GFAP.jpg>
-Package pdftex.def Info: Figures/GFAP.jpg used on input line 78.
-(pdftex.def)             Requested size: 170.71652pt x 128.02927pt.
+Overfull \vbox (5.15884pt too high) detected at line 111
+ []
+
+[5
+
+ <./Figures/TSR.pdf>] <Figures/g2f.pdf, id=520, 364.1906pt x 236.55077pt>
+File: Figures/g2f.pdf Graphic file (type pdf)
+
+<use Figures/g2f.pdf>
+Package pdftex.def Info: Figures/g2f.pdf used on input line 116.
+(pdftex.def)             Requested size: 307.28987pt x 199.59282pt.
+
+Overfull \vbox (5.01166pt too high) detected at line 116
+ []
+
+[6
+
+ <./Figures/g2f.pdf>] <Figures/minval.pdf, id=592, 364.1906pt x 241.82045pt>
+File: Figures/minval.pdf Graphic file (type pdf)
+
+<use Figures/minval.pdf>
+Package pdftex.def Info: Figures/minval.pdf used on input line 121.
+(pdftex.def)             Requested size: 307.28987pt x 204.03917pt.
+
+Overfull \vbox (9.45801pt too high) detected at line 121
+ []
+
+[7
+
+ <./Figures/minval.pdf>]
+<Figures/exp2flux.pdf, id=681, 364.1906pt x 241.90375pt>
+File: Figures/exp2flux.pdf Graphic file (type pdf)
+
+<use Figures/exp2flux.pdf>
+Package pdftex.def Info: Figures/exp2flux.pdf used on input line 126.
+(pdftex.def)             Requested size: 307.28987pt x 204.10947pt.
+
+Overfull \vbox (9.5283pt too high) detected at line 126
+ []
+
+[8
+
+ <./Figures/exp2flux.pdf>] <Figures/Ages.pdf, id=772, 722.7pt x 469.755pt>
+File: Figures/Ages.pdf Graphic file (type pdf)
+
+<use Figures/Ages.pdf>
+Package pdftex.def Info: Figures/Ages.pdf used on input line 131.
+(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
+
+Overfull \vbox (5.15884pt too high) detected at line 131
+ []
 
 [9
 
-]
-File: Figures/GFAP.jpg Graphic file (type jpg)
- <use Figures/GFAP.jpg>
-Package pdftex.def Info: Figures/GFAP.jpg used on input line 78.
-(pdftex.def)             Requested size: 170.71652pt x 128.02927pt.
- [10
+ <./Figures/Ages.pdf>] [10
 
 ]
-File: Figures/GFAP.jpg Graphic file (type jpg)
- <use Figures/GFAP.jpg>
-Package pdftex.def Info: Figures/GFAP.jpg used on input line 78.
-(pdftex.def)             Requested size: 170.71652pt x 128.02927pt.
+<Figures/Scenarios.pdf, id=1338, 722.7pt x 469.755pt>
+File: Figures/Scenarios.pdf Graphic file (type pdf)
+
+<use Figures/Scenarios.pdf>
+Package pdftex.def Info: Figures/Scenarios.pdf used on input line 139.
+(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
  [11
 
-]
-File: Figures/GFAP.jpg Graphic file (type jpg)
-
-<use Figures/GFAP.jpg>
-Package pdftex.def Info: Figures/GFAP.jpg used on input line 78.
-(pdftex.def)             Requested size: 170.71652pt x 128.02927pt.
- [12
+ <./Figures/Scenarios.pdf>] [12
 
 ]
-<Figures/Tibolone.pdf, id=197, 722.7pt x 469.755pt>
-File: Figures/Tibolone.pdf Graphic file (type pdf)
- <use Figures/Tibolone.pdf>
-Package pdftex.def Info: Figures/Tibolone.pdf used on input line 83.
+<Figures/FluxDifferenes.pdf, id=1438, 722.7pt x 469.755pt>
+File: Figures/FluxDifferenes.pdf Graphic file (type pdf)
+
+<use Figures/FluxDifferenes.pdf>
+Package pdftex.def Info: Figures/FluxDifferenes.pdf used on input line 149.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (23.15884pt too high) detected at line 83
+Overfull \vbox (5.15884pt too high) detected at line 149
  []
 
 [13
 
- <./Figures/Tibolone.pdf>] [14
+ <./Figures/FluxDifferenes.pdf>]
+<Figures/MetChanges.pdf, id=1497, 722.7pt x 469.755pt>
+File: Figures/MetChanges.pdf Graphic file (type pdf)
 
-] [15
-
-]
-<Figures/GE.pdf, id=255, 380.42125pt x 522.95375pt>
-File: Figures/GE.pdf Graphic file (type pdf)
- <use Figures/GE.pdf>
-Package pdftex.def Info: Figures/GE.pdf used on input line 107.
-(pdftex.def)             Requested size: 142.26378pt x 195.57254pt.
-
-<Figures/ActiveGenes.pdf, id=256, 361.35pt x 469.755pt>
-File: Figures/ActiveGenes.pdf Graphic file (type pdf)
-
-<use Figures/ActiveGenes.pdf>
-Package pdftex.def Info: Figures/ActiveGenes.pdf used on input line 107.
-(pdftex.def)             Requested size: 142.26378pt x 184.94551pt.
-
-Overfull \vbox (5.59138pt too high) detected at line 107
- []
-
-[16
-
- <./Figures/GE.pdf> <./Figures/ActiveGenes.pdf>]
-<Figures/TSR.pdf, id=625, 722.7pt x 469.755pt>
-File: Figures/TSR.pdf Graphic file (type pdf)
- <use Figures/TSR.pdf>
-Package pdftex.def Info: Figures/TSR.pdf used on input line 112.
+<use Figures/MetChanges.pdf>
+Package pdftex.def Info: Figures/MetChanges.pdf used on input line 154.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 112
+Overfull \vbox (5.15884pt too high) detected at line 154
+ []
+
+[14
+
+ <./Figures/MetChanges.pdf>] [15
+
+]
+<Figures/Networks.pdf, id=1583, 722.7pt x 469.755pt>
+File: Figures/Networks.pdf Graphic file (type pdf)
+
+<use Figures/Networks.pdf>
+Package pdftex.def Info: Figures/Networks.pdf used on input line 164.
+(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
+ [16
+
+ <./Figures/Networks.pdf>]
+<Figures/SPackages.pdf, id=1630, 722.7pt x 469.755pt>
+File: Figures/SPackages.pdf Graphic file (type pdf)
+
+<use Figures/SPackages.pdf>
+Package pdftex.def Info: Figures/SPackages.pdf used on input line 170.
+(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
+
+Overfull \vbox (5.15884pt too high) detected at line 170
  []
 
 [17
 
- <./Figures/TSR.pdf>] <Figures/g2f.pdf, id=680, 364.1906pt x 236.55077pt>
-File: Figures/g2f.pdf Graphic file (type pdf)
+ <./Figures/SPackages.pdf>]
+<Figures/Astrocyte.pdf, id=1710, 722.7pt x 469.755pt>
+File: Figures/Astrocyte.pdf Graphic file (type pdf)
 
-<use Figures/g2f.pdf>
-Package pdftex.def Info: Figures/g2f.pdf used on input line 117.
-(pdftex.def)             Requested size: 307.28987pt x 199.59282pt.
+<use Figures/Astrocyte.pdf>
+Package pdftex.def Info: Figures/Astrocyte.pdf used on input line 175.
+(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.01166pt too high) detected at line 117
+Overfull \vbox (5.15884pt too high) detected at line 175
  []
 
 [18
 
- <./Figures/g2f.pdf>]
-<Figures/minval.pdf, id=751, 364.1906pt x 241.82045pt>
-File: Figures/minval.pdf Graphic file (type pdf)
-
-<use Figures/minval.pdf>
-Package pdftex.def Info: Figures/minval.pdf used on input line 122.
-(pdftex.def)             Requested size: 307.28987pt x 204.03917pt.
-
-Overfull \vbox (9.45801pt too high) detected at line 122
- []
-
-[19
-
- <./Figures/minval.pdf>]
-<Figures/exp2flux.pdf, id=839, 364.1906pt x 241.90375pt>
-File: Figures/exp2flux.pdf Graphic file (type pdf)
-
-<use Figures/exp2flux.pdf>
-Package pdftex.def Info: Figures/exp2flux.pdf used on input line 127.
-(pdftex.def)             Requested size: 307.28987pt x 204.10947pt.
-
-Overfull \vbox (9.5283pt too high) detected at line 127
- []
-
-[20
-
- <./Figures/exp2flux.pdf>] <Figures/Ages.pdf, id=929, 722.7pt x 469.755pt>
-File: Figures/Ages.pdf Graphic file (type pdf)
-
-<use Figures/Ages.pdf>
-Package pdftex.def Info: Figures/Ages.pdf used on input line 132.
-(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
-
-Overfull \vbox (5.15884pt too high) detected at line 132
- []
-
-[21
-
- <./Figures/Ages.pdf>] [22
-
-]
-<Figures/Scenarios.pdf, id=1493, 722.7pt x 469.755pt>
-File: Figures/Scenarios.pdf Graphic file (type pdf)
-
-<use Figures/Scenarios.pdf>
-Package pdftex.def Info: Figures/Scenarios.pdf used on input line 140.
-(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
- [23
-
- <./Figures/Scenarios.pdf>] [24
-
-]
-<Figures/FluxDifferenes.pdf, id=1591, 722.7pt x 469.755pt>
-File: Figures/FluxDifferenes.pdf Graphic file (type pdf)
-
-<use Figures/FluxDifferenes.pdf>
-Package pdftex.def Info: Figures/FluxDifferenes.pdf used on input line 150.
-(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
-
-Overfull \vbox (5.15884pt too high) detected at line 150
- []
-
-[25
-
- <./Figures/FluxDifferenes.pdf>]
-<Figures/MetChanges.pdf, id=1649, 722.7pt x 469.755pt>
-File: Figures/MetChanges.pdf Graphic file (type pdf)
-
-<use Figures/MetChanges.pdf>
-Package pdftex.def Info: Figures/MetChanges.pdf used on input line 155.
-(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
-
-Overfull \vbox (5.15884pt too high) detected at line 155
- []
-
-[26
-
- <./Figures/MetChanges.pdf>] [27
-
-]
-<Figures/Networks.pdf, id=1733, 722.7pt x 469.755pt>
-File: Figures/Networks.pdf Graphic file (type pdf)
-
-<use Figures/Networks.pdf>
-Package pdftex.def Info: Figures/Networks.pdf used on input line 165.
-(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
- [28
-
- <./Figures/Networks.pdf>]
-<Figures/SPackages.pdf, id=1779, 722.7pt x 469.755pt>
-File: Figures/SPackages.pdf Graphic file (type pdf)
-
-<use Figures/SPackages.pdf>
-Package pdftex.def Info: Figures/SPackages.pdf used on input line 171.
-(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
-
-Overfull \vbox (5.15884pt too high) detected at line 171
- []
-
-[29
-
- <./Figures/SPackages.pdf>]
-<Figures/Astrocyte.pdf, id=1858, 722.7pt x 469.755pt>
-File: Figures/Astrocyte.pdf Graphic file (type pdf)
-
-<use Figures/Astrocyte.pdf>
-Package pdftex.def Info: Figures/Astrocyte.pdf used on input line 176.
-(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
-
-Overfull \vbox (5.15884pt too high) detected at line 176
- []
-
-[30
-
  <./Figures/Astrocyte.pdf>]
-<Figures/Astrocyte_MetabolicChanges.pdf, id=1918, 722.7pt x 469.755pt>
+<Figures/Astrocyte_MetabolicChanges.pdf, id=1771, 722.7pt x 469.755pt>
 File: Figures/Astrocyte_MetabolicChanges.pdf Graphic file (type pdf)
 
 <use Figures/Astrocyte_MetabolicChanges.pdf>
 Package pdftex.def Info: Figures/Astrocyte_MetabolicChanges.pdf used on input l
-ine 181.
+ine 180.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 181
+Overfull \vbox (5.15884pt too high) detected at line 180
  []
 
-[31
+[19
 
  <./Figures/Astrocyte_MetabolicChanges.pdf>]
-<Figures/IC50.pdf, id=1938, 939.51pt x 610.28pt>
+<Figures/IC50.pdf, id=1792, 939.51pt x 610.28pt>
 File: Figures/IC50.pdf Graphic file (type pdf)
  <use Figures/IC50.pdf>
-Package pdftex.def Info: Figures/IC50.pdf used on input line 186.
+Package pdftex.def Info: Figures/IC50.pdf used on input line 185.
 (pdftex.def)             Requested size: 307.28987pt x 199.60509pt.
 
-Overfull \vbox (5.02393pt too high) detected at line 186
+Overfull \vbox (5.02393pt too high) detected at line 185
  []
 
-[32
+[20
 
  <./Figures/IC50.pdf>]
-<Figures/Healthy2Inflammated.pdf, id=1958, 722.7pt x 469.755pt>
+<Figures/Healthy2Inflammated.pdf, id=1814, 722.7pt x 469.755pt>
 File: Figures/Healthy2Inflammated.pdf Graphic file (type pdf)
 
 <use Figures/Healthy2Inflammated.pdf>
-Package pdftex.def Info: Figures/Healthy2Inflammated.pdf used on input line 191
+Package pdftex.def Info: Figures/Healthy2Inflammated.pdf used on input line 190
 .
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 191
+Overfull \vbox (5.15884pt too high) detected at line 190
  []
 
-[33
+[21
 
  <./Figures/Healthy2Inflammated.pdf>]
-<Figures/GTi.pdf, id=1977, 722.7pt x 469.755pt>
+<Figures/GTi.pdf, id=1833, 722.7pt x 469.755pt>
 File: Figures/GTi.pdf Graphic file (type pdf)
  <use Figures/GTi.pdf>
-Package pdftex.def Info: Figures/GTi.pdf used on input line 196.
+Package pdftex.def Info: Figures/GTi.pdf used on input line 195.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 196
+Overfull \vbox (5.15884pt too high) detected at line 195
  []
 
-[34
+[22
 
- <./Figures/GTi.pdf>] <Figures/Effects.pdf, id=2021, 722.7pt x 289.08pt>
+ <./Figures/GTi.pdf>] <Figures/Effects.pdf, id=1879, 722.7pt x 289.08pt>
 File: Figures/Effects.pdf Graphic file (type pdf)
 
 <use Figures/Effects.pdf>
-Package pdftex.def Info: Figures/Effects.pdf used on input line 201.
+Package pdftex.def Info: Figures/Effects.pdf used on input line 200.
 (pdftex.def)             Requested size: 307.28987pt x 122.91692pt.
- [35
+ [23
 
  <./Figures/Effects.pdf>]
-<Figures/Inflammated2Tibolone.pdf, id=2039, 722.7pt x 469.755pt>
+<Figures/Inflammated2Tibolone.pdf, id=1898, 722.7pt x 469.755pt>
 File: Figures/Inflammated2Tibolone.pdf Graphic file (type pdf)
 
 <use Figures/Inflammated2Tibolone.pdf>
 Package pdftex.def Info: Figures/Inflammated2Tibolone.pdf used on input line 20
-6.
+5.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 206
+Overfull \vbox (5.15884pt too high) detected at line 205
  []
 
-[36
+[24
 
  <./Figures/Inflammated2Tibolone.pdf>]
-<Figures/GTt.pdf, id=2057, 722.7pt x 469.755pt>
+<Figures/GTt.pdf, id=1917, 722.7pt x 469.755pt>
 File: Figures/GTt.pdf Graphic file (type pdf)
  <use Figures/GTt.pdf>
-Package pdftex.def Info: Figures/GTt.pdf used on input line 211.
+Package pdftex.def Info: Figures/GTt.pdf used on input line 210.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 211
+Overfull \vbox (5.15884pt too high) detected at line 210
  []
 
-[37
+[25
 
  <./Figures/GTt.pdf>]
-<Figures/ProInflammatory.pdf, id=2102, 722.7pt x 469.755pt>
+<Figures/ProInflammatory.pdf, id=1963, 722.7pt x 469.755pt>
 File: Figures/ProInflammatory.pdf Graphic file (type pdf)
 
 <use Figures/ProInflammatory.pdf>
-Package pdftex.def Info: Figures/ProInflammatory.pdf used on input line 216.
+Package pdftex.def Info: Figures/ProInflammatory.pdf used on input line 215.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 216
+Overfull \vbox (5.15884pt too high) detected at line 215
  []
 
-[38
+[26
 
  <./Figures/ProInflammatory.pdf>]
-<Figures/Antiinflammatory.pdf, id=2179, 722.7pt x 469.755pt>
+<Figures/Antiinflammatory.pdf, id=2041, 722.7pt x 469.755pt>
 File: Figures/Antiinflammatory.pdf Graphic file (type pdf)
 
 <use Figures/Antiinflammatory.pdf>
-Package pdftex.def Info: Figures/Antiinflammatory.pdf used on input line 221.
+Package pdftex.def Info: Figures/Antiinflammatory.pdf used on input line 220.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 221
+Overfull \vbox (5.15884pt too high) detected at line 220
  []
 
-[39
+[27
 
  <./Figures/Antiinflammatory.pdf>]
-<Figures/TiboloneEnzymes.pdf, id=2225, 722.7pt x 469.755pt>
+<Figures/TiboloneEnzymes.pdf, id=2088, 722.7pt x 469.755pt>
 File: Figures/TiboloneEnzymes.pdf Graphic file (type pdf)
 
 <use Figures/TiboloneEnzymes.pdf>
-Package pdftex.def Info: Figures/TiboloneEnzymes.pdf used on input line 226.
+Package pdftex.def Info: Figures/TiboloneEnzymes.pdf used on input line 225.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 226
+Overfull \vbox (5.15884pt too high) detected at line 225
  []
 
-[40
+[28
 
- <./Figures/TiboloneEnzymes.pdf>]
-<Figures/Events.pdf, id=2289, 771.13884pt x 123.72011pt>
+ <./Figures/TiboloneEnzymes.pdf>] [29
+
+]
+<Figures/Events.pdf, id=2164, 771.13884pt x 123.72011pt>
 File: Figures/Events.pdf Graphic file (type pdf)
 
 <use Figures/Events.pdf>
-Package pdftex.def Info: Figures/Events.pdf used on input line 250.
+Package pdftex.def Info: Figures/Events.pdf used on input line 255.
 (pdftex.def)             Requested size: 307.28987pt x 49.30026pt.
- <Figures/IS3B.png, id=2290, 151.2852pt x 96.36pt>
+ <Figures/IS3B.png, id=2165, 151.2852pt x 96.36pt>
 File: Figures/IS3B.png Graphic file (type png)
 
 <use Figures/IS3B.png>
-Package pdftex.def Info: Figures/IS3B.png used on input line 250.
+Package pdftex.def Info: Figures/IS3B.png used on input line 255.
 (pdftex.def)             Requested size: 92.1879pt x 58.71921pt.
- <Figures/ICSB.png, id=2292, 315.1775pt x 200.75pt>
+ <Figures/ICSB.png, id=2166, 315.1775pt x 200.75pt>
 File: Figures/ICSB.png Graphic file (type png)
 
 <use Figures/ICSB.png>
-Package pdftex.def Info: Figures/ICSB.png used on input line 250.
+Package pdftex.def Info: Figures/ICSB.png used on input line 255.
 (pdftex.def)             Requested size: 92.1879pt x 58.71837pt.
- <Figures/ICGEB.pdf, id=2293, 315.1775pt x 200.75pt>
+ <Figures/ICGEB.pdf, id=2167, 315.1775pt x 200.75pt>
 File: Figures/ICGEB.pdf Graphic file (type pdf)
 
 <use Figures/ICGEB.pdf>
-Package pdftex.def Info: Figures/ICGEB.pdf used on input line 250.
+Package pdftex.def Info: Figures/ICGEB.pdf used on input line 255.
 (pdftex.def)             Requested size: 92.1879pt x 58.71837pt.
- [41
+ [30
 
  <./Figures/Events.pdf, page is rotated 270 degrees> <./Figures/IS3B.png> <./Fi
 gures/ICSB.png> <./Figures/ICGEB.pdf>]
-<Figures/logoIG.png, id=2474, 401.5pt x 102.3825pt>
+<Figures/logoIG.png, id=2349, 401.5pt x 102.3825pt>
 File: Figures/logoIG.png Graphic file (type png)
  <use Figures/logoIG.png>
-Package pdftex.def Info: Figures/logoIG.png used on input line 275.
+Package pdftex.def Info: Figures/logoIG.png used on input line 280.
 (pdftex.def)             Requested size: 78.10532pt x 19.91684pt.
 
-<Figures/logoGIBBS.png, id=2475, 307.1475pt x 112.42pt>
+<Figures/logoGIBBS.png, id=2350, 307.1475pt x 112.42pt>
 File: Figures/logoGIBBS.png Graphic file (type png)
 
 <use Figures/logoGIBBS.png>
-Package pdftex.def Info: Figures/logoGIBBS.png used on input line 275.
+Package pdftex.def Info: Figures/logoGIBBS.png used on input line 280.
 (pdftex.def)             Requested size: 54.41243pt x 19.91684pt.
 
-<Figures/GIBBS.jpg, id=2476, 2689.04625pt x 718.685pt>
+<Figures/GIBBS.jpg, id=2351, 2689.04625pt x 718.685pt>
 File: Figures/GIBBS.jpg Graphic file (type jpg)
  <use Figures/GIBBS.jpg>
-Package pdftex.def Info: Figures/GIBBS.jpg used on input line 275.
+Package pdftex.def Info: Figures/GIBBS.jpg used on input line 280.
 (pdftex.def)             Requested size: 307.28987pt x 82.12613pt.
 
-Overfull \vbox (8.06184pt too high) detected at line 275
+Overfull \vbox (8.06184pt too high) detected at line 280
  []
 
-[42
+[31
 
  <./Figures/logoIG.png> <./Figures/logoGIBBS.png> <./Figures/GIBBS.jpg>]
 \tf@nav=\write7
@@ -1505,46 +1433,45 @@ Overfull \vbox (8.06184pt too high) detected at line 275
 \tf@snm=\write9
 \openout9 = `masterThesis.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 281.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 281.
 
 (./masterThesis.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 281.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 281.
 Package rerunfilecheck Info: File `masterThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8B45123C2EFD091FB6B76A3F0652A935;231.
+(rerunfilecheck)             Checksum: 008ED7B7005355B73078D0AC4A866B5E;277.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 281.
  ) 
 Here is how much of TeX's memory you used:
- 18852 strings out of 493014
- 353385 string characters out of 6133351
- 447151 words of memory out of 5000000
- 21828 multiletter control sequences out of 15000+600000
- 17311 words of font info for 63 fonts, out of 8000000 for 9000
+ 18813 strings out of 493014
+ 352839 string characters out of 6133351
+ 443565 words of memory out of 5000000
+ 21812 multiletter control sequences out of 15000+600000
+ 15663 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,55p,443b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,55p,538b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.
 pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/stix/STIXGeneral-Reg
-ular.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
-10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss1
-2.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb>
-Output written on masterThesis.pdf (42 pages, 23173212 bytes).
+ular.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+s10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx1
+0.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
+am10.pfb>
+Output written on masterThesis.pdf (31 pages, 22419114 bytes).
 PDF statistics:
- 2539 PDF objects out of 2984 (max. 8388607)
- 1064 compressed objects within 11 object streams
- 90 named destinations out of 1000 (max. 500000)
- 248 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2407 PDF objects out of 2487 (max. 8388607)
+ 963 compressed objects within 10 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 

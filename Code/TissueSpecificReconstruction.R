@@ -8,11 +8,11 @@
 # biocLite("ReactomePA")
 # biocLite("gage")
 # install.packages("sybilSBML")
+# require(ReactomePA)
 require(UniProt.ws)
 require(GEOquery)
 require(g2f)
 require(minval)
-require(ReactomePA)
 require(sybilSBML)
 library(gage)
 

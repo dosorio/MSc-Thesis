@@ -6,6 +6,7 @@
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{multirow}
 \usepackage{amssymb}
 \usepackage{fancybox}
 \usepackage{multicol}
@@ -109,20 +110,66 @@ Build a tissue specific computational model of \\astrocytes metabolism using gen
 \includegraphics[width=\textwidth]{TSR}
 \end{center}
 \end{frame}
-\begin{frame}{Gap-Find and Gap-Fill Algorithms}
-
+\begin{frame}{Gap-Find and Gap-Fill Available Algorithms}
+\begin{center}
+\begin{tabular}{r|c|p{3.7cm}}
+\hline
+\textbf{ALGORITHM}&\textbf{ENVIRONMENT}&\textbf{HOW IT WORKS}\\
+\hline
+\hline
+\multirow{2}{*}{SMILEY}&\multirow{2}{*}{Python - OpenSource}&· Optimization based.\\
+&&· \textbf{Fills one metabolite \emph{per time}}.\\
+\hline
+\multirow{2}{*}{gap-Find/Fill}&\multirow{2}{*}{GAMS - OpenSource}&· Optimization based.\\
+&&· \textbf{Makes several \emph{intra model modifications}}.\\
+\hline
+\multirow{2}{*}{growMatch}&\multirow{2}{*}{Python - OpenSource}&· Optimization based.\\
+&&· \textbf{Fills one objective function \emph{per time}}.\\
+\hline
+\multirow{2}{*}{fastGapFill}&\multirow{2}{*}{MatLab - \textbf{Privative}}&· Optimization based.\\
+&&· Multiobjective.\\
+\hline
+\end{tabular}
+\end{center}
 \end{frame}
 \begin{frame}{Finding and Filling Gaps}
 \begin{center}
 \includegraphics[width=\textwidth]{g2f}
 \end{center}
 \end{frame}
-\begin{frame}{Software Development}
+\begin{frame}{Syntax, Mass-Charge Validation and SBML files}
 \begin{center}
 \includegraphics[width=\textwidth]{minval}
 \end{center}
 \end{frame}
-\begin{frame}{Software Development}
+\begin{frame}{Metabolic Model Debugging}
+\begin{center}
+\includegraphics[width=\textwidth]{Debug}
+\end{center}
+\end{frame}
+\begin{frame}{Gene Expression Integration Available Algorithms}
+\begin{center}
+\begin{tabular}{r|c|p{3.7cm}}
+\hline
+\textbf{ALGORITHM}&\textbf{ENVIRONMENT}&\textbf{HOW IT WORKS}\\
+\hline
+\hline
+\multirow{2}{*}{GIMME}&\multirow{2}{*}{MatLab - \textbf{Privative}}&· \textbf{Binary Disctretization}\\
+&&· \textbf{Incorporation associated to a selected objective function}\\
+\hline
+\multirow{2}{*}{iMAT}&\multirow{2}{*}{MatLab - \textbf{Privative}}&· \\
+&&· \\
+\hline
+\multirow{2}{*}{E-FLUX}&\multirow{2}{*}{\textbf{Not implemented}}&·\\
+&&·.\\
+\hline
+\multirow{2}{*}{PROM}&\multirow{2}{*}{MatLab - \textbf{Privative}}&·\\
+&&·\\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+\begin{frame}{Constraining the Metabolic Model}
 \begin{center}
 \includegraphics[width=\textwidth]{exp2flux}
 \end{center}

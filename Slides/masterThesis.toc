@@ -5,4 +5,5 @@
 \beamer@sectionintoc {3}{Results}{20}{0}{3}
 \beamer@sectionintoc {4}{Conclusions}{32}{0}{4}
 \beamer@sectionintoc {5}{Events}{33}{0}{5}
-\beamer@sectionintoc {6}{Questions}{34}{0}{6}
+\beamer@sectionintoc {6}{Acknowledgements}{34}{0}{6}
+\beamer@sectionintoc {7}{Questions}{35}{0}{7}

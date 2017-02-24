@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 FEB 2017 17:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 FEB 2017 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1056,9 +1056,9 @@ File: Figures/UN.png Graphic file (type png)
 
 <use Figures/UN.png>
 Package pdftex.def Info: Figures/UN.png used on input line 38.
-(pdftex.def)             Requested size: 137.79236pt x 60.85025pt.
+(pdftex.def)             Requested size: 41.33665pt x 18.25461pt.
 
-Overfull \vbox (60.34854pt too high) detected at line 38
+Overfull \vbox (17.7529pt too high) detected at line 38
  []
 
 
@@ -1531,7 +1531,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 339.
 Here is how much of TeX's memory you used:
  18889 strings out of 493014
  353794 string characters out of 6133351
- 448811 words of memory out of 5000000
+ 448812 words of memory out of 5000000
  21862 multiletter control sequences out of 15000+600000
  18618 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1548,7 +1548,7 @@ pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.p
 fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
 0.pfb>
-Output written on masterThesis.pdf (37 pages, 23523616 bytes).
+Output written on masterThesis.pdf (37 pages, 23482717 bytes).
 PDF statistics:
  3044 PDF objects out of 3580 (max. 8388607)
  1264 compressed objects within 13 object streams

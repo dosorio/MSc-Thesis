@@ -3,7 +3,8 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{Objectives and Methods}{2}{0}{2}
 \beamer@sectionintoc {3}{Results}{21}{0}{3}
-\beamer@sectionintoc {4}{Conclusions}{34}{0}{4}
-\beamer@sectionintoc {5}{Events}{35}{0}{5}
-\beamer@sectionintoc {6}{Acknowledgements}{36}{0}{6}
-\beamer@sectionintoc {7}{Questions}{37}{0}{7}
+\beamer@sectionintoc {4}{Conclusions}{36}{0}{4}
+\beamer@sectionintoc {5}{Publications}{38}{0}{5}
+\beamer@sectionintoc {6}{Events}{39}{0}{6}
+\beamer@sectionintoc {7}{Acknowledgements}{40}{0}{7}
+\beamer@sectionintoc {8}{Questions}{41}{0}{8}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 FEB 2017 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 FEB 2017 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1226,17 +1226,28 @@ Package pdftex.def Info: Figures/R.pdf used on input line 107.
 
 ] [19
 
-] [20
-
 ]
-<Figures/TMedicine.pdf, id=762, 722.7pt x 469.755pt>
+<Figures/TiboloneM.pdf, id=748, 722.7pt x 439.35141pt>
+File: Figures/TiboloneM.pdf Graphic file (type pdf)
+
+<use Figures/TiboloneM.pdf>
+Package pdftex.def Info: Figures/TiboloneM.pdf used on input line 118.
+(pdftex.def)             Requested size: 291.92444pt x 177.46706pt.
+
+Overfull \vbox (1.8859pt too high) detected at line 118
+ []
+
+[20
+
+ <./Figures/TiboloneM.pdf>]
+<Figures/TMedicine.pdf, id=798, 722.7pt x 469.755pt>
 File: Figures/TMedicine.pdf Graphic file (type pdf)
 
 <use Figures/TMedicine.pdf>
-Package pdftex.def Info: Figures/TMedicine.pdf used on input line 122.
+Package pdftex.def Info: Figures/TMedicine.pdf used on input line 123.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 122
+Overfull \vbox (5.15884pt too high) detected at line 123
  []
 
 [21
@@ -1246,14 +1257,14 @@ Overfull \vbox (5.15884pt too high) detected at line 122
 ] [23
 
 ]
-<Figures/Materials.pdf, id=1314, 364.65332pt x 242.67764pt>
+<Figures/Materials.pdf, id=1349, 364.65332pt x 242.67764pt>
 File: Figures/Materials.pdf Graphic file (type pdf)
 
 <use Figures/Materials.pdf>
-Package pdftex.def Info: Figures/Materials.pdf used on input line 142.
+Package pdftex.def Info: Figures/Materials.pdf used on input line 143.
 (pdftex.def)             Requested size: 307.28987pt x 204.51434pt.
 
-Overfull \vbox (9.93318pt too high) detected at line 142
+Overfull \vbox (9.93318pt too high) detected at line 143
  []
 
 [24
@@ -1261,32 +1272,32 @@ Overfull \vbox (9.93318pt too high) detected at line 142
  <./Figures/Materials.pdf>] [25
 
 ]
-<Figures/GE.pdf, id=1454, 380.42125pt x 522.95375pt>
+<Figures/GE.pdf, id=1489, 380.42125pt x 522.95375pt>
 File: Figures/GE.pdf Graphic file (type pdf)
  <use Figures/GE.pdf>
-Package pdftex.def Info: Figures/GE.pdf used on input line 156.
+Package pdftex.def Info: Figures/GE.pdf used on input line 157.
 (pdftex.def)             Requested size: 142.26378pt x 195.57254pt.
 
-<Figures/ActiveGenes.pdf, id=1455, 361.35pt x 469.755pt>
+<Figures/ActiveGenes.pdf, id=1490, 361.35pt x 469.755pt>
 File: Figures/ActiveGenes.pdf Graphic file (type pdf)
 
 <use Figures/ActiveGenes.pdf>
-Package pdftex.def Info: Figures/ActiveGenes.pdf used on input line 156.
+Package pdftex.def Info: Figures/ActiveGenes.pdf used on input line 157.
 (pdftex.def)             Requested size: 142.26378pt x 184.94551pt.
 
-Overfull \vbox (5.59138pt too high) detected at line 156
+Overfull \vbox (5.59138pt too high) detected at line 157
  []
 
 [26
 
  <./Figures/GE.pdf> <./Figures/ActiveGenes.pdf>]
-<Figures/TSR.pdf, id=1829, 722.7pt x 469.755pt>
+<Figures/TSR.pdf, id=1864, 722.7pt x 469.755pt>
 File: Figures/TSR.pdf Graphic file (type pdf)
  <use Figures/TSR.pdf>
-Package pdftex.def Info: Figures/TSR.pdf used on input line 161.
+Package pdftex.def Info: Figures/TSR.pdf used on input line 162.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 161
+Overfull \vbox (5.15884pt too high) detected at line 162
  []
 
 [27
@@ -1295,80 +1306,80 @@ Overfull \vbox (5.15884pt too high) detected at line 161
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textperiodcentered' on input line 183.
+(Font)              for symbol `textperiodcentered' on input line 184.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 183.
+(Font)              using `OT1/cmss/bx/n' instead on input line 184.
 
 
-Overfull \hbox (2.8439pt too wide) in paragraph at lines 183--183
+Overfull \hbox (2.8439pt too wide) in paragraph at lines 184--184
  [] 
  []
 
 [28
 
-] <Figures/g2f.pdf, id=2041, 364.1906pt x 236.55077pt>
+] <Figures/g2f.pdf, id=2076, 364.1906pt x 236.55077pt>
 File: Figures/g2f.pdf Graphic file (type pdf)
 
 <use Figures/g2f.pdf>
-Package pdftex.def Info: Figures/g2f.pdf used on input line 188.
+Package pdftex.def Info: Figures/g2f.pdf used on input line 189.
 (pdftex.def)             Requested size: 307.28987pt x 199.59282pt.
 
-Overfull \vbox (5.01166pt too high) detected at line 188
+Overfull \vbox (5.01166pt too high) detected at line 189
  []
 
 [29
 
  <./Figures/g2f.pdf>]
-<Figures/minval.pdf, id=2128, 364.1906pt x 241.82045pt>
+<Figures/minval.pdf, id=2161, 364.1906pt x 241.82045pt>
 File: Figures/minval.pdf Graphic file (type pdf)
 
 <use Figures/minval.pdf>
-Package pdftex.def Info: Figures/minval.pdf used on input line 193.
+Package pdftex.def Info: Figures/minval.pdf used on input line 194.
 (pdftex.def)             Requested size: 307.28987pt x 204.03917pt.
 
-Overfull \vbox (9.45801pt too high) detected at line 193
+Overfull \vbox (9.45801pt too high) detected at line 194
  []
 
 [30
 
  <./Figures/minval.pdf>]
-<Figures/Debug.pdf, id=2209, 364.1906pt x 236.55077pt>
+<Figures/Debug.pdf, id=2242, 364.1906pt x 236.55077pt>
 File: Figures/Debug.pdf Graphic file (type pdf)
  <use Figures/Debug.pdf>
-Package pdftex.def Info: Figures/Debug.pdf used on input line 198.
+Package pdftex.def Info: Figures/Debug.pdf used on input line 199.
 (pdftex.def)             Requested size: 307.28987pt x 199.59282pt.
 
-Overfull \vbox (5.01166pt too high) detected at line 198
+Overfull \vbox (5.01166pt too high) detected at line 199
  []
 
 [31
 
  <./Figures/Debug.pdf>]
-Overfull \hbox (1.5729pt too wide) in paragraph at lines 220--220
+Overfull \hbox (1.5729pt too wide) in paragraph at lines 221--221
 []\OT1/cmss/bx/it/10.95 ENVIRONMENT| 
  []
 
 
-Overfull \hbox (2.02919pt too wide) in paragraph at lines 220--220
+Overfull \hbox (2.02919pt too wide) in paragraph at lines 221--221
 [][]| 
  []
 
 
-Overfull \vbox (0.21875pt too high) detected at line 220
+Overfull \vbox (0.21875pt too high) detected at line 221
  []
 
 [32
 
-] <Figures/exp2flux.pdf, id=2307, 364.1906pt x 241.90375pt>
+] <Figures/exp2flux.pdf, id=2340, 364.1906pt x 241.90375pt>
 File: Figures/exp2flux.pdf Graphic file (type pdf)
 
 <use Figures/exp2flux.pdf>
-Package pdftex.def Info: Figures/exp2flux.pdf used on input line 225.
+Package pdftex.def Info: Figures/exp2flux.pdf used on input line 226.
 (pdftex.def)             Requested size: 307.28987pt x 204.10947pt.
 
-Overfull \vbox (9.5283pt too high) detected at line 225
+Overfull \vbox (9.5283pt too high) detected at line 226
  []
 
 [33
@@ -1376,43 +1387,43 @@ Overfull \vbox (9.5283pt too high) detected at line 225
  <./Figures/exp2flux.pdf>] [34
 
 ]
-<Figures/Healthy.pdf, id=2415, 722.7pt x 316.5155pt>
+<Figures/Healthy.pdf, id=2448, 722.7pt x 316.5155pt>
 File: Figures/Healthy.pdf Graphic file (type pdf)
  <use Figures/Healthy.pdf>
-Package pdftex.def Info: Figures/Healthy.pdf used on input line 236.
+Package pdftex.def Info: Figures/Healthy.pdf used on input line 237.
 (pdftex.def)             Requested size: 307.28987pt x 134.5825pt.
 
 [35
 
  <./Figures/Healthy.pdf>]
-<Figures/Inflamed.pdf, id=2506, 722.7pt x 469.755pt>
+<Figures/Inflamed.pdf, id=2540, 722.7pt x 469.755pt>
 File: Figures/Inflamed.pdf Graphic file (type pdf)
 
 <use Figures/Inflamed.pdf>
-Package pdftex.def Info: Figures/Inflamed.pdf used on input line 239.
+Package pdftex.def Info: Figures/Inflamed.pdf used on input line 240.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
  [36
 
  <./Figures/Inflamed.pdf>]
-<Figures/Medicated.pdf, id=2588, 722.7pt x 469.755pt>
+<Figures/Medicated.pdf, id=2621, 722.7pt x 469.755pt>
 File: Figures/Medicated.pdf Graphic file (type pdf)
 
 <use Figures/Medicated.pdf>
-Package pdftex.def Info: Figures/Medicated.pdf used on input line 242.
+Package pdftex.def Info: Figures/Medicated.pdf used on input line 243.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
  [37
 
  <./Figures/Medicated.pdf>] [38
 
 ]
-<Figures/FluxDifferenes.pdf, id=2676, 722.7pt x 469.755pt>
+<Figures/FluxDifferenes.pdf, id=2710, 722.7pt x 469.755pt>
 File: Figures/FluxDifferenes.pdf Graphic file (type pdf)
 
 <use Figures/FluxDifferenes.pdf>
-Package pdftex.def Info: Figures/FluxDifferenes.pdf used on input line 252.
+Package pdftex.def Info: Figures/FluxDifferenes.pdf used on input line 253.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 252
+Overfull \vbox (5.15884pt too high) detected at line 253
  []
 
 [39
@@ -1420,49 +1431,49 @@ Overfull \vbox (5.15884pt too high) detected at line 252
  <./Figures/FluxDifferenes.pdf>] [40
 
 ]
-<Figures/Networks.pdf, id=2804, 364.65332pt x 242.67764pt>
+<Figures/Networks.pdf, id=2837, 364.65332pt x 242.67764pt>
 File: Figures/Networks.pdf Graphic file (type pdf)
 
 <use Figures/Networks.pdf>
-Package pdftex.def Info: Figures/Networks.pdf used on input line 262.
+Package pdftex.def Info: Figures/Networks.pdf used on input line 263.
 (pdftex.def)             Requested size: 307.28987pt x 204.51434pt.
 
-Overfull \vbox (9.93318pt too high) detected at line 262
+Overfull \vbox (9.93318pt too high) detected at line 263
  []
 
 [41
 
  <./Figures/Networks.pdf>]
-<Figures/Astrocyte.pdf, id=2929, 722.7pt x 469.755pt>
+<Figures/Astrocyte.pdf, id=2962, 722.7pt x 469.755pt>
 File: Figures/Astrocyte.pdf Graphic file (type pdf)
 
 <use Figures/Astrocyte.pdf>
-Package pdftex.def Info: Figures/Astrocyte.pdf used on input line 268.
+Package pdftex.def Info: Figures/Astrocyte.pdf used on input line 269.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 268
+Overfull \vbox (5.15884pt too high) detected at line 269
  []
 
 [42
 
  <./Figures/Astrocyte.pdf>]
-<Figures/Ages.pdf, id=3022, 722.7pt x 469.755pt>
+<Figures/Ages.pdf, id=3055, 722.7pt x 469.755pt>
 File: Figures/Ages.pdf Graphic file (type pdf)
  <use Figures/Ages.pdf>
-Package pdftex.def Info: Figures/Ages.pdf used on input line 273.
+Package pdftex.def Info: Figures/Ages.pdf used on input line 274.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 273
+Overfull \vbox (5.15884pt too high) detected at line 274
  []
 
 [43
 
  <./Figures/Ages.pdf>]
-<Figures/H-results.pdf, id=3579, 364.1906pt x 154.24326pt>
+<Figures/H-results.pdf, id=3612, 364.1906pt x 154.24326pt>
 File: Figures/H-results.pdf Graphic file (type pdf)
 
 <use Figures/H-results.pdf>
-Package pdftex.def Info: Figures/H-results.pdf used on input line 281.
+Package pdftex.def Info: Figures/H-results.pdf used on input line 282.
 (pdftex.def)             Requested size: 307.28987pt x 130.14478pt.
  [44
 
@@ -1470,35 +1481,35 @@ Package pdftex.def Info: Figures/H-results.pdf used on input line 281.
 File: Figures/H-results.pdf Graphic file (type pdf)
 
 <use Figures/H-results.pdf>
-Package pdftex.def Info: Figures/H-results.pdf used on input line 281.
+Package pdftex.def Info: Figures/H-results.pdf used on input line 282.
 (pdftex.def)             Requested size: 307.28987pt x 130.14478pt.
  [45
 
 ]
 File: Figures/H-results.pdf Graphic file (type pdf)
  <use Figures/H-results.pdf>
-Package pdftex.def Info: Figures/H-results.pdf used on input line 281.
+Package pdftex.def Info: Figures/H-results.pdf used on input line 282.
 (pdftex.def)             Requested size: 307.28987pt x 130.14478pt.
  [46
 
 ]
-<Figures/IC50.pdf, id=3672, 939.51pt x 610.28pt>
+<Figures/IC50.pdf, id=3705, 939.51pt x 610.28pt>
 File: Figures/IC50.pdf Graphic file (type pdf)
  <use Figures/IC50.pdf>
-Package pdftex.def Info: Figures/IC50.pdf used on input line 287.
+Package pdftex.def Info: Figures/IC50.pdf used on input line 288.
 (pdftex.def)             Requested size: 291.92444pt x 189.62251pt.
 
-Overfull \vbox (10.20801pt too high) detected at line 287
+Overfull \vbox (10.20801pt too high) detected at line 288
  []
 
 [47
 
  <./Figures/IC50.pdf>]
-<Figures/I-results.pdf, id=3695, 364.1906pt x 164.94923pt>
+<Figures/I-results.pdf, id=3728, 364.1906pt x 164.94923pt>
 File: Figures/I-results.pdf Graphic file (type pdf)
 
 <use Figures/I-results.pdf>
-Package pdftex.def Info: Figures/I-results.pdf used on input line 296.
+Package pdftex.def Info: Figures/I-results.pdf used on input line 297.
 (pdftex.def)             Requested size: 307.28987pt x 139.17809pt.
  [48
 
@@ -1506,49 +1517,49 @@ Package pdftex.def Info: Figures/I-results.pdf used on input line 296.
 File: Figures/I-results.pdf Graphic file (type pdf)
 
 <use Figures/I-results.pdf>
-Package pdftex.def Info: Figures/I-results.pdf used on input line 296.
+Package pdftex.def Info: Figures/I-results.pdf used on input line 297.
 (pdftex.def)             Requested size: 307.28987pt x 139.17809pt.
  [49
 
 ]
 File: Figures/I-results.pdf Graphic file (type pdf)
  <use Figures/I-results.pdf>
-Package pdftex.def Info: Figures/I-results.pdf used on input line 304.
+Package pdftex.def Info: Figures/I-results.pdf used on input line 305.
 (pdftex.def)             Requested size: 307.28987pt x 139.17809pt.
  [50
 
 ]
-<Figures/GTi.pdf, id=3784, 722.7pt x 469.755pt>
+<Figures/GTi.pdf, id=3817, 722.7pt x 469.755pt>
 File: Figures/GTi.pdf Graphic file (type pdf)
  <use Figures/GTi.pdf>
-Package pdftex.def Info: Figures/GTi.pdf used on input line 307.
+Package pdftex.def Info: Figures/GTi.pdf used on input line 308.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
  [51
 
- <./Figures/GTi.pdf>] <Figures/Antiinflammatory.pdf, id=3831, 722.7pt x 409.53p
+ <./Figures/GTi.pdf>] <Figures/Antiinflammatory.pdf, id=3864, 722.7pt x 409.53p
 t>
 File: Figures/Antiinflammatory.pdf Graphic file (type pdf)
 
 <use Figures/Antiinflammatory.pdf>
-Package pdftex.def Info: Figures/Antiinflammatory.pdf used on input line 310.
+Package pdftex.def Info: Figures/Antiinflammatory.pdf used on input line 311.
 (pdftex.def)             Requested size: 307.28987pt x 174.1323pt.
  [52
 
  <./Figures/Antiinflammatory.pdf>]
-<Figures/Proinflammatory.pdf, id=3944, 722.7pt x 469.755pt>
+<Figures/Proinflammatory.pdf, id=3977, 722.7pt x 469.755pt>
 File: Figures/Proinflammatory.pdf Graphic file (type pdf)
 
 <use Figures/Proinflammatory.pdf>
-Package pdftex.def Info: Figures/Proinflammatory.pdf used on input line 313.
+Package pdftex.def Info: Figures/Proinflammatory.pdf used on input line 314.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
  [53
 
  <./Figures/Proinflammatory.pdf>]
-<Figures/M-results.pdf, id=4024, 364.1906pt x 164.11313pt>
+<Figures/M-results.pdf, id=4057, 364.1906pt x 164.11313pt>
 File: Figures/M-results.pdf Graphic file (type pdf)
 
 <use Figures/M-results.pdf>
-Package pdftex.def Info: Figures/M-results.pdf used on input line 321.
+Package pdftex.def Info: Figures/M-results.pdf used on input line 322.
 (pdftex.def)             Requested size: 307.28987pt x 138.4726pt.
  [54
 
@@ -1556,34 +1567,34 @@ Package pdftex.def Info: Figures/M-results.pdf used on input line 321.
 File: Figures/M-results.pdf Graphic file (type pdf)
 
 <use Figures/M-results.pdf>
-Package pdftex.def Info: Figures/M-results.pdf used on input line 329.
+Package pdftex.def Info: Figures/M-results.pdf used on input line 330.
 (pdftex.def)             Requested size: 307.28987pt x 138.4726pt.
  [55
 
 ]
 File: Figures/M-results.pdf Graphic file (type pdf)
  <use Figures/M-results.pdf>
-Package pdftex.def Info: Figures/M-results.pdf used on input line 329.
+Package pdftex.def Info: Figures/M-results.pdf used on input line 330.
 (pdftex.def)             Requested size: 307.28987pt x 138.4726pt.
  [56
 
 ]
-<Figures/GTt.pdf, id=4104, 722.7pt x 469.755pt>
+<Figures/GTt.pdf, id=4137, 722.7pt x 469.755pt>
 File: Figures/GTt.pdf Graphic file (type pdf)
  <use Figures/GTt.pdf>
-Package pdftex.def Info: Figures/GTt.pdf used on input line 332.
+Package pdftex.def Info: Figures/GTt.pdf used on input line 333.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
  [57
 
- <./Figures/GTt.pdf>] <Figures/TiboloneEnzymes.pdf, id=4150, 722.7pt x 430.2744
+ <./Figures/GTt.pdf>] <Figures/TiboloneEnzymes.pdf, id=4184, 722.7pt x 430.2744
 9pt>
 File: Figures/TiboloneEnzymes.pdf Graphic file (type pdf)
 
 <use Figures/TiboloneEnzymes.pdf>
-Package pdftex.def Info: Figures/TiboloneEnzymes.pdf used on input line 338.
+Package pdftex.def Info: Figures/TiboloneEnzymes.pdf used on input line 339.
 (pdftex.def)             Requested size: 307.28987pt x 182.95287pt.
 
-Overfull \vbox (3.97171pt too high) detected at line 338
+Overfull \vbox (3.97171pt too high) detected at line 339
  []
 
 [58
@@ -1593,14 +1604,14 @@ Overfull \vbox (3.97171pt too high) detected at line 338
 ] [60
 
 ]
-<Figures/SPackages.pdf, id=4250, 722.7pt x 469.755pt>
+<Figures/SPackages.pdf, id=4283, 722.7pt x 469.755pt>
 File: Figures/SPackages.pdf Graphic file (type pdf)
 
 <use Figures/SPackages.pdf>
-Package pdftex.def Info: Figures/SPackages.pdf used on input line 364.
+Package pdftex.def Info: Figures/SPackages.pdf used on input line 365.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 364
+Overfull \vbox (5.15884pt too high) detected at line 365
  []
 
 [61
@@ -1608,29 +1619,29 @@ Overfull \vbox (5.15884pt too high) detected at line 364
  <./Figures/SPackages.pdf>] [62
 
 ]
-<Figures/Events.pdf, id=4347, 771.13884pt x 123.72011pt>
+<Figures/Events.pdf, id=4381, 771.13884pt x 123.72011pt>
 File: Figures/Events.pdf Graphic file (type pdf)
 
 <use Figures/Events.pdf>
-Package pdftex.def Info: Figures/Events.pdf used on input line 398.
+Package pdftex.def Info: Figures/Events.pdf used on input line 399.
 (pdftex.def)             Requested size: 307.28987pt x 49.30026pt.
- <Figures/IS3B.png, id=4348, 151.2852pt x 96.36pt>
+ <Figures/IS3B.png, id=4382, 151.2852pt x 96.36pt>
 File: Figures/IS3B.png Graphic file (type png)
 
 <use Figures/IS3B.png>
-Package pdftex.def Info: Figures/IS3B.png used on input line 398.
+Package pdftex.def Info: Figures/IS3B.png used on input line 399.
 (pdftex.def)             Requested size: 92.1879pt x 58.71921pt.
- <Figures/ICSB.png, id=4349, 315.1775pt x 200.75pt>
+ <Figures/ICSB.png, id=4383, 315.1775pt x 200.75pt>
 File: Figures/ICSB.png Graphic file (type png)
 
 <use Figures/ICSB.png>
-Package pdftex.def Info: Figures/ICSB.png used on input line 398.
+Package pdftex.def Info: Figures/ICSB.png used on input line 399.
 (pdftex.def)             Requested size: 92.1879pt x 58.71837pt.
- <Figures/ICGEB.pdf, id=4350, 315.1775pt x 200.75pt>
+ <Figures/ICGEB.pdf, id=4384, 315.1775pt x 200.75pt>
 File: Figures/ICGEB.pdf Graphic file (type pdf)
 
 <use Figures/ICGEB.pdf>
-Package pdftex.def Info: Figures/ICGEB.pdf used on input line 398.
+Package pdftex.def Info: Figures/ICGEB.pdf used on input line 399.
 (pdftex.def)             Requested size: 92.1879pt x 58.71837pt.
  [63
 
@@ -1639,66 +1650,66 @@ gures/ICSB.png> <./Figures/ICGEB.pdf>]
 File: Figures/UN.png Graphic file (type png)
 
 <use Figures/UN.png>
-Package pdftex.def Info: Figures/UN.png used on input line 409.
+Package pdftex.def Info: Figures/UN.png used on input line 410.
 (pdftex.def)             Requested size: 115.9676pt x 51.21504pt.
- <Figures/Javeriana.png, id=4535, 263.0628pt x 88.1694pt>
+ <Figures/Javeriana.png, id=4568, 263.0628pt x 88.1694pt>
 File: Figures/Javeriana.png Graphic file (type png)
 
 <use Figures/Javeriana.png>
-Package pdftex.def Info: Figures/Javeriana.png used on input line 409.
+Package pdftex.def Info: Figures/Javeriana.png used on input line 410.
 (pdftex.def)             Requested size: 152.80531pt x 51.21504pt.
 
-<Figures/Janneth.png, id=4536, 161.60374pt x 161.60374pt>
+<Figures/Janneth.png, id=4569, 161.60374pt x 161.60374pt>
 File: Figures/Janneth.png Graphic file (type png)
 
 <use Figures/Janneth.png>
-Package pdftex.def Info: Figures/Janneth.png used on input line 409.
+Package pdftex.def Info: Figures/Janneth.png used on input line 410.
 (pdftex.def)             Requested size: 76.82234pt x 76.82175pt.
- <Figures/Andres.png, id=4537, 52.8885pt x 52.8885pt>
+ <Figures/Andres.png, id=4570, 52.8885pt x 52.8885pt>
 File: Figures/Andres.png Graphic file (type png)
 
 <use Figures/Andres.png>
-Package pdftex.def Info: Figures/Andres.png used on input line 409.
+Package pdftex.def Info: Figures/Andres.png used on input line 410.
 (pdftex.def)             Requested size: 76.82234pt x 76.83pt.
 
-<Figures/Familia.jpg, id=4538, 997.7275pt x 997.7275pt>
+<Figures/Familia.jpg, id=4571, 997.7275pt x 997.7275pt>
 File: Figures/Familia.jpg Graphic file (type jpg)
 
 <use Figures/Familia.jpg>
-Package pdftex.def Info: Figures/Familia.jpg used on input line 409.
+Package pdftex.def Info: Figures/Familia.jpg used on input line 410.
 (pdftex.def)             Requested size: 76.82234pt x 76.82068pt.
 
-<Figures/Kelly-Juan-Daniel.jpg, id=4539, 963.6pt x 963.6pt>
+<Figures/Kelly-Juan-Daniel.jpg, id=4572, 963.6pt x 963.6pt>
 File: Figures/Kelly-Juan-Daniel.jpg Graphic file (type jpg)
 
 <use Figures/Kelly-Juan-Daniel.jpg>
-Package pdftex.def Info: Figures/Kelly-Juan-Daniel.jpg used on input line 409.
+Package pdftex.def Info: Figures/Kelly-Juan-Daniel.jpg used on input line 410.
 (pdftex.def)             Requested size: 76.82234pt x 76.81021pt.
  [64
 
  <./Figures/Javeriana.png> <./Figures/Janneth.png> <./Figures/Andres.png> <./Fi
 gures/Familia.jpg> <./Figures/Kelly-Juan-Daniel.jpg>] <Figures/logoIG.png, id=4
-556, 401.5pt x 102.3825pt>
+589, 401.5pt x 102.3825pt>
 File: Figures/logoIG.png Graphic file (type png)
 
 <use Figures/logoIG.png>
-Package pdftex.def Info: Figures/logoIG.png used on input line 432.
+Package pdftex.def Info: Figures/logoIG.png used on input line 433.
 (pdftex.def)             Requested size: 78.10532pt x 19.91684pt.
 
-<Figures/logoGIBBS.png, id=4557, 307.1475pt x 112.42pt>
+<Figures/logoGIBBS.png, id=4590, 307.1475pt x 112.42pt>
 File: Figures/logoGIBBS.png Graphic file (type png)
 
 <use Figures/logoGIBBS.png>
-Package pdftex.def Info: Figures/logoGIBBS.png used on input line 432.
+Package pdftex.def Info: Figures/logoGIBBS.png used on input line 433.
 (pdftex.def)             Requested size: 54.41243pt x 19.91684pt.
 
-<Figures/GIBBS.jpg, id=4558, 2689.04625pt x 718.685pt>
+<Figures/GIBBS.jpg, id=4591, 2689.04625pt x 718.685pt>
 File: Figures/GIBBS.jpg Graphic file (type jpg)
  <use Figures/GIBBS.jpg>
-Package pdftex.def Info: Figures/GIBBS.jpg used on input line 432.
+Package pdftex.def Info: Figures/GIBBS.jpg used on input line 433.
 (pdftex.def)             Requested size: 307.28987pt x 82.12613pt.
 
-Overfull \vbox (1.19101pt too high) detected at line 432
+Overfull \vbox (1.19101pt too high) detected at line 433
  []
 
 [65
@@ -1713,15 +1724,15 @@ Overfull \vbox (1.19101pt too high) detected at line 432
 \tf@snm=\write9
 \openout9 = `masterThesis.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 433.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 433.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 434.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 434.
 
 (./masterThesis.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 433.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 433.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 434.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 434.
 Package rerunfilecheck Info: File `masterThesis.out' has not changed.
 (rerunfilecheck)             Checksum: 3F70E534214C3F25FDC9508ADF298D1E;375.
 
@@ -1732,13 +1743,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 433.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 434.
  ) 
 Here is how much of TeX's memory you used:
- 19060 strings out of 493014
- 356493 string characters out of 6133351
+ 19065 strings out of 493014
+ 356609 string characters out of 6133351
  448812 words of memory out of 5000000
- 21965 multiletter control sequences out of 15000+600000
+ 21969 multiletter control sequences out of 15000+600000
  19326 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,55p,539b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1757,10 +1768,10 @@ b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pf
 b>
-Output written on masterThesis.pdf (65 pages, 42816400 bytes).
+Output written on masterThesis.pdf (65 pages, 43120246 bytes).
 PDF statistics:
- 4649 PDF objects out of 5155 (max. 8388607)
- 2146 compressed objects within 22 object streams
+ 4682 PDF objects out of 5155 (max. 8388607)
+ 2160 compressed objects within 22 object streams
  139 named destinations out of 1000 (max. 500000)
- 332 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

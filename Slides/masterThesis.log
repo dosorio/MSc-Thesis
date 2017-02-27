@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 FEB 2017 09:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 FEB 2017 13:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,195 +1278,195 @@ Overfull \vbox (1.87364pt too high) detected at line 135
 
  <./Figures/FBA.pdf>] [23
 
-]
-<Figures/Materials.pdf, id=1463, 364.65332pt x 242.67764pt>
-File: Figures/Materials.pdf Graphic file (type pdf)
-
-<use Figures/Materials.pdf>
-Package pdftex.def Info: Figures/Materials.pdf used on input line 150.
-(pdftex.def)             Requested size: 307.28987pt x 204.51434pt.
-
-Overfull \vbox (9.93318pt too high) detected at line 150
- []
-
-[24
-
- <./Figures/Materials.pdf>] [25
+] [24
 
 ]
-<Figures/GE.pdf, id=1602, 380.42125pt x 522.95375pt>
+<Figures/GE.pdf, id=1477, 380.42125pt x 522.95375pt>
 File: Figures/GE.pdf Graphic file (type pdf)
  <use Figures/GE.pdf>
-Package pdftex.def Info: Figures/GE.pdf used on input line 164.
+Package pdftex.def Info: Figures/GE.pdf used on input line 159.
 (pdftex.def)             Requested size: 142.26378pt x 195.57254pt.
 
-<Figures/ActiveGenes.pdf, id=1603, 361.35pt x 469.755pt>
+<Figures/ActiveGenes.pdf, id=1478, 361.35pt x 469.755pt>
 File: Figures/ActiveGenes.pdf Graphic file (type pdf)
 
 <use Figures/ActiveGenes.pdf>
-Package pdftex.def Info: Figures/ActiveGenes.pdf used on input line 164.
+Package pdftex.def Info: Figures/ActiveGenes.pdf used on input line 159.
 (pdftex.def)             Requested size: 142.26378pt x 184.94551pt.
 
-Overfull \vbox (5.59138pt too high) detected at line 164
+Overfull \vbox (5.59138pt too high) detected at line 159
+ []
+
+[25
+
+ <./Figures/GE.pdf> <./Figures/ActiveGenes.pdf>]
+<Figures/TSR.pdf, id=1854, 722.7pt x 469.755pt>
+File: Figures/TSR.pdf Graphic file (type pdf)
+ <use Figures/TSR.pdf>
+Package pdftex.def Info: Figures/TSR.pdf used on input line 164.
+(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
+
+Overfull \vbox (5.15884pt too high) detected at line 164
  []
 
 [26
-
- <./Figures/GE.pdf> <./Figures/ActiveGenes.pdf>]
-<Figures/TSR.pdf, id=1978, 722.7pt x 469.755pt>
-File: Figures/TSR.pdf Graphic file (type pdf)
- <use Figures/TSR.pdf>
-Package pdftex.def Info: Figures/TSR.pdf used on input line 169.
-(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
-
-Overfull \vbox (5.15884pt too high) detected at line 169
- []
-
-[27
 
  <./Figures/TSR.pdf>]
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textperiodcentered' on input line 191.
+(Font)              for symbol `textperiodcentered' on input line 186.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 191.
+(Font)              using `OT1/cmss/bx/n' instead on input line 186.
 
 
-Overfull \hbox (2.8439pt too wide) in paragraph at lines 191--191
+Overfull \hbox (2.8439pt too wide) in paragraph at lines 186--186
  [] 
+ []
+
+[27
+
+] <Figures/g2f.pdf, id=2063, 364.1906pt x 236.55077pt>
+File: Figures/g2f.pdf Graphic file (type pdf)
+
+<use Figures/g2f.pdf>
+Package pdftex.def Info: Figures/g2f.pdf used on input line 191.
+(pdftex.def)             Requested size: 307.28987pt x 199.59282pt.
+
+Overfull \vbox (5.01166pt too high) detected at line 191
  []
 
 [28
 
-] <Figures/g2f.pdf, id=2187, 364.1906pt x 236.55077pt>
-File: Figures/g2f.pdf Graphic file (type pdf)
+ <./Figures/g2f.pdf>]
+<Figures/minval.pdf, id=2149, 364.1906pt x 241.82045pt>
+File: Figures/minval.pdf Graphic file (type pdf)
 
-<use Figures/g2f.pdf>
-Package pdftex.def Info: Figures/g2f.pdf used on input line 196.
-(pdftex.def)             Requested size: 307.28987pt x 199.59282pt.
+<use Figures/minval.pdf>
+Package pdftex.def Info: Figures/minval.pdf used on input line 196.
+(pdftex.def)             Requested size: 307.28987pt x 204.03917pt.
 
-Overfull \vbox (5.01166pt too high) detected at line 196
+Overfull \vbox (9.45801pt too high) detected at line 196
  []
 
 [29
 
- <./Figures/g2f.pdf>]
-<Figures/minval.pdf, id=2273, 364.1906pt x 241.82045pt>
-File: Figures/minval.pdf Graphic file (type pdf)
+ <./Figures/minval.pdf>]
+<Figures/Debug.pdf, id=2229, 364.1906pt x 236.55077pt>
+File: Figures/Debug.pdf Graphic file (type pdf)
+ <use Figures/Debug.pdf>
+Package pdftex.def Info: Figures/Debug.pdf used on input line 201.
+(pdftex.def)             Requested size: 307.28987pt x 199.59282pt.
 
-<use Figures/minval.pdf>
-Package pdftex.def Info: Figures/minval.pdf used on input line 201.
-(pdftex.def)             Requested size: 307.28987pt x 204.03917pt.
-
-Overfull \vbox (9.45801pt too high) detected at line 201
+Overfull \vbox (5.01166pt too high) detected at line 201
  []
 
 [30
 
- <./Figures/minval.pdf>]
-<Figures/Debug.pdf, id=2353, 364.1906pt x 236.55077pt>
-File: Figures/Debug.pdf Graphic file (type pdf)
- <use Figures/Debug.pdf>
-Package pdftex.def Info: Figures/Debug.pdf used on input line 206.
-(pdftex.def)             Requested size: 307.28987pt x 199.59282pt.
-
-Overfull \vbox (5.01166pt too high) detected at line 206
- []
-
-[31
-
  <./Figures/Debug.pdf>]
-Overfull \hbox (1.5729pt too wide) in paragraph at lines 228--228
+Overfull \hbox (1.5729pt too wide) in paragraph at lines 223--223
 []\OT1/cmss/bx/it/10.95 ENVIRONMENT| 
  []
 
 
-Overfull \hbox (2.02919pt too wide) in paragraph at lines 228--228
+Overfull \hbox (2.02919pt too wide) in paragraph at lines 223--223
 [][]| 
  []
 
 
-Overfull \vbox (0.21875pt too high) detected at line 228
+Overfull \vbox (0.21875pt too high) detected at line 223
+ []
+
+[31
+
+] <Figures/exp2flux.pdf, id=2328, 364.1906pt x 241.90375pt>
+File: Figures/exp2flux.pdf Graphic file (type pdf)
+
+<use Figures/exp2flux.pdf>
+Package pdftex.def Info: Figures/exp2flux.pdf used on input line 228.
+(pdftex.def)             Requested size: 307.28987pt x 204.10947pt.
+
+Overfull \vbox (9.5283pt too high) detected at line 228
  []
 
 [32
 
-] <Figures/exp2flux.pdf, id=2452, 364.1906pt x 241.90375pt>
-File: Figures/exp2flux.pdf Graphic file (type pdf)
-
-<use Figures/exp2flux.pdf>
-Package pdftex.def Info: Figures/exp2flux.pdf used on input line 233.
-(pdftex.def)             Requested size: 307.28987pt x 204.10947pt.
-
-Overfull \vbox (9.5283pt too high) detected at line 233
- []
-
-[33
-
- <./Figures/exp2flux.pdf>] [34
+ <./Figures/exp2flux.pdf>] [33
 
 ]
-<Figures/Healthy.pdf, id=2560, 722.7pt x 316.5155pt>
+<Figures/Healthy.pdf, id=2435, 722.7pt x 316.5155pt>
 File: Figures/Healthy.pdf Graphic file (type pdf)
  <use Figures/Healthy.pdf>
-Package pdftex.def Info: Figures/Healthy.pdf used on input line 244.
+Package pdftex.def Info: Figures/Healthy.pdf used on input line 239.
 (pdftex.def)             Requested size: 307.28987pt x 134.5825pt.
 
-[35
+[34
 
  <./Figures/Healthy.pdf>]
-<Figures/Inflamed.pdf, id=2651, 722.7pt x 469.755pt>
+<Figures/Inflamed.pdf, id=2527, 722.7pt x 469.755pt>
 File: Figures/Inflamed.pdf Graphic file (type pdf)
 
 <use Figures/Inflamed.pdf>
-Package pdftex.def Info: Figures/Inflamed.pdf used on input line 247.
+Package pdftex.def Info: Figures/Inflamed.pdf used on input line 242.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
- [36
+ [35
 
  <./Figures/Inflamed.pdf>]
-<Figures/Medicated.pdf, id=2732, 722.7pt x 469.755pt>
+<Figures/Medicated.pdf, id=2608, 722.7pt x 469.755pt>
 File: Figures/Medicated.pdf Graphic file (type pdf)
 
 <use Figures/Medicated.pdf>
-Package pdftex.def Info: Figures/Medicated.pdf used on input line 250.
+Package pdftex.def Info: Figures/Medicated.pdf used on input line 245.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
- [37
+ [36
 
- <./Figures/Medicated.pdf>] [38
+ <./Figures/Medicated.pdf>] [37
 
 ]
-<Figures/FluxDifferenes.pdf, id=2821, 722.7pt x 469.755pt>
+<Figures/FluxDifferenes.pdf, id=2697, 722.7pt x 469.755pt>
 File: Figures/FluxDifferenes.pdf Graphic file (type pdf)
 
 <use Figures/FluxDifferenes.pdf>
-Package pdftex.def Info: Figures/FluxDifferenes.pdf used on input line 260.
+Package pdftex.def Info: Figures/FluxDifferenes.pdf used on input line 255.
 (pdftex.def)             Requested size: 307.28987pt x 199.74pt.
 
-Overfull \vbox (5.15884pt too high) detected at line 260
+Overfull \vbox (5.15884pt too high) detected at line 255
  []
 
-[39
+[38
 
- <./Figures/FluxDifferenes.pdf>] [40
+ <./Figures/FluxDifferenes.pdf>] [39
 
 ]
-<Figures/Networks.pdf, id=2949, 364.65332pt x 242.67764pt>
+<Figures/Networks.pdf, id=2824, 364.65332pt x 242.67764pt>
 File: Figures/Networks.pdf Graphic file (type pdf)
 
 <use Figures/Networks.pdf>
-Package pdftex.def Info: Figures/Networks.pdf used on input line 270.
+Package pdftex.def Info: Figures/Networks.pdf used on input line 265.
 (pdftex.def)             Requested size: 307.28987pt x 204.51434pt.
 
-Overfull \vbox (9.93318pt too high) detected at line 270
+Overfull \vbox (9.93318pt too high) detected at line 265
+ []
+
+[40
+
+ <./Figures/Networks.pdf>]
+<Figures/Materials.pdf, id=2949, 364.65332pt x 242.67764pt>
+File: Figures/Materials.pdf Graphic file (type pdf)
+
+<use Figures/Materials.pdf>
+Package pdftex.def Info: Figures/Materials.pdf used on input line 271.
+(pdftex.def)             Requested size: 307.28987pt x 204.51434pt.
+
+Overfull \vbox (9.93318pt too high) detected at line 271
  []
 
 [41
 
- <./Figures/Networks.pdf>]
-<Figures/Astrocyte.pdf, id=3073, 722.7pt x 469.755pt>
+ <./Figures/Materials.pdf>]
+<Figures/Astrocyte.pdf, id=3072, 722.7pt x 469.755pt>
 File: Figures/Astrocyte.pdf Graphic file (type pdf)
 
 <use Figures/Astrocyte.pdf>
@@ -1790,7 +1790,7 @@ b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pf
 b>
-Output written on masterThesis.pdf (65 pages, 44198162 bytes).
+Output written on masterThesis.pdf (65 pages, 44198687 bytes).
 PDF statistics:
  4794 PDF objects out of 5155 (max. 8388607)
  2206 compressed objects within 23 object streams

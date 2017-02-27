@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 FEB 2017 13:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 FEB 2017 15:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1173,110 +1173,110 @@ Package pdftex.def Info: Figures/GFAP.pdf used on input line 66.
  [10
 
 ]
-<Figures/Inflammation.pdf, id=302, 722.7pt x 421.575pt>
-File: Figures/Inflammation.pdf Graphic file (type pdf)
-
-<use Figures/Inflammation.pdf>
-Package pdftex.def Info: Figures/Inflammation.pdf used on input line 71.
-(pdftex.def)             Requested size: 307.28987pt x 179.25383pt.
- [11
-
- <./Figures/Inflammation.pdf>]
-<Figures/BInflam.pdf, id=363, 722.7pt x 319.862pt>
+<Figures/BInflam.pdf, id=302, 722.7pt x 319.862pt>
 File: Figures/BInflam.pdf Graphic file (type pdf)
  <use Figures/BInflam.pdf>
-Package pdftex.def Info: Figures/BInflam.pdf used on input line 83.
+Package pdftex.def Info: Figures/BInflam.pdf used on input line 78.
 (pdftex.def)             Requested size: 270.30118pt x 119.6307pt.
 
-[12
+[11
 
- <./Figures/BInflam.pdf>] [13
+ <./Figures/BInflam.pdf>] [12
 
-] [14
+] [13
 
 ]
-<Figures/R.pdf, id=492, 722.7pt x 227.51701pt>
+<Figures/R.pdf, id=432, 722.7pt x 227.51701pt>
 File: Figures/R.pdf Graphic file (type pdf)
  <use Figures/R.pdf>
-Package pdftex.def Info: Figures/R.pdf used on input line 109.
+Package pdftex.def Info: Figures/R.pdf used on input line 104.
 (pdftex.def)             Requested size: 307.28987pt x 96.74031pt.
- [15
+ [14
 
  <./Figures/R.pdf>]
 File: Figures/R.pdf Graphic file (type pdf)
  <use Figures/R.pdf>
-Package pdftex.def Info: Figures/R.pdf used on input line 109.
+Package pdftex.def Info: Figures/R.pdf used on input line 104.
 (pdftex.def)             Requested size: 307.28987pt x 96.74031pt.
- [16
+ [15
 
 ]
 File: Figures/R.pdf Graphic file (type pdf)
  <use Figures/R.pdf>
-Package pdftex.def Info: Figures/R.pdf used on input line 109.
+Package pdftex.def Info: Figures/R.pdf used on input line 104.
 (pdftex.def)             Requested size: 307.28987pt x 96.74031pt.
- [17
+ [16
 
 ]
-<Figures/Steroids.pdf, id=719, 722.7pt x 428.60126pt>
-File: Figures/Steroids.pdf Graphic file (type pdf)
+<Figures/Inflammation.pdf, id=659, 722.7pt x 421.575pt>
+File: Figures/Inflammation.pdf Graphic file (type pdf)
 
-<use Figures/Steroids.pdf>
-Package pdftex.def Info: Figures/Steroids.pdf used on input line 115.
-(pdftex.def)             Requested size: 307.28987pt x 182.24141pt.
+<use Figures/Inflammation.pdf>
+Package pdftex.def Info: Figures/Inflammation.pdf used on input line 109.
+(pdftex.def)             Requested size: 307.28987pt x 179.25383pt.
+ [17
 
-Overfull \vbox (4.2158pt too high) detected at line 115
+ <./Figures/Inflammation.pdf>]
+<Figures/TMedicine.pdf, id=719, 722.7pt x 469.755pt>
+File: Figures/TMedicine.pdf Graphic file (type pdf)
+
+<use Figures/TMedicine.pdf>
+Package pdftex.def Info: Figures/TMedicine.pdf used on input line 114.
+(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
+
+Overfull \vbox (5.15884pt too high) detected at line 114
  []
 
 [18
 
- <./Figures/Steroids.pdf>]
-<Figures/TiboloneM.pdf, id=766, 722.7pt x 439.35141pt>
-File: Figures/TiboloneM.pdf Graphic file (type pdf)
+ <./Figures/TMedicine.pdf>]
+<Figures/FBA.pdf, id=1244, 722.7pt x 413.68555pt>
+File: Figures/FBA.pdf Graphic file (type pdf)
+ <use Figures/FBA.pdf>
+Package pdftex.def Info: Figures/FBA.pdf used on input line 120.
+(pdftex.def)             Requested size: 307.28987pt x 175.89925pt.
 
-<use Figures/TiboloneM.pdf>
-Package pdftex.def Info: Figures/TiboloneM.pdf used on input line 121.
-(pdftex.def)             Requested size: 291.92444pt x 177.46706pt.
-
-Overfull \vbox (1.8859pt too high) detected at line 121
+Overfull \vbox (1.87364pt too high) detected at line 120
  []
 
 [19
 
- <./Figures/TiboloneM.pdf>]
-<Figures/Tibolone.pdf, id=817, 722.7pt x 222.58156pt>
-File: Figures/Tibolone.pdf Graphic file (type pdf)
+ <./Figures/FBA.pdf>]
+<Figures/Steroids.pdf, id=1314, 722.7pt x 428.60126pt>
+File: Figures/Steroids.pdf Graphic file (type pdf)
 
-<use Figures/Tibolone.pdf>
-Package pdftex.def Info: Figures/Tibolone.pdf used on input line 124.
-(pdftex.def)             Requested size: 307.28987pt x 94.64175pt.
- [20
+<use Figures/Steroids.pdf>
+Package pdftex.def Info: Figures/Steroids.pdf used on input line 126.
+(pdftex.def)             Requested size: 307.28987pt x 182.24141pt.
 
- <./Figures/Tibolone.pdf>]
-<Figures/TMedicine.pdf, id=856, 722.7pt x 469.755pt>
-File: Figures/TMedicine.pdf Graphic file (type pdf)
+Overfull \vbox (4.2158pt too high) detected at line 126
+ []
 
-<use Figures/TMedicine.pdf>
-Package pdftex.def Info: Figures/TMedicine.pdf used on input line 129.
-(pdftex.def)             Requested size: 307.28987pt x 199.74pt.
+[20
 
-Overfull \vbox (5.15884pt too high) detected at line 129
+ <./Figures/Steroids.pdf>]
+<Figures/TiboloneM.pdf, id=1361, 722.7pt x 439.35141pt>
+File: Figures/TiboloneM.pdf Graphic file (type pdf)
+
+<use Figures/TiboloneM.pdf>
+Package pdftex.def Info: Figures/TiboloneM.pdf used on input line 132.
+(pdftex.def)             Requested size: 291.92444pt x 177.46706pt.
+
+Overfull \vbox (1.8859pt too high) detected at line 132
  []
 
 [21
 
- <./Figures/TMedicine.pdf>]
-<Figures/FBA.pdf, id=1380, 722.7pt x 413.68555pt>
-File: Figures/FBA.pdf Graphic file (type pdf)
- <use Figures/FBA.pdf>
-Package pdftex.def Info: Figures/FBA.pdf used on input line 135.
-(pdftex.def)             Requested size: 307.28987pt x 175.89925pt.
+ <./Figures/TiboloneM.pdf>]
+<Figures/Tibolone.pdf, id=1411, 722.7pt x 222.58156pt>
+File: Figures/Tibolone.pdf Graphic file (type pdf)
 
-Overfull \vbox (1.87364pt too high) detected at line 135
- []
+<use Figures/Tibolone.pdf>
+Package pdftex.def Info: Figures/Tibolone.pdf used on input line 135.
+(pdftex.def)             Requested size: 307.28987pt x 94.64175pt.
+ [22
 
-[22
-
- <./Figures/FBA.pdf>] [23
+ <./Figures/Tibolone.pdf>] [23
 
 ] [24
 
@@ -1790,7 +1790,7 @@ b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pf
 b>
-Output written on masterThesis.pdf (65 pages, 44198687 bytes).
+Output written on masterThesis.pdf (65 pages, 44195266 bytes).
 PDF statistics:
  4794 PDF objects out of 5155 (max. 8388607)
  2206 compressed objects within 23 object streams
